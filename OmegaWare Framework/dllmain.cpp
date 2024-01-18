@@ -40,17 +40,17 @@ namespace Cheat
 			if (kiero::bind(54, (void**)&oExecuteCommandLists, hkExecuteCommandLists) != kiero::Status::Success)
 				return false;
 
-			if (kiero::bind(58, (void**)&oSignal, hkSignal) != kiero::Status::Success)
-				return false;
+			//if (kiero::bind(58, (void**)&oSignal, hkSignal) != kiero::Status::Success)
+				//return false;
 
 			if (kiero::bind(140, (void**)&oPresent, hkPresent) != kiero::Status::Success)
 				return false;
 			
-			if (kiero::bind(84, (void**)&oDrawInstanced, hkDrawInstanced) != kiero::Status::Success)
-				return false;
+			//if (kiero::bind(84, (void**)&oDrawInstanced, hkDrawInstanced) != kiero::Status::Success)
+				//return false;
 
-			if (kiero::bind(85, (void**)&oDrawIndexedInstanced, hkDrawIndexedInstanced) != kiero::Status::Success)
-				return false;
+			//if (kiero::bind(85, (void**)&oDrawIndexedInstanced, hkDrawIndexedInstanced) != kiero::Status::Success)
+				//return false;
 		}
 		else
 			return false;
@@ -92,7 +92,7 @@ namespace Cheat
 			console.get()->ToggleVisibility();
 
 		if (GetAsyncKeyState(dwUnloadKey))
-			bShouldRun = false;
+			Cheat::bShouldRun = false;
 
 		for (size_t i = 0; i < Features.size(); i++)
 		{
@@ -111,12 +111,12 @@ namespace Cheat
 		if (!Init())
 		{
 			Utils::LogError(Utils::GetLocation(CurrentLoc), Cheat::Title + ": Failed to initalize");
-			bShouldRun = false;
+			Cheat::bShouldRun = false;
 		}
 		else
 			Utils::LogDebug(Utils::GetLocation(CurrentLoc), Cheat::Title + ": Initalized");
 
-		while (bShouldRun)
+		while (Cheat::bShouldRun)
 		{
 			HandleKeys();
 
@@ -133,6 +133,13 @@ namespace Cheat
 
 		#if FRAMEWORK_RENDER_D3D12
 		D3D12Release();
+
+		//kiero::unbind(54);
+		//kiero::unbind(58);
+		//kiero::unbind(140);
+		//kiero::unbind(84);
+		//kiero::unbind(85);
+
 		kiero::shutdown();
 		#endif
 

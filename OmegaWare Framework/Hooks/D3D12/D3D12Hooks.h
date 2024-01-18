@@ -54,9 +54,6 @@ LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 bool init = false;
 extern long __fastcall hkPresent(IDXGISwapChain3* pSwapChain, UINT SyncInterval, UINT Flags)
 {
-	if (!Cheat::bShouldRun)
-		return oPresent(pSwapChain, SyncInterval, Flags);
-
 	if (!init)
 	{
 		if (SUCCEEDED(pSwapChain->GetDevice(__uuidof(ID3D12Device), (void**)&d3d12Device))) {
@@ -140,7 +137,7 @@ extern long __fastcall hkPresent(IDXGISwapChain3* pSwapChain, UINT SyncInterval,
 		init = true;
 	}
 
-	if (!d3d12CommandQueue)
+	if (!d3d12CommandQueue || !Cheat::bShouldRun)
 		return oPresent(pSwapChain, SyncInterval, Flags);
 
 	GUI::BeginRender();
@@ -212,7 +209,7 @@ void D3D12Release()
 	d3d12DescriptorHeapBackBuffers->Release();
 	d3d12DescriptorHeapImGuiRender->Release();
 	d3d12CommandList->Release();
-	d3d12Fence->Release();
+	//d3d12Fence->Release();
 	d3d12CommandQueue->Release();
 
 	oWndProc = (WNDPROC)SetWindowLongPtrA(Window, GWLP_WNDPROC, (LONG_PTR)oWndProc);

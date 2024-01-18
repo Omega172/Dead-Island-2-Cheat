@@ -87,7 +87,7 @@ namespace Cheat
 
 	static const std::string Title = Framework + " (" + Game + ")";
 
-	static bool bShouldRun = true;
+	inline bool bShouldRun = true;
 	static DWORD dwThreadID = NULL;
 	static HMODULE hModule = NULL;
 
