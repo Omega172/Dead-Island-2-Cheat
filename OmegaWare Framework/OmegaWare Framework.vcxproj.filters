@@ -16,6 +16,9 @@
     <ClCompile Include="ImGUI\imgui_widgets.cpp" />
     <ClCompile Include="Kiero\kiero.cpp" />
     <ClCompile Include="ImGUI\imgui_impl_dx12.cpp" />
+    <ClCompile Include="SDK\BasicTypes_Package.cpp" />
+    <ClCompile Include="SDK\CoreUObject_Package.cpp" />
+    <ClCompile Include="SDK\Engine_Package.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -42,5 +45,6 @@
     <ClInclude Include="ImGUI\imgui_impl_dx12.h" />
     <ClInclude Include="Hooks\D3D12\D3D12Hooks.h" />
     <ClInclude Include="Interfaces\Unreal.h" />
+    <ClInclude Include="SDK.h" />
   </ItemGroup>
 </Project>

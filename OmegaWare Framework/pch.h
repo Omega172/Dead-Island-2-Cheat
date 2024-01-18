@@ -10,14 +10,14 @@
 #define FRAMEWORK_REWORK_VERSION 0
 
 #define FRAMEWORK_CODENAME "OmegaWare"
-#define FRAMEWORK_TARGET_GAME ""
+#define FRAMEWORK_TARGET_GAME "Dead Island 2"
 #pragma warning(disable : 5056)
 static_assert(FRAMEWORK_TARGET_GAME != ""); // Make sure the target game is set
 
-#define FRAMEWORK_UNREAL 0
+#define FRAMEWORK_UNREAL 1
 
-#define FRAMEWORK_RENDER_D3D11 1
-#define FRAMEWORK_RENDER_D3D12 0
+#define FRAMEWORK_RENDER_D3D11 0
+#define FRAMEWORK_RENDER_D3D12 1
 static_assert(FRAMEWORK_RENDER_D3D11 != FRAMEWORK_RENDER_D3D12); // Don't allow both rendering frameworks
 
 #if FRAMEWORK_RENDER_D3D11

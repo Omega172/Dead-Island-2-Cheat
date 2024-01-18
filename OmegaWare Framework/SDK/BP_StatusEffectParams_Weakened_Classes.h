@@ -1,0 +1,36 @@
+﻿#pragma once
+
+/**
+ * Name: Dead_Island_2
+ * Version: Cracked
+ */
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x01)
+#endif
+
+namespace CG
+{
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * BlueprintGeneratedClass BP_StatusEffectParams_Weakened.BP_StatusEffectParams_Weakened_C
+	 * Size -> 0x0007 (FullSize[0x00F0] - InheritedSize[0x00E9])
+	 */
+	class UBP_StatusEffectParams_Weakened_C : public UBP_Base_StatusEffectParams_ApplyDebuff_C
+	{
+	public:
+		unsigned char                                              UnknownData_7P2K[0x3];                                   // 0x00E9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		float                                                      DamageTakenModifier;                                     // 0x00EC(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
+
+	public:
+		void GetModifiers(TArray<struct FSStatusEffectDebuffTypesAndValues>* StatusEffectsAndValues);
+		static UClass* StaticClass();
+	};
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif
