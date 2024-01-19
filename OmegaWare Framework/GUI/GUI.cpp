@@ -67,18 +67,16 @@ void GUI::Render()
 	{
 		CG::USimpleHealthComponent* HealthComponent = DIPlayer->HealthComponent;
 		if (HealthComponent)
-		{
-			HealthComponent->bInvincible = true;
-			HealthComponent->Health = HealthComponent->MaxHealth;
-		}
+			if (HealthComponent->Health != HealthComponent->MaxHealth)
+				HealthComponent->Health = HealthComponent->MaxHealth;
 
 		CG::UStaminaComponent* StaminaComponent = DIPlayer->StaminaComponent;
 		if (StaminaComponent)
-		{
-			StaminaComponent->Stamina = StaminaComponent->MaxStamina;
-		}
+			if (StaminaComponent->Stamina != StaminaComponent->MaxStamina)
+				StaminaComponent->Stamina = StaminaComponent->MaxStamina;
 
-		CG::UDamageableComponent* DamageComponent = DIPlayer->DamageComponent;
+		//CG::UDamageableComponent* DamageComponent = DIPlayer->DamageComponent;
+		//CG::UDamageableComponent* DamageableComponenet = DIPlayer->DamageableComponent;
 	}
 
 	//
