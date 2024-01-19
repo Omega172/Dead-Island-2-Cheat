@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_InteractionState_HostOnly.BP_InteractionState_HostOnly_C.Initialize
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		class UInteractiveComponent*                       InInteractiveComponent                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -34,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_InteractionState_HostOnly.BP_InteractionState_HostOnly_C.ExecuteUbergraph_BP_InteractionState_HostOnly
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

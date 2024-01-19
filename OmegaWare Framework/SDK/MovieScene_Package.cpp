@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -26,9 +26,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F77130
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetRowIndex
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            NewRowIndex                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -42,15 +42,16 @@ namespace CG
 		params.NewRowIndex = NewRowIndex;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F770A0
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetPreRollFrames
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            InPreRollFrames                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -64,15 +65,16 @@ namespace CG
 		params.InPreRollFrames = InPreRollFrames;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F77010
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetPostRollFrames
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            InPostRollFrames                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -86,15 +88,16 @@ namespace CG
 		params.InPostRollFrames = InPostRollFrames;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76F90
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetOverlapPriority
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            NewPriority                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -108,15 +111,16 @@ namespace CG
 		params.NewPriority = NewPriority;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76F00
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetIsLocked
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bInIsLocked                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -130,15 +134,16 @@ namespace CG
 		params.bInIsLocked = bInIsLocked;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76E70
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetIsActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bInIsActive                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -152,15 +157,16 @@ namespace CG
 		params.bInIsActive = bInIsActive;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76DF0
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetCompletionMode
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EMovieSceneCompletionMode                          InCompletionMode                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -174,15 +180,16 @@ namespace CG
 		params.InCompletionMode = InCompletionMode;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76D70
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetBlendType
-	 * 		Flags  -> ()
+	 * 		Flags  -> (RequiredAPI, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EMovieSceneBlendType                               InBlendType                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -196,15 +203,16 @@ namespace CG
 		params.InBlendType = InBlendType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76D40
 	 * 		Name   -> Function MovieScene.MovieSceneSection.IsLocked
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UMovieSceneSection::IsLocked()
 	{
@@ -215,6 +223,7 @@ namespace CG
 		UMovieSceneSection_IsLocked_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -223,9 +232,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76D10
 	 * 		Name   -> Function MovieScene.MovieSceneSection.IsActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UMovieSceneSection::IsActive()
 	{
@@ -236,6 +245,7 @@ namespace CG
 		UMovieSceneSection_IsActive_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -244,9 +254,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01BAA470
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetRowIndex
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	int32_t UMovieSceneSection::GetRowIndex()
 	{
@@ -257,6 +267,7 @@ namespace CG
 		UMovieSceneSection_GetRowIndex_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -265,9 +276,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76CF0
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetPreRollFrames
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	int32_t UMovieSceneSection::GetPreRollFrames()
 	{
@@ -278,6 +289,7 @@ namespace CG
 		UMovieSceneSection_GetPreRollFrames_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -286,9 +298,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76CD0
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetPostRollFrames
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	int32_t UMovieSceneSection::GetPostRollFrames()
 	{
@@ -299,6 +311,7 @@ namespace CG
 		UMovieSceneSection_GetPostRollFrames_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -307,9 +320,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01BAA450
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetOverlapPriority
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	int32_t UMovieSceneSection::GetOverlapPriority()
 	{
@@ -320,6 +333,7 @@ namespace CG
 		UMovieSceneSection_GetOverlapPriority_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -328,9 +342,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76CB0
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetCompletionMode
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	EMovieSceneCompletionMode UMovieSceneSection::GetCompletionMode()
 	{
@@ -341,6 +355,7 @@ namespace CG
 		UMovieSceneSection_GetCompletionMode_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -349,9 +364,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76C80
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetBlendType
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FOptionalMovieSceneBlendType UMovieSceneSection::GetBlendType()
 	{
@@ -362,6 +377,7 @@ namespace CG
 		UMovieSceneSection_GetBlendType_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -412,9 +428,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76BA0
 	 * 		Name   -> Function MovieScene.MovieSceneSequence.FindBindingsByTag
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        InBindingName                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -428,6 +444,7 @@ namespace CG
 		params.InBindingName = InBindingName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -436,9 +453,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F76AF0
 	 * 		Name   -> Function MovieScene.MovieSceneSequence.FindBindingByTag
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        InBindingName                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -452,6 +469,7 @@ namespace CG
 		params.InBindingName = InBindingName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -474,9 +492,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7B0B0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.StopAtCurrentTime
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UMovieSceneSequencePlayer::StopAtCurrentTime()
 	{
@@ -487,15 +505,16 @@ namespace CG
 		UMovieSceneSequencePlayer_StopAtCurrentTime_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7B090
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.Stop
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UMovieSceneSequencePlayer::Stop()
 	{
@@ -506,15 +525,16 @@ namespace CG
 		UMovieSceneSequencePlayer_Stop_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7AFD0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetTimeRange
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              StartTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Duration                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -530,15 +550,16 @@ namespace CG
 		params.Duration = Duration;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7AD10
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlayRate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              PlayRate                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -552,15 +573,16 @@ namespace CG
 		params.PlayRate = PlayRate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7AE90
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              NewStartTime                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              NewEndTime                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -576,15 +598,16 @@ namespace CG
 		params.NewEndTime = NewEndTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7AD90
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              NewPlaybackPosition                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -598,15 +621,16 @@ namespace CG
 		params.NewPlaybackPosition = NewPlaybackPosition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7AC80
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetFrameRate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FFrameRate                                  FrameRate                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -620,15 +644,16 @@ namespace CG
 		params.FrameRate = FrameRate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7ABC0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetFrameRange
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            StartFrame                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Duration                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -644,15 +669,16 @@ namespace CG
 		params.Duration = Duration;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7AB30
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetDisableCameraCuts
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bInDisableCameraCuts                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -666,15 +692,16 @@ namespace CG
 		params.bInDisableCameraCuts = bInDisableCameraCuts;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A4D0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.ScrubToSeconds
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              TimeInSeconds                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -688,15 +715,16 @@ namespace CG
 		params.TimeInSeconds = TimeInSeconds;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7AA80
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.ScrubToMarkedFrame
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      InLabel                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -710,6 +738,7 @@ namespace CG
 		params.InLabel = InLabel;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -718,9 +747,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A9F0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.ScrubToFrame
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FFrameTime                                  NewPosition                                                (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -734,15 +763,16 @@ namespace CG
 		params.NewPosition = NewPosition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A9D0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.Scrub
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UMovieSceneSequencePlayer::Scrub()
 	{
@@ -753,15 +783,16 @@ namespace CG
 		UMovieSceneSequencePlayer_Scrub_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A940
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.RPC_OnStopEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 	 * Parameters:
 	 * 		struct FFrameTime                                  StoppedTime                                                (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -775,15 +806,16 @@ namespace CG
 		params.StoppedTime = StoppedTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A870
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.RPC_ExplicitServerUpdateEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 	 * Parameters:
 	 * 		EUpdatePositionMethod                              Method                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FFrameTime                                  RelevantTime                                               (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -799,15 +831,16 @@ namespace CG
 		params.RelevantTime = RelevantTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A7F0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayToSeconds
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              TimeInSeconds                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -821,15 +854,16 @@ namespace CG
 		params.TimeInSeconds = TimeInSeconds;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A740
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayToMarkedFrame
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      InLabel                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -843,6 +877,7 @@ namespace CG
 		params.InLabel = InLabel;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -851,9 +886,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A6B0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayToFrame
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FFrameTime                                  NewPosition                                                (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -867,15 +902,16 @@ namespace CG
 		params.NewPosition = NewPosition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A690
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayReverse
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UMovieSceneSequencePlayer::PlayReverse()
 	{
@@ -886,15 +922,16 @@ namespace CG
 		UMovieSceneSequencePlayer_PlayReverse_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A610
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayLooping
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            NumLoops                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -908,15 +945,16 @@ namespace CG
 		params.NumLoops = NumLoops;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A5F0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.Play
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UMovieSceneSequencePlayer::Play()
 	{
@@ -927,15 +965,16 @@ namespace CG
 		UMovieSceneSequencePlayer_Play_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A5D0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.Pause
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UMovieSceneSequencePlayer::Pause()
 	{
@@ -946,15 +985,16 @@ namespace CG
 		UMovieSceneSequencePlayer_Pause_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A550
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.JumpToSeconds
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              TimeInSeconds                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -968,15 +1008,16 @@ namespace CG
 		params.TimeInSeconds = TimeInSeconds;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A4D0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.JumpToPosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              NewPlaybackPosition                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -990,15 +1031,16 @@ namespace CG
 		params.NewPlaybackPosition = NewPlaybackPosition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A420
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.JumpToMarkedFrame
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      InLabel                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1012,6 +1054,7 @@ namespace CG
 		params.InLabel = InLabel;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1020,9 +1063,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A390
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.JumpToFrame
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FFrameTime                                  NewPosition                                                (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1036,15 +1079,16 @@ namespace CG
 		params.NewPosition = NewPosition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A360
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.IsReversed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UMovieSceneSequencePlayer::IsReversed()
 	{
@@ -1055,6 +1099,7 @@ namespace CG
 		UMovieSceneSequencePlayer_IsReversed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1063,9 +1108,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A330
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.IsPlaying
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UMovieSceneSequencePlayer::IsPlaying()
 	{
@@ -1076,6 +1121,7 @@ namespace CG
 		UMovieSceneSequencePlayer_IsPlaying_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1084,9 +1130,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A300
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.IsPaused
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UMovieSceneSequencePlayer::IsPaused()
 	{
@@ -1097,6 +1143,7 @@ namespace CG
 		UMovieSceneSequencePlayer_IsPaused_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1105,9 +1152,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A2E0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GoToEndAndStop
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UMovieSceneSequencePlayer::GoToEndAndStop()
 	{
@@ -1118,15 +1165,16 @@ namespace CG
 		UMovieSceneSequencePlayer_GoToEndAndStop_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A290
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetStartTime
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetStartTime()
 	{
@@ -1137,6 +1185,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetStartTime_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1145,9 +1194,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A010
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlayRate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UMovieSceneSequencePlayer::GetPlayRate()
 	{
@@ -1158,6 +1207,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetPlayRate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1166,9 +1216,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A1D0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UMovieSceneSequencePlayer::GetPlaybackStart()
 	{
@@ -1179,6 +1229,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetPlaybackStart_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1187,9 +1238,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A0D0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UMovieSceneSequencePlayer::GetPlaybackPosition()
 	{
@@ -1200,6 +1251,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetPlaybackPosition_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1208,9 +1260,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A040
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UMovieSceneSequencePlayer::GetPlaybackEnd()
 	{
@@ -1221,6 +1273,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetPlaybackEnd_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1229,9 +1282,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F79F30
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetObjectBindings
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     InObject                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1245,6 +1298,7 @@ namespace CG
 		params.InObject = InObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1253,9 +1307,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F79F00
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetLength
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UMovieSceneSequencePlayer::GetLength()
 	{
@@ -1266,6 +1320,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetLength_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1274,9 +1329,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F79EE0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetFrameRate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FFrameRate UMovieSceneSequencePlayer::GetFrameRate()
 	{
@@ -1287,6 +1342,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetFrameRate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1295,9 +1351,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F79EB0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetFrameDuration
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	int32_t UMovieSceneSequencePlayer::GetFrameDuration()
 	{
@@ -1308,6 +1364,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetFrameDuration_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1316,9 +1373,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F79E50
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetEndTime
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetEndTime()
 	{
@@ -1329,6 +1386,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetEndTime_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1337,9 +1395,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F79E10
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetDuration
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetDuration()
 	{
@@ -1350,6 +1408,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetDuration_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1358,9 +1417,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F79DE0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetDisableCameraCuts
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	bool UMovieSceneSequencePlayer::GetDisableCameraCuts()
 	{
@@ -1371,6 +1430,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetDisableCameraCuts_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1379,9 +1439,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F79DA0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetCurrentTime
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetCurrentTime()
 	{
@@ -1392,6 +1452,7 @@ namespace CG
 		UMovieSceneSequencePlayer_GetCurrentTime_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1400,9 +1461,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F79CA0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetBoundObjects
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FMovieSceneObjectBindingID                  ObjectBinding                                              (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1416,6 +1477,7 @@ namespace CG
 		params.ObjectBinding = ObjectBinding;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1424,9 +1486,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F79C80
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UMovieSceneSequencePlayer::ChangePlaybackDirection()
 	{
@@ -1437,6 +1499,7 @@ namespace CG
 		UMovieSceneSequencePlayer_ChangePlaybackDirection_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -1457,9 +1520,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7AF50
 	 * 		Name   -> Function MovieScene.MovieSceneSubSection.SetSequence
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UMovieSceneSequence*                         Sequence                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1473,15 +1536,16 @@ namespace CG
 		params.Sequence = Sequence;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F7A260
 	 * 		Name   -> Function MovieScene.MovieSceneSubSection.GetSequence
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UMovieSceneSequence* UMovieSceneSubSection::GetSequence()
 	{
@@ -1492,6 +1556,7 @@ namespace CG
 		UMovieSceneSubSection_GetSequence_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1528,9 +1593,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F72540
 	 * 		Name   -> Function MovieScene.MovieSceneCustomClockSource.OnTick
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public)
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              InPlayRate                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1546,15 +1611,16 @@ namespace CG
 		params.InPlayRate = InPlayRate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F72490
 	 * 		Name   -> Function MovieScene.MovieSceneCustomClockSource.OnStopPlaying
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms)
 	 * Parameters:
 	 * 		struct FQualifiedFrameTime                         InStopTime                                                 (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1568,15 +1634,16 @@ namespace CG
 		params.InStopTime = InStopTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F723E0
 	 * 		Name   -> Function MovieScene.MovieSceneCustomClockSource.OnStartPlaying
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms)
 	 * Parameters:
 	 * 		struct FQualifiedFrameTime                         InStartTime                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1590,15 +1657,16 @@ namespace CG
 		params.InStartTime = InStartTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x02F722E0
 	 * 		Name   -> Function MovieScene.MovieSceneCustomClockSource.OnRequestCurrentTime
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms)
 	 * Parameters:
 	 * 		struct FQualifiedFrameTime                         InCurrentTime                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              InPlayRate                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1614,6 +1682,7 @@ namespace CG
 		params.InPlayRate = InPlayRate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1720,9 +1789,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function MovieScene.MovieSceneEasingFunction.OnEvaluate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 * Parameters:
 	 * 		float                                              Interp                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */

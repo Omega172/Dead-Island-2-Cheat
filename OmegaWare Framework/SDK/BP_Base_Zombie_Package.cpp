@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_Zombie.BP_Base_Zombie_C.UserConstructionScript
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_Zombie_C::UserConstructionScript()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_Zombie.BP_Base_Zombie_C.BndEvt__ImpactEventComponent_K2Node_ComponentBoundEvent_0_OnPointImpactEventReceivedDelegate__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FPointImpactEventResult                     ImpactEvent                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
@@ -55,9 +55,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_Zombie.BP_Base_Zombie_C.ExecuteUbergraph_BP_Base_Zombie
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

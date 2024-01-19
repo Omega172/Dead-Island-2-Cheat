@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A376E0
 	 * 		Name   -> Function Discovery.DiscoverableComponent.RemoveDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -28,15 +28,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A375D0
 	 * 		Name   -> Function Discovery.DiscoverableComponent.OnDiscoveryChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		bool                                               bDiscovered                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -50,15 +51,16 @@ namespace CG
 		params.bDiscovered = bDiscovered;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A374D0
 	 * 		Name   -> Function Discovery.DiscoverableComponent.AddDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -72,6 +74,7 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -120,9 +123,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A37760
 	 * 		Name   -> Function Discovery.DiscoveryManager.UnRegisterDiscoveryObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UDiscoveryObject*                            DiscoveryObject                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -136,15 +139,16 @@ namespace CG
 		params.DiscoveryObject = DiscoveryObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A37660
 	 * 		Name   -> Function Discovery.DiscoveryManager.RegisterDiscoveryObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UDiscoveryObject*                            DiscoveryObject                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -158,19 +162,20 @@ namespace CG
 		params.DiscoveryObject = DiscoveryObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A37550
 	 * 		Name   -> Function Discovery.DiscoveryManager.Get
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UDiscoveryManager* UDiscoveryManager::Get(class UObject* WorldContextObject)
+	class UDiscoveryManager* UDiscoveryManager::STATIC_Get(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -180,6 +185,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

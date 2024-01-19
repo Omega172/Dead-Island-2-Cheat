@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -28,6 +28,7 @@ namespace CG
 		class FText                                                ActionOverrideDescriptor;                                // 0x0140(0x0018) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
+		void IsClassToTest(class UClass* Class, bool* bResult);
 		void UserExitedRange(class APawn* User);
 		void UserEnteredRange(class APawn* User);
 		void CacheRequiredComponents(class AActor* Target);

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_SpawnCosmeticEffectAtHitLocation.BP_PerkEffect_SpawnCosmeticEffectAtHitLocation_C.OnStart
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FPerkEffectStartParams                      Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -34,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_SpawnCosmeticEffectAtHitLocation.BP_PerkEffect_SpawnCosmeticEffectAtHitLocation_C.OnEnd
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FPerkEffectEndParams                        Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -56,9 +56,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_SpawnCosmeticEffectAtHitLocation.BP_PerkEffect_SpawnCosmeticEffectAtHitLocation_C.OnPointImpact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetMulticast, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FPointImpactEventResult                     ImpactEvent                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
@@ -80,9 +80,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_SpawnCosmeticEffectAtHitLocation.BP_PerkEffect_SpawnCosmeticEffectAtHitLocation_C.ExecuteUbergraph_BP_PerkEffect_SpawnCosmeticEffectAtHitLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

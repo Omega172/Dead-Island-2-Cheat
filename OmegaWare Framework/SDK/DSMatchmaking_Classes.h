@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -26,12 +26,12 @@ namespace CG
 
 	/**
 	 * Class DSMatchmaking.PeerMeshNetDriver
-	 * Size -> 0x0020 (FullSize[0x0978] - InheritedSize[0x0958])
+	 * Size -> 0x0020 (FullSize[0x09B0] - InheritedSize[0x0990])
 	 */
 	class UPeerMeshNetDriver : public UIpNetDriver
 	{
 	public:
-		unsigned char                                              UnknownData_ZRB4[0x20];                                  // 0x0958(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7XOW[0x20];                                  // 0x0990(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

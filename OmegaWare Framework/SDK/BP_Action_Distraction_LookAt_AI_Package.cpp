@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_LookAt_AI.BP_Action_Distraction_LookAt_AI_C.GetLookAtTarget
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		bool                                               FoundLookAtTarget                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class USceneComponent*                             GetLookAtComponent                                         (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -42,9 +42,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_LookAt_AI.BP_Action_Distraction_LookAt_AI_C.RemoveLookAtRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_LookAt_AI_C::RemoveLookAtRequest()
 	{
@@ -61,9 +61,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_LookAt_AI.BP_Action_Distraction_LookAt_AI_C.AddLookAtRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               ReturnSuccess                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -85,9 +85,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_LookAt_AI.BP_Action_Distraction_LookAt_AI_C.RemoveTImer
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_LookAt_AI_C::RemoveTImer()
 	{
@@ -104,9 +104,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_LookAt_AI.BP_Action_Distraction_LookAt_AI_C.AddTimer
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_LookAt_AI_C::AddTimer()
 	{
@@ -123,9 +123,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_LookAt_AI.BP_Action_Distraction_LookAt_AI_C.OnBeginEarly
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
 	bool UBP_Action_Distraction_LookAt_AI_C::OnBeginEarly()
 	{
@@ -144,9 +144,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_LookAt_AI.BP_Action_Distraction_LookAt_AI_C.OnBegin
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnBeginParams               Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -168,9 +168,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_LookAt_AI.BP_Action_Distraction_LookAt_AI_C.OnEnd
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnEndParams                 Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -192,9 +192,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_LookAt_AI.BP_Action_Distraction_LookAt_AI_C.OnTimerFinished
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_LookAt_AI_C::OnTimerFinished()
 	{
@@ -211,9 +211,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_LookAt_AI.BP_Action_Distraction_LookAt_AI_C.ExecuteUbergraph_BP_Action_Distraction_LookAt_AI
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

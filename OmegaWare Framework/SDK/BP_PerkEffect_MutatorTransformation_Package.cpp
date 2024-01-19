@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_MutatorTransformation.BP_PerkEffect_MutatorTransformation_C.OnTransformationRequestCancelled
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnCancelledParams           Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -36,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_MutatorTransformation.BP_PerkEffect_MutatorTransformation_C.OnActionResolved
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnResolvedParams            Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -60,9 +60,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_MutatorTransformation.BP_PerkEffect_MutatorTransformation_C.UnbindOnTransformationRequestFailed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_PerkEffect_MutatorTransformation_C::UnbindOnTransformationRequestFailed()
 	{
@@ -79,9 +79,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_MutatorTransformation.BP_PerkEffect_MutatorTransformation_C.RequestTransformAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_PerkEffect_MutatorTransformation_C::RequestTransformAction()
 	{
@@ -98,9 +98,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_MutatorTransformation.BP_PerkEffect_MutatorTransformation_C.OnTransformWarmUpConditionChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               bResult                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -120,9 +120,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_MutatorTransformation.BP_PerkEffect_MutatorTransformation_C.OnStart
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FPerkEffectStartParams                      Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -142,9 +142,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_MutatorTransformation.BP_PerkEffect_MutatorTransformation_C.OnEnd
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FPerkEffectEndParams                        Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -164,9 +164,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_MutatorTransformation.BP_PerkEffect_MutatorTransformation_C.OnInstantTransformConditionChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               bResult                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -186,9 +186,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_MutatorTransformation.BP_PerkEffect_MutatorTransformation_C.OnActionFailedToBegin
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_PerkEffect_MutatorTransformation_C::OnActionFailedToBegin()
 	{
@@ -205,9 +205,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkEffect_MutatorTransformation.BP_PerkEffect_MutatorTransformation_C.ExecuteUbergraph_BP_PerkEffect_MutatorTransformation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

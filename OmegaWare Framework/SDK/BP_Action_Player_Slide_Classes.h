@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Action_Player_Slide.BP_Action_Player_Slide_C
-	 * Size -> 0x0000 (FullSize[0x0190] - InheritedSize[0x0190])
+	 * Size -> 0x0000 (FullSize[0x0208] - InheritedSize[0x0208])
 	 */
 	class UBP_Action_Player_Slide_C : public USlideCharacterAction
 	{

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distaction_ControlledAnimStateMachine_AI.BP_Action_Distaction_ControlledAnimStateMachine_AI_C.EndAnimSetActionState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distaction_ControlledAnimStateMachine_AI_C::EndAnimSetActionState()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distaction_ControlledAnimStateMachine_AI.BP_Action_Distaction_ControlledAnimStateMachine_AI_C.BeginAnimSetActionState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distaction_ControlledAnimStateMachine_AI_C::BeginAnimSetActionState()
 	{
@@ -50,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distaction_ControlledAnimStateMachine_AI.BP_Action_Distaction_ControlledAnimStateMachine_AI_C.GetMoveTargetDirection
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
 	struct FVector UBP_Action_Distaction_ControlledAnimStateMachine_AI_C::GetMoveTargetDirection()
 	{

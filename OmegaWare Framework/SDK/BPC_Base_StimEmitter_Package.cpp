@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,50 +12,61 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.BeginAndEndStim
-	 * 		Flags  -> ()
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.RemoveFeelAllyCloseStim
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void UBPC_Base_StimEmitter_C::RemoveFeelAllyCloseStim()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.RemoveFeelAllyCloseStim");
+		
+		UBPC_Base_StimEmitter_C_RemoveFeelAllyCloseStim_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.AddFeelAllyCloseStim
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UStimTemplate*                               StimTemplate                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		struct FSStimOverrideParams                        StimParams                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
-	 * 		float                                              Duration                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		struct FStimID                                     StimID                                                     (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPC_Base_StimEmitter_C::BeginAndEndStim(class UStimTemplate* StimTemplate, const struct FSStimOverrideParams& StimParams, float Duration, struct FStimID* StimID)
+	void UBPC_Base_StimEmitter_C::AddFeelAllyCloseStim(class UStimTemplate* StimTemplate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.BeginAndEndStim");
+			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.AddFeelAllyCloseStim");
 		
-		UBPC_Base_StimEmitter_C_BeginAndEndStim_Params params {};
+		UBPC_Base_StimEmitter_C_AddFeelAllyCloseStim_Params params {};
 		params.StimTemplate = StimTemplate;
-		params.StimParams = StimParams;
-		params.Duration = Duration;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
-		if (StimID != nullptr)
-			*StimID = params.StimID;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.EndStim
-	 * 		Flags  -> ()
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnCombatStateChanged
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		struct FStimID                                     StimID                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	 * 		ECombatState                                       NewState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPC_Base_StimEmitter_C::EndStim(const struct FStimID& StimID)
+	void UBPC_Base_StimEmitter_C::OnCombatStateChanged(ECombatState NewState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.EndStim");
+			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnCombatStateChanged");
 		
-		UBPC_Base_StimEmitter_C_EndStim_Params params {};
-		params.StimID = StimID;
+		UBPC_Base_StimEmitter_C_OnCombatStateChanged_Params params {};
+		params.NewState = NewState;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -64,37 +75,167 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.BeginStim
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		class UStimTemplate*                               StimTemplate                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		struct FSStimOverrideParams                        StimParams                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
-	 * 		struct FStimID                                     StimID                                                     (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnCharacterUnpossessed
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
-	void UBPC_Base_StimEmitter_C::BeginStim(class UStimTemplate* StimTemplate, const struct FSStimOverrideParams& StimParams, struct FStimID* StimID)
+	void UBPC_Base_StimEmitter_C::OnCharacterUnpossessed()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.BeginStim");
+			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnCharacterUnpossessed");
 		
-		UBPC_Base_StimEmitter_C_BeginStim_Params params {};
-		params.StimTemplate = StimTemplate;
-		params.StimParams = StimParams;
+		UBPC_Base_StimEmitter_C_OnCharacterUnpossessed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
-		if (StimID != nullptr)
-			*StimID = params.StimID;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnCharacterPossessed
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class AController*                                 PlayerController                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UBPC_Base_StimEmitter_C::OnCharacterPossessed(class AController* PlayerController)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnCharacterPossessed");
+		
+		UBPC_Base_StimEmitter_C_OnCharacterPossessed_Params params {};
+		params.PlayerController = PlayerController;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.UninitialiseFeelAllyCloseStim
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void UBPC_Base_StimEmitter_C::UninitialiseFeelAllyCloseStim()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.UninitialiseFeelAllyCloseStim");
+		
+		UBPC_Base_StimEmitter_C_UninitialiseFeelAllyCloseStim_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.IntialiseFeelAllyCloseStim
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void UBPC_Base_StimEmitter_C::IntialiseFeelAllyCloseStim()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.IntialiseFeelAllyCloseStim");
+		
+		UBPC_Base_StimEmitter_C_IntialiseFeelAllyCloseStim_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.SetAlive
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		bool                                               Alive                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UBPC_Base_StimEmitter_C::SetAlive(bool Alive)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.SetAlive");
+		
+		UBPC_Base_StimEmitter_C_SetAlive_Params params {};
+		params.Alive = Alive;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnResurrect
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void UBPC_Base_StimEmitter_C::OnResurrect()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnResurrect");
+		
+		UBPC_Base_StimEmitter_C_OnResurrect_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnDeath
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void UBPC_Base_StimEmitter_C::OnDeath()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnDeath");
+		
+		UBPC_Base_StimEmitter_C_OnDeath_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.ReceiveBeginPlay
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 */
+	void UBPC_Base_StimEmitter_C::ReceiveBeginPlay()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.ReceiveBeginPlay");
+		
+		UBPC_Base_StimEmitter_C_ReceiveBeginPlay_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.ReceiveEndPlay
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		EEndPlayReason                                     EndPlayReason                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -114,9 +255,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.ExecuteUbergraph_BPC_Base_StimEmitter
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,34 +16,34 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * AnimBlueprintGeneratedClass ABP_ZombieWalkerFacial.ABP_ZombieWalkerFacial_C
-	 * Size -> 0x0828 (FullSize[0x16F8] - InheritedSize[0x0ED0])
+	 * Size -> 0x0828 (FullSize[0x1698] - InheritedSize[0x0E70])
 	 */
 	class UABP_ZombieWalkerFacial_C : public UDIFacialAnimInstance
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0ED0(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x0ED8(0x0030)
-		struct FAnimNode_TransitionResult                          AnimGraphNode_TransitionResult_3;                        // 0x0F08(0x0028)
-		struct FAnimNode_TransitionResult                          AnimGraphNode_TransitionResult_2;                        // 0x0F30(0x0028)
-		struct FAnimNode_TransitionResult                          AnimGraphNode_TransitionResult;                          // 0x0F58(0x0028)
-		struct FAnimNode_StateResult                               AnimGraphNode_StateResult_3;                             // 0x0F80(0x0030)
-		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend_2;                        // 0x0FB0(0x00C0)
-		struct FAnimNode_AnimSetBlendSpacePlayer                   AnimGraphNode_AnimSetBlendSpacePlayer_2;                 // 0x1070(0x00F8)
-		struct FAnimNode_AnimSetSequencePlayer                     AnimGraphNode_AnimSetSequencePlayer_2;                   // 0x1168(0x0068)
-		struct FAnimNode_StateResult                               AnimGraphNode_StateResult_2;                             // 0x11D0(0x0030)
-		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend;                          // 0x1200(0x00C0)
-		struct FAnimNode_AnimSetBlendSpacePlayer                   AnimGraphNode_AnimSetBlendSpacePlayer;                   // 0x12C0(0x00F8)
-		struct FAnimNode_AnimSetSequencePlayer                     AnimGraphNode_AnimSetSequencePlayer;                     // 0x13B8(0x0068)
-		struct FAnimNode_StateResult                               AnimGraphNode_StateResult;                               // 0x1420(0x0030)
-		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x1450(0x00B0)
-		struct FAnimNode_LinkedInputPose                           AnimGraphNode_SubInput;                                  // 0x1500(0x00D0)
-		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose;                            // 0x15D0(0x0110)
-		ECosmeticCombatState                                       InternalCombatState;                                     // 0x16E0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_IEKV[0x7];                                   // 0x16E1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class UDIAnimInstance*                                     ParentClass;                                             // 0x16E8(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       IsReady;                                                 // 0x16F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_3QHE[0x3];                                   // 0x16F1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		float                                                      Layer_ProceduralMouth;                                   // 0x16F4(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0E70(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x0E78(0x0030)
+		struct FAnimNode_TransitionResult                          AnimGraphNode_TransitionResult_3;                        // 0x0EA8(0x0028)
+		struct FAnimNode_TransitionResult                          AnimGraphNode_TransitionResult_2;                        // 0x0ED0(0x0028)
+		struct FAnimNode_TransitionResult                          AnimGraphNode_TransitionResult;                          // 0x0EF8(0x0028)
+		struct FAnimNode_StateResult                               AnimGraphNode_StateResult_3;                             // 0x0F20(0x0030)
+		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend_2;                        // 0x0F50(0x00C0)
+		struct FAnimNode_AnimSetBlendSpacePlayer                   AnimGraphNode_AnimSetBlendSpacePlayer_2;                 // 0x1010(0x00F8)
+		struct FAnimNode_AnimSetSequencePlayer                     AnimGraphNode_AnimSetSequencePlayer_2;                   // 0x1108(0x0068)
+		struct FAnimNode_StateResult                               AnimGraphNode_StateResult_2;                             // 0x1170(0x0030)
+		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend;                          // 0x11A0(0x00C0)
+		struct FAnimNode_AnimSetBlendSpacePlayer                   AnimGraphNode_AnimSetBlendSpacePlayer;                   // 0x1260(0x00F8)
+		struct FAnimNode_AnimSetSequencePlayer                     AnimGraphNode_AnimSetSequencePlayer;                     // 0x1358(0x0068)
+		struct FAnimNode_StateResult                               AnimGraphNode_StateResult;                               // 0x13C0(0x0030)
+		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x13F0(0x00B0)
+		struct FAnimNode_LinkedInputPose                           AnimGraphNode_SubInput;                                  // 0x14A0(0x00D0)
+		struct FAnimNode_SaveCachedPose                            AnimGraphNode_SaveCachedPose;                            // 0x1570(0x0110)
+		ECosmeticCombatState                                       InternalCombatState;                                     // 0x1680(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_WJOU[0x7];                                   // 0x1681(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class UDIAnimInstance*                                     ParentClass;                                             // 0x1688(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       IsReady;                                                 // 0x1690(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_RAQQ[0x3];                                   // 0x1691(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		float                                                      Layer_ProceduralMouth;                                   // 0x1694(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph);

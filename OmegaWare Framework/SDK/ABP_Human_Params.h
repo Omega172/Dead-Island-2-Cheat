@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -22,18 +22,6 @@ namespace CG
 	public:
 		struct FPoseLink                                           AnimGraph;                                               // 0x0000(0x0010)  (Parm, OutParm, NoDestructor)
 	};
-
-	/**
-	 * Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_24E1E77E4B7116FA4C8D668ECA12D438
-	 */
-	struct UABP_Human_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_24E1E77E4B7116FA4C8D668ECA12D438_Params
-	{	};
-
-	/**
-	 * Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_2BC4449645630F6040116E8693216053
-	 */
-	struct UABP_Human_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_2BC4449645630F6040116E8693216053_Params
-	{	};
 
 	/**
 	 * Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_AnimSetSequencePlayer_07D2435846AD5D64140B0AB3F687F7F8
@@ -94,7 +82,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_VBGS[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_G12U[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

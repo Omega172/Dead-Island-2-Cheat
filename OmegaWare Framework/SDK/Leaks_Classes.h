@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UBaseLeakObject : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_3OO7[0x48];                                  // 0x0028(0x0048) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9RFU[0x48];                                  // 0x0028(0x0048) MISSED OFFSET (PADDING)
 
 	public:
 		void OnLeakStopped();
@@ -38,7 +38,7 @@ namespace CG
 	{
 	public:
 		struct FLeakInfo                                           LeakInfo;                                                // 0x0290(0x0010) Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_NHT5[0x10];                                  // 0x02A0(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XTRK[0x10];                                  // 0x02A0(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		void StopLeak();
@@ -67,8 +67,8 @@ namespace CG
 	class ULeakFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void StopLeak(class UObject* WorldContextObject, int32_t* ID);
-		int32_t RequestLeak(class UObject* WorldContextObject, const struct FLeakRequestParams& LeakRequest);
+		void STATIC_StopLeak(class UObject* WorldContextObject, int32_t* ID);
+		int32_t STATIC_RequestLeak(class UObject* WorldContextObject, const struct FLeakRequestParams& LeakRequest);
 		static UClass* StaticClass();
 	};
 
@@ -91,7 +91,7 @@ namespace CG
 	public:
 		TArray<class ULeakObject*>                                 RegisteredLeaks;                                         // 0x02B0(0x0010) ZeroConstructor, Transient, NativeAccessSpecifierPrivate
 		TMap<class USceneComponent*, class ULeakObject*>           ComponentsToLeaks;                                       // 0x02C0(0x0050) Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_O85V[0x18];                                  // 0x0310(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_V8OJ[0x18];                                  // 0x0310(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -26,9 +26,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03EB21A0
 	 * 		Name   -> Function ApexDestruction.DestructibleComponent.SetDestructibleMesh
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UDestructibleMesh*                           NewMesh                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -42,15 +42,16 @@ namespace CG
 		params.NewMesh = NewMesh;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03EB2170
 	 * 		Name   -> Function ApexDestruction.DestructibleComponent.GetDestructibleMesh
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	class UDestructibleMesh* UDestructibleComponent::GetDestructibleMesh()
 	{
@@ -61,6 +62,7 @@ namespace CG
 		UDestructibleComponent_GetDestructibleMesh_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -69,9 +71,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03EB1FC0
 	 * 		Name   -> Function ApexDestruction.DestructibleComponent.ApplyRadiusDamage
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              BaseDamage                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     HurtOrigin                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -93,15 +95,16 @@ namespace CG
 		params.bFullDamage = bFullDamage;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03EB1E50
 	 * 		Name   -> Function ApexDestruction.DestructibleComponent.ApplyDamage
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              DamageAmount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     HitLocation                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -121,6 +124,7 @@ namespace CG
 		params.ImpulseStrength = ImpulseStrength;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

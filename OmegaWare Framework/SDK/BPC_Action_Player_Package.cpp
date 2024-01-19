@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_Action_Player.BPC_Action_Player_C.RegisterDefaultActions
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
 	void UBPC_Action_Player_C::RegisterDefaultActions()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_Action_Player.BPC_Action_Player_C.ExecuteUbergraph_BPC_Action_Player
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

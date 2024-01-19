@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function WBP_GameLobby.WBP_GameLobby_C.UpdateStatusText
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		class FText                                        StatusText                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 */
@@ -34,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function WBP_GameLobby.WBP_GameLobby_C.ReturnToMapSelect
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UWBP_GameLobby_C::ReturnToMapSelect()
 	{
@@ -53,9 +53,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function WBP_GameLobby.WBP_GameLobby_C.OnSessionFailed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
 	void UWBP_GameLobby_C::OnSessionFailed()
 	{
@@ -72,9 +72,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function WBP_GameLobby.WBP_GameLobby_C.ExecuteUbergraph_WBP_GameLobby
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

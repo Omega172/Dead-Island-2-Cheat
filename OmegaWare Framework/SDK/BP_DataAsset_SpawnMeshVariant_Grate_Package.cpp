@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_DataAsset_SpawnMeshVariant_Grate.BP_DataAsset_SpawnMeshVariant_Grate_C.GetErrorsToOutput
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		TArray<class FText>                                Errors                                                     (Parm, OutParm)
 	 */
@@ -36,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_DataAsset_SpawnMeshVariant_Grate.BP_DataAsset_SpawnMeshVariant_Grate_C.IsValidInternal
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
 	bool UBP_DataAsset_SpawnMeshVariant_Grate_C::IsValidInternal()
 	{

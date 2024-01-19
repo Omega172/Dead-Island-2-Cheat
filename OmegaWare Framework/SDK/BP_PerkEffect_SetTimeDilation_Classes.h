@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,14 +16,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_PerkEffect_SetTimeDilation.BP_PerkEffect_SetTimeDilation_C
-	 * Size -> 0x0048 (FullSize[0x0098] - InheritedSize[0x0050])
+	 * Size -> 0x0048 (FullSize[0x00A8] - InheritedSize[0x0060])
 	 */
 	class UBP_PerkEffect_SetTimeDilation_C : public UInstancedPerkEffect
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0050(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		struct FSlomoRequest                                       SlomoRequest;                                            // 0x0058(0x0020) Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn
-		struct FSlomoHandle                                        SlomoHandle;                                             // 0x0078(0x0020) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0060(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		struct FSlomoRequest                                       SlomoRequest;                                            // 0x0068(0x0020) Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn
+		struct FSlomoHandle                                        SlomoHandle;                                             // 0x0088(0x0020) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
 
 	public:
 		void OnStart(const struct FPerkEffectStartParams& Params);

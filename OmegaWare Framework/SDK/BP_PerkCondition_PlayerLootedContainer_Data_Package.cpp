@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkCondition_PlayerLootedContainer_Data.BP_PerkCondition_PlayerLootedContainer_Data_C.HandleSatisfy
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		ELootContainerMapDiscoveryType                     ContainerType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -34,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkCondition_PlayerLootedContainer_Data.BP_PerkCondition_PlayerLootedContainer_Data_C.Possessed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AController*                                 PlayerController                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -56,9 +56,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkCondition_PlayerLootedContainer_Data.BP_PerkCondition_PlayerLootedContainer_Data_C.SetupLootingListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_PerkCondition_PlayerLootedContainer_Data_C::SetupLootingListener()
 	{
@@ -75,9 +75,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkCondition_PlayerLootedContainer_Data.BP_PerkCondition_PlayerLootedContainer_Data_C.RemoveLootingListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_PerkCondition_PlayerLootedContainer_Data_C::RemoveLootingListener()
 	{
@@ -94,9 +94,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkCondition_PlayerLootedContainer_Data.BP_PerkCondition_PlayerLootedContainer_Data_C.OnPlayerLooted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ADIPlayerController*                         PlayerController                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class ALootableContainer*                          LootableContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -118,9 +118,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkCondition_PlayerLootedContainer_Data.BP_PerkCondition_PlayerLootedContainer_Data_C.OnPlayerLooted_Trunk
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		ELootContainerMapDiscoveryType                     LootContainerType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -140,9 +140,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_PerkCondition_PlayerLootedContainer_Data.BP_PerkCondition_PlayerLootedContainer_Data_C.ExecuteUbergraph_BP_PerkCondition_PlayerLootedContainer_Data
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

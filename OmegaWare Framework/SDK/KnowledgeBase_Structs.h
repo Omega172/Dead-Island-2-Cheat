@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -91,7 +91,7 @@ namespace CG
 	{
 	public:
 		class FString                                              Expression;                                              // 0x0000(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_KXDE[0x28];                                  // 0x0010(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_98FB[0x28];                                  // 0x0010(0x0028) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -101,7 +101,7 @@ namespace CG
 	struct FNamedReferenceCounter
 	{
 	public:
-		unsigned char                                              UnknownData_2E1P[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_31AH[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -114,14 +114,14 @@ namespace CG
 		class FName                                                Name;                                                    // 0x0000(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EKnowledgeBaseFactType                                     Type;                                                    // 0x0008(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bBooleanValue;                                           // 0x0009(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_VUF0[0x2];                                   // 0x000A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QRJ3[0x2];                                   // 0x000A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    IntegerValue;                                            // 0x000C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      FloatValue;                                              // 0x0010(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ACPH[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_WX16[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              StringValue;                                             // 0x0018(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FNamedReferenceCounter                              CounterValue;                                            // 0x0028(0x0010) Edit, NativeAccessSpecifierPublic
 		struct FVector                                             VecValue;                                                // 0x0038(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_U3AR[0x4];                                   // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_KHRQ[0x4];                                   // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FDateTime                                           DateTimeValue;                                           // 0x0048(0x0008) Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -132,7 +132,7 @@ namespace CG
 	struct FKnowledgeBaseNetworkedFactValueWrapper
 	{
 	public:
-		unsigned char                                              UnknownData_7WLP[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9NAB[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -142,10 +142,10 @@ namespace CG
 	struct FKnowledgeBaseNetworkedData : public FFastArraySerializerItem
 	{
 	public:
-		unsigned char                                              UnknownData_0790[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_4N31[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              Name;                                                    // 0x0010(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EKnowledgeBaseFactType                                     Type;                                                    // 0x0020(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8FNO[0x7];                                   // 0x0021(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XZTI[0x7];                                   // 0x0021(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FKnowledgeBaseNetworkedFactValueWrapper             FactValue;                                               // 0x0028(0x0018) NativeAccessSpecifierPublic
 	};
 
@@ -181,7 +181,7 @@ namespace CG
 		struct FKnowledgeBaseExpression                            Expression;                                              // 0x0000(0x0038) Edit, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<struct FScopedKnowledgeBaseActorContext>            ActorContext;                                            // 0x0038(0x0010) Edit, ZeroConstructor, DisableEditOnTemplate, NativeAccessSpecifierPrivate
 		class UKnowledgeBaseExpressionListener*                    ExpressionListener;                                      // 0x0048(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_DY3D[0x10];                                  // 0x0050(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_FIRZ[0x10];                                  // 0x0050(0x0010) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -192,7 +192,7 @@ namespace CG
 	{
 	public:
 		class FName                                                NameStorage;                                             // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_A55T[0x4];                                   // 0x0008(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_OO1B[0x4];                                   // 0x0008(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -202,7 +202,7 @@ namespace CG
 	struct FKnowledgeBaseObjectSerializer
 	{
 	public:
-		unsigned char                                              UnknownData_ZR48[0xB8];                                  // 0x0000(0x00B8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_O4JH[0xB8];                                  // 0x0000(0x00B8) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -212,7 +212,7 @@ namespace CG
 	struct FConditionalListElement
 	{
 	public:
-		unsigned char                                              UnknownData_XWQ3[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Y8R3[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UConditionalListRequirement*>                 Requirements;                                            // 0x0008(0x0010) Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic
 		class FString                                              ArrayElementTitleText;                                   // 0x0018(0x0010) Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 	};
@@ -234,7 +234,7 @@ namespace CG
 	struct FKnowledgeBaseFactListener
 	{
 	public:
-		unsigned char                                              UnknownData_YDVN[0x40];                                  // 0x0000(0x0040) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3BW4[0x40];                                  // 0x0000(0x0040) MISSED OFFSET (PADDING)
 	};
 
 }

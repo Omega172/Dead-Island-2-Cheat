@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -31,7 +31,7 @@ namespace CG
 		class UBlueprintLinks*                                     BlueprintLinks;                                          // 0x05B0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		TMap<class UParticipantSlotComponent*, class ADIAICharacter*> SpawnedCharacters;                                       // 0x05B8(0x0050) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, AdvancedDisplay
 		EMovementMode                                              PreSpawnMovementMode;                                    // 0x0608(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_9OPQ[0x7];                                   // 0x0609(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XHJG[0x7];                                   // 0x0609(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class UParticipantSlotComponent*, bool>               SuccessfullySetUpActor;                                  // 0x0610(0x0050) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, AdvancedDisplay
 		class FScriptMulticastDelegate                             OnParticipantReceived;                                   // 0x0660(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		TArray<class UBPC_BaseEntryComponent_C*>                   BaseEntryComponents;                                     // 0x0670(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
@@ -42,7 +42,7 @@ namespace CG
 		class FName                                                BodyPartName;                                            // 0x06C0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UDSLogChannelHandle*                                 DesignLogger;                                            // 0x06C8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       EnableComponents;                                        // 0x06D0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_RIUM[0x7];                                   // 0x06D1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YDNQ[0x7];                                   // 0x06D1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              TriggerOptOutConstraints[0x50];                          // 0x06D8(0x0050) UNKNOWN PROPERTY: SetProperty
 		class FScriptMulticastDelegate                             OnZombieWillBeReleased;                                  // 0x0728(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		class FScriptMulticastDelegate                             OnDIAICharacterReceived;                                 // 0x0738(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable

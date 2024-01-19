@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D75C60
 	 * 		Name   -> Function ClefAuthRuntime.UserAuthData.SetRefreshToken
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		class FString                                      NewToken                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -28,15 +28,16 @@ namespace CG
 		params.NewToken = NewToken;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D75BE0
 	 * 		Name   -> Function ClefAuthRuntime.UserAuthData.GetRefreshToken
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	class FString UUserAuthData::GetRefreshToken()
 	{
@@ -47,6 +48,7 @@ namespace CG
 		UUserAuthData_GetRefreshToken_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BCFE40
 	 * 		Name   -> Function BlueprintLinks.BlueprintLinks.AddLinks
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		TArray<class AActor*>                              ActorsToPointTo                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -28,6 +28,7 @@ namespace CG
 		params.ActorsToPointTo = ActorsToPointTo;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -48,9 +49,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BCFFF0
 	 * 		Name   -> Function BlueprintLinks.BlueprintLinksInterface.GatherComponentBlueprintLinks
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms, Const)
 	 * Parameters:
 	 * 		TArray<struct FComponentLinkInformation>           ComponentLinks                                             (Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
@@ -63,6 +64,7 @@ namespace CG
 		UBlueprintLinksInterface_GatherComponentBlueprintLinks_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -72,9 +74,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BCFF40
 	 * 		Name   -> Function BlueprintLinks.BlueprintLinksInterface.GatherBlueprintLinks
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms, Const)
 	 * Parameters:
 	 * 		TArray<class AActor*>                              ActorsToPointTo                                            (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
@@ -87,6 +89,7 @@ namespace CG
 		UBlueprintLinksInterface_GatherBlueprintLinks_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -96,9 +99,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BCFEF0
 	 * 		Name   -> Function BlueprintLinks.BlueprintLinksInterface.CollectBlueprintLinks
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
 	TArray<class AActor*> UBlueprintLinksInterface::CollectBlueprintLinks()
 	{
@@ -109,6 +112,7 @@ namespace CG
 		UBlueprintLinksInterface_CollectBlueprintLinks_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

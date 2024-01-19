@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		TMap<class UScriptStruct*, class UObject*>                 Managers;                                                // 0x0028(0x0050) NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_F507[0x50];                                  // 0x0078(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YUIX[0x50];                                  // 0x0078(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		class UObject* K2_GetManager(class UScriptStruct* Defintion);
@@ -38,9 +38,9 @@ namespace CG
 	public:
 		class UManagersDatabase*                                   Database;                                                // 0x0028(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TMap<class FName, struct FPreCachedDataContainer>          PreCachedClasses;                                        // 0x0030(0x0050) NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_L0AY[0x50];                                  // 0x0080(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UAXK[0x50];                                  // 0x0080(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class FName, struct FPreCachedDataContainer>          PreCachedData;                                           // 0x00D0(0x0050) NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_8IYV[0x50];                                  // 0x0120(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_IU8N[0x50];                                  // 0x0120(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

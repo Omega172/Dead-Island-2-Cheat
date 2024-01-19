@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.ShouldAddAgainstWallFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
 	bool UBP_Action_WaitMovingEQS_CannotReachTarget_AI_C::ShouldAddAgainstWallFact()
 	{
@@ -33,9 +33,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.OnCombatTargetChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UCombatTargetComponent*                      NewTarget                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -55,9 +55,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.CastAndStoreParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UCustomActionParamsBase*                     BaseParams                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -79,9 +79,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.CanSeeCombatTarget
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
 	bool UBP_Action_WaitMovingEQS_CannotReachTarget_AI_C::CanSeeCombatTarget()
 	{
@@ -100,9 +100,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.CanSkipMovementConditionsBasedOnCounters
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
 	bool UBP_Action_WaitMovingEQS_CannotReachTarget_AI_C::CanSkipMovementConditionsBasedOnCounters()
 	{
@@ -121,9 +121,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.RangedCombatParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_WaitMovingEQS_CannotReachTarget_AI_C::RangedCombatParams()
 	{
@@ -140,9 +140,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.MeleeCombatParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_WaitMovingEQS_CannotReachTarget_AI_C::MeleeCombatParams()
 	{
@@ -159,9 +159,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.CombatMovementParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_WaitMovingEQS_CannotReachTarget_AI_C::CombatMovementParams()
 	{
@@ -178,9 +178,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.IsWithinAttackRange
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              ZDistanceFromCombatTarget                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               IsWithinRange                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -207,9 +207,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.IsVerticalDotWithinLimits
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 * Parameters:
 	 * 		float                                              ZDistanceFromCombatTarget                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              MinDot                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -235,9 +235,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.CanSkipMovementConditions
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		EWaitMovingEQSStates                               MoveTargetType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               IsOffNavmesh                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -261,9 +261,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.IsOwnerOnNavmeshEdgeFacingCombatTarget
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
 	bool UBP_Action_WaitMovingEQS_CannotReachTarget_AI_C::IsOwnerOnNavmeshEdgeFacingCombatTarget()
 	{
@@ -282,9 +282,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.GetDistanceToSearchLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
 	float UBP_Action_WaitMovingEQS_CannotReachTarget_AI_C::GetDistanceToSearchLocation()
 	{
@@ -303,9 +303,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.OnBeginEarly
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
 	bool UBP_Action_WaitMovingEQS_CannotReachTarget_AI_C::OnBeginEarly()
 	{
@@ -324,9 +324,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.GetMoveTargetState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsOffNavmesh                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -348,9 +348,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.IsCombatMovementRequired
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              ZDistanceFromCombatTarget                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EWaitMovingEQSCombattHeightLevel                   CombatTargetsHeightLevel                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -374,9 +374,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.IsWithinRangedRange
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              ZDistanceFromCombatTarget                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               MovementRequired                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -402,9 +402,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.GetVerticalDistanceToSearchLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
 	float UBP_Action_WaitMovingEQS_CannotReachTarget_AI_C::GetVerticalDistanceToSearchLocation()
 	{
@@ -423,9 +423,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.IsWithinMeleeRange
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              ZDistanceFromCombatTarget                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -447,9 +447,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.GetAbsoluteVerticalDistanceToSearchLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
 	float UBP_Action_WaitMovingEQS_CannotReachTarget_AI_C::GetAbsoluteVerticalDistanceToSearchLocation()
 	{
@@ -468,9 +468,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.GetMaxDistanceAllowedFromSearchLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		float                                              ZDistanceFromCombatTarget                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              HardDistanceLimit                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -496,9 +496,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_WaitMovingEQS_CannotReachTarget_AI.BP_Action_WaitMovingEQS_CannotReachTarget_AI_C.SetQueryParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UEnvQueryInstanceBlueprintWrapper*           ActiveQuery                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

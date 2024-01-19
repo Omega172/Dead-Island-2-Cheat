@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -152,9 +152,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ConditionalTree.ConditionTreeTest.GetKnowledgeBaseComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
 	class UKnowledgeBaseComponent* AConditionTreeTest::GetKnowledgeBaseComponent()
 	{
@@ -173,9 +173,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB5430
 	 * 		Name   -> Function ConditionalTree.ConditionTreeTest.GetFirstValidStruct
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bFound                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -188,6 +188,7 @@ namespace CG
 		AConditionTreeTest_GetFirstValidStruct_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -199,9 +200,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB5400
 	 * 		Name   -> Function ConditionalTree.ConditionTreeTest.GetFirstValidObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	class UObject* AConditionTreeTest::GetFirstValidObject()
 	{
@@ -212,6 +213,7 @@ namespace CG
 		AConditionTreeTest_GetFirstValidObject_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -220,9 +222,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB5380
 	 * 		Name   -> Function ConditionalTree.ConditionTreeTest.GetAllValidStructs
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	TArray<struct FConditionTreeStructResultExample> AConditionTreeTest::GetAllValidStructs()
 	{
@@ -233,6 +235,7 @@ namespace CG
 		AConditionTreeTest_GetAllValidStructs_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -241,9 +244,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB5300
 	 * 		Name   -> Function ConditionalTree.ConditionTreeTest.GetAllValidObjects
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	TArray<class UObject*> AConditionTreeTest::GetAllValidObjects()
 	{
@@ -254,6 +257,7 @@ namespace CG
 		AConditionTreeTest_GetAllValidObjects_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -262,9 +266,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB5280
 	 * 		Name   -> Function ConditionalTree.ConditionTreeTest.DuckDuckGoose
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	TArray<struct FConditionTreeStructResultExample> AConditionTreeTest::DuckDuckGoose()
 	{
@@ -275,6 +279,7 @@ namespace CG
 		AConditionTreeTest_DuckDuckGoose_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

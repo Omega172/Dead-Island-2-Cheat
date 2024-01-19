@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -40,7 +40,7 @@ namespace CG
 		TArray<class ATriggerShapeActor*>                          ShowTriggers;                                            // 0x0108(0x0010) Edit, BlueprintVisible, ZeroConstructor, EditConst, NativeAccessSpecifierPublic
 		bool                                                       bServerControlled;                                       // 0x0118(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bUseDeferredUnloading;                                   // 0x0119(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_OMEY[0x2];                                   // 0x011A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_NWMR[0x2];                                   // 0x011A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      UnloadDelay;                                             // 0x011C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UClass*                                              CompatibleInteractor;                                    // 0x0120(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnStreamingStarted;                                      // 0x0128(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
@@ -55,7 +55,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnStreamingSetHidden;                                    // 0x01B8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class UKnowledgeBaseExpressionListener*                    ExpressionListener;                                      // 0x01C8(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<struct FLevelStreamingReplicatedState>              ReplicatedState;                                         // 0x01D0(0x0010) Net, ZeroConstructor, RepNotify, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_SZQ8[0x268];                                 // 0x01E0(0x0268) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_BGS0[0x268];                                 // 0x01E0(0x0268) MISSED OFFSET (PADDING)
 
 	public:
 		void StreamingSetEvent__DelegateSignature(int32_t Index);
@@ -96,7 +96,7 @@ namespace CG
 	{
 	public:
 		class ULevelStreaming*                                     StreamingLevel;                                          // 0x0028(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_RR55[0xC8];                                  // 0x0030(0x00C8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_0TJR[0xC8];                                  // 0x0030(0x00C8) MISSED OFFSET (PADDING)
 
 	public:
 		void NotifyLevelUnloaded();

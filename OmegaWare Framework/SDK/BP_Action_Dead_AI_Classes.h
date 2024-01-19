@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -26,9 +26,10 @@ namespace CG
 		struct FTimerHandle                                        PostDeathTimerGUID;                                      // 0x01B0(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnSignificantDurationAfterDeath();
 		void OnBegin(const struct FGuid& RequestId, const struct FCharacterActionOnBeginParams& Params);
+		void OnSignificantDurationAfterDeath();
 		void OnRagdollResting(bool bResult);
+		void OnEnd(const struct FGuid& RequestId, const struct FCharacterActionOnEndParams& Params);
 		void ExecuteUbergraph_BP_Action_Dead_AI(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

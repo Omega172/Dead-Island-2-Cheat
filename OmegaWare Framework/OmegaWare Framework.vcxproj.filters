@@ -19,6 +19,10 @@
     <ClCompile Include="SDK\BasicTypes_Package.cpp" />
     <ClCompile Include="SDK\CoreUObject_Package.cpp" />
     <ClCompile Include="SDK\Engine_Package.cpp" />
+    <ClCompile Include="SDK\ABP_PlayerCharacter_1P_Package.cpp" />
+    <ClCompile Include="SDK\DeadIsland_Package.cpp" />
+    <ClCompile Include="Features\ESP\ESP.cpp" />
+    <ClCompile Include="SDK\DSFramework_Package.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -46,5 +50,6 @@
     <ClInclude Include="Hooks\D3D12\D3D12Hooks.h" />
     <ClInclude Include="Interfaces\Unreal.h" />
     <ClInclude Include="SDK.h" />
+    <ClInclude Include="Features\ESP\ESP.h" />
   </ItemGroup>
 </Project>

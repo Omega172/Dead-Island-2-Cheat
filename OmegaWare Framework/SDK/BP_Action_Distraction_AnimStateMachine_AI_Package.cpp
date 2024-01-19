@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.FaceTargetStateCondition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		EMeatbaitAnimStates                                PotentialNewState                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EMeatbaitAnimStates                                NextState                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -40,9 +40,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.AddDSLog
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class FString                                      DebugText                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	 * 		EDSLogVerbosity                                    Verbosity                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -66,9 +66,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.SetupDistractionLogger
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::SetupDistractionLogger()
 	{
@@ -85,9 +85,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.GetTorsoTwistTarget
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		class AActor*                                      TargetActor                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     RelativeLocation                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -112,9 +112,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.RemoveTorsoTwistTarget
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::RemoveTorsoTwistTarget()
 	{
@@ -131,9 +131,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.AddTorsoTwistTarget
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               Success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -155,9 +155,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.GetInterestDuration
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
 	float UBP_Action_Distraction_AnimStateMachine_AI_C::GetInterestDuration()
 	{
@@ -176,9 +176,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.OnAnimSetSpacingStateFinished
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::OnAnimSetSpacingStateFinished()
 	{
@@ -195,9 +195,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.GoToState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		EMeatbaitAnimStates                                CurrentState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -217,9 +217,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.InterestLost
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::InterestLost()
 	{
@@ -236,9 +236,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.StartInterestTimer
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::StartInterestTimer()
 	{
@@ -255,9 +255,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.GetMoveTargetDirection
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
 	struct FVector UBP_Action_Distraction_AnimStateMachine_AI_C::GetMoveTargetDirection()
 	{
@@ -276,9 +276,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.OnMoveTargetEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		EMoveTargetEvent                                   Event                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -298,9 +298,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.EndFaceTargetState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::EndFaceTargetState()
 	{
@@ -317,9 +317,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.BeginFaceTargetState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::BeginFaceTargetState()
 	{
@@ -336,9 +336,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.OnAnimSetActionEnded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnEndParams                 Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -360,9 +360,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.OnBeginEarly
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
 	bool UBP_Action_Distraction_AnimStateMachine_AI_C::OnBeginEarly()
 	{
@@ -381,9 +381,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.EndAnimSetSpacingState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::EndAnimSetSpacingState()
 	{
@@ -400,9 +400,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.BeginAnimSetSpacingState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::BeginAnimSetSpacingState()
 	{
@@ -419,9 +419,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.EndAnimSetActionState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::EndAnimSetActionState()
 	{
@@ -438,9 +438,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.BeginAnimSetActionState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::BeginAnimSetActionState()
 	{
@@ -457,9 +457,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.GetNextState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		EMeatbaitAnimStates                                NextState                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -483,9 +483,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.EndState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::EndState()
 	{
@@ -502,9 +502,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.GoToNextState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::GoToNextState()
 	{
@@ -521,9 +521,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.BeginState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Distraction_AnimStateMachine_AI_C::BeginState()
 	{
@@ -540,9 +540,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.GetDistanceInFrontOfCharacter
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		float                                              Distance                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -564,9 +564,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.GetTargetData
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		float                                              VerticalDegrees                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Distance2D                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -591,9 +591,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.OnBegin
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnBeginParams               Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -615,9 +615,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.OnEnd
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnEndParams                 Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -639,9 +639,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Distraction_AnimStateMachine_AI.BP_Action_Distraction_AnimStateMachine_AI_C.ExecuteUbergraph_BP_Action_Distraction_AnimStateMachine_AI
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

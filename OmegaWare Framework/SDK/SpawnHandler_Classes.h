@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -31,7 +31,7 @@ namespace CG
 	class ASpawnHandlerManager : public AInfo
 	{
 	public:
-		unsigned char                                              UnknownData_HBT7[0x120];                                 // 0x02B0(0x0120) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ZAHQ[0x120];                                 // 0x02B0(0x0120) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -44,8 +44,8 @@ namespace CG
 	class USpawnHandlerLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool RequestSpawn(class UObject* WorldContext, const struct FSpawnParams& SpawnParams, const class FScriptDelegate& SpawnCallback);
-		bool RequestBatchSpawn(class UObject* WorldContext, TArray<struct FBatchSpawnRequestItem> SpawnsAndParams, const class FScriptDelegate& SpawnCallback);
+		bool STATIC_RequestSpawn(class UObject* WorldContext, const struct FSpawnParams& SpawnParams, const class FScriptDelegate& SpawnCallback);
+		bool STATIC_RequestBatchSpawn(class UObject* WorldContext, TArray<struct FBatchSpawnRequestItem> SpawnsAndParams, const class FScriptDelegate& SpawnCallback);
 		static UClass* StaticClass();
 	};
 

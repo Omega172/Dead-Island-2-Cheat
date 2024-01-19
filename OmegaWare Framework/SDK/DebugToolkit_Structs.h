@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -36,7 +36,7 @@ namespace CG
 	{
 	public:
 		TWeakObjectPtr<class AActor>                               Actor;                                                   // 0x000C(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_I8HF[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3PQS[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              Text;                                                    // 0x0018(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<class FName>                                        Clients;                                                 // 0x0028(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
 	};
@@ -64,7 +64,7 @@ namespace CG
 		bool                                                       bReplicated;                                             // 0x001C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bShowHeader;                                             // 0x001D(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bShowOnlyIfSelected;                                     // 0x001E(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZG6S[0x1];                                   // 0x001F(0x0001) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3C1U[0x1];                                   // 0x001F(0x0001) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -88,7 +88,7 @@ namespace CG
 		struct FVector                                             Max;                                                     // 0x000C(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<struct FVector>                                     V;                                                       // 0x0018(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
 		TArray<struct FWebDebuggerNavmeshTriangleGroup>            Tg;                                                      // 0x0028(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_T4VZ[0x8];                                   // 0x0038(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_HOIL[0x8];                                   // 0x0038(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -112,7 +112,7 @@ namespace CG
 	public:
 		TArray<struct FWebDebuggerTestSimpleStruct>                StructArray;                                             // 0x0020(0x0010) Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic
 		TArray<int32_t>                                            IntArray;                                                // 0x0030(0x0010) Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_BK1S[0x8];                                   // 0x0040(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_O116[0x8];                                   // 0x0040(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -122,7 +122,7 @@ namespace CG
 	struct FWebDebuggerJsonObjectWrapper
 	{
 	public:
-		unsigned char                                              UnknownData_5VIK[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XFT2[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
 	};
 
 }

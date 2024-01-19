@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -97,7 +97,7 @@ namespace CG
 	{
 	public:
 		class UClass*                                              ActorClass;                                              // 0x0090(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Z8NM[0x8];                                   // 0x0098(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NZUZ[0x8];                                   // 0x0098(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -159,9 +159,9 @@ namespace CG
 	class UCharacterKitMeshUtils : public UBlueprintFunctionLibrary
 	{
 	public:
-		void ShowSubSections(class USkeletalMeshComponent* SkeletalMesh, TArray<class FName> SectionsToKeep);
-		void ShowAllSubSections(class USkeletalMeshComponent* SkeletalMesh);
-		void HideAllSubSections(class USkeletalMeshComponent* SkeletalMesh);
+		void STATIC_ShowSubSections(class USkeletalMeshComponent* SkeletalMesh, TArray<class FName> SectionsToKeep);
+		void STATIC_ShowAllSubSections(class USkeletalMeshComponent* SkeletalMesh);
+		void STATIC_HideAllSubSections(class USkeletalMeshComponent* SkeletalMesh);
 		static UClass* StaticClass();
 	};
 
@@ -177,6 +177,26 @@ namespace CG
 		TArray<class FName>                                        SoftBodyNames;                                           // 0x0040(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 		TArray<uint32_t>                                           SectionID;                                               // 0x0050(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 		TArray<struct FPlayerHandsData>                            PlayerHandsData;                                         // 0x0060(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
+
+	public:
+		static UClass* StaticClass();
+	};
+
+	/**
+	 * Class CharacterKitRuntime.ModelVariationPreviewComponent
+	 * Size -> 0x0028 (FullSize[0x0110] - InheritedSize[0x00E8])
+	 */
+	class UModelVariationPreviewComponent : public UActorComponent
+	{
+	public:
+		int32_t                                                    MaterialVariantIndex;                                    // 0x00E8(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		int32_t                                                    SplatterVariantIndex;                                    // 0x00EC(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bCycleMaterialVariant;                                   // 0x00F0(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bCycleSplatterVariant;                                   // 0x00F1(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_ODWF[0x2];                                   // 0x00F2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		float                                                      CycleDelay;                                              // 0x00F4(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		struct FCharacterInitialStateResolved                      InitialStateVariant;                                     // 0x00F8(0x0010) Transient, NoDestructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected
+		unsigned char                                              UnknownData_DGRQ[0x8];                                   // 0x0108(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -202,7 +222,7 @@ namespace CG
 	class ASkeletalMeshBodyPartAttachmentActor : public ASkeletalMeshAttachmentActor
 	{
 	public:
-		unsigned char                                              UnknownData_J9KO[0x8];                                   // 0x02B8(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7INT[0x8];                                   // 0x02B8(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -210,7 +230,7 @@ namespace CG
 
 	/**
 	 * Class CharacterKitRuntime.SkeletalMeshSubSectionAttachmentActor
-	 * Size -> 0x0060 (FullSize[0x0310] - InheritedSize[0x02B0])
+	 * Size -> 0x0068 (FullSize[0x0318] - InheritedSize[0x02B0])
 	 */
 	class ASkeletalMeshSubSectionAttachmentActor : public AActor
 	{
@@ -220,9 +240,11 @@ namespace CG
 		TArray<class FName>                                        SubSectionNamesToSpawn;                                  // 0x02C8(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, ExposeOnSpawn, NativeAccessSpecifierPublic
 		TArray<class FName>                                        ParentSubSectionNamesToHide;                             // 0x02D8(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, ExposeOnSpawn, NativeAccessSpecifierPublic
 		class UPhysicsAsset*                                       PhysicsAsset;                                            // 0x02E8(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		struct FVector                                             InitialForce;                                            // 0x02F0(0x000C) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bEnableVelocityForcingOnSpawn;                           // 0x02FC(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_LO2L[0x13];                                  // 0x02FD(0x0013) MISSED OFFSET (PADDING)
+		bool                                                       bShareSplatterResourcesOnSpawn;                          // 0x02F0(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_W27B[0x3];                                   // 0x02F1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FVector                                             InitialForce;                                            // 0x02F4(0x000C) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bEnableVelocityForcingOnSpawn;                           // 0x0300(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_VK9V[0x17];                                  // 0x0301(0x0017) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -237,7 +259,7 @@ namespace CG
 	public:
 		struct FTransform                                          Location;                                                // 0x0050(0x0030) Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		int32_t                                                    BoneBranchMask;                                          // 0x0080(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_RZFF[0xC];                                   // 0x0084(0x000C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_BHAN[0xC];                                   // 0x0084(0x000C) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -272,7 +294,7 @@ namespace CG
 	public:
 		int32_t                                                    BoneId;                                                  // 0x0050(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                BoneName;                                                // 0x0054(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_98BJ[0x4];                                   // 0x005C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_U984[0x4];                                   // 0x005C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTransform                                          BoneSpace;                                               // 0x0060(0x0030) Edit, BlueprintVisible, BlueprintReadOnly, EditConst, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -321,10 +343,10 @@ namespace CG
 	class USpawnablePartsUtils : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool UnHideSkeletonPart(class USkeletalMeshComponent* Skeleton, const class FName& PartName);
-		bool IsSkeletonPartVisible(class USkeletalMeshComponent* Skeleton, const class FName& PartName);
-		void HideViscera(class USkeletalMeshComponent* Skeleton);
-		bool HideSkeletonPart(class USkeletalMeshComponent* Skeleton, const class FName& PartName);
+		bool STATIC_UnHideSkeletonPart(class USkeletalMeshComponent* Skeleton, const class FName& PartName);
+		bool STATIC_IsSkeletonPartVisible(class USkeletalMeshComponent* Skeleton, const class FName& PartName);
+		void STATIC_HideViscera(class USkeletalMeshComponent* Skeleton);
+		bool STATIC_HideSkeletonPart(class USkeletalMeshComponent* Skeleton, const class FName& PartName);
 		static UClass* StaticClass();
 	};
 
@@ -364,7 +386,7 @@ namespace CG
 		class UCosmeticEffectsDefinition*                          BreakageEffect;                                          // 0x0080(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                SplatterGroup;                                           // 0x0088(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class USplatterSet*                                        SplatterSet;                                             // 0x0090(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1AIJ[0x8];                                   // 0x0098(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_GUB4[0x8];                                   // 0x0098(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -414,10 +436,10 @@ namespace CG
 	{
 	public:
 		int32_t                                                    RootProxyID;                                             // 0x0050(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4BWD[0x4];                                   // 0x0054(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_US7R[0x4];                                   // 0x0054(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class FName>                                        VisceraSubsections;                                      // 0x0058(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic
 		float                                                      SwitchThreshold;                                         // 0x0068(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4L34[0x4];                                   // 0x006C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MIBJ[0x4];                                   // 0x006C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UCosmeticEffectsDefinition*                          ActivationEffects;                                       // 0x0070(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	public:
@@ -449,7 +471,7 @@ namespace CG
 	{
 	public:
 		struct FSoftBodyMovementModifer                            Modifer;                                                 // 0x0050(0x002C) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_DQK3[0x4];                                   // 0x007C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_BBM1[0x4];                                   // 0x007C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -464,23 +486,23 @@ namespace CG
 	public:
 		struct FTransform                                          Location;                                                // 0x0050(0x0030) Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		int32_t                                                    ProxyID;                                                 // 0x0080(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_X8UB[0x4];                                   // 0x0084(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LTRI[0x4];                                   // 0x0084(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class FName>                                        VisceraSubsections;                                      // 0x0088(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic
 		TArray<class FName>                                        BrokenSubsections;                                       // 0x0098(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic
 		TArray<ESpawnablePartSlot>                                 SpawnablePartSlots;                                      // 0x00A8(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic
 		ECutBias                                                   CutBias;                                                 // 0x00B8(0x0001) ELEMENT_SIZE_MISMATCH Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3ULU[0x3];                                   // 0x00B9(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+		unsigned char                                              UnknownData_CDZM[0x3];                                   // 0x00B9(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 		bool                                                       bCanRupture;                                             // 0x00BC(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIgnoreMaxBlend;                                         // 0x00BD(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bHoldFinalState;                                         // 0x00BE(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7GLC[0x1];                                   // 0x00BF(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_G3VT[0x1];                                   // 0x00BF(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UCosmeticEffectsDefinition*                          RuptureEffects;                                          // 0x00C0(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      RuptureThreshold;                                        // 0x00C8(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    RuptureBoneId;                                           // 0x00CC(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<float>                                              SwitchableThresholds;                                    // 0x00D0(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic
 		TArray<class UVisceraSwitchableVariant*>                   SwitchableVariants;                                      // 0x00E0(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic
 		int32_t                                                    BreakageBoneId;                                          // 0x00F0(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_URBY[0x4];                                   // 0x00F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_2L6H[0x4];                                   // 0x00F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAttachmentSpecBase*                                 GibbableSectionAttachment;                               // 0x00F8(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<class FName>                                        ShadowCapsules;                                          // 0x0100(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic
 		TArray<class UVisceraEvent*>                               CutEvents;                                               // 0x0110(0x0010) Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
@@ -526,13 +548,13 @@ namespace CG
 	{
 	public:
 		EVisceraOwnership                                          Ownership;                                               // 0x0050(0x0001) ELEMENT_SIZE_MISMATCH Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JTMD[0x3];                                   // 0x0051(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+		unsigned char                                              UnknownData_GV7U[0x3];                                   // 0x0051(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 		class FName                                                BoneName;                                                // 0x0054(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsShootable;                                            // 0x005C(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_UXXN[0x3];                                   // 0x005D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5HQ5[0x3];                                   // 0x005D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      CutMargin;                                               // 0x0060(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bCanRupture;                                             // 0x0064(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_39DB[0x3];                                   // 0x0065(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_041I[0x3];                                   // 0x0065(0x0003) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -546,7 +568,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NumProxies;                                              // 0x0058(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FLKX[0x4];                                   // 0x005C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_BKEB[0x4];                                   // 0x005C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

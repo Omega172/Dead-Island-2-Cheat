@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UActorGroupFeederObject : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_SL6Q[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_Q53O[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -34,7 +34,7 @@ namespace CG
 	class UActorGroupFeederObject_Spatial : public UActorGroupFeederObject
 	{
 	public:
-		unsigned char                                              UnknownData_EDKW[0x30];                                  // 0x0038(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3YPN[0x30];                                  // 0x0038(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		void OnEndOverlap(class UTriggerInteractorComponent* Interactor);
@@ -50,7 +50,7 @@ namespace CG
 	{
 	public:
 		class FName                                                Name;                                                    // 0x0028(0x0008) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_K4ID[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_BEAS[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		bool CanBeAdded(class AActor* Actor);
@@ -84,7 +84,7 @@ namespace CG
 	class UActorGroupMemberComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_0N5I[0x10];                                  // 0x00E8(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PIZE[0x10];                                  // 0x00E8(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -97,17 +97,17 @@ namespace CG
 	class UActorGroupOwnerComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_89FF[0x8];                                   // 0x00E8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7SXS[0x8];                                   // 0x00E8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FActorGroupEditorSettings                           ActorGroupEditorSettings;                                // 0x00F0(0x0010) Edit, NativeAccessSpecifierPrivate
 		TMap<EActorGroupCallbackType, class UGameEvent*>           GameEvents;                                              // 0x0100(0x0050) Edit, ExportObject, DisableEditOnTemplate, ContainsInstancedReference, NativeAccessSpecifierPrivate
 		class UGameEventState*                                     GameEventState;                                          // 0x0150(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<struct FActorGroupOwnerEvent>                       ConditionalEvents;                                       // 0x0158(0x0010) Edit, ZeroConstructor, DisableEditOnTemplate, ContainsInstancedReference, NativeAccessSpecifierPrivate
 		int32_t                                                    MaximumGroupSize;                                        // 0x0168(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_Y3SI[0x4];                                   // 0x016C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PLI3[0x4];                                   // 0x016C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UActorGroupFilter*>                           FiltersThatMustPass;                                     // 0x0170(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
 		TArray<class UActorGroupFilter*>                           FiltersThatOneMustPass;                                  // 0x0180(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
 		struct FScopedKnowledgeBaseExpressionListener              ActiveExpression;                                        // 0x0190(0x0060) Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_4ZFS[0x38];                                  // 0x01F0(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RX3T[0x38];                                  // 0x01F0(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UMultiActorGameEventStateHandler*                    GameEventStateHandler;                                   // 0x0228(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 
 	public:
@@ -132,7 +132,7 @@ namespace CG
 	public:
 		bool                                                       bAddToGroupWhenActorEntersTrigger;                       // 0x0230(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bRemoveFromGroupWhenActorLeavesTrigger;                  // 0x0231(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_5IDU[0x6];                                   // 0x0232(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_AAE6[0x6];                                   // 0x0232(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UActorGroupFilter*>                           FiltersToStopRemovalOfMembers;                           // 0x0238(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
 		class UActorGroupFeederObject_Spatial*                     SpatialFeeder;                                           // 0x0248(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 

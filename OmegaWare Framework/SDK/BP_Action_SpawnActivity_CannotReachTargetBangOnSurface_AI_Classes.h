@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UBP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C : public UBP_Action_Base_Task_AI_C
 	{
 	public:
-		unsigned char                                              UnknownData_GZGI[0x3];                                   // 0x055D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_X5CY[0x3];                                   // 0x055D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0560(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		TArray<class AActor*>                                      Walls;                                                   // 0x0568(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
 		float                                                      RotationErrorTolerence;                                  // 0x0578(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -33,7 +33,7 @@ namespace CG
 		TArray<class UOpenableComponent*>                          OpenableComponents;                                      // 0x05B0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
 		class UBPC_AnimationCoordinator_AI_C*                      AnimationComponent;                                      // 0x05C0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       DebugEnabled;                                            // 0x05C8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_OTBC[0x7];                                   // 0x05C9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LC48[0x7];                                   // 0x05C9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FKnowledgeBaseExpression                            DistanceExceptionForMaxFacingAngleExpression;            // 0x05D0(0x0038) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
 		class FName                                                CharacterOverlapProfile;                                 // 0x0608(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TArray<class AActor*>                                      ActorsToIgnore;                                          // 0x0610(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance

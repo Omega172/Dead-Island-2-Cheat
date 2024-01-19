@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA6B60
 	 * 		Name   -> Function Pipes.BasePipe.SetPipeAllowedToFlow
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bActive                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -28,15 +28,16 @@ namespace CG
 		params.bActive = bActive;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA6AE0
 	 * 		Name   -> Function Pipes.BasePipe.SetOutflowActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            OutflowIndex                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -50,15 +51,16 @@ namespace CG
 		params.OutflowIndex = OutflowIndex;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function Pipes.BasePipe.OnPipeFlowChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              NewFlowingPercentage                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -78,9 +80,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function Pipes.BasePipe.OnPipeConnected
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
 	void ABasePipe::OnPipeConnected()
 	{
@@ -97,9 +99,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA6A90
 	 * 		Name   -> Function Pipes.BasePipe.IsFlowing
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool ABasePipe::IsFlowing()
 	{
@@ -110,6 +112,7 @@ namespace CG
 		ABasePipe_IsFlowing_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -118,9 +121,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA6A70
 	 * 		Name   -> Function Pipes.BasePipe.IsFillingUp
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool ABasePipe::IsFillingUp()
 	{
@@ -131,6 +134,7 @@ namespace CG
 		ABasePipe_IsFillingUp_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -139,9 +143,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA6A40
 	 * 		Name   -> Function Pipes.BasePipe.GetPipeOrigin
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class APipeOrigin* ABasePipe::GetPipeOrigin()
 	{
@@ -152,6 +156,7 @@ namespace CG
 		ABasePipe_GetPipeOrigin_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -160,9 +165,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA6A10
 	 * 		Name   -> Function Pipes.BasePipe.GetLeakIndex
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
 	int32_t ABasePipe::GetLeakIndex()
 	{
@@ -173,6 +178,7 @@ namespace CG
 		ABasePipe_GetLeakIndex_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -181,9 +187,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA69E0
 	 * 		Name   -> Function Pipes.BasePipe.GetDataAsset
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UPipeOriginDataAsset* ABasePipe::GetDataAsset()
 	{
@@ -194,6 +200,7 @@ namespace CG
 		ABasePipe_GetDataAsset_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -244,9 +251,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA6AC0
 	 * 		Name   -> Function Pipes.PipeOrigin.OnRep_IsOriginAllowedToFlow
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void APipeOrigin::OnRep_IsOriginAllowedToFlow()
 	{
@@ -257,6 +264,7 @@ namespace CG
 		APipeOrigin_OnRep_IsOriginAllowedToFlow_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

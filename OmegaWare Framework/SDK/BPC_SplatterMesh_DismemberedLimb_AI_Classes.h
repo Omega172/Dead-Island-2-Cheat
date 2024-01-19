@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_SplatterMesh_DismemberedLimb_AI.BPC_SplatterMesh_DismemberedLimb_AI_C
-	 * Size -> 0x0000 (FullSize[0x0640] - InheritedSize[0x0640])
+	 * Size -> 0x0000 (FullSize[0x0680] - InheritedSize[0x0680])
 	 */
 	class UBPC_SplatterMesh_DismemberedLimb_AI_C : public USplatterMeshComponent
 	{

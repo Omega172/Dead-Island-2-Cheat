@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -48,7 +48,7 @@ namespace CG
 	struct FGameplayEvent
 	{
 	public:
-		unsigned char                                              UnknownData_MMMT[0x20];                                  // 0x0000(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3YE3[0x20];                                  // 0x0000(0x0020) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -58,7 +58,7 @@ namespace CG
 	struct FGameplayEventData
 	{
 	public:
-		unsigned char                                              UnknownData_N82V[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_1WSE[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -68,7 +68,7 @@ namespace CG
 	struct FGameplayEventData_OnBeginWorldTearDown : public FGameplayEventData
 	{
 	public:
-		unsigned char                                              UnknownData_MPYG[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_GCCO[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (PADDING)
 	};
 
 }

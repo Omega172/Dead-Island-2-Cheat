@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UImageWriteBlueprintLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void ExportToDisk(class UTexture* Texture, const class FString& Filename, const struct FImageWriteOptions& Options);
+		void STATIC_ExportToDisk(class UTexture* Texture, const class FString& Filename, const struct FImageWriteOptions& Options);
 		static UClass* StaticClass();
 	};
 

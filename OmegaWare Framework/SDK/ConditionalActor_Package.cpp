@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00DB3980
 	 * 		Name   -> Function ConditionalActor.ConditionalActor.OnSpawnHandlerSpawned
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasOutParms)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<class AActor*>                              SpawnedActors                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -30,15 +30,16 @@ namespace CG
 		params.SpawnedActors = SpawnedActors;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00DB3A80
 	 * 		Name   -> Function ConditionalActor.ConditionalActor.OnSpawnedActorDestroyed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EEndPlayReason                                     EndPlayReason                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -54,15 +55,16 @@ namespace CG
 		params.EndPlayReason = EndPlayReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00DB3960
 	 * 		Name   -> Function ConditionalActor.ConditionalActor.OnCooldownComplete
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void AConditionalActor::OnCooldownComplete()
 	{
@@ -73,15 +75,16 @@ namespace CG
 		AConditionalActor_OnCooldownComplete_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00DB38E0
 	 * 		Name   -> Function ConditionalActor.ConditionalActor.OnActorSourceProvidedActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -95,6 +98,7 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -115,9 +119,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BCC4B0
 	 * 		Name   -> Function ConditionalActor.ConditionalActorPostSpawnOperation.Execute
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -131,6 +135,7 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

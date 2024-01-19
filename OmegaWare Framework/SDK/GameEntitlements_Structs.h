@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -36,7 +36,7 @@ namespace CG
 	struct FGameEntitlementTableRowAndData
 	{
 	public:
-		unsigned char                                              UnknownData_7PBE[0x20];                                  // 0x0000(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WFLP[0x20];                                  // 0x0000(0x0020) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -99,7 +99,7 @@ namespace CG
 	public:
 		class FString                                              Description;                                             // 0x0008(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EGameEntitlementCategory                                   Category;                                                // 0x0018(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0LOZ[0x7];                                   // 0x0019(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5AD7[0x7];                                   // 0x0019(0x0007) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -109,7 +109,7 @@ namespace CG
 	struct FGameplayEventData_GrantEntitlement : public FGameplayEventData
 	{
 	public:
-		unsigned char                                              UnknownData_3HCG[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_R3ED[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (PADDING)
 	};
 
 }

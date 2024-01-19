@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -31,12 +31,12 @@ namespace CG
 	class AGameEntitlementsManager : public AInfo
 	{
 	public:
-		unsigned char                                              UnknownData_5Y8M[0x20];                                  // 0x02B0(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9W1Y[0x20];                                  // 0x02B0(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<uint32_t, struct FGameEntitlementTableRowAndData>     GameEntitlements;                                        // 0x02D0(0x0050) NativeAccessSpecifierPrivate
 		TArray<class UGameEntitlementsDataTable*>                  RegisteredTables;                                        // 0x0320(0x0010) ZeroConstructor, NativeAccessSpecifierPrivate
 		class UKnowledgeBaseComponent*                             KnowledgeBaseComponent;                                  // 0x0330(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		struct FReplicatedGameEntitlementsArray                    RepGameEntitlements;                                     // 0x0338(0x0120) Net, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_BT61[0x280];                                 // 0x0458(0x0280) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_HC57[0x280];                                 // 0x0458(0x0280) MISSED OFFSET (PADDING)
 
 	public:
 		void RevokeEntitlementFromLocalPlayer(const struct FFixedDataTableEditableRowHandle& GameEntitlementDefinitionHandle);
@@ -79,12 +79,13 @@ namespace CG
 
 	/**
 	 * Class GameEntitlements.KnowledgeBaseExpressionBuilderObject_HasEntitlement
-	 * Size -> 0x0010 (FullSize[0x0078] - InheritedSize[0x0068])
+	 * Size -> 0x0020 (FullSize[0x0088] - InheritedSize[0x0068])
 	 */
 	class UKnowledgeBaseExpressionBuilderObject_HasEntitlement : public UKnowledgeBaseExpressionBuilderObject
 	{
 	public:
 		struct FDataTableRowHandle                                 EntitlementToCheck;                                      // 0x0068(0x0010) Edit, NoDestructor, NativeAccessSpecifierPrivate
+		class FString                                              ObjectName;                                              // 0x0078(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 
 	public:
 		static UClass* StaticClass();

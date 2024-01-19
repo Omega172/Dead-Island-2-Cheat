@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_DialogPopUpGeneral_ErrorResponse.BP_DialogPopUpGeneral_ErrorResponse_C
-	 * Size -> 0x0000 (FullSize[0x0580] - InheritedSize[0x0580])
+	 * Size -> 0x0000 (FullSize[0x0608] - InheritedSize[0x0608])
 	 */
 	class UBP_DialogPopUpGeneral_ErrorResponse_C : public UBP_DialogPopUpGeneral_OK_C
 	{

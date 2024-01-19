@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -14,6 +14,26 @@ namespace CG
 	// --------------------------------------------------
 	// # Structs
 	// --------------------------------------------------
+	/**
+	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.GatherPrerequisites
+	 */
+	struct UBP_Action_Block_Butcher_C_GatherPrerequisites_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_U6T1[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+	};
+
+	/**
+	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnBeginEarly
+	 */
+	struct UBP_Action_Block_Butcher_C_OnBeginEarly_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_C4LD[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+	};
+
 	/**
 	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.LogInfo
 	 */
@@ -48,6 +68,25 @@ namespace CG
 	{	};
 
 	/**
+	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnEnd
+	 */
+	struct UBP_Action_Block_Butcher_C_OnEnd_Params
+	{
+	public:
+		struct FGuid                                               RequestId;                                               // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		struct FCharacterActionOnEndParams                         Params;                                                  // 0x0010(0x0028)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	};
+
+	/**
+	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.EndRequestedBy
+	 */
+	struct UBP_Action_Block_Butcher_C_EndRequestedBy_Params
+	{
+	public:
+		struct FGuid                                               QueuedActionId;                                          // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
 	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnMaintainExpressionResultChanged
 	 */
 	struct UBP_Action_Block_Butcher_C_OnMaintainExpressionResultChanged_Params
@@ -57,12 +96,19 @@ namespace CG
 	};
 
 	/**
-	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnConstruct
+	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnMaxDurationPassed
 	 */
-	struct UBP_Action_Block_Butcher_C_OnConstruct_Params
+	struct UBP_Action_Block_Butcher_C_OnMaxDurationPassed_Params
+	{	};
+
+	/**
+	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnBegin
+	 */
+	struct UBP_Action_Block_Butcher_C_OnBegin_Params
 	{
 	public:
-		class UCustomActionParamsBase*                             InitParams;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		struct FGuid                                               RequestId;                                               // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		struct FCharacterActionOnBeginParams                       Params;                                                  // 0x0010(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	};
 
 	/**
@@ -82,26 +128,6 @@ namespace CG
 	{	};
 
 	/**
-	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnBlockOutroEnd
-	 */
-	struct UBP_Action_Block_Butcher_C_OnBlockOutroEnd_Params
-	{
-	public:
-		struct FGuid                                               RequestId;                                               // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		struct FCharacterActionOnEndParams                         Params;                                                  // 0x0010(0x0028)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-	};
-
-	/**
-	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnBegin
-	 */
-	struct UBP_Action_Block_Butcher_C_OnBegin_Params
-	{
-	public:
-		struct FGuid                                               RequestId;                                               // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		struct FCharacterActionOnBeginParams                       Params;                                                  // 0x0010(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-	};
-
-	/**
 	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnAnyImpactEvent
 	 */
 	struct UBP_Action_Block_Butcher_C_OnAnyImpactEvent_Params
@@ -118,29 +144,23 @@ namespace CG
 	{	};
 
 	/**
-	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.EndRequestedBy
+	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnConstruct
 	 */
-	struct UBP_Action_Block_Butcher_C_EndRequestedBy_Params
+	struct UBP_Action_Block_Butcher_C_OnConstruct_Params
 	{
 	public:
-		struct FGuid                                               QueuedActionId;                                          // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		class UCustomActionParamsBase*                             InitParams;                                              // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
-	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnEnd
+	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnBlockOutroEnd
 	 */
-	struct UBP_Action_Block_Butcher_C_OnEnd_Params
+	struct UBP_Action_Block_Butcher_C_OnBlockOutroEnd_Params
 	{
 	public:
-		struct FGuid                                               RequestId;                                               // 0x0000(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		struct FGuid                                               RequestId;                                               // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		struct FCharacterActionOnEndParams                         Params;                                                  // 0x0010(0x0028)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	};
-
-	/**
-	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.OnMaxDurationPassed
-	 */
-	struct UBP_Action_Block_Butcher_C_OnMaxDurationPassed_Params
-	{	};
 
 	/**
 	 * Function BP_Action_Block_Butcher.BP_Action_Block_Butcher_C.ExecuteUbergraph_BP_Action_Block_Butcher

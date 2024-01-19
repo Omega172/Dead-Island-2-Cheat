@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FF55D0
 	 * 		Name   -> Function DynamicActorTracker.DynamicActorTrackingManager.WriteToCSV
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void ADynamicActorTrackingManager::WriteToCSV()
 	{
@@ -25,15 +25,16 @@ namespace CG
 		ADynamicActorTrackingManager_WriteToCSV_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FF55B0
 	 * 		Name   -> Function DynamicActorTracker.DynamicActorTrackingManager.TakeWorldSnapshot
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void ADynamicActorTrackingManager::TakeWorldSnapshot()
 	{
@@ -44,6 +45,7 @@ namespace CG
 		ADynamicActorTrackingManager_TakeWorldSnapshot_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

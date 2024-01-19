@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -67,14 +67,14 @@ namespace CG
 	{
 	public:
 		bool                                                       bManualCreation;                                         // 0x0000(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_927J[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_HPY3[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSoftClassPath                                      ActorClass;                                              // 0x0008(0x0018) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FSoftClassPath                                      NonActorClass;                                           // 0x0020(0x0018) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EManagerScope                                              Scope;                                                   // 0x0038(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_H8CC[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RZJ4[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UScriptStruct*>                               ScopeFilters;                                            // 0x0040(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 		EManagerNetworking                                         Networking;                                              // 0x0050(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_6JDR[0x7];                                   // 0x0051(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LGMN[0x7];                                   // 0x0051(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UScriptStruct*>                               CreationDependencies;                                    // 0x0058(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 		TArray<class UScriptStruct*>                               InitialisationDependencies;                              // 0x0068(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 		TArray<struct FManagerPreCache>                            PreCacheData;                                            // 0x0078(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
@@ -117,7 +117,7 @@ namespace CG
 	struct FManagerFilter
 	{
 	public:
-		unsigned char                                              UnknownData_L2UK[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NGWX[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -151,7 +151,7 @@ namespace CG
 	struct FSimpleDictionary
 	{
 	public:
-		unsigned char                                              UnknownData_Q5SL[0x50];                                  // 0x0000(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WAAX[0x50];                                  // 0x0000(0x0050) MISSED OFFSET (PADDING)
 	};
 
 }

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_ProjectileResponse_AddFact.BP_ProjectileResponse_AddFact_C.SetFactsAsReplicating
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		TArray<struct FKnowledgeBaseFactKey>               Facts                                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 */
@@ -38,9 +38,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_ProjectileResponse_AddFact.BP_ProjectileResponse_AddFact_C.ReceiveOnTriggered
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
 	void UBP_ProjectileResponse_AddFact_C::ReceiveOnTriggered()
 	{
@@ -57,9 +57,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_ProjectileResponse_AddFact.BP_ProjectileResponse_AddFact_C.ReceiveInitialize
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
 	void UBP_ProjectileResponse_AddFact_C::ReceiveInitialize()
 	{
@@ -76,9 +76,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_ProjectileResponse_AddFact.BP_ProjectileResponse_AddFact_C.ExecuteUbergraph_BP_ProjectileResponse_AddFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

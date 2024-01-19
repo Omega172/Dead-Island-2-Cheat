@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.OnRep_Inventorypopulated
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_DebugVendor_C::OnRep_Inventorypopulated()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.OnItemCreated
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               Success                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class AItemActor*                                  Item                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -57,9 +57,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.PopulateInventory
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_DebugVendor_C::PopulateInventory()
 	{
@@ -76,9 +76,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.UpdateState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		EDebugVendorStates                                 NewState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -98,9 +98,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.BndEvt__TriggerShape_K2Node_ComponentBoundEvent_0_InteractorEnteredSignature__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		class UTriggerInteractorComponent*                 Interactor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -120,9 +120,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.BndEvt__TriggerShape_K2Node_ComponentBoundEvent_1_InteractorLeftSignature__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		class UTriggerInteractorComponent*                 Interactor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -142,9 +142,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.StateIdle
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_DebugVendor_C::StateIdle()
 	{
@@ -161,9 +161,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.StateAttract
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_DebugVendor_C::StateAttract()
 	{
@@ -180,9 +180,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.StateInMenu
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_DebugVendor_C::StateInMenu()
 	{
@@ -199,9 +199,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.ReceiveBeginPlay
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
 	void ABP_Base_DebugVendor_C::ReceiveBeginPlay()
 	{
@@ -218,9 +218,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.BndEvt__Interactive_K2Node_ComponentBoundEvent_2_InteractDelegate__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		class APawn*                                       User                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EInteractionMode                                   Mode                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -244,9 +244,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.MenuClosed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_DebugVendor_C::MenuClosed()
 	{
@@ -263,9 +263,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.BndEvt__Interactive_K2Node_ComponentBoundEvent_3_InteractDelegate__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		class APawn*                                       User                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EInteractionMode                                   Mode                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -289,9 +289,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.OpenMenu
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_DebugVendor_C::OpenMenu()
 	{
@@ -308,9 +308,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_DebugVendor.BP_Base_DebugVendor_C.ExecuteUbergraph_BP_Base_DebugVendor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

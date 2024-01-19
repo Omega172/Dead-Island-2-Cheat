@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -26,9 +26,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB0890
 	 * 		Name   -> Function DSFramework.CharacterAction.SyncReplicatedState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UCharacterAction::SyncReplicatedState()
 	{
@@ -39,15 +39,16 @@ namespace CG
 		UCharacterAction_SyncReplicatedState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB0800
 	 * 		Name   -> Function DSFramework.CharacterAction.SetWantsTickBP
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bEnable                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -61,15 +62,16 @@ namespace CG
 		params.bEnable = bEnable;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9520
 	 * 		Name   -> Function DSFramework.CharacterAction.ResolveQueueTime
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
 	float UCharacterAction::ResolveQueueTime()
 	{
@@ -80,6 +82,7 @@ namespace CG
 		UCharacterAction_ResolveQueueTime_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -88,9 +91,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB05B0
 	 * 		Name   -> Function DSFramework.CharacterAction.Resolve
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionResolveParams               Params                                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		ECharacterActionResolution                         OutResolution                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -106,6 +109,7 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -117,9 +121,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function DSFramework.CharacterAction.OnTick
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              DeltaTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -139,9 +143,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB02A0
 	 * 		Name   -> Function DSFramework.CharacterAction.OnResolved
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnResolvedParams            Params                                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -157,15 +161,16 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB01C0
 	 * 		Name   -> Function DSFramework.CharacterAction.OnReplicatedStateUpdated
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, HasDefaults, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UCustomActionParamsBase*                     ReplicatedState                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -181,15 +186,16 @@ namespace CG
 		params.ReplicatedState = ReplicatedState;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB00C0
 	 * 		Name   -> Function DSFramework.CharacterAction.OnEnd
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnEndParams                 Params                                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -205,15 +211,16 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function DSFramework.CharacterAction.OnConstruct
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		class UCustomActionParamsBase*                     InitParams                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -233,9 +240,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0313F1D0
 	 * 		Name   -> Function DSFramework.CharacterAction.OnBeginEarly
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
 	bool UCharacterAction::OnBeginEarly()
 	{
@@ -246,6 +253,7 @@ namespace CG
 		UCharacterAction_OnBeginEarly_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -254,9 +262,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAFE90
 	 * 		Name   -> Function DSFramework.CharacterAction.OnBegin
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, HasOutParms, HasDefaults, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnBeginParams               Params                                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -272,15 +280,16 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAFBB0
 	 * 		Name   -> Function DSFramework.CharacterAction.IsActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UCharacterAction::IsActive()
 	{
@@ -291,6 +300,7 @@ namespace CG
 		UCharacterAction_IsActive_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -299,9 +309,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAFA70
 	 * 		Name   -> Function DSFramework.CharacterAction.HasActionAuthority
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UCharacterAction::HasActionAuthority()
 	{
@@ -312,6 +322,7 @@ namespace CG
 		UCharacterAction_HasActionAuthority_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -320,9 +331,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAFA40
 	 * 		Name   -> Function DSFramework.CharacterAction.GetOwner
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class AActor* UCharacterAction::GetOwner()
 	{
@@ -333,6 +344,7 @@ namespace CG
 		UCharacterAction_GetOwner_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -341,9 +353,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAFA10
 	 * 		Name   -> Function DSFramework.CharacterAction.GetNetworkRunningTime
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UCharacterAction::GetNetworkRunningTime()
 	{
@@ -354,6 +366,7 @@ namespace CG
 		UCharacterAction_GetNetworkRunningTime_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -362,9 +375,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF9E0
 	 * 		Name   -> Function DSFramework.CharacterAction.GetElapsedTime
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UCharacterAction::GetElapsedTime()
 	{
@@ -375,6 +388,7 @@ namespace CG
 		UCharacterAction_GetElapsedTime_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -383,9 +397,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01CD8810
 	 * 		Name   -> Function DSFramework.CharacterAction.GatherPrerequisites
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
 	bool UCharacterAction::GatherPrerequisites()
 	{
@@ -396,6 +410,7 @@ namespace CG
 		UCharacterAction_GatherPrerequisites_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -404,9 +419,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAED70
 	 * 		Name   -> Function DSFramework.CharacterAction.EndRequestedBy
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, HasDefaults, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       QueuedActionId                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -420,15 +435,16 @@ namespace CG
 		params.QueuedActionId = QueuedActionId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAECB0
 	 * 		Name   -> Function DSFramework.CharacterAction.EndAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		ECharacterActionEndReason                          Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DelayTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -444,15 +460,16 @@ namespace CG
 		params.DelayTime = DelayTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAEC30
 	 * 		Name   -> Function DSFramework.CharacterAction.CustomSignal
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 	 * Parameters:
 	 * 		class FName                                        SignalName                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -466,6 +483,7 @@ namespace CG
 		params.SignalName = SignalName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -500,9 +518,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBD800
 	 * 		Name   -> Function DSFramework.DSAIMovementComponent.RemoveMoveTargetEventDelegate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
@@ -518,15 +536,16 @@ namespace CG
 		params.Delegate = Delegate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBD730
 	 * 		Name   -> Function DSFramework.DSAIMovementComponent.RemoveMoveTarget
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Delay                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -542,15 +561,16 @@ namespace CG
 		params.Delay = Delay;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBD110
 	 * 		Name   -> Function DSFramework.DSAIMovementComponent.OnMovementCompletedFromController
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		struct FAIRequestID                                RequestId                                                  (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EPathFollowingResult                               Result                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -566,15 +586,16 @@ namespace CG
 		params.Result = Result;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCAD0
 	 * 		Name   -> Function DSFramework.DSAIMovementComponent.GetMoveTargetParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -588,6 +609,7 @@ namespace CG
 		params.Name = Name;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -596,9 +618,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCA40
 	 * 		Name   -> Function DSFramework.DSAIMovementComponent.GetDistanceToCurrentMoveTarget
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	float UDSAIMovementComponent::GetDistanceToCurrentMoveTarget()
 	{
@@ -609,6 +631,7 @@ namespace CG
 		UDSAIMovementComponent_GetDistanceToCurrentMoveTarget_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -617,9 +640,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBC9C0
 	 * 		Name   -> Function DSFramework.DSAIMovementComponent.GetCurrentMoveTargetLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, Const)
 	 */
 	struct FVector UDSAIMovementComponent::GetCurrentMoveTargetLocation()
 	{
@@ -630,6 +653,7 @@ namespace CG
 		UDSAIMovementComponent_GetCurrentMoveTargetLocation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -638,9 +662,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBC630
 	 * 		Name   -> Function DSFramework.DSAIMovementComponent.AddMoveTargetEventDelegate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
@@ -656,15 +680,16 @@ namespace CG
 		params.Delegate = Delegate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBC490
 	 * 		Name   -> Function DSFramework.DSAIMovementComponent.AddMoveTarget
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FMoveTarget                                 MoveTarget                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -682,6 +707,7 @@ namespace CG
 		params.bUseDefaultParams = bUseDefaultParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -702,9 +728,80 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1ED0
+	 * 		Name   -> Function DSFramework.ItemArchetype.RequestAssetsForActor
+	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, Const)
+	 * Parameters:
+	 * 		class AActor*                                      Requestor                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		bool                                               bHighPriority                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UItemArchetype::RequestAssetsForActor(class AActor* Requestor, bool bHighPriority, const class FName& Reason)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemArchetype.RequestAssetsForActor");
+		
+		UItemArchetype_RequestAssetsForActor_Params params {};
+		params.Requestor = Requestor;
+		params.bHighPriority = bHighPriority;
+		params.Reason = Reason;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD1DF0
+	 * 		Name   -> Function DSFramework.ItemArchetype.ReleaseAssetsForActor
+	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, Const)
+	 * Parameters:
+	 * 		class AActor*                                      Requestor                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UItemArchetype::ReleaseAssetsForActor(class AActor* Requestor, const class FName& Reason)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemArchetype.ReleaseAssetsForActor");
+		
+		UItemArchetype_ReleaseAssetsForActor_Params params {};
+		params.Requestor = Requestor;
+		params.Reason = Reason;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> DelegateFunction DSFramework.ItemArchetype.OnAssetsLoaded__DelegateSignature
+	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
+	 */
+	void UItemArchetype::OnAssetsLoaded__DelegateSignature()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("DelegateFunction DSFramework.ItemArchetype.OnAssetsLoaded__DelegateSignature");
+		
+		UItemArchetype_OnAssetsLoaded__DelegateSignature_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD1360
 	 * 		Name   -> Function DSFramework.ItemArchetype.GetUINameCaps
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class FText UItemArchetype::GetUINameCaps()
 	{
@@ -715,6 +812,7 @@ namespace CG
 		UItemArchetype_GetUINameCaps_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -738,695 +836,6 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction UItemInstanceData.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* UItemInstanceData::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class DSFramework.ItemInstanceData");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.UpdateActorVisualsToReflectItem
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		EItemVisualDetail                                  Detail                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	bool AItemActor::UpdateActorVisualsToReflectItem(class AActor* Actor, EItemVisualDetail Detail)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.UpdateActorVisualsToReflectItem");
-		
-		AItemActor_UpdateActorVisualsToReflectItem_Params params {};
-		params.Actor = Actor;
-		params.Detail = Detail;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.ShouldHideInCounters
-	 * 		Flags  -> ()
-	 */
-	bool AItemActor::ShouldHideInCounters()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.ShouldHideInCounters");
-		
-		AItemActor_ShouldHideInCounters_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.SetActorVisuals
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		EItemVisualDetail                                  Detail                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	bool AItemActor::SetActorVisuals(class AActor* Actor, EItemVisualDetail Detail)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.SetActorVisuals");
-		
-		AItemActor_SetActorVisuals_Params params {};
-		params.Actor = Actor;
-		params.Detail = Detail;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.OnTickReasonsCleared
-	 * 		Flags  -> ()
-	 */
-	void AItemActor::OnTickReasonsCleared()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnTickReasonsCleared");
-		
-		AItemActor_OnTickReasonsCleared_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.OnTickReasonsActivated
-	 * 		Flags  -> ()
-	 */
-	void AItemActor::OnTickReasonsActivated()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnTickReasonsActivated");
-		
-		AItemActor_OnTickReasonsActivated_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.OnRep_UIDataChanged
-	 * 		Flags  -> ()
-	 */
-	void AItemActor::OnRep_UIDataChanged()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnRep_UIDataChanged");
-		
-		AItemActor_OnRep_UIDataChanged_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.OnRep_OwnerChanged
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		class UInventoryComponent*                         PrevInventory                                              (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	void AItemActor::OnRep_OwnerChanged(class UInventoryComponent* PrevInventory)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnRep_OwnerChanged");
-		
-		AItemActor_OnRep_OwnerChanged_Params params {};
-		params.PrevInventory = PrevInventory;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.OnRep_ItemInstanceData
-	 * 		Flags  -> ()
-	 */
-	void AItemActor::OnRep_ItemInstanceData()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnRep_ItemInstanceData");
-		
-		AItemActor_OnRep_ItemInstanceData_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.OnRep_ItemArchetypePackage
-	 * 		Flags  -> ()
-	 */
-	void AItemActor::OnRep_ItemArchetypePackage()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnRep_ItemArchetypePackage");
-		
-		AItemActor_OnRep_ItemArchetypePackage_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.OnRep_ItemArchetype
-	 * 		Flags  -> ()
-	 */
-	void AItemActor::OnRep_ItemArchetype()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnRep_ItemArchetype");
-		
-		AItemActor_OnRep_ItemArchetype_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.K2_SetActorVisuals
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		EItemVisualDetail                                  Detail                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	bool AItemActor::K2_SetActorVisuals(class AActor* Actor, EItemVisualDetail Detail)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.K2_SetActorVisuals");
-		
-		AItemActor_K2_SetActorVisuals_Params params {};
-		params.Actor = Actor;
-		params.Detail = Detail;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.K2_OnInitialize
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		class UItemArchetype*                              ArchetypeIn                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		class UItemInstanceData*                           InstanceDataIn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	void AItemActor::K2_OnInitialize(class UItemArchetype* ArchetypeIn, class UItemInstanceData* InstanceDataIn)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.K2_OnInitialize");
-		
-		AItemActor_K2_OnInitialize_Params params {};
-		params.ArchetypeIn = ArchetypeIn;
-		params.InstanceDataIn = InstanceDataIn;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.IsSellable
-	 * 		Flags  -> ()
-	 */
-	bool AItemActor::IsSellable()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.IsSellable");
-		
-		AItemActor_IsSellable_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.IsScrappable
-	 * 		Flags  -> ()
-	 */
-	bool AItemActor::IsScrappable()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.IsScrappable");
-		
-		AItemActor_IsScrappable_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.IsReady
-	 * 		Flags  -> ()
-	 */
-	bool AItemActor::IsReady()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.IsReady");
-		
-		AItemActor_IsReady_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.IsFreeInShops
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		class APlayerController*                           ForPlayer                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	bool AItemActor::IsFreeInShops(class APlayerController* ForPlayer)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.IsFreeInShops");
-		
-		AItemActor_IsFreeInShops_Params params {};
-		params.ForPlayer = ForPlayer;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.IsDroppable
-	 * 		Flags  -> ()
-	 */
-	bool AItemActor::IsDroppable()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.IsDroppable");
-		
-		AItemActor_IsDroppable_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetUISubCategory
-	 * 		Flags  -> ()
-	 */
-	class FName AItemActor::GetUISubCategory()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUISubCategory");
-		
-		AItemActor_GetUISubCategory_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetUIStats
-	 * 		Flags  -> ()
-	 */
-	TMap<class FName, struct FItemStat> AItemActor::GetUIStats()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIStats");
-		
-		AItemActor_GetUIStats_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetUISourceName
-	 * 		Flags  -> ()
-	 */
-	class FString AItemActor::GetUISourceName()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUISourceName");
-		
-		AItemActor_GetUISourceName_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetUINameCaps
-	 * 		Flags  -> ()
-	 */
-	class FText AItemActor::GetUINameCaps()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUINameCaps");
-		
-		AItemActor_GetUINameCaps_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetUIName
-	 * 		Flags  -> ()
-	 */
-	class FText AItemActor::GetUIName()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIName");
-		
-		AItemActor_GetUIName_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetUIIconTexture
-	 * 		Flags  -> ()
-	 */
-	class UTexture2D* AItemActor::GetUIIconTexture()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIIconTexture");
-		
-		AItemActor_GetUIIconTexture_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetUIIconLabel
-	 * 		Flags  -> ()
-	 */
-	class FString AItemActor::GetUIIconLabel()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIIconLabel");
-		
-		AItemActor_GetUIIconLabel_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetUIIconImage
-	 * 		Flags  -> ()
-	 */
-	struct FSoftObjectPath AItemActor::GetUIIconImage()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIIconImage");
-		
-		AItemActor_GetUIIconImage_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetUIDescription
-	 * 		Flags  -> ()
-	 */
-	class FText AItemActor::GetUIDescription()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIDescription");
-		
-		AItemActor_GetUIDescription_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetMaxCashValueForUpgrades
-	 * 		Flags  -> ()
-	 */
-	int32_t AItemActor::GetMaxCashValueForUpgrades()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetMaxCashValueForUpgrades");
-		
-		AItemActor_GetMaxCashValueForUpgrades_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetMaxCashValue
-	 * 		Flags  -> ()
-	 */
-	int32_t AItemActor::GetMaxCashValue()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetMaxCashValue");
-		
-		AItemActor_GetMaxCashValue_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetItemUIComponent
-	 * 		Flags  -> ()
-	 */
-	class UItemUIComponent* AItemActor::GetItemUIComponent()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetItemUIComponent");
-		
-		AItemActor_GetItemUIComponent_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetInventoryOwner
-	 * 		Flags  -> ()
-	 */
-	class AActor* AItemActor::GetInventoryOwner()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetInventoryOwner");
-		
-		AItemActor_GetInventoryOwner_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemActor.GetCurrentCashValue
-	 * 		Flags  -> ()
-	 */
-	int32_t AItemActor::GetCurrentCashValue()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetCurrentCashValue");
-		
-		AItemActor_GetCurrentCashValue_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction AItemActor.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* AItemActor::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class DSFramework.ItemActor");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction UDSGFxMoviePlayer.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
@@ -1440,9 +849,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC9E0
 	 * 		Name   -> Function DSFramework.EquippableComponent.OnUnequippableReasonsCleared
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	void UEquippableComponent::OnUnequippableReasonsCleared()
 	{
@@ -1453,15 +862,16 @@ namespace CG
 		UEquippableComponent_OnUnequippableReasonsCleared_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC9C0
 	 * 		Name   -> Function DSFramework.EquippableComponent.OnUnequippableReasonsActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	void UEquippableComponent::OnUnequippableReasonsActive()
 	{
@@ -1472,15 +882,16 @@ namespace CG
 		UEquippableComponent_OnUnequippableReasonsActive_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01B9C9C0
 	 * 		Name   -> Function DSFramework.EquippableComponent.OnRemovalFromPaperDollSlotCompleted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
 	void UEquippableComponent::OnRemovalFromPaperDollSlotCompleted()
 	{
@@ -1491,15 +902,16 @@ namespace CG
 		UEquippableComponent_OnRemovalFromPaperDollSlotCompleted_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC8A0
 	 * 		Name   -> Function DSFramework.EquippableComponent.OnIsLocalPlayerFactChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UKnowledgeBaseComponent*                     InKnowledgeBaseComponent                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1517,15 +929,16 @@ namespace CG
 		params.FactChangeType = FactChangeType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC6A0
 	 * 		Name   -> Function DSFramework.EquippableComponent.IsAssignedToPaperDollSlot
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UEquippableComponent::IsAssignedToPaperDollSlot()
 	{
@@ -1536,6 +949,7 @@ namespace CG
 		UEquippableComponent_IsAssignedToPaperDollSlot_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1544,9 +958,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC3A0
 	 * 		Name   -> Function DSFramework.EquippableComponent.GetOwningItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class AItemActor* UEquippableComponent::GetOwningItem()
 	{
@@ -1557,6 +971,7 @@ namespace CG
 		UEquippableComponent_GetOwningItem_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1565,9 +980,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC260
 	 * 		Name   -> Function DSFramework.EquippableComponent.GetCurrentUser
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class AActor* UEquippableComponent::GetCurrentUser()
 	{
@@ -1578,6 +993,7 @@ namespace CG
 		UEquippableComponent_GetCurrentUser_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1586,9 +1002,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01BC2320
 	 * 		Name   -> Function DSFramework.EquippableComponent.ClientAddShortcutItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
 	 * 		class UItemAssignmentShortcutGroupInstance*        InShortcutGroup                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            InShortcutGroupIndex                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1604,6 +1020,7 @@ namespace CG
 		params.InShortcutGroupIndex = InShortcutGroupIndex;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -1638,9 +1055,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC16B0
 	 * 		Name   -> Function DSFramework.DSGameInstance.GetExclusiveUser
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UExclusiveUser* UDSGameInstance::GetExclusiveUser()
 	{
@@ -1651,6 +1068,7 @@ namespace CG
 		UDSGameInstance_GetExclusiveUser_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1673,9 +1091,798 @@ namespace CG
 
 	/**
 	 * Function:
+	 * 		RVA    -> 0x03FD7400
+	 * 		Name   -> Function DSFramework.ItemActor.UpdateActorVisualsToReflectItem
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * Parameters:
+	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EItemVisualDetail                                  Detail                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	bool AItemActor::UpdateActorVisualsToReflectItem(class AActor* Actor, EItemVisualDetail Detail)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.UpdateActorVisualsToReflectItem");
+		
+		AItemActor_UpdateActorVisualsToReflectItem_Params params {};
+		params.Actor = Actor;
+		params.Detail = Detail;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03C965F0
+	 * 		Name   -> Function DSFramework.ItemActor.ShouldHideInCounters
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	bool AItemActor::ShouldHideInCounters()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.ShouldHideInCounters");
+		
+		AItemActor_ShouldHideInCounters_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD7170
+	 * 		Name   -> Function DSFramework.ItemActor.SetActorVisuals
+	 * 		Flags  -> (Native, Public, BlueprintCallable, Const)
+	 * Parameters:
+	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EItemVisualDetail                                  Detail                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void AItemActor::SetActorVisuals(class AActor* Actor, EItemVisualDetail Detail)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.SetActorVisuals");
+		
+		AItemActor_SetActorVisuals_Params params {};
+		params.Actor = Actor;
+		params.Detail = Detail;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6EE0
+	 * 		Name   -> Function DSFramework.ItemActor.OnVisualActorEndPlay
+	 * 		Flags  -> (Final, Native, Private)
+	 * Parameters:
+	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EEndPlayReason                                     EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void AItemActor::OnVisualActorEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnVisualActorEndPlay");
+		
+		AItemActor_OnVisualActorEndPlay_Params params {};
+		params.Actor = Actor;
+		params.EndPlayReason = EndPlayReason;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6E60
+	 * 		Name   -> Function DSFramework.ItemActor.OnVisualActorDestroyed
+	 * 		Flags  -> (Final, Native, Private)
+	 * Parameters:
+	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void AItemActor::OnVisualActorDestroyed(class AActor* Actor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnVisualActorDestroyed");
+		
+		AItemActor_OnVisualActorDestroyed_Params params {};
+		params.Actor = Actor;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6D70
+	 * 		Name   -> Function DSFramework.ItemActor.OnTickReasonsCleared
+	 * 		Flags  -> (Final, Native, Public)
+	 */
+	void AItemActor::OnTickReasonsCleared()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnTickReasonsCleared");
+		
+		AItemActor_OnTickReasonsCleared_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6D50
+	 * 		Name   -> Function DSFramework.ItemActor.OnTickReasonsActivated
+	 * 		Flags  -> (Final, Native, Public)
+	 */
+	void AItemActor::OnTickReasonsActivated()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnTickReasonsActivated");
+		
+		AItemActor_OnTickReasonsActivated_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03BED160
+	 * 		Name   -> Function DSFramework.ItemActor.OnRep_UIDataChanged
+	 * 		Flags  -> (Native, Public)
+	 */
+	void AItemActor::OnRep_UIDataChanged()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnRep_UIDataChanged");
+		
+		AItemActor_OnRep_UIDataChanged_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6CC0
+	 * 		Name   -> Function DSFramework.ItemActor.OnRep_OwnerChanged
+	 * 		Flags  -> (Native, Public)
+	 * Parameters:
+	 * 		class UInventoryComponent*                         PrevInventory                                              (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void AItemActor::OnRep_OwnerChanged(class UInventoryComponent* PrevInventory)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnRep_OwnerChanged");
+		
+		AItemActor_OnRep_OwnerChanged_Params params {};
+		params.PrevInventory = PrevInventory;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03BCA420
+	 * 		Name   -> Function DSFramework.ItemActor.OnRep_ItemInstanceData
+	 * 		Flags  -> (Native, Public)
+	 */
+	void AItemActor::OnRep_ItemInstanceData()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnRep_ItemInstanceData");
+		
+		AItemActor_OnRep_ItemInstanceData_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6CA0
+	 * 		Name   -> Function DSFramework.ItemActor.OnRep_ItemArchetypePackage
+	 * 		Flags  -> (Final, Native, Public)
+	 */
+	void AItemActor::OnRep_ItemArchetypePackage()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnRep_ItemArchetypePackage");
+		
+		AItemActor_OnRep_ItemArchetypePackage_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6C80
+	 * 		Name   -> Function DSFramework.ItemActor.OnRep_ItemArchetype
+	 * 		Flags  -> (Native, Public)
+	 */
+	void AItemActor::OnRep_ItemArchetype()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.OnRep_ItemArchetype");
+		
+		AItemActor_OnRep_ItemArchetype_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function DSFramework.ItemActor.K2_SetActorVisuals
+	 * 		Flags  -> (Event, Public, BlueprintEvent, Const)
+	 * Parameters:
+	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EItemVisualDetail                                  Detail                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	bool AItemActor::K2_SetActorVisuals(class AActor* Actor, EItemVisualDetail Detail)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.K2_SetActorVisuals");
+		
+		AItemActor_K2_SetActorVisuals_Params params {};
+		params.Actor = Actor;
+		params.Detail = Detail;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function DSFramework.ItemActor.K2_OnInitialize
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * Parameters:
+	 * 		class UItemArchetype*                              ArchetypeIn                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class UItemInstanceData*                           InstanceDataIn                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void AItemActor::K2_OnInitialize(class UItemArchetype* ArchetypeIn, class UItemInstanceData* InstanceDataIn)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.K2_OnInitialize");
+		
+		AItemActor_K2_OnInitialize_Params params {};
+		params.ArchetypeIn = ArchetypeIn;
+		params.InstanceDataIn = InstanceDataIn;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6AB0
+	 * 		Name   -> Function DSFramework.ItemActor.IsSellable
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	bool AItemActor::IsSellable()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.IsSellable");
+		
+		AItemActor_IsSellable_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03BC9E10
+	 * 		Name   -> Function DSFramework.ItemActor.IsScrappable
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	bool AItemActor::IsScrappable()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.IsScrappable");
+		
+		AItemActor_IsScrappable_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6A80
+	 * 		Name   -> Function DSFramework.ItemActor.IsReady
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	bool AItemActor::IsReady()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.IsReady");
+		
+		AItemActor_IsReady_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD69E0
+	 * 		Name   -> Function DSFramework.ItemActor.IsFreeInShops
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * Parameters:
+	 * 		class APlayerController*                           ForPlayer                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	bool AItemActor::IsFreeInShops(class APlayerController* ForPlayer)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.IsFreeInShops");
+		
+		AItemActor_IsFreeInShops_Params params {};
+		params.ForPlayer = ForPlayer;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD69B0
+	 * 		Name   -> Function DSFramework.ItemActor.IsDroppable
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	bool AItemActor::IsDroppable()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.IsDroppable");
+		
+		AItemActor_IsDroppable_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6970
+	 * 		Name   -> Function DSFramework.ItemActor.GetUISubCategory
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	class FName AItemActor::GetUISubCategory()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUISubCategory");
+		
+		AItemActor_GetUISubCategory_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6880
+	 * 		Name   -> Function DSFramework.ItemActor.GetUIStats
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	TMap<class FName, struct FItemStat> AItemActor::GetUIStats()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIStats");
+		
+		AItemActor_GetUIStats_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6800
+	 * 		Name   -> Function DSFramework.ItemActor.GetUISourceName
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	class FString AItemActor::GetUISourceName()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUISourceName");
+		
+		AItemActor_GetUISourceName_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6760
+	 * 		Name   -> Function DSFramework.ItemActor.GetUINameCaps
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	class FText AItemActor::GetUINameCaps()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUINameCaps");
+		
+		AItemActor_GetUINameCaps_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD66C0
+	 * 		Name   -> Function DSFramework.ItemActor.GetUIName
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	class FText AItemActor::GetUIName()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIName");
+		
+		AItemActor_GetUIName_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6690
+	 * 		Name   -> Function DSFramework.ItemActor.GetUIIconTexture
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	class UTexture2D* AItemActor::GetUIIconTexture()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIIconTexture");
+		
+		AItemActor_GetUIIconTexture_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6650
+	 * 		Name   -> Function DSFramework.ItemActor.GetUIIconLabel
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	class FString AItemActor::GetUIIconLabel()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIIconLabel");
+		
+		AItemActor_GetUIIconLabel_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD65C0
+	 * 		Name   -> Function DSFramework.ItemActor.GetUIIconImage
+	 * 		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+	 */
+	struct FSoftObjectPath AItemActor::GetUIIconImage()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIIconImage");
+		
+		AItemActor_GetUIIconImage_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6520
+	 * 		Name   -> Function DSFramework.ItemActor.GetUIDescription
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	class FText AItemActor::GetUIDescription()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetUIDescription");
+		
+		AItemActor_GetUIDescription_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD61D0
+	 * 		Name   -> Function DSFramework.ItemActor.GetMaxCashValueForUpgrades
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	int32_t AItemActor::GetMaxCashValueForUpgrades()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetMaxCashValueForUpgrades");
+		
+		AItemActor_GetMaxCashValueForUpgrades_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD61A0
+	 * 		Name   -> Function DSFramework.ItemActor.GetMaxCashValue
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	int32_t AItemActor::GetMaxCashValue()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetMaxCashValue");
+		
+		AItemActor_GetMaxCashValue_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03BCD7B0
+	 * 		Name   -> Function DSFramework.ItemActor.GetItemUIComponent
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	class UItemUIComponent* AItemActor::GetItemUIComponent()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetItemUIComponent");
+		
+		AItemActor_GetItemUIComponent_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD60B0
+	 * 		Name   -> Function DSFramework.ItemActor.GetInventoryOwner
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	class AActor* AItemActor::GetInventoryOwner()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetInventoryOwner");
+		
+		AItemActor_GetInventoryOwner_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD5E30
+	 * 		Name   -> Function DSFramework.ItemActor.GetCurrentCashValue
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	int32_t AItemActor::GetCurrentCashValue()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemActor.GetCurrentCashValue");
+		
+		AItemActor_GetCurrentCashValue_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
 	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AItemActor.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* AItemActor::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class DSFramework.ItemActor");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FAB420
+	 * 		Name   -> Function DSFramework.AchievementsManager.GetAchievementsManager
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+	 * Parameters:
+	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	class AAchievementsManager* AAchievementsManager::STATIC_GetAchievementsManager(class UObject* WorldContextObject)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.AchievementsManager.GetAchievementsManager");
+		
+		AAchievementsManager_GetAchievementsManager_Params params {};
+		params.WorldContextObject = WorldContextObject;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AAchievementsManager.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* AAchievementsManager::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class DSFramework.AchievementsManager");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FBE300
 	 * 		Name   -> Function DSFramework.DSCharacter.UpdateComponentHidden
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
 	 * 		class UActorComponent*                             Component                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1689,15 +1896,16 @@ namespace CG
 		params.Component = Component;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBDE50
 	 * 		Name   -> Function DSFramework.DSCharacter.SetPerspective
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EPerspective                                       NewPerspective                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1711,6 +1919,7 @@ namespace CG
 		params.NewPerspective = NewPerspective;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1719,9 +1928,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBDCE0
 	 * 		Name   -> Function DSFramework.DSCharacter.SetCharacterLocationWS
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		ECharacterLocationType                             LocationType                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     NewLocation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1741,15 +1950,16 @@ namespace CG
 		params.Teleport = Teleport;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBDB70
 	 * 		Name   -> Function DSFramework.DSCharacter.SetCharacterLocationLS
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		ECharacterLocationType                             LocationType                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     NewLocation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1769,15 +1979,16 @@ namespace CG
 		params.Teleport = Teleport;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBDB20
 	 * 		Name   -> Function DSFramework.DSCharacter.ServerCheatWalk
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, Native, Event, Public, NetServer, NetValidate)
 	 */
 	void ADSCharacter::ServerCheatWalk()
 	{
@@ -1788,15 +1999,16 @@ namespace CG
 		ADSCharacter_ServerCheatWalk_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBDAD0
 	 * 		Name   -> Function DSFramework.DSCharacter.ServerCheatGhost
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, Native, Event, Public, NetServer, NetValidate)
 	 */
 	void ADSCharacter::ServerCheatGhost()
 	{
@@ -1807,15 +2019,16 @@ namespace CG
 		ADSCharacter_ServerCheatGhost_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBDA80
 	 * 		Name   -> Function DSFramework.DSCharacter.ServerCheatFly
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, Native, Event, Public, NetServer, NetValidate)
 	 */
 	void ADSCharacter::ServerCheatFly()
 	{
@@ -1826,15 +2039,87 @@ namespace CG
 		ADSCharacter_ServerCheatFly_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBD470
+	 * 		Name   -> Function DSFramework.DSCharacter.RemoveHideRequest_BP
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * Parameters:
+	 * 		struct FGuid                                       ID                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EHideableTransitionType                            TransitionType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void ADSCharacter::RemoveHideRequest_BP(const struct FGuid& ID, EHideableTransitionType TransitionType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.DSCharacter.RemoveHideRequest_BP");
+		
+		ADSCharacter_RemoveHideRequest_BP_Params params {};
+		params.ID = ID;
+		params.TransitionType = TransitionType;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FBD250
+	 * 		Name   -> Function DSFramework.DSCharacter.OnSpatialCellDeactivated
+	 * 		Flags  -> (Final, Native, Protected)
+	 * Parameters:
+	 * 		class USpatialTickComponent*                       Component                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void ADSCharacter::OnSpatialCellDeactivated(class USpatialTickComponent* Component)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.DSCharacter.OnSpatialCellDeactivated");
+		
+		ADSCharacter_OnSpatialCellDeactivated_Params params {};
+		params.Component = Component;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FBD1D0
+	 * 		Name   -> Function DSFramework.DSCharacter.OnSpatialCellActivated
+	 * 		Flags  -> (Final, Native, Protected)
+	 * Parameters:
+	 * 		class USpatialTickComponent*                       Component                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void ADSCharacter::OnSpatialCellActivated(class USpatialTickComponent* Component)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.DSCharacter.OnSpatialCellActivated");
+		
+		ADSCharacter_OnSpatialCellActivated_Params params {};
+		params.Component = Component;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FBCCB0
 	 * 		Name   -> Function DSFramework.DSCharacter.IsInAir
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool ADSCharacter::IsInAir()
 	{
@@ -1845,6 +2130,7 @@ namespace CG
 		ADSCharacter_IsInAir_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1853,9 +2139,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCBF0
 	 * 		Name   -> Function DSFramework.DSCharacter.IsControlAuthority
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool ADSCharacter::IsControlAuthority()
 	{
@@ -1866,6 +2152,7 @@ namespace CG
 		ADSCharacter_IsControlAuthority_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1874,9 +2161,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCB90
 	 * 		Name   -> Function DSFramework.DSCharacter.GetVelocityForLocomotion
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FVector ADSCharacter::GetVelocityForLocomotion()
 	{
@@ -1887,6 +2174,7 @@ namespace CG
 		ADSCharacter_GetVelocityForLocomotion_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1895,9 +2183,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCA00
 	 * 		Name   -> Function DSFramework.DSCharacter.GetDSMesh
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UDSSkeletalMeshComponent* ADSCharacter::GetDSMesh()
 	{
@@ -1908,6 +2196,7 @@ namespace CG
 		ADSCharacter_GetDSMesh_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1916,9 +2205,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F0DAC0
 	 * 		Name   -> Function DSFramework.DSCharacter.GetDSCharacterMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UDSCharacterMovementComponent* ADSCharacter::GetDSCharacterMovement()
 	{
@@ -1929,6 +2218,7 @@ namespace CG
 		ADSCharacter_GetDSCharacterMovement_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1937,9 +2227,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F0DAE0
 	 * 		Name   -> Function DSFramework.DSCharacter.GetDSCapsuleComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UDSCapsuleComponent* ADSCharacter::GetDSCapsuleComponent()
 	{
@@ -1950,6 +2240,7 @@ namespace CG
 		ADSCharacter_GetDSCapsuleComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1958,9 +2249,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBC990
 	 * 		Name   -> Function DSFramework.DSCharacter.GetCurrentAnimInstance
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UAnimInstance* ADSCharacter::GetCurrentAnimInstance()
 	{
@@ -1971,6 +2262,7 @@ namespace CG
 		ADSCharacter_GetCurrentAnimInstance_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1979,9 +2271,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBC8F0
 	 * 		Name   -> Function DSFramework.DSCharacter.GetCharacterLocationWS
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		ECharacterLocationType                             LocationType                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1995,6 +2287,7 @@ namespace CG
 		params.LocationType = LocationType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2003,9 +2296,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBC850
 	 * 		Name   -> Function DSFramework.DSCharacter.GetCharacterLocationLS
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		ECharacterLocationType                             LocationType                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2019,6 +2312,34 @@ namespace CG
 		params.LocationType = LocationType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FBC2E0
+	 * 		Name   -> Function DSFramework.DSCharacter.AddHideRequest_BP
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
+	 * Parameters:
+	 * 		class FName                                        Requester                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		EHideableTransitionType                            TransitionType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	struct FGuid ADSCharacter::AddHideRequest_BP(const class FName& Requester, EHideableTransitionType TransitionType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.DSCharacter.AddHideRequest_BP");
+		
+		ADSCharacter_AddHideRequest_BP_Params params {};
+		params.Requester = Requester;
+		params.TransitionType = TransitionType;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2041,9 +2362,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC28C0
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.UpdateMovementModeRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EMovementMode                                      NewRequestedMovementMode                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2061,15 +2382,16 @@ namespace CG
 		params.NewCustomMovementMode = NewCustomMovementMode;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC21C0
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.RemovePushTypeRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2083,15 +2405,16 @@ namespace CG
 		params.RequestId = RequestId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC2130
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.RemoveMovementModeRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2105,15 +2428,16 @@ namespace CG
 		params.RequestId = RequestId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC2020
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.IsActiveMovementModeRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2127,6 +2451,7 @@ namespace CG
 		params.RequestId = RequestId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2135,9 +2460,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC1CE0
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.InstantDampenExternalVelocity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              DampenToFraction                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EExtraVelocityChannel                              Channel                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2153,15 +2478,16 @@ namespace CG
 		params.Channel = Channel;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC1740
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.GetLastWalkingFeetLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     Loc                                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EOkInvalidResult                                   Result                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2175,6 +2501,7 @@ namespace CG
 		UDSCharacterMovementComponent_GetLastWalkingFeetLocation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2186,9 +2513,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC16D0
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.GetFilteredCollisionSlowDownScale
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UDSCharacterMovementComponent::GetFilteredCollisionSlowDownScale()
 	{
@@ -2199,6 +2526,7 @@ namespace CG
 		UDSCharacterMovementComponent_GetFilteredCollisionSlowDownScale_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2207,9 +2535,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC1260
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.ApplyCollsionSlowDownImpulse
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FHitResult                                  Hit                                                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		class UPrimitiveComponent*                         OtherComp                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2227,15 +2555,16 @@ namespace CG
 		params.Impulse = Impulse;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC10A0
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.AddTargetExternalVelocityImpulse
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     TargetVelocity                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Strength                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2257,15 +2586,16 @@ namespace CG
 		params.DeltaTime = DeltaTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC0FD0
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.AddPushTypeRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        PushType                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2281,6 +2611,7 @@ namespace CG
 		params.PushType = PushType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2289,9 +2620,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC0E30
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.AddMovementModeRequestWithCallback
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EMovementMode                                      RequestedMovementMode                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2311,6 +2642,7 @@ namespace CG
 		params.RequestActiveCallback = RequestActiveCallback;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2319,9 +2651,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC0D20
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.AddMovementModeRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EMovementMode                                      RequestedMovementMode                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2339,6 +2671,7 @@ namespace CG
 		params.RequestedCustomMovementMode = RequestedCustomMovementMode;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2347,9 +2680,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC0C00
 	 * 		Name   -> Function DSFramework.DSCharacterMovementComponent.AddExternalVelocityImpulse
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     ExtraVelocity                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EExtraVelocityChannel                              Channel                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2367,6 +2700,7 @@ namespace CG
 		params.bOnlyIfAuthoritative = bOnlyIfAuthoritative;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -2387,14 +2721,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBDF60
 	 * 		Name   -> Function DSFramework.DSAIController.UnregisterPossessionListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     Listener                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ADSAIController::UnregisterPossessionListener(class UObject* Listener, class AActor* Actor)
+	void ADSAIController::STATIC_UnregisterPossessionListener(class UObject* Listener, class AActor* Actor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2405,15 +2739,16 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBD550
 	 * 		Name   -> Function DSFramework.DSAIController.RemoveHomeArea
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Source                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FHomeArea                                   HomeArea                                                   (Parm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
@@ -2429,21 +2764,22 @@ namespace CG
 		params.HomeArea = HomeArea;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBD2D0
 	 * 		Name   -> Function DSFramework.DSAIController.RegisterPossessionListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     Listener                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bReceiveLatePossess                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ADSAIController::RegisterPossessionListener(class UObject* Listener, class AActor* Actor, bool bReceiveLatePossess)
+	void ADSAIController::STATIC_RegisterPossessionListener(class UObject* Listener, class AActor* Actor, bool bReceiveLatePossess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2455,15 +2791,16 @@ namespace CG
 		params.bReceiveLatePossess = bReceiveLatePossess;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCA90
 	 * 		Name   -> Function DSFramework.DSAIController.GetHomeAreaAsSpherical
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 	 */
 	struct FHomeArea ADSAIController::GetHomeAreaAsSpherical()
 	{
@@ -2474,6 +2811,7 @@ namespace CG
 		ADSAIController_GetHomeAreaAsSpherical_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2482,9 +2820,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBC3B0
 	 * 		Name   -> Function DSFramework.DSAIController.AddHomeArea
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Source                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FHomeArea                                   HomeArea                                                   (Parm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
@@ -2500,6 +2838,7 @@ namespace CG
 		params.HomeArea = HomeArea;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -2520,9 +2859,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC8460
 	 * 		Name   -> Function DSFramework.DSPlayerController.SetMenuMouse
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bEnable                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Reason                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2538,15 +2877,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC80B0
 	 * 		Name   -> Function DSFramework.DSPlayerController.OnMenuMouseDisabled
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void ADSPlayerController::OnMenuMouseDisabled()
 	{
@@ -2557,15 +2897,16 @@ namespace CG
 		ADSPlayerController_OnMenuMouseDisabled_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC8090
 	 * 		Name   -> Function DSFramework.DSPlayerController.OnMenuMouseActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void ADSPlayerController::OnMenuMouseActive()
 	{
@@ -2576,15 +2917,58 @@ namespace CG
 		ADSPlayerController_OnMenuMouseActive_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB73B0
+	 * 		Name   -> Function DSFramework.DSPlayerController.LogActiveInputFilters
+	 * 		Flags  -> (Final, Exec, Native, Public)
+	 */
+	void ADSPlayerController::LogActiveInputFilters()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.DSPlayerController.LogActiveInputFilters");
+		
+		ADSPlayerController_LogActiveInputFilters_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FC7A00
+	 * 		Name   -> Function DSFramework.DSPlayerController.GetCharacterTypeString
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	class FString ADSPlayerController::GetCharacterTypeString()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.DSPlayerController.GetCharacterTypeString");
+		
+		ADSPlayerController_GetCharacterTypeString_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FC5F50
 	 * 		Name   -> Function DSFramework.DSPlayerController.ActionFilterEnable
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UInputMapperActionFilterDefinition*          ActionFilterDefinition                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bEnable                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2602,6 +2986,7 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -2622,9 +3007,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB0700
 	 * 		Name   -> Function DSFramework.ChallengeComponent.ServerOnTierCompleted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            TierCompleted                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2640,15 +3025,16 @@ namespace CG
 		params.TierCompleted = TierCompleted;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB0390
 	 * 		Name   -> Function DSFramework.ChallengeComponent.OnTierCompleted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            TierCompleted                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2664,15 +3050,16 @@ namespace CG
 		params.TierCompleted = TierCompleted;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01D089A0
 	 * 		Name   -> Function DSFramework.ChallengeComponent.ClientPauseChallenge
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2686,15 +3073,16 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAEA90
 	 * 		Name   -> Function DSFramework.ChallengeComponent.ClientIncrementChallenge
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            ProgressDelta                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2710,15 +3098,16 @@ namespace CG
 		params.ProgressDelta = ProgressDelta;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01B54170
 	 * 		Name   -> Function DSFramework.ChallengeComponent.ClientEnableChallenge
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2732,6 +3121,7 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -2766,9 +3156,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBD8E0
 	 * 		Name   -> Function DSFramework.DespawnManager.ScheduleActorDespawn
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        DespawnConditionsName                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2788,15 +3178,16 @@ namespace CG
 		params.DespawnCallback = DespawnCallback;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCBD0
 	 * 		Name   -> Function DSFramework.DespawnManager.ResetDespawning
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void ADespawnManager::ResetDespawning()
 	{
@@ -2807,15 +3198,16 @@ namespace CG
 		ADespawnManager_ResetDespawning_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBD050
 	 * 		Name   -> Function DSFramework.DespawnManager.OnDespawningActorEndPlay
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EEndPlayReason                                     EndPlayReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2831,15 +3223,16 @@ namespace CG
 		params.EndPlayReason = EndPlayReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03BD5BE0
 	 * 		Name   -> Function DSFramework.DespawnManager.NetMulticastHide
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2853,15 +3246,16 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01B8FA30
 	 * 		Name   -> Function DSFramework.DespawnManager.NetMulticastEndExclusiveObservation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APlayerController*                           Observer                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2877,15 +3271,16 @@ namespace CG
 		params.Observer = Observer;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCF10
 	 * 		Name   -> Function DSFramework.DespawnManager.NetMulticastBeginExclusiveObservation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class APlayerController*                           Observer                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2905,15 +3300,16 @@ namespace CG
 		params.NotVisibleAtDistance = NotVisibleAtDistance;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCBD0
 	 * 		Name   -> Function DSFramework.DespawnManager.InstantlyDespawnAllActors
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void ADespawnManager::InstantlyDespawnAllActors()
 	{
@@ -2924,15 +3320,16 @@ namespace CG
 		ADespawnManager_InstantlyDespawnAllActors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBC710
 	 * 		Name   -> Function DSFramework.DespawnManager.DelayedRemoveActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DelayTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2952,15 +3349,16 @@ namespace CG
 		params.bImmediateHide = bImmediateHide;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBBFB0
 	 * 		Name   -> Function DSFramework.DespawnManager.AbortActorDespawn
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2974,6 +3372,7 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -3050,9 +3449,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC0B20
 	 * 		Name   -> Function DSFramework.DSGameViewportClient.AddExternalDisplayInfo
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      InText                                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLinearColor                                Colour                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3068,6 +3467,7 @@ namespace CG
 		params.Colour = Colour;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -3102,9 +3502,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC81B0
 	 * 		Name   -> Function DSFramework.DSInputProfileManagerComponent.PushInputContext
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        InContext                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3118,15 +3518,16 @@ namespace CG
 		params.InContext = InContext;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC8110
 	 * 		Name   -> Function DSFramework.DSInputProfileManagerComponent.PopInputContext
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        InContext                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3140,15 +3541,16 @@ namespace CG
 		params.InContext = InContext;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC7E80
 	 * 		Name   -> Function DSFramework.DSInputProfileManagerComponent.OnControlSchemeChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		EControlSchemeType                                 InCurrentControlScheme                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EControlSchemeType                                 LastControlScheme                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3164,15 +3566,16 @@ namespace CG
 		params.LastControlScheme = LastControlScheme;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC7FD0
 	 * 		Name   -> Function DSFramework.DSInputProfileManagerComponent.OnControllerTypeChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		EInputMapperControllerType                         InCurrentControllerType                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EInputMapperControllerType                         LastControllerType                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3188,6 +3591,7 @@ namespace CG
 		params.LastControllerType = LastControllerType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -3208,9 +3612,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD0D90
 	 * 		Name   -> Function DSFramework.InventoryActor.GetInventoryComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UInventoryComponent* AInventoryActor::GetInventoryComponent()
 	{
@@ -3221,6 +3625,7 @@ namespace CG
 		AInventoryActor_GetInventoryComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3243,9 +3648,117 @@ namespace CG
 
 	/**
 	 * Function:
+	 * 		RVA    -> 0x03FD1840
+	 * 		Name   -> Function DSFramework.InventoryCategoryContainer.IsRemainingCapacityForItemArchetype
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * Parameters:
+	 * 		class UItemArchetype*                              ItemArchetype                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	bool UInventoryCategoryContainer::IsRemainingCapacityForItemArchetype(class UItemArchetype* ItemArchetype)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.InventoryCategoryContainer.IsRemainingCapacityForItemArchetype");
+		
+		UInventoryCategoryContainer_IsRemainingCapacityForItemArchetype_Params params {};
+		params.ItemArchetype = ItemArchetype;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD1020
+	 * 		Name   -> Function DSFramework.InventoryCategoryContainer.GetSlots
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	TArray<struct FInventoryCategorySlot> UInventoryCategoryContainer::GetSlots()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.InventoryCategoryContainer.GetSlots");
+		
+		UInventoryCategoryContainer_GetSlots_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD0F90
+	 * 		Name   -> Function DSFramework.InventoryCategoryContainer.GetRemainingCapacityForItemArchetype
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 * Parameters:
+	 * 		class UItemArchetype*                              ItemArchetype                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	int32_t UInventoryCategoryContainer::GetRemainingCapacityForItemArchetype(class UItemArchetype* ItemArchetype)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.InventoryCategoryContainer.GetRemainingCapacityForItemArchetype");
+		
+		UInventoryCategoryContainer_GetRemainingCapacityForItemArchetype_Params params {};
+		params.ItemArchetype = ItemArchetype;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD0ED0
+	 * 		Name   -> Function DSFramework.InventoryCategoryContainer.GetNumValidItems
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	int32_t UInventoryCategoryContainer::GetNumValidItems()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.InventoryCategoryContainer.GetNumValidItems");
+		
+		UInventoryCategoryContainer_GetNumValidItems_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
 	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UInventoryCategoryContainer.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UInventoryCategoryContainer::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class DSFramework.InventoryCategoryContainer");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD2310
 	 * 		Name   -> Function DSFramework.InventoryComponent.ServerRemoveItemByArchetype
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, BlueprintCallable, NetValidate)
 	 * Parameters:
 	 * 		class UItemArchetype*                              ItemArchetype                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Count                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3261,15 +3774,16 @@ namespace CG
 		params.Count = Count;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD2210
 	 * 		Name   -> Function DSFramework.InventoryComponent.ServerRemoveItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, BlueprintCallable, NetValidate)
 	 * Parameters:
 	 * 		class AItemActor*                                  Item                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Count                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3285,15 +3799,16 @@ namespace CG
 		params.Count = Count;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD20D0
 	 * 		Name   -> Function DSFramework.InventoryComponent.ServerAddItemByArchetype
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, BlueprintCallable, NetValidate)
 	 * Parameters:
 	 * 		class UItemArchetype*                              ItemArchetype                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Count                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3311,15 +3826,16 @@ namespace CG
 		params.bShouldDropOnOverflow = bShouldDropOnOverflow;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1FD0
 	 * 		Name   -> Function DSFramework.InventoryComponent.ServerAddItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, BlueprintCallable, NetValidate)
 	 * Parameters:
 	 * 		class AItemActor*                                  Item                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bShouldDropOverflow                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3335,15 +3851,16 @@ namespace CG
 		params.bShouldDropOverflow = bShouldDropOverflow;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1BA0
 	 * 		Name   -> Function DSFramework.InventoryComponent.OnSlotChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Protected, HasOutParms)
 	 * Parameters:
 	 * 		struct FInventoryCategorySlot                      Slot                                                       (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class UInventoryCategoryContainer*                 Owner                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3361,15 +3878,16 @@ namespace CG
 		params.Delta = Delta;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1A70
 	 * 		Name   -> Function DSFramework.InventoryComponent.OnSlotAdded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Protected, HasOutParms)
 	 * Parameters:
 	 * 		struct FInventoryCategorySlot                      Slot                                                       (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class UInventoryCategoryContainer*                 Owner                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3387,15 +3905,16 @@ namespace CG
 		params.Delta = Delta;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1680
 	 * 		Name   -> Function DSFramework.InventoryComponent.HasItemArchetype
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class UItemArchetype*                              ItemArchetype                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3409,6 +3928,7 @@ namespace CG
 		params.ItemArchetype = ItemArchetype;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3417,9 +3937,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1400
 	 * 		Name   -> Function DSFramework.InventoryComponent.GetUser
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class AActor* UInventoryComponent::GetUser()
 	{
@@ -3430,6 +3950,7 @@ namespace CG
 		UInventoryComponent_GetUser_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3438,9 +3959,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD0F00
 	 * 		Name   -> Function DSFramework.InventoryComponent.GetOccupiedSlotsInCategory
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class UInventoryCategory*                          ItemCategory                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3454,6 +3975,7 @@ namespace CG
 		params.ItemCategory = ItemCategory;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3462,9 +3984,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD0DC0
 	 * 		Name   -> Function DSFramework.InventoryComponent.GetItemArchetypeCount
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class UItemArchetype*                              ItemArchetype                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3478,6 +4000,7 @@ namespace CG
 		params.ItemArchetype = ItemArchetype;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3486,9 +4009,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD0D00
 	 * 		Name   -> Function DSFramework.InventoryComponent.GetCategory
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        CategoryName                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3502,6 +4025,7 @@ namespace CG
 		params.CategoryName = CategoryName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3510,9 +4034,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD0C70
 	 * 		Name   -> Function DSFramework.InventoryComponent.GetAvailableSlotsInCategory
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class UInventoryCategory*                          ItemCategory                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3526,6 +4050,7 @@ namespace CG
 		params.ItemCategory = ItemCategory;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3534,9 +4059,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD0AE0
 	 * 		Name   -> Function DSFramework.InventoryComponent.ClientInventoryUpdated
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
 	 * 		TArray<struct FClientInventoryUpdatedItem>         ReceivedItems                                              (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -3550,6 +4075,7 @@ namespace CG
 		params.ReceivedItems = ReceivedItems;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -3598,9 +4124,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC7F40
 	 * 		Name   -> Function DSFramework.DSLocalPlayer.OnControlSchemeUsingMouseChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		bool                                               bUsingMouse                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3614,6 +4140,7 @@ namespace CG
 		params.bUsingMouse = bUsingMouse;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -3634,113 +4161,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.InventoryCategoryContainer.IsRemainingCapacityForItemArchetype
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		class UItemArchetype*                              ItemArchetype                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	bool UInventoryCategoryContainer::IsRemainingCapacityForItemArchetype(class UItemArchetype* ItemArchetype)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.InventoryCategoryContainer.IsRemainingCapacityForItemArchetype");
-		
-		UInventoryCategoryContainer_IsRemainingCapacityForItemArchetype_Params params {};
-		params.ItemArchetype = ItemArchetype;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.InventoryCategoryContainer.GetSlots
-	 * 		Flags  -> ()
-	 */
-	TArray<struct FInventoryCategorySlot> UInventoryCategoryContainer::GetSlots()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.InventoryCategoryContainer.GetSlots");
-		
-		UInventoryCategoryContainer_GetSlots_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.InventoryCategoryContainer.GetRemainingCapacityForItemArchetype
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		class UItemArchetype*                              ItemArchetype                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	int32_t UInventoryCategoryContainer::GetRemainingCapacityForItemArchetype(class UItemArchetype* ItemArchetype)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.InventoryCategoryContainer.GetRemainingCapacityForItemArchetype");
-		
-		UInventoryCategoryContainer_GetRemainingCapacityForItemArchetype_Params params {};
-		params.ItemArchetype = ItemArchetype;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.InventoryCategoryContainer.GetNumValidItems
-	 * 		Flags  -> ()
-	 */
-	int32_t UInventoryCategoryContainer::GetNumValidItems()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.InventoryCategoryContainer.GetNumValidItems");
-		
-		UInventoryCategoryContainer_GetNumValidItems_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction UInventoryCategoryContainer.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* UInventoryCategoryContainer::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class DSFramework.InventoryCategoryContainer");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BCC4B0
 	 * 		Name   -> Function DSFramework.ObjectDespawnManagerNotifier.OnActorFellOutOfWorld
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Protected)
 	 * Parameters:
 	 * 		class AActor*                                      InActor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3754,6 +4177,7 @@ namespace CG
 		params.InActor = InActor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -3830,9 +4254,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3F80
 	 * 		Name   -> Function DSFramework.PaperDollComponent.RemoveItemFrom
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        SlotName                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3846,15 +4270,16 @@ namespace CG
 		params.SlotName = SlotName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3CB0
 	 * 		Name   -> Function DSFramework.PaperDollComponent.OnRep_PaperDollState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	void UPaperDollComponent::OnRep_PaperDollState()
 	{
@@ -3865,15 +4290,16 @@ namespace CG
 		UPaperDollComponent_OnRep_PaperDollState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3C70
 	 * 		Name   -> Function DSFramework.PaperDollComponent.OnOwnerPlayerCharacterUnpossessed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	void UPaperDollComponent::OnOwnerPlayerCharacterUnpossessed()
 	{
@@ -3884,15 +4310,16 @@ namespace CG
 		UPaperDollComponent_OnOwnerPlayerCharacterUnpossessed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3BF0
 	 * 		Name   -> Function DSFramework.PaperDollComponent.OnOwnerPlayerCharacterPossessed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		class AController*                                 PlayerController                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3906,15 +4333,16 @@ namespace CG
 		params.PlayerController = PlayerController;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE33B0
 	 * 		Name   -> Function DSFramework.PaperDollComponent.GetSlotNameContainingItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AItemActor*                                  EquippableItem                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3928,6 +4356,7 @@ namespace CG
 		params.EquippableItem = EquippableItem;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3936,9 +4365,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3320
 	 * 		Name   -> Function DSFramework.PaperDollComponent.GetSlot
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        SlotName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3952,6 +4381,7 @@ namespace CG
 		params.SlotName = SlotName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3960,9 +4390,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3290
 	 * 		Name   -> Function DSFramework.PaperDollComponent.GetItemPendingOrAssignedToSlot
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        SlotName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -3976,6 +4406,7 @@ namespace CG
 		params.SlotName = SlotName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -3984,9 +4415,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3200
 	 * 		Name   -> Function DSFramework.PaperDollComponent.GetItemAssignmentShortcutGroup
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        ShortcutGroupName                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4000,6 +4431,7 @@ namespace CG
 		params.ShortcutGroupName = ShortcutGroupName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4008,9 +4440,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3170
 	 * 		Name   -> Function DSFramework.PaperDollComponent.GetItemAssignedToSlot
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        SlotName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4024,6 +4456,7 @@ namespace CG
 		params.SlotName = SlotName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4032,9 +4465,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE30E0
 	 * 		Name   -> Function DSFramework.PaperDollComponent.GetEquippableAssignedToSlot
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        SlotName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4048,6 +4481,7 @@ namespace CG
 		params.SlotName = SlotName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4056,9 +4490,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE2ED0
 	 * 		Name   -> Function DSFramework.PaperDollComponent.DeactivateSlot
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        SlotName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4072,15 +4506,16 @@ namespace CG
 		params.SlotName = SlotName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE28E0
 	 * 		Name   -> Function DSFramework.PaperDollComponent.AssignItemTo
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        SlotName                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UEquippableComponent*                        Equippable                                                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4096,15 +4531,16 @@ namespace CG
 		params.Equippable = Equippable;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE2860
 	 * 		Name   -> Function DSFramework.PaperDollComponent.ActivateSlot
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        SlotName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4118,6 +4554,7 @@ namespace CG
 		params.SlotName = SlotName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -4139,8 +4576,22 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDSPathFollowingComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UDSPathFollowingComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class DSFramework.DSPathFollowingComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FE67C0
 	 * 		Name   -> Function DSFramework.StarerComponent.ServerStopStaring
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
 	 * 		class UStareeComponent*                            StaringActor                                               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4154,15 +4605,16 @@ namespace CG
 		params.StaringActor = StaringActor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE6700
 	 * 		Name   -> Function DSFramework.StarerComponent.ServerStartStaring
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
 	 * 		class UStareeComponent*                            StaringActor                                               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4176,6 +4628,7 @@ namespace CG
 		params.StaringActor = StaringActor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -4196,9 +4649,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC80F0
 	 * 		Name   -> Function DSFramework.DSPlayerState.OnRep_PaperDollState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected)
 	 */
 	void ADSPlayerState::OnRep_PaperDollState()
 	{
@@ -4209,15 +4662,16 @@ namespace CG
 		ADSPlayerState_OnRep_PaperDollState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC80D0
 	 * 		Name   -> Function DSFramework.DSPlayerState.OnRep_InventoryActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Protected)
 	 */
 	void ADSPlayerState::OnRep_InventoryActor()
 	{
@@ -4228,15 +4682,16 @@ namespace CG
 		ADSPlayerState_OnRep_InventoryActor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC7AB0
 	 * 		Name   -> Function DSFramework.DSPlayerState.GetInventoryActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class AInventoryActor* ADSPlayerState::GetInventoryActor()
 	{
@@ -4247,6 +4702,7 @@ namespace CG
 		ADSPlayerState_GetInventoryActor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4255,9 +4711,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC7A80
 	 * 		Name   -> Function DSFramework.DSPlayerState.GetInventory
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UInventoryComponent* ADSPlayerState::GetInventory()
 	{
@@ -4268,6 +4724,7 @@ namespace CG
 		ADSPlayerState_GetInventory_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4276,9 +4733,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function DSFramework.DSPlayerState.BlueprintOnRep_InventoryActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
 	void ADSPlayerState::BlueprintOnRep_InventoryActor()
 	{
@@ -4323,9 +4780,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE6670
 	 * 		Name   -> Function DSFramework.StareeComponent.RemoveDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        DisableReason                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4339,15 +4796,16 @@ namespace CG
 		params.DisableReason = DisableReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE65D0
 	 * 		Name   -> Function DSFramework.StareeComponent.OnCooldownComplete
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void UStareeComponent::OnCooldownComplete()
 	{
@@ -4358,15 +4816,16 @@ namespace CG
 		UStareeComponent_OnCooldownComplete_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE6530
 	 * 		Name   -> Function DSFramework.StareeComponent.IsWithinBounds
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FVector                                     PlayerLocation                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4380,6 +4839,7 @@ namespace CG
 		params.PlayerLocation = PlayerLocation;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4388,9 +4848,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE5E50
 	 * 		Name   -> Function DSFramework.StareeComponent.AddDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        DisableReason                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4404,6 +4864,7 @@ namespace CG
 		params.DisableReason = DisableReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -4466,9 +4927,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB830
 	 * 		Name   -> Function DSFramework.BaseChallengeDataAsset.GetTierThreshold
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		int32_t                                            Tier                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4482,6 +4943,7 @@ namespace CG
 		params.Tier = Tier;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4490,9 +4952,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB7A0
 	 * 		Name   -> Function DSFramework.BaseChallengeDataAsset.GetTierForProgress
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		int32_t                                            Progress                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4506,6 +4968,7 @@ namespace CG
 		params.Progress = Progress;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4514,9 +4977,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB710
 	 * 		Name   -> Function DSFramework.BaseChallengeDataAsset.GetTierCompletedForProgress
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, Const)
 	 * Parameters:
 	 * 		int32_t                                            Progress                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4530,6 +4993,7 @@ namespace CG
 		params.Progress = Progress;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4538,9 +5002,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB6E0
 	 * 		Name   -> Function DSFramework.BaseChallengeDataAsset.GetNumTiers
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	int32_t UBaseChallengeDataAsset::GetNumTiers()
 	{
@@ -4551,6 +5015,7 @@ namespace CG
 		UBaseChallengeDataAsset_GetNumTiers_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4559,9 +5024,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB6B0
 	 * 		Name   -> Function DSFramework.BaseChallengeDataAsset.GetCompletionThreshold
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	int32_t UBaseChallengeDataAsset::GetCompletionThreshold()
 	{
@@ -4572,6 +5037,7 @@ namespace CG
 		UBaseChallengeDataAsset_GetCompletionThreshold_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4594,9 +5060,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB0530
 	 * 		Name   -> Function DSFramework.ChallengeManager.RemoveChallengeSet
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UChallengeSetDataAsset*                      ChallengeSet                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4610,15 +5076,16 @@ namespace CG
 		params.ChallengeSet = ChallengeSet;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB0460
 	 * 		Name   -> Function DSFramework.ChallengeManager.PauseChallenge
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class ADSPlayerController*                         Player                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4634,15 +5101,16 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAFD30
 	 * 		Name   -> Function DSFramework.ChallengeManager.K2_RemoveCallbackForChallenge
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4662,15 +5130,16 @@ namespace CG
 		params.FunctionName = FunctionName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAFBD0
 	 * 		Name   -> Function DSFramework.ChallengeManager.K2_AddCallbackForChallenge
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4690,15 +5159,16 @@ namespace CG
 		params.FunctionName = FunctionName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAFAA0
 	 * 		Name   -> Function DSFramework.ChallengeManager.IncrementChallenge
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class ADSPlayerController*                         TargetedPlayerController                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4716,15 +5186,16 @@ namespace CG
 		params.ProgressDelta = ProgressDelta;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF900
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetCompletedChallengesCount
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        Category                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Tier                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4740,6 +5211,7 @@ namespace CG
 		params.Tier = Tier;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4748,9 +5220,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF7C0
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeTierProgressFraction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              OutProgress                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4766,6 +5238,7 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4777,9 +5250,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF680
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeTierProgress
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            OutProgress                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4795,6 +5268,7 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4806,9 +5280,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF5A0
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeThresholdForTier
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Tier                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4824,6 +5298,7 @@ namespace CG
 		params.Tier = Tier;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4832,9 +5307,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF4C0
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeProgressFractionTowardsTier
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Tier                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4850,6 +5325,7 @@ namespace CG
 		params.Tier = Tier;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4858,9 +5334,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF420
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeProgressFraction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4874,6 +5350,7 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4882,9 +5359,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF380
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeProgress
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4898,6 +5375,7 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4906,9 +5384,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF2F0
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class UBaseChallengeDataAsset*                     ChallengeData                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4922,6 +5400,7 @@ namespace CG
 		params.ChallengeData = ChallengeData;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4930,9 +5409,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF210
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeDisplayedProgressFractionTowardsTier
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Tier                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4948,6 +5427,7 @@ namespace CG
 		params.Tier = Tier;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4956,9 +5436,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF170
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeDisplayedProgressFraction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4972,6 +5452,7 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -4980,9 +5461,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAF0D0
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeDisplayedProgress
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -4996,6 +5477,7 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5004,9 +5486,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAEFF0
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeDeltaProgressTowardsTier
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Tier                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5022,6 +5504,7 @@ namespace CG
 		params.Tier = Tier;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5030,9 +5513,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAEF50
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeData
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5046,6 +5529,7 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5054,9 +5538,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAEEB0
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallengeCount
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        Category                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5070,6 +5554,7 @@ namespace CG
 		params.Category = Category;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5078,9 +5563,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAEE10
 	 * 		Name   -> Function DSFramework.ChallengeManager.GetChallenge
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5094,6 +5579,7 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5102,9 +5588,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAEB60
 	 * 		Name   -> Function DSFramework.ChallengeManager.CreateAndEnableChallenge
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class ADSPlayerController*                         Player                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ChallengeName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5120,15 +5606,16 @@ namespace CG
 		params.ChallengeName = ChallengeName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAEA10
 	 * 		Name   -> Function DSFramework.ChallengeManager.AddChallengeSet
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UChallengeSetDataAsset*                      ChallengeSet                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5142,6 +5629,7 @@ namespace CG
 		params.ChallengeSet = ChallengeSet;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -5176,9 +5664,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCC20
 	 * 		Name   -> Function DSFramework.DemoFilterList.IsFilterType
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		EDemoFilterType                                    InFilterType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5192,6 +5680,7 @@ namespace CG
 		params.InFilterType = InFilterType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5200,9 +5689,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCA70
 	 * 		Name   -> Function DSFramework.DemoFilterList.GetFilterType
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	EDemoFilterType UDemoFilterList::GetFilterType()
 	{
@@ -5213,6 +5702,7 @@ namespace CG
 		UDemoFilterList_GetFilterType_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5235,9 +5725,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FABBC0
 	 * 		Name   -> Function DSFramework.Attachment.UnHideAttachment
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        HideReason                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5251,6 +5741,7 @@ namespace CG
 		params.HideReason = HideReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5259,9 +5750,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FABB00
 	 * 		Name   -> Function DSFramework.Attachment.OnComponentDestroyed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
 	 * 		class UActorComponent*                             DestroyedComponent                                         (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5275,15 +5766,16 @@ namespace CG
 		params.DestroyedComponent = DestroyedComponent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FABB00
 	 * 		Name   -> Function DSFramework.Attachment.OnActorDestroyed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
 	 * 		class AActor*                                      DestroyedActor                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5297,15 +5789,16 @@ namespace CG
 		params.DestroyedActor = DestroyedActor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FABA30
 	 * 		Name   -> Function DSFramework.Attachment.IsHidden
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UAttachment::IsHidden()
 	{
@@ -5316,6 +5809,7 @@ namespace CG
 		UAttachment_IsHidden_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5324,9 +5818,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01B9CB40
 	 * 		Name   -> Function DSFramework.Attachment.IsAttachmentAllowed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 */
 	bool UAttachment::IsAttachmentAllowed()
 	{
@@ -5337,6 +5831,7 @@ namespace CG
 		UAttachment_IsAttachmentAllowed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5345,9 +5840,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01B39DB0
 	 * 		Name   -> Function DSFramework.Attachment.Initialize
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
 	void UAttachment::Initialize()
 	{
@@ -5358,15 +5853,16 @@ namespace CG
 		UAttachment_Initialize_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB8D0
 	 * 		Name   -> Function DSFramework.Attachment.HideAttachment
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        HideReason                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5380,6 +5876,7 @@ namespace CG
 		params.HideReason = HideReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5388,9 +5885,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01C934C0
 	 * 		Name   -> Function DSFramework.Attachment.HasValidData
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 */
 	bool UAttachment::HasValidData()
 	{
@@ -5401,6 +5898,7 @@ namespace CG
 		UAttachment_HasValidData_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5409,9 +5907,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB600
 	 * 		Name   -> Function DSFramework.Attachment.GetAttachmentTargetComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UAttachmentComponent* UAttachment::GetAttachmentTargetComponent()
 	{
@@ -5422,6 +5920,7 @@ namespace CG
 		UAttachment_GetAttachmentTargetComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5430,9 +5929,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0333FA40
 	 * 		Name   -> Function DSFramework.Attachment.GetAttachmentTarget
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class USceneComponent* UAttachment::GetAttachmentTarget()
 	{
@@ -5443,6 +5942,7 @@ namespace CG
 		UAttachment_GetAttachmentTarget_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5451,9 +5951,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB5D0
 	 * 		Name   -> Function DSFramework.Attachment.GetAttachmentSourceComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UAttachmentComponent* UAttachment::GetAttachmentSourceComponent()
 	{
@@ -5464,6 +5964,7 @@ namespace CG
 		UAttachment_GetAttachmentSourceComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5472,9 +5973,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB5B0
 	 * 		Name   -> Function DSFramework.Attachment.GetAttachmentSource
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class USceneComponent* UAttachment::GetAttachmentSource()
 	{
@@ -5485,6 +5986,7 @@ namespace CG
 		UAttachment_GetAttachmentSource_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5493,9 +5995,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9800
 	 * 		Name   -> Function DSFramework.Attachment.Detach
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UAttachment::Detach()
 	{
@@ -5506,15 +6008,16 @@ namespace CG
 		UAttachment_Detach_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAAF10
 	 * 		Name   -> Function DSFramework.Attachment.CleanupAttachment
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EDetachmentReason                                  DetachmentReason                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5528,15 +6031,16 @@ namespace CG
 		params.DetachmentReason = DetachmentReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01B9D810
 	 * 		Name   -> Function DSFramework.Attachment.Attach
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
 	bool UAttachment::Attach()
 	{
@@ -5547,6 +6051,7 @@ namespace CG
 		UAttachment_Attach_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5569,9 +6074,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC82C0
 	 * 		Name   -> Function DSFramework.DSSkeletalMeshComponent.RemoveVisibilityBasedAnimTickOptionRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5585,15 +6090,16 @@ namespace CG
 		params.RequestId = RequestId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC6050
 	 * 		Name   -> Function DSFramework.DSSkeletalMeshComponent.AddVisibilityBasedAnimTickOptionRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EVisibilityBasedAnimTickOption                     AnimTickOption                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5609,6 +6115,7 @@ namespace CG
 		params.AnimTickOption = AnimTickOption;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5631,9 +6138,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4B20
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.UntagAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Tag                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5649,15 +6156,16 @@ namespace CG
 		params.Tag = Tag;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4A50
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.TagAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Tag                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5673,15 +6181,16 @@ namespace CG
 		params.Tag = Tag;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB49D0
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.SetKnowledgeBaseComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     InKnowledgeBaseComponent                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5695,15 +6204,16 @@ namespace CG
 		params.InKnowledgeBaseComponent = InKnowledgeBaseComponent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4910
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.ServerUpdateStateParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 * Parameters:
 	 * 		struct FUserParamsObjectWrapper                    Params                                                     (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -5717,15 +6227,16 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4840
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.ServerRequestDenied
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, HasDefaults, NetValidate)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5739,15 +6250,16 @@ namespace CG
 		params.RequestId = RequestId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4770
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.ServerRequestCancelled
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, HasDefaults, NetValidate)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5761,15 +6273,16 @@ namespace CG
 		params.RequestId = RequestId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4670
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.ServerRemoveCharacterActionRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, HasDefaults, NetValidate)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		ECharacterActionEndedReason                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5785,15 +6298,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4550
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.ServerBounceReplicationBlock
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, HasDefaults, NetValidate)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FUserParamsObjectWrapper                    UserParams                                                 (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -5809,15 +6323,16 @@ namespace CG
 		params.UserParams = UserParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4470
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.ServerAddCharacterActionRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
 	 * 		struct FCharacterActionNetworkRequestItem          CharacterActionRequestItem                                 (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -5831,15 +6346,16 @@ namespace CG
 		params.CharacterActionRequestItem = CharacterActionRequestItem;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB43B0
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.RequestCharacterAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FCharacterActionRequestParams               RequestParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -5853,6 +6369,7 @@ namespace CG
 		params.RequestParams = RequestParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5861,9 +6378,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.RegisterDefaultActions
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
 	void UCharacterActionComponent::RegisterDefaultActions()
 	{
@@ -5880,9 +6397,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4160
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.RegisterAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UActionDefinition*                           ActionDefinition                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5896,6 +6413,7 @@ namespace CG
 		params.ActionDefinition = ActionDefinition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5904,9 +6422,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4140
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.OnRep_StateParamsArray
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected)
 	 */
 	void UCharacterActionComponent::OnRep_StateParamsArray()
 	{
@@ -5917,15 +6435,16 @@ namespace CG
 		UCharacterActionComponent_OnRep_StateParamsArray_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4090
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.NetMulticastAddCharacterActionRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, Native, Event, NetMulticast, Protected)
 	 * Parameters:
 	 * 		struct FCharacterActionNetworkRequestItem          CharacterActionRequestItem                                 (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -5939,15 +6458,16 @@ namespace CG
 		params.CharacterActionRequestItem = CharacterActionRequestItem;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4010
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.LoadActionDefinitions
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UActionDefinitions*                          Definitions                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5961,15 +6481,16 @@ namespace CG
 		params.Definitions = Definitions;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3F60
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.IsValidActionRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -5983,6 +6504,7 @@ namespace CG
 		params.RequestId = RequestId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -5991,9 +6513,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3BC0
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.GetInitParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UCustomActionParamsBase*                     OutInitParams                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6009,6 +6531,7 @@ namespace CG
 		params.RequestId = RequestId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6020,9 +6543,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3B20
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.FindByID
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6036,6 +6559,7 @@ namespace CG
 		params.RequestId = RequestId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6044,9 +6568,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3A20
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.FindActionsByTag
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        Tag                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FGuid>                               ResultArray                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -6061,6 +6585,7 @@ namespace CG
 		params.Tag = Tag;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6072,9 +6597,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3920
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.FindActionsByName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        ActionName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FGuid>                               ResultArray                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -6089,6 +6614,7 @@ namespace CG
 		params.ActionName = ActionName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6100,9 +6626,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3820
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.FindActionsByClass
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class UClass*                                      ActionType                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FGuid>                               ResultArray                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -6117,6 +6643,7 @@ namespace CG
 		params.ActionType = ActionType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6128,9 +6655,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3710
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.EndActionsByTag
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Tag                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		ECharacterActionEndReason                          Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6148,6 +6675,7 @@ namespace CG
 		params.DelayTime = DelayTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6156,9 +6684,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB34E0
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.EndAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		ECharacterActionEndReason                          Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6176,15 +6704,16 @@ namespace CG
 		params.DelayTime = DelayTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3410
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.CustomSignal
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, Const)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        SignalName                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6200,15 +6729,16 @@ namespace CG
 		params.SignalName = SignalName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3230
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.ClientRequestCharacterAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, HasDefaults, NetClient)
 	 * Parameters:
 	 * 		int32_t                                            ActionTypeHash                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FUserParamsObjectWrapper                    InitParams                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
@@ -6228,15 +6758,16 @@ namespace CG
 		params.RequestId = RequestId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3110
 	 * 		Name   -> Function DSFramework.CharacterActionComponent.ClientEndAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, HasDefaults, NetClient)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		ECharacterActionEndedReason                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6254,6 +6785,7 @@ namespace CG
 		params.DelayTime = DelayTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -6274,9 +6806,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC2780
 	 * 		Name   -> Function DSFramework.DSGFxObject.SetMemberValueArray
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      ArrayName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FASValue>                            ArrayData                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -6292,15 +6824,16 @@ namespace CG
 		params.ArrayData = ArrayData;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC2640
 	 * 		Name   -> Function DSFramework.DSGFxObject.SetMemberValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      MemberName                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FASValue                                    Input                                                      (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -6316,15 +6849,16 @@ namespace CG
 		params.Input = Input;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BCC4B0
 	 * 		Name   -> Function DSFramework.DSGFxObject.SetAssetFromOtherGFxObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UGFxObject*                                  OtherGFxObject                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6338,15 +6872,16 @@ namespace CG
 		params.OtherGFxObject = OtherGFxObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC24F0
 	 * 		Name   -> Function DSFramework.DSGFxObject.SetAssetFromMoviePlayer
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UGFxMoviePlayer*                             MoviePlayer                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Path                                                       (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6362,15 +6897,16 @@ namespace CG
 		params.Path = Path;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC23A0
 	 * 		Name   -> Function DSFramework.DSGFxObject.SetAssetFromGFxObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UGFxObject*                                  ParentGFxObject                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Path                                                       (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6386,15 +6922,16 @@ namespace CG
 		params.Path = Path;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC2250
 	 * 		Name   -> Function DSFramework.DSGFxObject.SetAssetFromDSGFxObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UDSGFxObject*                                ParentDSGFxObject                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Path                                                       (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6410,15 +6947,16 @@ namespace CG
 		params.Path = Path;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC2100
 	 * 		Name   -> Function DSFramework.DSGFxObject.IsValid
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UDSGFxObject::IsValid()
 	{
@@ -6429,6 +6967,7 @@ namespace CG
 		UDSGFxObject_IsValid_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6437,9 +6976,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC20C0
 	 * 		Name   -> Function DSFramework.DSGFxObject.IsNull
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UDSGFxObject::IsNull()
 	{
@@ -6450,6 +6989,7 @@ namespace CG
 		UDSGFxObject_IsNull_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6458,9 +6998,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC1EE0
 	 * 		Name   -> Function DSFramework.DSGFxObject.InvokeOptionalNoReturn
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      FunctionName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FASValue>                            Params                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -6476,15 +7016,16 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC1DA0
 	 * 		Name   -> Function DSFramework.DSGFxObject.InvokeNoReturn
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      FunctionName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FASValue>                            Params                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -6500,15 +7041,16 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC1C30
 	 * 		Name   -> Function DSFramework.DSGFxObject.HasMemberValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      MemberName                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6522,6 +7064,7 @@ namespace CG
 		params.MemberName = MemberName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6530,9 +7073,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC1C00
 	 * 		Name   -> Function DSFramework.DSGFxObject.GetMoviePlayer
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UGFxMoviePlayer* UDSGFxObject::GetMoviePlayer()
 	{
@@ -6543,6 +7086,7 @@ namespace CG
 		UDSGFxObject_GetMoviePlayer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6551,9 +7095,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC1B50
 	 * 		Name   -> Function DSFramework.DSGFxObject.GetMemberVariable
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      MemberName                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6567,6 +7111,7 @@ namespace CG
 		params.MemberName = MemberName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6575,9 +7120,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC19D0
 	 * 		Name   -> Function DSFramework.DSGFxObject.GetMemberValueArray
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      ArrayName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6591,6 +7136,7 @@ namespace CG
 		params.ArrayName = ArrayName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6599,9 +7145,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC1830
 	 * 		Name   -> Function DSFramework.DSGFxObject.GetMemberValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FString                                      MemberName                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6615,6 +7161,7 @@ namespace CG
 		params.MemberName = MemberName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6623,9 +7170,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC1700
 	 * 		Name   -> Function DSFramework.DSGFxObject.GetGFxObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UGFxObject* UDSGFxObject::GetGFxObject()
 	{
@@ -6636,6 +7183,7 @@ namespace CG
 		UDSGFxObject_GetGFxObject_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6644,9 +7192,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01C52B30
 	 * 		Name   -> Function DSFramework.DSGFxObject.ClearAssetObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UDSGFxObject::ClearAssetObject()
 	{
@@ -6657,15 +7205,16 @@ namespace CG
 		UDSGFxObject_ClearAssetObject_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC13C0
 	 * 		Name   -> Function DSFramework.DSGFxObject.CheckIfMemberExists
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      MemberName                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6679,6 +7228,7 @@ namespace CG
 		params.MemberName = MemberName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -6701,9 +7251,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD8E0
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.UnregisterFromDirectCommands
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UGFxDisplayObject::UnregisterFromDirectCommands()
 	{
@@ -6714,15 +7264,16 @@ namespace CG
 		UGFxDisplayObject_UnregisterFromDirectCommands_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD640
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetYRotation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              YRotation                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6736,15 +7287,16 @@ namespace CG
 		params.YRotation = YRotation;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD5C0
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetY
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              Y                                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6758,15 +7310,16 @@ namespace CG
 		params.Y = Y;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD540
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetXRotation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              XRotation                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6780,15 +7333,16 @@ namespace CG
 		params.XRotation = XRotation;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD4C0
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetX
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              X                                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6802,15 +7356,16 @@ namespace CG
 		params.X = X;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD440
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetWidth
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              Width                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6824,15 +7379,16 @@ namespace CG
 		params.Width = Width;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01D54C20
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetVisible
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bVisible                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6846,15 +7402,16 @@ namespace CG
 		params.bVisible = bVisible;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD200
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetScaleYFrac
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              ScaleYFrac                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6868,15 +7425,16 @@ namespace CG
 		params.ScaleYFrac = ScaleYFrac;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD180
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetScaleXYFrac
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              Scale                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6890,15 +7448,16 @@ namespace CG
 		params.Scale = Scale;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD100
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetScaleXFrac
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              ScaleXFrac                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6912,15 +7471,16 @@ namespace CG
 		params.ScaleXFrac = ScaleXFrac;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD070
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetScaleFrac
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector2D                                   Scale2D                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6934,15 +7494,16 @@ namespace CG
 		params.Scale2D = Scale2D;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCCFF0
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetRotation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              Rotation                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6956,15 +7517,16 @@ namespace CG
 		params.Rotation = Rotation;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCCF60
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetPosition2D
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector2D                                   Position                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -6978,15 +7540,16 @@ namespace CG
 		params.Position = Position;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCCE60
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetHeight
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              Height                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7000,15 +7563,16 @@ namespace CG
 		params.Height = Height;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCCDE0
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetEdgeAAMode
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EDIEdgeAAMode                                      EdgeAAMode                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7022,15 +7586,16 @@ namespace CG
 		params.EdgeAAMode = EdgeAAMode;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCCD10
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetDisplayInfo
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FASDisplayInfo                              InDisplayInfo                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -7044,15 +7609,16 @@ namespace CG
 		params.InDisplayInfo = InDisplayInfo;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCCC30
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetColorTransform
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FLinearColor                                Multiply                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLinearColor                                Add                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7068,15 +7634,16 @@ namespace CG
 		params.Add = Add;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCCBB0
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.SetAlphaFrac
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              AlphaFrac                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7090,15 +7657,16 @@ namespace CG
 		params.AlphaFrac = AlphaFrac;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCCA00
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.RegisterForDirectCommands
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UGFxDisplayObject::RegisterForDirectCommands()
 	{
@@ -7109,15 +7677,16 @@ namespace CG
 		UGFxDisplayObject_RegisterForDirectCommands_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC620
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetYRotation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UGFxDisplayObject::GetYRotation()
 	{
@@ -7128,6 +7697,7 @@ namespace CG
 		UGFxDisplayObject_GetYRotation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7136,9 +7706,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC5F0
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetY
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UGFxDisplayObject::GetY()
 	{
@@ -7149,6 +7719,7 @@ namespace CG
 		UGFxDisplayObject_GetY_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7157,9 +7728,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC5C0
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetXRotation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UGFxDisplayObject::GetXRotation()
 	{
@@ -7170,6 +7741,7 @@ namespace CG
 		UGFxDisplayObject_GetXRotation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7178,9 +7750,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC590
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetX
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UGFxDisplayObject::GetX()
 	{
@@ -7191,6 +7763,7 @@ namespace CG
 		UGFxDisplayObject_GetX_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7199,9 +7772,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC560
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetWidth
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UGFxDisplayObject::GetWidth()
 	{
@@ -7212,6 +7785,7 @@ namespace CG
 		UGFxDisplayObject_GetWidth_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7220,9 +7794,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01CD8810
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetVisible
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UGFxDisplayObject::GetVisible()
 	{
@@ -7233,6 +7807,7 @@ namespace CG
 		UGFxDisplayObject_GetVisible_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7241,9 +7816,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC520
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetSize2D
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FVector2D UGFxDisplayObject::GetSize2D()
 	{
@@ -7254,6 +7829,7 @@ namespace CG
 		UGFxDisplayObject_GetSize2D_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7262,9 +7838,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC4F0
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetScaleYFrac
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UGFxDisplayObject::GetScaleYFrac()
 	{
@@ -7275,6 +7851,7 @@ namespace CG
 		UGFxDisplayObject_GetScaleYFrac_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7283,9 +7860,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC4C0
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetScaleXFrac
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UGFxDisplayObject::GetScaleXFrac()
 	{
@@ -7296,6 +7873,7 @@ namespace CG
 		UGFxDisplayObject_GetScaleXFrac_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7304,9 +7882,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC480
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetScaleFrac
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FVector2D UGFxDisplayObject::GetScaleFrac()
 	{
@@ -7317,6 +7895,7 @@ namespace CG
 		UGFxDisplayObject_GetScaleFrac_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7325,9 +7904,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC450
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetRotation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UGFxDisplayObject::GetRotation()
 	{
@@ -7338,6 +7917,7 @@ namespace CG
 		UGFxDisplayObject_GetRotation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7346,9 +7926,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC410
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetPosition2D
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FVector2D UGFxDisplayObject::GetPosition2D()
 	{
@@ -7359,6 +7939,7 @@ namespace CG
 		UGFxDisplayObject_GetPosition2D_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7367,9 +7948,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC370
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetHeight
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UGFxDisplayObject::GetHeight()
 	{
@@ -7380,6 +7961,7 @@ namespace CG
 		UGFxDisplayObject_GetHeight_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7388,9 +7970,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC2A0
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetDisplayInfo
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FASDisplayInfo                              OutDisplayInfo                                             (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -7403,6 +7985,7 @@ namespace CG
 		UGFxDisplayObject_GetDisplayInfo_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7414,9 +7997,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC230
 	 * 		Name   -> Function DSFramework.GFxDisplayObject.GetAlphaFrac
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UGFxDisplayObject::GetAlphaFrac()
 	{
@@ -7427,6 +8010,7 @@ namespace CG
 		UGFxDisplayObject_GetAlphaFrac_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7449,9 +8033,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD28F0
 	 * 		Name   -> Function DSFramework.GFxMovieClip.Unload
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UGFxMovieClip::Unload()
 	{
@@ -7462,15 +8046,16 @@ namespace CG
 		UGFxMovieClip_Unload_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1EB0
 	 * 		Name   -> Function DSFramework.GFxMovieClip.RemoveMovieClipAndClear
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UGFxMovieClip::RemoveMovieClipAndClear()
 	{
@@ -7481,15 +8066,16 @@ namespace CG
 		UGFxMovieClip_RemoveMovieClipAndClear_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD19A0
 	 * 		Name   -> Function DSFramework.GFxMovieClip.LoadMovie
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class USwfMovie*                                   SwfMovie                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bForceAdvance                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7505,15 +8091,16 @@ namespace CG
 		params.bForceAdvance = bForceAdvance;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD18F0
 	 * 		Name   -> Function DSFramework.GFxMovieClip.LoadImageAsset
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FSoftObjectPath                             AssetReference                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7527,15 +8114,16 @@ namespace CG
 		params.AssetReference = AssetReference;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1600
 	 * 		Name   -> Function DSFramework.GFxMovieClip.GotoAndStopI
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            FrameNum                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7549,15 +8137,16 @@ namespace CG
 		params.FrameNum = FrameNum;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1560
 	 * 		Name   -> Function DSFramework.GFxMovieClip.GotoAndStop
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      FrameString                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7571,15 +8160,16 @@ namespace CG
 		params.FrameString = FrameString;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD14E0
 	 * 		Name   -> Function DSFramework.GFxMovieClip.GotoAndPlayI
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            FrameNumber                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7593,15 +8183,16 @@ namespace CG
 		params.FrameNumber = FrameNumber;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1440
 	 * 		Name   -> Function DSFramework.GFxMovieClip.GotoAndPlay
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      FrameString                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7615,15 +8206,16 @@ namespace CG
 		params.FrameString = FrameString;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1330
 	 * 		Name   -> Function DSFramework.GFxMovieClip.GetTotalFrames
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	int32_t UGFxMovieClip::GetTotalFrames()
 	{
@@ -7634,6 +8226,7 @@ namespace CG
 		UGFxMovieClip_GetTotalFrames_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7642,9 +8235,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD0E50
 	 * 		Name   -> Function DSFramework.GFxMovieClip.GetMovieClipName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	class FString UGFxMovieClip::GetMovieClipName()
 	{
@@ -7655,6 +8248,7 @@ namespace CG
 		UGFxMovieClip_GetMovieClipName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7663,9 +8257,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD0B80
 	 * 		Name   -> Function DSFramework.GFxMovieClip.CreateEmptyMovieClipBP
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      InstanceName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Depth                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7681,6 +8275,7 @@ namespace CG
 		params.Depth = Depth;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7689,9 +8284,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD09A0
 	 * 		Name   -> Function DSFramework.GFxMovieClip.AttachMovieBP
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      SymbolName                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      InstanceName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7709,6 +8304,7 @@ namespace CG
 		params.Depth = Depth;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7760,8 +8356,22 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UItemInstanceData.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UItemInstanceData::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class DSFramework.ItemInstanceData");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FABC60
 	 * 		Name   -> Function DSFramework.AttachmentComponent.UnHideAttachmentsOnBone
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        HideReason                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        BoneName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7777,15 +8387,16 @@ namespace CG
 		params.BoneName = BoneName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FABBA0
 	 * 		Name   -> Function DSFramework.AttachmentComponent.RemoveAllAttachments
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UAttachmentComponent::RemoveAllAttachments()
 	{
@@ -7796,15 +8407,16 @@ namespace CG
 		UAttachmentComponent_RemoveAllAttachments_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FABB80
 	 * 		Name   -> Function DSFramework.AttachmentComponent.OnRep_NetworkedAttachments
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void UAttachmentComponent::OnRep_NetworkedAttachments()
 	{
@@ -7815,15 +8427,16 @@ namespace CG
 		UAttachmentComponent_OnRep_NetworkedAttachments_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FABA60
 	 * 		Name   -> Function DSFramework.AttachmentComponent.NamedAttachmentExists
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        AttachmentName                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7837,6 +8450,7 @@ namespace CG
 		params.AttachmentName = AttachmentName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7845,9 +8459,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03CC3A50
 	 * 		Name   -> Function DSFramework.AttachmentComponent.IsAttachmentAllowed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class UAttachment*                                 Attachment                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7861,6 +8475,7 @@ namespace CG
 		params.Attachment = Attachment;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7869,9 +8484,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB970
 	 * 		Name   -> Function DSFramework.AttachmentComponent.HideAttachmentsOnBone
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        HideReason                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        BoneName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7887,15 +8502,16 @@ namespace CG
 		params.BoneName = BoneName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB630
 	 * 		Name   -> Function DSFramework.AttachmentComponent.GetAttachments
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	TArray<class UAttachment*> UAttachmentComponent::GetAttachments()
 	{
@@ -7906,6 +8522,7 @@ namespace CG
 		UAttachmentComponent_GetAttachments_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7914,9 +8531,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB4A0
 	 * 		Name   -> Function DSFramework.AttachmentComponent.GetAttachmentClassForActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -7930,6 +8547,7 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7938,9 +8556,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAAEE0
 	 * 		Name   -> Function DSFramework.AttachmentComponent.AnyAttachmentExists
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UAttachmentComponent::AnyAttachmentExists()
 	{
@@ -7951,6 +8569,7 @@ namespace CG
 		UAttachmentComponent_AnyAttachmentExists_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -7974,38 +8593,14 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.AchievementsManager.GetAchievementsManager
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	class AAchievementsManager* AAchievementsManager::GetAchievementsManager(class UObject* WorldContextObject)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.AchievementsManager.GetAchievementsManager");
-		
-		AAchievementsManager_GetAchievementsManager_Params params {};
-		params.WorldContextObject = WorldContextObject;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction AAchievementsManager.StaticClass
+	 * 		Name   -> PredefinedFunction UAchievementsManagerConfig.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
-	UClass* AAchievementsManager::StaticClass()
+	UClass* UAchievementsManagerConfig::StaticClass()
 	{
 		static UClass* ptr = nullptr;
 		if (!ptr)
-			ptr = UObject::FindClass("Class DSFramework.AchievementsManager");
+			ptr = UObject::FindClass("Class DSFramework.AchievementsManagerConfig");
 		return ptr;
 	}
 
@@ -8110,20 +8705,6 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction UAnimNotifyState_SkeletalMeshAttachment.StaticClass
-	 * 		Flags  -> (Predefined, Static)
-	 */
-	UClass* UAnimNotifyState_SkeletalMeshAttachment::StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr)
-			ptr = UObject::FindClass("Class DSFramework.AnimNotifyState_SkeletalMeshAttachment");
-		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction UAnimNotifyState_Slomo.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
@@ -8151,13 +8732,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB530
 	 * 		Name   -> Function DSFramework.AttachmentManager.GetAttachmentManager
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class AAttachmentManager* AAttachmentManager::GetAttachmentManager(class UObject* WorldContextObject)
+	class AAttachmentManager* AAttachmentManager::STATIC_GetAttachmentManager(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8167,6 +8748,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8175,9 +8757,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB380
 	 * 		Name   -> Function DSFramework.AttachmentManager.FindExistingNamedAttachment
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        AttachmentName                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -8191,6 +8773,7 @@ namespace CG
 		params.AttachmentName = AttachmentName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8199,9 +8782,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB230
 	 * 		Name   -> Function DSFramework.AttachmentManager.CreateAttachmentBetweenComponentAndActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class USceneComponent*                             SourceComponent                                            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      TargetActor                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -8219,6 +8802,7 @@ namespace CG
 		params.DynamicAttachmentRules = DynamicAttachmentRules;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8227,9 +8811,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAB0E0
 	 * 		Name   -> Function DSFramework.AttachmentManager.CreateAttachmentBetweenActors
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      ActorToAttach                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      TargetActor                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -8247,6 +8831,7 @@ namespace CG
 		params.DynamicAttachmentRules = DynamicAttachmentRules;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8255,9 +8840,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAAF90
 	 * 		Name   -> Function DSFramework.AttachmentManager.CreateAttachmentBetweenActorAndComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      ActorToAttach                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class USceneComponent*                             TargetComponent                                            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -8275,6 +8860,7 @@ namespace CG
 		params.DynamicAttachmentRules = DynamicAttachmentRules;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8367,9 +8953,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FAFF80
 	 * 		Name   -> Function DSFramework.ChallengeCompletionChallengeRuntimeObject.OnChallengeComplete
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class UBaseChallengeRuntimeObject*                 Challenge                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		ENotificationRule                                  NotificationRule                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -8389,6 +8975,7 @@ namespace CG
 		params.Progress = Progress;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -8451,9 +9038,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3060
 	 * 		Name   -> Function DSFramework.CharacterActionFactory.AllocateAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FAllocateActionParams                       Params                                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -8467,6 +9054,7 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8517,9 +9105,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB4250
 	 * 		Name   -> Function DSFramework.CharacterActionRequestHelper.RequestAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UCharacterActionComponent*                   InCharacterActionComponent                                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionRequestParams               RequestParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -8537,6 +9125,7 @@ namespace CG
 		params.InReferenceType = InReferenceType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8545,9 +9134,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3EA0
 	 * 		Name   -> Function DSFramework.CharacterActionRequestHelper.IsRequestValid
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UCharacterActionRequestHelper::IsRequestValid()
 	{
@@ -8558,6 +9147,7 @@ namespace CG
 		UCharacterActionRequestHelper_IsRequestValid_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8566,9 +9156,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3ED0
 	 * 		Name   -> Function DSFramework.CharacterActionRequestHelper.IsRequestStatus
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		ERequestStatus                                     InRequestStatus                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -8582,6 +9172,7 @@ namespace CG
 		params.InRequestStatus = InRequestStatus;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8590,9 +9181,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3EA0
 	 * 		Name   -> Function DSFramework.CharacterActionRequestHelper.IsRequestInProgress
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UCharacterActionRequestHelper::IsRequestInProgress()
 	{
@@ -8603,6 +9194,7 @@ namespace CG
 		UCharacterActionRequestHelper_IsRequestInProgress_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8611,9 +9203,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3E10
 	 * 		Name   -> Function DSFramework.CharacterActionRequestHelper.IsRequestForActionByName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        InActionName                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -8627,6 +9219,7 @@ namespace CG
 		params.InActionName = InActionName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8635,9 +9228,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3D80
 	 * 		Name   -> Function DSFramework.CharacterActionRequestHelper.IsRequestForAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class UActionDefinition*                           InDefinition                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -8651,6 +9244,7 @@ namespace CG
 		params.InDefinition = InDefinition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8659,9 +9253,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3CF0
 	 * 		Name   -> Function DSFramework.CharacterActionRequestHelper.HasActionAuthority
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UCharacterActionComponent*                   InCharacterActionComponent                                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -8675,6 +9269,7 @@ namespace CG
 		params.InCharacterActionComponent = InCharacterActionComponent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8683,9 +9278,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3600
 	 * 		Name   -> Function DSFramework.CharacterActionRequestHelper.EndAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		ECharacterActionEndReason                          Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DelayTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -8703,19 +9298,20 @@ namespace CG
 		params.bWaitForActionEnd = bWaitForActionEnd;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB3390
 	 * 		Name   -> Function DSFramework.CharacterActionRequestHelper.CreateCharacterActionRequestHelper
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UCharacterActionRequestHelper* UCharacterActionRequestHelper::CreateCharacterActionRequestHelper(class UObject* WorldContextObject)
+	class UCharacterActionRequestHelper* UCharacterActionRequestHelper::STATIC_CreateCharacterActionRequestHelper(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8725,6 +9321,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8803,9 +9400,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8860
 	 * 		Name   -> Function DSFramework.CharacterMultiActionMultiActorRequester.OnActionsSucceeded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void UCharacterMultiActionMultiActorRequester::OnActionsSucceeded()
 	{
@@ -8816,15 +9413,16 @@ namespace CG
 		UCharacterMultiActionMultiActorRequester_OnActionsSucceeded_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8840
 	 * 		Name   -> Function DSFramework.CharacterMultiActionMultiActorRequester.OnActionsFailed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void UCharacterMultiActionMultiActorRequester::OnActionsFailed()
 	{
@@ -8835,6 +9433,7 @@ namespace CG
 		UCharacterMultiActionMultiActorRequester_OnActionsFailed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -8855,13 +9454,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8150
 	 * 		Name   -> Function DSFramework.ControlSchemeBlueprintLibrary.GetDisplayNameForKey
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		struct FKey                                        Key                                                        (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class FText UControlSchemeBlueprintLibrary::GetDisplayNameForKey(const struct FKey& Key)
+	class FText UControlSchemeBlueprintLibrary::STATIC_GetDisplayNameForKey(const struct FKey& Key)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8871,6 +9470,7 @@ namespace CG
 		params.Key = Key;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8879,13 +9479,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8030
 	 * 		Name   -> Function DSFramework.ControlSchemeBlueprintLibrary.GetControlSchemeManagerFromPlayerController
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class APlayerController*                           PlayerController                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UControlSchemeManager* UControlSchemeBlueprintLibrary::GetControlSchemeManagerFromPlayerController(class APlayerController* PlayerController)
+	class UControlSchemeManager* UControlSchemeBlueprintLibrary::STATIC_GetControlSchemeManagerFromPlayerController(class APlayerController* PlayerController)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8895,6 +9495,7 @@ namespace CG
 		params.PlayerController = PlayerController;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8903,13 +9504,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB7F40
 	 * 		Name   -> Function DSFramework.ControlSchemeBlueprintLibrary.GetControlSchemeManager
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UControlSchemeManager* UControlSchemeBlueprintLibrary::GetControlSchemeManager(class UObject* WorldContextObject)
+	class UControlSchemeManager* UControlSchemeBlueprintLibrary::STATIC_GetControlSchemeManager(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -8919,6 +9520,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8941,9 +9543,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB87C0
 	 * 		Name   -> Function DSFramework.ControlSchemeManager.IsMouseKeyboardControlScheme
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EControlSchemeType                                 ControlScheme                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -8957,6 +9559,7 @@ namespace CG
 		params.ControlScheme = ControlScheme;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8965,9 +9568,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8740
 	 * 		Name   -> Function DSFramework.ControlSchemeManager.IsGamepadControlScheme
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EControlSchemeType                                 ControlScheme                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -8981,6 +9584,7 @@ namespace CG
 		params.ControlScheme = ControlScheme;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -8989,9 +9593,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8710
 	 * 		Name   -> Function DSFramework.ControlSchemeManager.IsCurrentlyMouseKeyboardControlScheme
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	bool UControlSchemeManager::IsCurrentlyMouseKeyboardControlScheme()
 	{
@@ -9002,6 +9606,7 @@ namespace CG
 		UControlSchemeManager_IsCurrentlyMouseKeyboardControlScheme_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9010,9 +9615,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB86E0
 	 * 		Name   -> Function DSFramework.ControlSchemeManager.IsCurrentlyGamepadControlScheme
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	bool UControlSchemeManager::IsCurrentlyGamepadControlScheme()
 	{
@@ -9023,6 +9628,7 @@ namespace CG
 		UControlSchemeManager_IsCurrentlyGamepadControlScheme_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9031,9 +9637,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB80F0
 	 * 		Name   -> Function DSFramework.ControlSchemeManager.GetCurrentControlScheme
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	EControlSchemeType UControlSchemeManager::GetCurrentControlScheme()
 	{
@@ -9044,6 +9650,7 @@ namespace CG
 		UControlSchemeManager_GetCurrentControlScheme_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9052,9 +9659,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8130
 	 * 		Name   -> Function DSFramework.ControlSchemeManager.GetCurrentControllerType
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	EInputMapperControllerType UControlSchemeManager::GetCurrentControllerType()
 	{
@@ -9065,6 +9672,7 @@ namespace CG
 		UControlSchemeManager_GetCurrentControllerType_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9073,9 +9681,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8110
 	 * 		Name   -> Function DSFramework.ControlSchemeManager.GetCurrentControllerLayout
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FControllerLayout UControlSchemeManager::GetCurrentControllerLayout()
 	{
@@ -9086,6 +9694,7 @@ namespace CG
 		UControlSchemeManager_GetCurrentControllerLayout_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9108,9 +9717,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB82E0
 	 * 		Name   -> Function DSFramework.UIColourRowHandleWrapper.GetLinearColor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FLinearColor UUIColourRowHandleWrapper::GetLinearColor()
 	{
@@ -9121,6 +9730,7 @@ namespace CG
 		UUIColourRowHandleWrapper_GetLinearColor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9129,9 +9739,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x01C34820
 	 * 		Name   -> Function DSFramework.UIColourRowHandleWrapper.GetColorName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class FName UUIColourRowHandleWrapper::GetColorName()
 	{
@@ -9142,6 +9752,7 @@ namespace CG
 		UUIColourRowHandleWrapper_GetColorName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9150,9 +9761,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB7EF0
 	 * 		Name   -> Function DSFramework.UIColourRowHandleWrapper.GetColor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FColor UUIColourRowHandleWrapper::GetColor()
 	{
@@ -9163,6 +9774,7 @@ namespace CG
 		UUIColourRowHandleWrapper_GetColor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9185,9 +9797,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8900
 	 * 		Name   -> Function DSFramework.CosmeticEffectData_ParticleSystem.OnSystemFinished
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		class UParticleSystemComponent*                    InPS                                                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -9201,15 +9813,16 @@ namespace CG
 		params.InPS = InPS;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8880
 	 * 		Name   -> Function DSFramework.CosmeticEffectData_ParticleSystem.OnSystemDestroyed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		class UParticleSystemComponent*                    InPS                                                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -9223,6 +9836,7 @@ namespace CG
 		params.InPS = InPS;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -9285,16 +9899,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8510
 	 * 		Name   -> Function DSFramework.CurveUtils.GetVelocityFromScaledDistanceCurve
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UCurveFloat*                                 ScaledCurve                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Time                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              TimeScale                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              ValueScale                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	float UCurveUtils::GetVelocityFromScaledDistanceCurve(class UCurveFloat* ScaledCurve, float Time, float TimeScale, float ValueScale)
+	float UCurveUtils::STATIC_GetVelocityFromScaledDistanceCurve(class UCurveFloat* ScaledCurve, float Time, float TimeScale, float ValueScale)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9307,6 +9921,7 @@ namespace CG
 		params.ValueScale = ValueScale;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9315,14 +9930,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8440
 	 * 		Name   -> Function DSFramework.CurveUtils.GetVelocityFromDistanceCurve
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UCurveFloat*                                 DistanceCurve                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Time                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	float UCurveUtils::GetVelocityFromDistanceCurve(class UCurveFloat* DistanceCurve, float Time)
+	float UCurveUtils::STATIC_GetVelocityFromDistanceCurve(class UCurveFloat* DistanceCurve, float Time)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9333,6 +9948,7 @@ namespace CG
 		params.Time = Time;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9341,16 +9957,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB7DC0
 	 * 		Name   -> Function DSFramework.CurveUtils.GetAccelerationFromScaledDistanceCurve
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UCurveFloat*                                 ScaledCurve                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Time                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              TimeScale                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              ValueScale                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	float UCurveUtils::GetAccelerationFromScaledDistanceCurve(class UCurveFloat* ScaledCurve, float Time, float TimeScale, float ValueScale)
+	float UCurveUtils::STATIC_GetAccelerationFromScaledDistanceCurve(class UCurveFloat* ScaledCurve, float Time, float TimeScale, float ValueScale)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9363,6 +9979,7 @@ namespace CG
 		params.ValueScale = ValueScale;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9371,14 +9988,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB7CF0
 	 * 		Name   -> Function DSFramework.CurveUtils.GetAccelerationFromDistanceCurve
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UCurveFloat*                                 DistanceCurve                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Time                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	float UCurveUtils::GetAccelerationFromDistanceCurve(class UCurveFloat* DistanceCurve, float Time)
+	float UCurveUtils::STATIC_GetAccelerationFromDistanceCurve(class UCurveFloat* DistanceCurve, float Time)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9389,6 +10006,7 @@ namespace CG
 		params.Time = Time;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9411,9 +10029,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8980
 	 * 		Name   -> Function DSFramework.CustomParamsStackContainer.Remove
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       ID                                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -9427,6 +10045,7 @@ namespace CG
 		params.ID = ID;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9435,9 +10054,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8640
 	 * 		Name   -> Function DSFramework.CustomParamsStackContainer.IsCurrentId
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FGuid                                       ID                                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -9451,6 +10070,7 @@ namespace CG
 		params.ID = ID;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9459,9 +10079,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8400
 	 * 		Name   -> Function DSFramework.CustomParamsStackContainer.GetRestrictTo
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UClass* UCustomParamsStackContainer::GetRestrictTo()
 	{
@@ -9472,6 +10092,7 @@ namespace CG
 		UCustomParamsStackContainer_GetRestrictTo_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9480,9 +10101,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8350
 	 * 		Name   -> Function DSFramework.CustomParamsStackContainer.GetParamsById
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FGuid                                       ID                                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -9496,6 +10117,7 @@ namespace CG
 		params.ID = ID;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9504,9 +10126,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8320
 	 * 		Name   -> Function DSFramework.CustomParamsStackContainer.GetParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UCustomParamsStackItem* UCustomParamsStackContainer::GetParams()
 	{
@@ -9517,6 +10139,7 @@ namespace CG
 		UCustomParamsStackContainer_GetParams_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9525,14 +10148,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB7BB0
 	 * 		Name   -> Function DSFramework.CustomParamsStackContainer.CreateCustomParamsStackContainer
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      InRestrictTo                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UCustomParamsStackContainer* UCustomParamsStackContainer::CreateCustomParamsStackContainer(class UObject* WorldContextObject, class UClass* InRestrictTo)
+	class UCustomParamsStackContainer* UCustomParamsStackContainer::STATIC_CreateCustomParamsStackContainer(class UObject* WorldContextObject, class UClass* InRestrictTo)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9543,6 +10166,7 @@ namespace CG
 		params.InRestrictTo = InRestrictTo;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9551,9 +10175,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB79E0
 	 * 		Name   -> Function DSFramework.CustomParamsStackContainer.Add
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UCustomParamsStackItem*                      Params                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Priority                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -9569,6 +10193,7 @@ namespace CG
 		params.Priority = Priority;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9591,9 +10216,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB8A20
 	 * 		Name   -> Function DSFramework.CustomParamsStackItemHelper.Remove
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UCustomParamsStackItemHelper::Remove()
 	{
@@ -9604,19 +10229,20 @@ namespace CG
 		UCustomParamsStackItemHelper_Remove_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB7C70
 	 * 		Name   -> Function DSFramework.CustomParamsStackItemHelper.CreateCustomParamsStackItemHelper
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UCustomParamsStackItemHelper* UCustomParamsStackItemHelper::CreateCustomParamsStackItemHelper(class UObject* WorldContextObject)
+	class UCustomParamsStackItemHelper* UCustomParamsStackItemHelper::STATIC_CreateCustomParamsStackItemHelper(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9626,6 +10252,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9634,9 +10261,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FB7AB0
 	 * 		Name   -> Function DSFramework.CustomParamsStackItemHelper.Add
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UClass*                                      InItemType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UCustomParamsStackContainer*                 InContainer                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -9654,6 +10281,7 @@ namespace CG
 		params.InPriority = InPriority;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9676,11 +10304,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCA20
 	 * 		Name   -> Function DSFramework.DemoSettings.GetDemoFeatureReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
-	class FName UDemoSettings::GetDemoFeatureReason()
+	class FName UDemoSettings::STATIC_GetDemoFeatureReason()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9689,6 +10317,7 @@ namespace CG
 		UDemoSettings_GetDemoFeatureReason_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9739,15 +10368,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBD630
 	 * 		Name   -> Function DSFramework.DespawnUtils.RemoveLingering
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        LingeringReason                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Delay                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDespawnUtils::RemoveLingering(class AActor* Actor, const class FName& LingeringReason, float Delay)
+	void UDespawnUtils::STATIC_RemoveLingering(class AActor* Actor, const class FName& LingeringReason, float Delay)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9759,20 +10388,21 @@ namespace CG
 		params.Delay = Delay;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCE60
 	 * 		Name   -> Function DSFramework.DespawnUtils.MarkLingering
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        LingeringReason                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDespawnUtils::MarkLingering(class AActor* Actor, const class FName& LingeringReason)
+	void UDespawnUtils::STATIC_MarkLingering(class AActor* Actor, const class FName& LingeringReason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9783,21 +10413,22 @@ namespace CG
 		params.LingeringReason = LingeringReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCD60
 	 * 		Name   -> Function DSFramework.DespawnUtils.MakeLinger
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        LingeringReason                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Duration                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDespawnUtils::MakeLinger(class AActor* Actor, const class FName& LingeringReason, float Duration)
+	void UDespawnUtils::STATIC_MakeLinger(class AActor* Actor, const class FName& LingeringReason, float Duration)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9809,19 +10440,20 @@ namespace CG
 		params.Duration = Duration;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBCCE0
 	 * 		Name   -> Function DSFramework.DespawnUtils.IsLingering
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UDespawnUtils::IsLingering(class AActor* Actor)
+	bool UDespawnUtils::STATIC_IsLingering(class AActor* Actor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -9831,6 +10463,7 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9867,9 +10500,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBDEE0
 	 * 		Name   -> Function DSFramework.DSCameraShake.SetShakeScale
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              NewShakeScale                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -9883,6 +10516,7 @@ namespace CG
 		params.NewShakeScale = NewShakeScale;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -9903,9 +10537,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBE210
 	 * 		Name   -> Function DSFramework.DSCapsuleComponent.UpdateCollisionRequestToProfile
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        NewCollisionProfileName                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -9921,6 +10555,7 @@ namespace CG
 		params.NewCollisionProfileName = NewCollisionProfileName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9929,9 +10564,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBE010
 	 * 		Name   -> Function DSFramework.DSCapsuleComponent.UpdateCollisionRequestToCustom
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCapsuleCustomCollisionParams               NewParams                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -9947,6 +10582,7 @@ namespace CG
 		params.NewParams = NewParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -9955,9 +10591,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBD3D0
 	 * 		Name   -> Function DSFramework.DSCapsuleComponent.RemoveCollisionRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -9971,15 +10607,16 @@ namespace CG
 		params.RequestId = RequestId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBC100
 	 * 		Name   -> Function DSFramework.DSCapsuleComponent.AddCustomCollisionRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        RequestReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCapsuleCustomCollisionParams               Params                                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -9995,6 +10632,7 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10003,9 +10641,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FBC030
 	 * 		Name   -> Function DSFramework.DSCapsuleComponent.AddCollisionProfileRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        RequestReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        CollisionProfileName                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10021,6 +10659,7 @@ namespace CG
 		params.CollisionProfileName = CollisionProfileName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10127,9 +10766,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC1470
 	 * 		Name   -> Function DSFramework.DSComponentBlueprintFunctionLibrary.CreateSceneComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      ComponentClass                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10138,7 +10777,7 @@ namespace CG
 	 * 		bool                                               bIsRootComponent                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class USceneComponent*                             ParentComponent                                            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class USceneComponent* UDSComponentBlueprintFunctionLibrary::CreateSceneComponent(class AActor* Actor, class UClass* ComponentClass, const class FName& InstanceName, bool bVisibleInComponentHierarchy, bool bIsRootComponent, class USceneComponent* ParentComponent)
+	class USceneComponent* UDSComponentBlueprintFunctionLibrary::STATIC_CreateSceneComponent(class AActor* Actor, class UClass* ComponentClass, const class FName& InstanceName, bool bVisibleInComponentHierarchy, bool bIsRootComponent, class USceneComponent* ParentComponent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10153,6 +10792,7 @@ namespace CG
 		params.ParentComponent = ParentComponent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10245,16 +10885,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC8520
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.TranslateConstraintPosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      SkeletalMeshComp                                           (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        BoneName                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     PositionDelta                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        CoordinateSpaceBone                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::TranslateConstraintPosition(class USkeletalMeshComponent* SkeletalMeshComp, const class FName& BoneName, const struct FVector& PositionDelta, const class FName& CoordinateSpaceBone)
+	void UDSPhysicsUtils::STATIC_TranslateConstraintPosition(class USkeletalMeshComponent* SkeletalMeshComp, const class FName& BoneName, const struct FVector& PositionDelta, const class FName& CoordinateSpaceBone)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10267,21 +10907,22 @@ namespace CG
 		params.CoordinateSpaceBone = CoordinateSpaceBone;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC8350
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.SetAllPhysicsAngularVelocity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      SkeletalMeshComp                                           (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     NewAngVel                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bAddToCurrent                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::SetAllPhysicsAngularVelocity(class USkeletalMeshComponent* SkeletalMeshComp, const struct FVector& NewAngVel, bool bAddToCurrent)
+	void UDSPhysicsUtils::STATIC_SetAllPhysicsAngularVelocity(class USkeletalMeshComponent* SkeletalMeshComp, const struct FVector& NewAngVel, bool bAddToCurrent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10293,19 +10934,20 @@ namespace CG
 		params.bAddToCurrent = bAddToCurrent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC8250
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.PutAllBodiesToSleep
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      SkeletalMeshComp                                           (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::PutAllBodiesToSleep(class USkeletalMeshComponent* SkeletalMeshComp)
+	void UDSPhysicsUtils::STATIC_PutAllBodiesToSleep(class USkeletalMeshComponent* SkeletalMeshComp)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10315,15 +10957,16 @@ namespace CG
 		params.SkeletalMeshComp = SkeletalMeshComp;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC7C80
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.GetVectorSpringVelocity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     CurrentPosition                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     CurrentVelocity                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10331,7 +10974,7 @@ namespace CG
 	 * 		float                                              SpringConstant                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              SpringDamping                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVector UDSPhysicsUtils::GetVectorSpringVelocity(const struct FVector& CurrentPosition, const struct FVector& CurrentVelocity, float DeltaTime, float SpringConstant, float SpringDamping)
+	struct FVector UDSPhysicsUtils::STATIC_GetVectorSpringVelocity(const struct FVector& CurrentPosition, const struct FVector& CurrentVelocity, float DeltaTime, float SpringConstant, float SpringDamping)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10345,6 +10988,7 @@ namespace CG
 		params.SpringDamping = SpringDamping;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10353,9 +10997,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC7AE0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.GetSpringVelocity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              CurrentPosition                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              CurrentVelocity                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10363,7 +11007,7 @@ namespace CG
 	 * 		float                                              SpringConstant                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              SpringDamping                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	float UDSPhysicsUtils::GetSpringVelocity(float CurrentPosition, float CurrentVelocity, float DeltaTime, float SpringConstant, float SpringDamping)
+	float UDSPhysicsUtils::STATIC_GetSpringVelocity(float CurrentPosition, float CurrentVelocity, float DeltaTime, float SpringConstant, float SpringDamping)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10377,6 +11021,7 @@ namespace CG
 		params.SpringDamping = SpringDamping;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10385,9 +11030,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC76E0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.ExpLerpV
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     X                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     TargetX                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10395,7 +11040,7 @@ namespace CG
 	 * 		float                                              Rate                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              MaxRate                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVector UDSPhysicsUtils::ExpLerpV(const struct FVector& X, const struct FVector& TargetX, float DeltaTime, float Rate, float MaxRate)
+	struct FVector UDSPhysicsUtils::STATIC_ExpLerpV(const struct FVector& X, const struct FVector& TargetX, float DeltaTime, float Rate, float MaxRate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10409,6 +11054,7 @@ namespace CG
 		params.MaxRate = MaxRate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10417,9 +11063,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC74F0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.ExpLerp
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              X                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              TargetX                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10427,7 +11073,7 @@ namespace CG
 	 * 		float                                              Rate                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              MaxRate                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	float UDSPhysicsUtils::ExpLerp(float X, float TargetX, float DeltaTime, float Rate, float MaxRate)
+	float UDSPhysicsUtils::STATIC_ExpLerp(float X, float TargetX, float DeltaTime, float Rate, float MaxRate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10441,6 +11087,7 @@ namespace CG
 		params.MaxRate = MaxRate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10449,14 +11096,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC70C0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.DSVectorSpringSetVel
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     NewVel                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDSVectorSpringState                        SpringState                                                (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::DSVectorSpringSetVel(const struct FVector& NewVel, struct FDSVectorSpringState* SpringState)
+	void UDSPhysicsUtils::STATIC_DSVectorSpringSetVel(const struct FVector& NewVel, struct FDSVectorSpringState* SpringState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10466,6 +11113,7 @@ namespace CG
 		params.NewVel = NewVel;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10475,14 +11123,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC6FC0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.DSVectorSpringSetPos
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     NewPos                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDSVectorSpringState                        SpringState                                                (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::DSVectorSpringSetPos(const struct FVector& NewPos, struct FDSVectorSpringState* SpringState)
+	void UDSPhysicsUtils::STATIC_DSVectorSpringSetPos(const struct FVector& NewPos, struct FDSVectorSpringState* SpringState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10492,6 +11140,7 @@ namespace CG
 		params.NewPos = NewPos;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10501,9 +11150,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC6DF0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.DSVectorSpringInterp
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     TargetPos                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDSVectorSpringState                        SpringState                                                (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -10511,7 +11160,7 @@ namespace CG
 	 * 		float                                              SpringDamping                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DeltaTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::DSVectorSpringInterp(const struct FVector& TargetPos, struct FDSVectorSpringState* SpringState, float SpringConstant, float SpringDamping, float DeltaTime)
+	void UDSPhysicsUtils::STATIC_DSVectorSpringInterp(const struct FVector& TargetPos, struct FDSVectorSpringState* SpringState, float SpringConstant, float SpringDamping, float DeltaTime)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10524,6 +11173,7 @@ namespace CG
 		params.DeltaTime = DeltaTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10533,14 +11183,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC6CF0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.DSVectorSpringAddToVel
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     AddToVel                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDSVectorSpringState                        SpringState                                                (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::DSVectorSpringAddToVel(const struct FVector& AddToVel, struct FDSVectorSpringState* SpringState)
+	void UDSPhysicsUtils::STATIC_DSVectorSpringAddToVel(const struct FVector& AddToVel, struct FDSVectorSpringState* SpringState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10550,6 +11200,7 @@ namespace CG
 		params.AddToVel = AddToVel;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10559,14 +11210,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC6BF0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.DSVectorSpringAddToPos
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     AddToPos                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDSVectorSpringState                        SpringState                                                (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::DSVectorSpringAddToPos(const struct FVector& AddToPos, struct FDSVectorSpringState* SpringState)
+	void UDSPhysicsUtils::STATIC_DSVectorSpringAddToPos(const struct FVector& AddToPos, struct FDSVectorSpringState* SpringState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10576,6 +11227,7 @@ namespace CG
 		params.AddToPos = AddToPos;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10585,14 +11237,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC6B20
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.DSFloatSpringSetVel
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              NewVel                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDSFloatSpringState                         SpringState                                                (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::DSFloatSpringSetVel(float NewVel, struct FDSFloatSpringState* SpringState)
+	void UDSPhysicsUtils::STATIC_DSFloatSpringSetVel(float NewVel, struct FDSFloatSpringState* SpringState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10602,6 +11254,7 @@ namespace CG
 		params.NewVel = NewVel;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10611,14 +11264,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC6A50
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.DSFloatSpringSetPos
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              NewPos                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDSFloatSpringState                         SpringState                                                (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::DSFloatSpringSetPos(float NewPos, struct FDSFloatSpringState* SpringState)
+	void UDSPhysicsUtils::STATIC_DSFloatSpringSetPos(float NewPos, struct FDSFloatSpringState* SpringState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10628,6 +11281,7 @@ namespace CG
 		params.NewPos = NewPos;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10637,9 +11291,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC68B0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.DSFloatSpringInterp
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              TargetPos                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDSFloatSpringState                         SpringState                                                (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -10647,7 +11301,7 @@ namespace CG
 	 * 		float                                              SpringDamping                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DeltaTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::DSFloatSpringInterp(float TargetPos, struct FDSFloatSpringState* SpringState, float SpringConstant, float SpringDamping, float DeltaTime)
+	void UDSPhysicsUtils::STATIC_DSFloatSpringInterp(float TargetPos, struct FDSFloatSpringState* SpringState, float SpringConstant, float SpringDamping, float DeltaTime)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10660,6 +11314,7 @@ namespace CG
 		params.DeltaTime = DeltaTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10669,14 +11324,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC67E0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.DSFloatSpringAddToVel
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              AddToVel                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDSFloatSpringState                         SpringState                                                (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::DSFloatSpringAddToVel(float AddToVel, struct FDSFloatSpringState* SpringState)
+	void UDSPhysicsUtils::STATIC_DSFloatSpringAddToVel(float AddToVel, struct FDSFloatSpringState* SpringState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10686,6 +11341,7 @@ namespace CG
 		params.AddToVel = AddToVel;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10695,14 +11351,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC6710
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.DSFloatSpringAddToPos
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              AddToPos                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDSFloatSpringState                         SpringState                                                (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UDSPhysicsUtils::DSFloatSpringAddToPos(float AddToPos, struct FDSFloatSpringState* SpringState)
+	void UDSPhysicsUtils::STATIC_DSFloatSpringAddToPos(float AddToPos, struct FDSFloatSpringState* SpringState)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10712,6 +11368,7 @@ namespace CG
 		params.AddToPos = AddToPos;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10721,9 +11378,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC71C0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.DirectionalExpLerpV
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     X                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     TargetX                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10731,7 +11388,7 @@ namespace CG
 	 * 		float                                              Rate                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              MaxRate                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVector UDSPhysicsUtils::DirectionalExpLerpV(const struct FVector& X, const struct FVector& TargetX, float DeltaTime, float Rate, float MaxRate)
+	struct FVector UDSPhysicsUtils::STATIC_DirectionalExpLerpV(const struct FVector& X, const struct FVector& TargetX, float DeltaTime, float Rate, float MaxRate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10745,6 +11402,7 @@ namespace CG
 		params.MaxRate = MaxRate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10753,16 +11411,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC6540
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.BoxSphereIntersection
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FTransform                                  BoxTransform                                               (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     BoxExtents                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     SpherePosition                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              SphereRadius                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UDSPhysicsUtils::BoxSphereIntersection(const struct FTransform& BoxTransform, const struct FVector& BoxExtents, const struct FVector& SpherePosition, float SphereRadius)
+	bool UDSPhysicsUtils::STATIC_BoxSphereIntersection(const struct FTransform& BoxTransform, const struct FVector& BoxExtents, const struct FVector& SpherePosition, float SphereRadius)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10775,6 +11433,7 @@ namespace CG
 		params.SphereRadius = SphereRadius;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10783,15 +11442,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC63C0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.BoxPlaneTest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FPlane                                      Plane                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FTransform                                  BoxTranform                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     BoxExtents                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UDSPhysicsUtils::BoxPlaneTest(const struct FPlane& Plane, const struct FTransform& BoxTranform, const struct FVector& BoxExtents)
+	int32_t UDSPhysicsUtils::STATIC_BoxPlaneTest(const struct FPlane& Plane, const struct FTransform& BoxTranform, const struct FVector& BoxExtents)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10803,6 +11462,7 @@ namespace CG
 		params.BoxExtents = BoxExtents;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10811,15 +11471,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC6240
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.BoxPlaneIntersection
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FPlane                                      Plane                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FTransform                                  BoxTranform                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     BoxExtents                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UDSPhysicsUtils::BoxPlaneIntersection(const struct FPlane& Plane, const struct FTransform& BoxTranform, const struct FVector& BoxExtents)
+	bool UDSPhysicsUtils::STATIC_BoxPlaneIntersection(const struct FPlane& Plane, const struct FTransform& BoxTranform, const struct FVector& BoxExtents)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10831,6 +11491,7 @@ namespace CG
 		params.BoxExtents = BoxExtents;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10839,13 +11500,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC61B0
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.ApproxOneMinusExp
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              X                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	float UDSPhysicsUtils::ApproxOneMinusExp(float X)
+	float UDSPhysicsUtils::STATIC_ApproxOneMinusExp(float X)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10855,6 +11516,7 @@ namespace CG
 		params.X = X;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10863,13 +11525,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FC6120
 	 * 		Name   -> Function DSFramework.DSPhysicsUtils.ApproxExp
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              X                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	float UDSPhysicsUtils::ApproxExp(float X)
+	float UDSPhysicsUtils::STATIC_ApproxExp(float X)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -10879,6 +11541,7 @@ namespace CG
 		params.X = X;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -10985,9 +11648,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC650
 	 * 		Name   -> Function DSFramework.ExclusiveUser.HasExclusiveUser
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UExclusiveUser::HasExclusiveUser()
 	{
@@ -10998,6 +11661,7 @@ namespace CG
 		UExclusiveUser_HasExclusiveUser_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -11006,9 +11670,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC210
 	 * 		Name   -> Function DSFramework.ExclusiveUser.ClearExclusiveUser
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UExclusiveUser::ClearExclusiveUser()
 	{
@@ -11019,15 +11683,16 @@ namespace CG
 		UExclusiveUser_ClearExclusiveUser_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC0C0
 	 * 		Name   -> Function DSFramework.ExclusiveUser.AcquireExclusiveUser
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            ControllerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11041,6 +11706,7 @@ namespace CG
 		params.ControllerIndex = ControllerIndex;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -11063,9 +11729,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function DSFramework.FadeableAttachmentInterface.SetFadeValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              FadeValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11099,9 +11765,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCCA20
 	 * 		Name   -> Function DSFramework.FeatureAvailabilityManager.RemoveUnavailableReasonFor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Feature                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11117,15 +11783,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC6D0
 	 * 		Name   -> Function DSFramework.FeatureAvailabilityManager.IsFeatureAvailable
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        Feature                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11139,6 +11806,7 @@ namespace CG
 		params.Feature = Feature;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -11147,9 +11815,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC150
 	 * 		Name   -> Function DSFramework.FeatureAvailabilityManager.AddUnavailableReasonFor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Feature                                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11165,6 +11833,7 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -11269,9 +11938,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD2490
 	 * 		Name   -> Function DSFramework.GFxMultiKeyIcon.SetKeys
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKey                                        Key1                                                       (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKey                                        Key2                                                       (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11287,6 +11956,7 @@ namespace CG
 		params.Key2 = Key2;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -11309,9 +11979,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCCAE0
 	 * 		Name   -> Function DSFramework.GFxActionIcon.SetAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UInputMapperAction*                          Action                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bCanSendChangedEvent                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11327,15 +11997,16 @@ namespace CG
 		params.bCanSendChangedEvent = bCanSendChangedEvent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC7E0
 	 * 		Name   -> Function DSFramework.GFxActionIcon.OnHoldProgress
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		EInputActionHoldEventType                          Type                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              ProgressPct                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11351,15 +12022,16 @@ namespace CG
 		params.ProgressPct = ProgressPct;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC760
 	 * 		Name   -> Function DSFramework.GFxActionIcon.OnActionOverrideConfigChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class UInputMapperActionOverrideConfig*            Config                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11373,6 +12045,7 @@ namespace CG
 		params.Config = Config;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -11407,9 +12080,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD7A0
 	 * 		Name   -> Function DSFramework.GFxCompareIcon.ShowInt
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            ShowValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            BaseValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11425,15 +12098,16 @@ namespace CG
 		params.BaseValue = BaseValue;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD6E0
 	 * 		Name   -> Function DSFramework.GFxCompareIcon.ShowFloat
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              ShowValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              BaseValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11449,15 +12123,16 @@ namespace CG
 		params.BaseValue = BaseValue;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCC680
 	 * 		Name   -> Function DSFramework.GFxCompareIcon.Hide
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UGFxCompareIcon::Hide()
 	{
@@ -11468,6 +12143,7 @@ namespace CG
 		UGFxCompareIcon_Hide_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -11488,9 +12164,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD860
 	 * 		Name   -> Function DSFramework.GFxDeltaProgressBar.Tick
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              DeltaTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11504,15 +12180,16 @@ namespace CG
 		params.DeltaTime = DeltaTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD6C0
 	 * 		Name   -> Function DSFramework.GFxDeltaProgressBar.ShortcutAnimation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UGFxDeltaProgressBar::ShortcutAnimation()
 	{
@@ -11523,15 +12200,16 @@ namespace CG
 		UGFxDeltaProgressBar_ShortcutAnimation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD3C0
 	 * 		Name   -> Function DSFramework.GFxDeltaProgressBar.SetUseAnimation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bInUseAnimation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11545,15 +12223,16 @@ namespace CG
 		params.bInUseAnimation = bInUseAnimation;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD300
 	 * 		Name   -> Function DSFramework.GFxDeltaProgressBar.SetShowProgressValues
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              BaseValue                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              CompareValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11569,15 +12248,16 @@ namespace CG
 		params.CompareValue = CompareValue;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCD280
 	 * 		Name   -> Function DSFramework.GFxDeltaProgressBar.SetShowProgressValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11591,15 +12271,16 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FCCEE0
 	 * 		Name   -> Function DSFramework.GFxDeltaProgressBar.SetPlayProgressValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11613,6 +12294,7 @@ namespace CG
 		params.NewValue = NewValue;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -11629,6 +12311,94 @@ namespace CG
 		if (!ptr)
 			ptr = UObject::FindClass("Class DSFramework.GFxDeltaProgressBar");
 		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD2910
+	 * 		Name   -> Function DSFramework.GFxImageStreamer.UnloadImage
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 */
+	void UGFxImageStreamer::UnloadImage()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.GFxImageStreamer.UnloadImage");
+		
+		UGFxImageStreamer_UnloadImage_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD2840
+	 * 		Name   -> Function DSFramework.GFxImageStreamer.StreamImage
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 * Parameters:
+	 * 		struct FSoftObjectPath                             ImagePath                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UGFxImageStreamer::StreamImage(const struct FSoftObjectPath& ImagePath)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.GFxImageStreamer.StreamImage");
+		
+		UGFxImageStreamer_StreamImage_Params params {};
+		params.ImagePath = ImagePath;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD2410
+	 * 		Name   -> Function DSFramework.GFxImageStreamer.SetImage
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 * Parameters:
+	 * 		class UTexture2D*                                  Image                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UGFxImageStreamer::SetImage(class UTexture2D* Image)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.GFxImageStreamer.SetImage");
+		
+		UGFxImageStreamer_SetImage_Params params {};
+		params.Image = Image;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD18D0
+	 * 		Name   -> Function DSFramework.GFxImageStreamer.IsShowingImage
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	bool UGFxImageStreamer::IsShowingImage()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.GFxImageStreamer.IsShowingImage");
+		
+		UGFxImageStreamer_IsShowingImage_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
 	}
 
 	/**
@@ -11661,9 +12431,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD2610
 	 * 		Name   -> Function DSFramework.GFxProgressBar.SetProgressValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              NewValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bForce                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11679,6 +12449,7 @@ namespace CG
 		params.bForce = bForce;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -11687,9 +12458,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1710
 	 * 		Name   -> Function DSFramework.GFxProgressBar.IsEmpty
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UGFxProgressBar::IsEmpty()
 	{
@@ -11700,6 +12471,7 @@ namespace CG
 		UGFxProgressBar_IsEmpty_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -11722,9 +12494,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD27B0
 	 * 		Name   -> Function DSFramework.GFxTextfield.SetTextColor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FLinearColor                                Color                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11738,15 +12510,16 @@ namespace CG
 		params.Color = Color;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD26E0
 	 * 		Name   -> Function DSFramework.GFxTextfield.SetText
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FText                                        Text                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -11760,15 +12533,16 @@ namespace CG
 		params.Text = Text;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1280
 	 * 		Name   -> Function DSFramework.GFxTextfield.GetTextWidth
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		float                                              OutWidth                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11781,6 +12555,7 @@ namespace CG
 		UGFxTextfield_GetTextWidth_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -11792,9 +12567,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1110
 	 * 		Name   -> Function DSFramework.GFxTextfield.GetTextHTML
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FString                                      OutText                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11807,6 +12582,7 @@ namespace CG
 		UGFxTextfield_GetTextHTML_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -11818,9 +12594,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD11D0
 	 * 		Name   -> Function DSFramework.GFxTextfield.GetTextHeight
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		float                                              OutHeight                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11833,6 +12609,7 @@ namespace CG
 		UGFxTextfield_GetTextHeight_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -11844,9 +12621,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1050
 	 * 		Name   -> Function DSFramework.GFxTextfield.GetText
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FString                                      OutText                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11859,6 +12636,7 @@ namespace CG
 		UGFxTextfield_GetText_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -11884,9 +12662,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1D60
 	 * 		Name   -> Function DSFramework.GFxUIAligner.RefreshPositions
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bUpdatePositionsImmediately                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11900,15 +12678,16 @@ namespace CG
 		params.bUpdatePositionsImmediately = bUpdatePositionsImmediately;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1CD0
 	 * 		Name   -> Function DSFramework.GFxUIAligner.RefreshElements
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bUpdatePositionsImmediately                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -11922,6 +12701,7 @@ namespace CG
 		params.bUpdatePositionsImmediately = bUpdatePositionsImmediately;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -11942,13 +12722,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD17C0
 	 * 		Name   -> Function DSFramework.GlobalFactsFunctionLibrary.IsLocalGameWorldObscured
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      ContextActor                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UGlobalFactsFunctionLibrary::IsLocalGameWorldObscured(class AActor* ContextActor)
+	bool UGlobalFactsFunctionLibrary::STATIC_IsLocalGameWorldObscured(class AActor* ContextActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -11958,6 +12738,7 @@ namespace CG
 		params.ContextActor = ContextActor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -11966,13 +12747,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD1740
 	 * 		Name   -> Function DSFramework.GlobalFactsFunctionLibrary.IsGameWorldObscured
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      ContextActor                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UGlobalFactsFunctionLibrary::IsGameWorldObscured(class AActor* ContextActor)
+	bool UGlobalFactsFunctionLibrary::STATIC_IsGameWorldObscured(class AActor* ContextActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -11982,6 +12763,7 @@ namespace CG
 		params.ContextActor = ContextActor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12047,6 +12829,20 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UIncrementalDespawnable.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UIncrementalDespawnable::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class DSFramework.IncrementalDespawnable");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction UInventoryCategory.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
@@ -12060,9 +12856,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD6D90
 	 * 		Name   -> Function DSFramework.PossessionListenerInterface.OnUnPossess
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		class APawn*                                       Pawn                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bDummyOutput                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12077,6 +12873,7 @@ namespace CG
 		params.Pawn = Pawn;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12086,9 +12883,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD6BB0
 	 * 		Name   -> Function DSFramework.PossessionListenerInterface.OnPreUnPossess
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		class APawn*                                       Pawn                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bDummyOutput                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12103,6 +12900,7 @@ namespace CG
 		params.Pawn = Pawn;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12112,9 +12910,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD6AE0
 	 * 		Name   -> Function DSFramework.PossessionListenerInterface.OnPossess
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		class APawn*                                       Pawn                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bDummyOutput                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12129,6 +12927,7 @@ namespace CG
 		params.Pawn = Pawn;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12166,9 +12965,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD72C0
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.SwapItemShortcut
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AItemActor*                                  Item1                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Index1                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12188,6 +12987,7 @@ namespace CG
 		params.Index2 = Index2;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12196,9 +12996,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD7240
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.SetSelectedItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            ShortcutIndexIn                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -12212,15 +13012,16 @@ namespace CG
 		params.ShortcutIndexIn = ShortcutIndexIn;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD7070
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.ServerAssignShortcutGroup
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, Private, NetServer, NetValidate)
 	 * Parameters:
 	 * 		class UEquippableComponent*                        ShortcutItem                                               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            ShortcutIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12236,15 +13037,16 @@ namespace CG
 		params.ShortcutIndex = ShortcutIndex;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD7050
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.SelectPreviousItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UItemAssignmentShortcutGroupInstance::SelectPreviousItem()
 	{
@@ -12255,15 +13057,16 @@ namespace CG
 		UItemAssignmentShortcutGroupInstance_SelectPreviousItem_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD7030
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.SelectNextItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UItemAssignmentShortcutGroupInstance::SelectNextItem()
 	{
@@ -12274,15 +13077,16 @@ namespace CG
 		UItemAssignmentShortcutGroupInstance_SelectNextItem_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD6FA0
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.RemoveItemShortcut
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UEquippableComponent*                        ItemToRemove                                               (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -12296,6 +13100,7 @@ namespace CG
 		params.ItemToRemove = ItemToRemove;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12304,9 +13109,31 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD6200
+	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.GetSelectedItemEvenIfBroken
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+	 */
+	class UEquippableComponent* UItemAssignmentShortcutGroupInstance::GetSelectedItemEvenIfBroken()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemAssignmentShortcutGroupInstance.GetSelectedItemEvenIfBroken");
+		
+		UItemAssignmentShortcutGroupInstance_GetSelectedItemEvenIfBroken_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x03FD6170
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.GetLastSelectedItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UEquippableComponent* UItemAssignmentShortcutGroupInstance::GetLastSelectedItem()
 	{
@@ -12317,6 +13144,7 @@ namespace CG
 		UItemAssignmentShortcutGroupInstance_GetLastSelectedItem_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12325,9 +13153,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD60E0
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.GetItemAtShortcutIndex
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -12341,6 +13169,7 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12349,9 +13178,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD6020
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.GetIndexForShortcutItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class AItemActor*                                  QueryItem                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -12365,6 +13194,7 @@ namespace CG
 		params.QueryItem = QueryItem;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12373,9 +13203,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD5F90
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.GetEquippableAtShortcutIndex
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -12389,6 +13219,7 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12397,9 +13228,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD5BC0
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.ClientInitialize
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
 	 * 		TArray<struct FGuid>                               InClientShortcutIds                                        (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            InSelectedShortcut                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12415,15 +13246,16 @@ namespace CG
 		params.InSelectedShortcut = InSelectedShortcut;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD5B30
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.CanEquip
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class UEquippableComponent*                        Equippable                                                 (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -12437,6 +13269,7 @@ namespace CG
 		params.Equippable = Equippable;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12445,9 +13278,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD5A70
 	 * 		Name   -> Function DSFramework.ItemAssignmentShortcutGroupInstance.AssignItemShortcut
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UEquippableComponent*                        Item                                                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12463,6 +13296,7 @@ namespace CG
 		params.Index = Index;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12481,30 +13315,6 @@ namespace CG
 		if (!ptr)
 			ptr = UObject::FindClass("Class DSFramework.ItemAssignmentShortcutGroupInstance");
 		return ptr;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function DSFramework.ItemFactory.CreateItem
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		struct FItemCreationParams                         Params                                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	 */
-	class AItemActor* UItemFactory::CreateItem(const struct FItemCreationParams& Params)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function DSFramework.ItemFactory.CreateItem");
-		
-		UItemFactory_CreateItem_Params params {};
-		params.Params = Params;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
 	}
 
 	/**
@@ -12537,9 +13347,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD5D90
 	 * 		Name   -> Function DSFramework.ItemFactoryManager.FindOrCreateFactory
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		class UItemArchetype*                              ItemArchetype                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -12553,6 +13363,7 @@ namespace CG
 		params.ItemArchetype = ItemArchetype;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -12587,15 +13398,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD5CA0
 	 * 		Name   -> Function DSFramework.ItemHelpers.CreateItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     Outer                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UItemArchetype*                              ItemArchetype                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UItemInstanceData*                           InstanceData                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class AItemActor* UItemHelpers::CreateItem(class UObject* Outer, class UItemArchetype* ItemArchetype, class UItemInstanceData* InstanceData)
+	class AItemActor* UItemHelpers::STATIC_CreateItem(class UObject* Outer, class UItemArchetype* ItemArchetype, class UItemInstanceData* InstanceData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -12607,6 +13418,7 @@ namespace CG
 		params.InstanceData = InstanceData;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12629,9 +13441,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD6460
 	 * 		Name   -> Function DSFramework.ItemStatDisplayInfo.GetStatGroup
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        StatGroupIdentifier                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -12645,6 +13457,7 @@ namespace CG
 		params.StatGroupIdentifier = StatGroupIdentifier;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12653,9 +13466,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD6330
 	 * 		Name   -> Function DSFramework.ItemStatDisplayInfo.GetStatContibutors
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	TArray<struct FItemStatContributorData> UItemStatDisplayInfo::GetStatContibutors()
 	{
@@ -12666,6 +13479,7 @@ namespace CG
 		UItemStatDisplayInfo_GetStatContibutors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12674,9 +13488,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD6230
 	 * 		Name   -> Function DSFramework.ItemStatDisplayInfo.GetStatContibutorInfo
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        ContributorIdentifier                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -12690,6 +13504,7 @@ namespace CG
 		params.ContributorIdentifier = ContributorIdentifier;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12698,9 +13513,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FD5E60
 	 * 		Name   -> Function DSFramework.ItemStatDisplayInfo.GetDisplayInfo
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        StatType                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -12714,6 +13529,7 @@ namespace CG
 		params.StatType = StatType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -12750,9 +13566,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FDF330
 	 * 		Name   -> Function DSFramework.LookAtTargetCameraModifier.SetTargetPosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     Target                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -12766,6 +13582,7 @@ namespace CG
 		params.Target = Target;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -12800,9 +13617,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FDF230
 	 * 		Name   -> Function DSFramework.MissionCompletionChallengeRuntimeObject.OnMissionStateChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class UMissionInstance*                            MissionInstance                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EMissionState                                      NewState                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12820,6 +13637,7 @@ namespace CG
 		params.LeavingState = LeavingState;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -13148,9 +13966,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FDF120
 	 * 		Name   -> Function DSFramework.OptionsManager.GetPresentationProxy
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       InHierarchyGuid                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      InOptionPath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -13166,6 +13984,7 @@ namespace CG
 		params.InOptionPath = InOptionPath;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13174,9 +13993,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FDEFB0
 	 * 		Name   -> Function DSFramework.OptionsManager.GetOptionStringValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       InHierarchyGuid                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      InOptionPath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -13193,6 +14012,7 @@ namespace CG
 		params.InOptionPath = InOptionPath;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13204,9 +14024,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FDEE60
 	 * 		Name   -> Function DSFramework.OptionsManager.GetOptionIntValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       InHierarchyGuid                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      InOptionPath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -13223,6 +14043,7 @@ namespace CG
 		params.InOptionPath = InOptionPath;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13234,9 +14055,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FDED10
 	 * 		Name   -> Function DSFramework.OptionsManager.GetOptionFloatValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       InHierarchyGuid                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      InOptionPath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -13253,6 +14074,7 @@ namespace CG
 		params.InOptionPath = InOptionPath;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13264,9 +14086,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FDEBC0
 	 * 		Name   -> Function DSFramework.OptionsManager.GetOptionBoolValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FGuid                                       InHierarchyGuid                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      InOptionPath                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -13283,6 +14105,7 @@ namespace CG
 		params.InOptionPath = InOptionPath;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13294,9 +14117,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FDEB10
 	 * 		Name   -> Function DSFramework.OptionsManager.GetGuidForOptionsHierarchy
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class FString                                      InOptionsHierarchyPath                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -13310,6 +14133,7 @@ namespace CG
 		params.InOptionsHierarchyPath = InOptionsHierarchyPath;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13374,9 +14198,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3EE0
 	 * 		Name   -> Function DSFramework.OptionStoragePersistentData.OnSetUserProfilePath
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class FString                                      InUserProfilePath                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -13390,6 +14214,7 @@ namespace CG
 		params.InUserProfilePath = InUserProfilePath;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -13410,9 +14235,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE4000
 	 * 		Name   -> Function DSFramework.PaperDollSlot.ServerAssignItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, Private, NetServer, BlueprintCallable, NetValidate)
 	 * Parameters:
 	 * 		class UEquippableComponent*                        Item                                                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -13426,15 +14251,16 @@ namespace CG
 		params.Item = Item;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3C90
 	 * 		Name   -> Function DSFramework.PaperDollSlot.OnRep_AuthorityAssignedItem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	void UPaperDollSlot::OnRep_AuthorityAssignedItem()
 	{
@@ -13445,15 +14271,16 @@ namespace CG
 		UPaperDollSlot_OnRep_AuthorityAssignedItem_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3B70
 	 * 		Name   -> Function DSFramework.PaperDollSlot.OnItemReadyForRemoval
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		class UEquippableComponent*                        EquippableItem                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -13467,15 +14294,16 @@ namespace CG
 		params.EquippableItem = EquippableItem;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3440
 	 * 		Name   -> Function DSFramework.PaperDollSlot.GetUser
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	class AActor* UPaperDollSlot::GetUser()
 	{
@@ -13486,6 +14314,7 @@ namespace CG
 		UPaperDollSlot_GetUser_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13508,9 +14337,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function DSFramework.PaperDollSlotGroup.K2_SelectedItemChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
 	void UPaperDollSlotGroup::K2_SelectedItemChanged()
 	{
@@ -13541,9 +14370,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3CD0
 	 * 		Name   -> Function DSFramework.PaperDollState.OnRep_PaperDollUser
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	void APaperDollState::OnRep_PaperDollUser()
 	{
@@ -13554,6 +14383,7 @@ namespace CG
 		APaperDollState_OnRep_PaperDollUser_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -13658,13 +14488,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE2B30
 	 * 		Name   -> Function DSFramework.PlayerUtils.BlueprintIsLocallyControlledPlayerFromPawn
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class APawn*                                       Pawn                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UPlayerUtils::BlueprintIsLocallyControlledPlayerFromPawn(class APawn* Pawn)
+	bool UPlayerUtils::STATIC_BlueprintIsLocallyControlledPlayerFromPawn(class APawn* Pawn)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -13674,6 +14504,7 @@ namespace CG
 		params.Pawn = Pawn;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13682,13 +14513,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE2A80
 	 * 		Name   -> Function DSFramework.PlayerUtils.BlueprintIsLocallyControlledPlayerFromController
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AController*                                 Controller                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UPlayerUtils::BlueprintIsLocallyControlledPlayerFromController(class AController* Controller)
+	bool UPlayerUtils::STATIC_BlueprintIsLocallyControlledPlayerFromController(class AController* Controller)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -13698,6 +14529,7 @@ namespace CG
 		params.Controller = Controller;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13706,13 +14538,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE29A0
 	 * 		Name   -> Function DSFramework.PlayerUtils.BlueprintIsLocallyControlledPlayerFromActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UPlayerUtils::BlueprintIsLocallyControlledPlayerFromActor(class AActor* Actor)
+	bool UPlayerUtils::STATIC_BlueprintIsLocallyControlledPlayerFromActor(class AActor* Actor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -13722,6 +14554,7 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13772,9 +14605,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3CF0
 	 * 		Name   -> Function DSFramework.RequestCharacterActionCallbackProxy.OnResolvedAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms, HasDefaults)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnResolvedParams            ResolvedParams                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -13790,15 +14623,16 @@ namespace CG
 		params.ResolvedParams = ResolvedParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3960
 	 * 		Name   -> Function DSFramework.RequestCharacterActionCallbackProxy.OnEndAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms, HasDefaults)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnEndParams                 EndParams                                                  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -13814,15 +14648,16 @@ namespace CG
 		params.EndParams = EndParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3860
 	 * 		Name   -> Function DSFramework.RequestCharacterActionCallbackProxy.OnCustomSignalReceived
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms, HasDefaults)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnCustomSignalParams        CustomSignalParams                                         (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -13838,15 +14673,16 @@ namespace CG
 		params.CustomSignalParams = CustomSignalParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3690
 	 * 		Name   -> Function DSFramework.RequestCharacterActionCallbackProxy.OnCancelledAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms, HasDefaults)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnCancelledParams           CancelledParams                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -13862,15 +14698,16 @@ namespace CG
 		params.CancelledParams = CancelledParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE34A0
 	 * 		Name   -> Function DSFramework.RequestCharacterActionCallbackProxy.OnBeginAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms, HasDefaults)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnBeginParams               BeginParams                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -13886,15 +14723,16 @@ namespace CG
 		params.BeginParams = BeginParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3470
 	 * 		Name   -> Function DSFramework.RequestCharacterActionCallbackProxy.IsRequestValid
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool URequestCharacterActionCallbackProxy::IsRequestValid()
 	{
@@ -13905,6 +14743,7 @@ namespace CG
 		URequestCharacterActionCallbackProxy_IsRequestValid_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13913,9 +14752,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE2F50
 	 * 		Name   -> Function DSFramework.RequestCharacterActionCallbackProxy.EndAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		ECharacterActionEndReason                          Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DelayTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -13933,22 +14772,23 @@ namespace CG
 		params.bWaitForActionEnd = bWaitForActionEnd;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE2BF0
 	 * 		Name   -> Function DSFramework.RequestCharacterActionCallbackProxy.CreateProxyObjectForRequestCharacterAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UCharacterActionComponent*                   InCharacterActionComponent                                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionRequestParams               RequestParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		ECharacterActionHelperReferenceType                InReferenceType                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FGuid                                       OutRequestId                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class URequestCharacterActionCallbackProxy* URequestCharacterActionCallbackProxy::CreateProxyObjectForRequestCharacterAction(class UCharacterActionComponent* InCharacterActionComponent, const struct FCharacterActionRequestParams& RequestParams, ECharacterActionHelperReferenceType InReferenceType, struct FGuid* OutRequestId)
+	class URequestCharacterActionCallbackProxy* URequestCharacterActionCallbackProxy::STATIC_CreateProxyObjectForRequestCharacterAction(class UCharacterActionComponent* InCharacterActionComponent, const struct FCharacterActionRequestParams& RequestParams, ECharacterActionHelperReferenceType InReferenceType, struct FGuid* OutRequestId)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -13960,6 +14800,7 @@ namespace CG
 		params.InReferenceType = InReferenceType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -13971,9 +14812,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE2840
 	 * 		Name   -> Function DSFramework.RequestCharacterActionCallbackProxy.Activate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void URequestCharacterActionCallbackProxy::Activate()
 	{
@@ -13984,6 +14825,7 @@ namespace CG
 		URequestCharacterActionCallbackProxy_Activate_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -14004,9 +14846,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3DF0
 	 * 		Name   -> Function DSFramework.RequestCharacterActionOnMultipleActorsCallbackProxy.OnResolvedAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasOutParms, HasDefaults)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnResolvedParams            ResolvedParams                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -14022,15 +14864,16 @@ namespace CG
 		params.ResolvedParams = ResolvedParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3A70
 	 * 		Name   -> Function DSFramework.RequestCharacterActionOnMultipleActorsCallbackProxy.OnEndAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasOutParms, HasDefaults)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnEndParams                 EndParams                                                  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -14046,15 +14889,16 @@ namespace CG
 		params.EndParams = EndParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3780
 	 * 		Name   -> Function DSFramework.RequestCharacterActionOnMultipleActorsCallbackProxy.OnCancelledAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasOutParms, HasDefaults)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnCancelledParams           CancelledParams                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -14070,15 +14914,16 @@ namespace CG
 		params.CancelledParams = CancelledParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE35A0
 	 * 		Name   -> Function DSFramework.RequestCharacterActionOnMultipleActorsCallbackProxy.OnBeginAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasOutParms, HasDefaults)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionOnBeginParams               BeginParams                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -14094,15 +14939,16 @@ namespace CG
 		params.BeginParams = BeginParams;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE3060
 	 * 		Name   -> Function DSFramework.RequestCharacterActionOnMultipleActorsCallbackProxy.EndAllActions
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		ECharacterActionEndReason                          Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -14116,21 +14962,22 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE2D70
 	 * 		Name   -> Function DSFramework.RequestCharacterActionOnMultipleActorsCallbackProxy.CreateProxyObjectForRequestCharacterAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		TArray<class AActor*>                              Actors                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		struct FCharacterActionRequestParams               RequestParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		ECharacterActionHelperReferenceType                InReferenceType                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class URequestCharacterActionOnMultipleActorsCallbackProxy* URequestCharacterActionOnMultipleActorsCallbackProxy::CreateProxyObjectForRequestCharacterAction(TArray<class AActor*> Actors, const struct FCharacterActionRequestParams& RequestParams, ECharacterActionHelperReferenceType InReferenceType)
+	class URequestCharacterActionOnMultipleActorsCallbackProxy* URequestCharacterActionOnMultipleActorsCallbackProxy::STATIC_CreateProxyObjectForRequestCharacterAction(TArray<class AActor*> Actors, const struct FCharacterActionRequestParams& RequestParams, ECharacterActionHelperReferenceType InReferenceType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14142,6 +14989,7 @@ namespace CG
 		params.InReferenceType = InReferenceType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -14192,9 +15040,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE65F0
 	 * 		Name   -> Function DSFramework.SlomoManager.RemoveBlockReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        BlockReason                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -14208,15 +15056,16 @@ namespace CG
 		params.BlockReason = BlockReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE63A0
 	 * 		Name   -> Function DSFramework.SlomoManager.GetTimeDilation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float ASlomoManager::GetTimeDilation()
 	{
@@ -14227,6 +15076,7 @@ namespace CG
 		ASlomoManager_GetTimeDilation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -14235,13 +15085,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE6320
 	 * 		Name   -> Function DSFramework.SlomoManager.GetSlomoManager
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class ASlomoManager* ASlomoManager::GetSlomoManager(class UObject* WorldContextObject)
+	class ASlomoManager* ASlomoManager::STATIC_GetSlomoManager(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -14251,6 +15101,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -14259,9 +15110,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE61E0
 	 * 		Name   -> Function DSFramework.SlomoManager.EndSlomoRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FSlomoHandle                                Handle                                                     (Parm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		bool                                               bBlendOut                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -14277,15 +15128,16 @@ namespace CG
 		params.bBlendOut = bBlendOut;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE6150
 	 * 		Name   -> Function DSFramework.SlomoManager.DoesGroupExist
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FName                                        Group                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -14299,6 +15151,7 @@ namespace CG
 		params.Group = Group;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -14307,9 +15160,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE6120
 	 * 		Name   -> Function DSFramework.SlomoManager.AnySlomoActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool ASlomoManager::AnySlomoActive()
 	{
@@ -14320,6 +15173,7 @@ namespace CG
 		ASlomoManager_AnySlomoActive_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -14328,9 +15182,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE6000
 	 * 		Name   -> Function DSFramework.SlomoManager.AddStateSlomoRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FStateSlomoRequest                          Request                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -14344,6 +15198,7 @@ namespace CG
 		params.Request = Request;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -14352,9 +15207,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE5EE0
 	 * 		Name   -> Function DSFramework.SlomoManager.AddSlomoRequest
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FSlomoRequest                               Request                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -14368,6 +15223,7 @@ namespace CG
 		params.Request = Request;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -14376,9 +15232,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE5DD0
 	 * 		Name   -> Function DSFramework.SlomoManager.AddBlockReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        BlockReason                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -14392,6 +15248,7 @@ namespace CG
 		params.BlockReason = BlockReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -14454,9 +15311,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x03FE63C0
 	 * 		Name   -> Function DSFramework.StatChallengeRuntimeObject.IncrementCallback
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
 	 * 		int32_t                                            Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Delta                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -14475,6 +15332,7 @@ namespace CG
 		params.BindType = BindType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

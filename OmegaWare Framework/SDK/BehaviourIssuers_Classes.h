@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		TMap<class FName, int32_t>                                 BehaviourIssuerPriorities;                               // 0x00E8(0x0050) Edit, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JOW5[0x138];                                 // 0x0138(0x0138) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DJA3[0x138];                                 // 0x0138(0x0138) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

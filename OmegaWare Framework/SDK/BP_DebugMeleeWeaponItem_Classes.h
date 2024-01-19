@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,12 +16,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_DebugMeleeWeaponItem.BP_DebugMeleeWeaponItem_C
-	 * Size -> 0x0008 (FullSize[0x06E8] - InheritedSize[0x06E0])
+	 * Size -> 0x0008 (FullSize[0x0770] - InheritedSize[0x0768])
 	 */
 	class ABP_DebugMeleeWeaponItem_C : public ADebugMeleeWeaponItemActor
 	{
 	public:
-		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x06E0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class USceneComponent*                                     DefaultSceneRoot;                                        // 0x0768(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
 		static UClass* StaticClass();

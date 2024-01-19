@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -14,6 +14,28 @@ namespace CG
 	// --------------------------------------------------
 	// # Structs
 	// --------------------------------------------------
+	/**
+	 * Function BP_PerkEffect_ManageStateAbility.BP_PerkEffect_ManageStateAbility_C.On Accumulating Effects State Change
+	 */
+	struct UBP_PerkEffect_ManageStateAbility_C_OnAccumulatingEffectsStateChange_Params
+	{
+	public:
+		class AActor*                                              OwningActor;                                             // 0x0000(0x0008)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		class UAccumulatingEffectInstance*                         EffectInstance;                                          // 0x0008(0x0008)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
+	 * Function BP_PerkEffect_ManageStateAbility.BP_PerkEffect_ManageStateAbility_C.UnbindAccumulatingEffectsStateChangeDelegate
+	 */
+	struct UBP_PerkEffect_ManageStateAbility_C_UnbindAccumulatingEffectsStateChangeDelegate_Params
+	{	};
+
+	/**
+	 * Function BP_PerkEffect_ManageStateAbility.BP_PerkEffect_ManageStateAbility_C.BindAccumulatingEffectsStateChangeDelegate
+	 */
+	struct UBP_PerkEffect_ManageStateAbility_C_BindAccumulatingEffectsStateChangeDelegate_Params
+	{	};
+
 	/**
 	 * Function BP_PerkEffect_ManageStateAbility.BP_PerkEffect_ManageStateAbility_C.AddDSLog
 	 */
@@ -147,15 +169,6 @@ namespace CG
 	{	};
 
 	/**
-	 * Function BP_PerkEffect_ManageStateAbility.BP_PerkEffect_ManageStateAbility_C.OnEnd
-	 */
-	struct UBP_PerkEffect_ManageStateAbility_C_OnEnd_Params
-	{
-	public:
-		struct FPerkEffectEndParams                                Params;                                                  // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-	};
-
-	/**
 	 * Function BP_PerkEffect_ManageStateAbility.BP_PerkEffect_ManageStateAbility_C.OnStart
 	 */
 	struct UBP_PerkEffect_ManageStateAbility_C_OnStart_Params
@@ -165,13 +178,22 @@ namespace CG
 	};
 
 	/**
+	 * Function BP_PerkEffect_ManageStateAbility.BP_PerkEffect_ManageStateAbility_C.OnEnd
+	 */
+	struct UBP_PerkEffect_ManageStateAbility_C_OnEnd_Params
+	{
+	public:
+		struct FPerkEffectEndParams                                Params;                                                  // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	};
+
+	/**
 	 * Function BP_PerkEffect_ManageStateAbility.BP_PerkEffect_ManageStateAbility_C.ExecuteUbergraph_BP_PerkEffect_ManageStateAbility
 	 */
 	struct UBP_PerkEffect_ManageStateAbility_C_ExecuteUbergraph_BP_PerkEffect_ManageStateAbility_Params
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_03N0[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_CMN2[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

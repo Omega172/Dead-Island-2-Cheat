@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_JournalEntryRegistry.BP_JournalEntryRegistry_C
-	 * Size -> 0x0000 (FullSize[0x0470] - InheritedSize[0x0470])
+	 * Size -> 0x0000 (FullSize[0x0488] - InheritedSize[0x0488])
 	 */
 	class ABP_JournalEntryRegistry_C : public AJournalEntryRegistry
 	{

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,35 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.CheckEntitlementIsValidForDisplayName
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		struct FDataTableRowHandle                         Entitlement                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	 * 		bool                                               IsValid                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void ABP_Base_EntitlementObject_C::CheckEntitlementIsValidForDisplayName(const struct FDataTableRowHandle& Entitlement, bool* IsValid)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.CheckEntitlementIsValidForDisplayName");
+		
+		ABP_Base_EntitlementObject_C_CheckEntitlementIsValidForDisplayName_Params params {};
+		params.Entitlement = Entitlement;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		if (IsValid != nullptr)
+			*IsValid = params.IsValid;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.UpdateCosmeticEffectVisibility
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_EntitlementObject_C::UpdateCosmeticEffectVisibility()
 	{
@@ -31,9 +57,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.GetEntitlementForDisplayName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               ValidEntitlementFound                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FDataTableRowHandle                         EntitlementToUse                                           (Parm, OutParm, NoDestructor)
@@ -58,9 +84,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.GetEntitlementDisplayName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FDataTableRowHandle                         Entitlement                                                (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	 * 		bool                                               EntitlementFoundInRegistry                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -87,9 +113,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.SetEntitlementDisplayName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_EntitlementObject_C::SetEntitlementDisplayName()
 	{
@@ -106,9 +132,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.UpdateParticleVisibility
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_EntitlementObject_C::UpdateParticleVisibility()
 	{
@@ -125,9 +151,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.InitializeFromEntitlementData
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_EntitlementObject_C::InitializeFromEntitlementData()
 	{
@@ -144,9 +170,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.CreateResponses
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		TArray<struct FDataTableRowHandle>                 EntitlementsRequired                                       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 */
@@ -168,9 +194,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.CreateGameEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_EntitlementObject_C::CreateGameEvent()
 	{
@@ -187,9 +213,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.AddGameEventResponders
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		TArray<class UGameEventResponse*>                  ResponsesToAdd                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 */
@@ -211,9 +237,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.BndEvt__Pickupable_K2Node_ComponentBoundEvent_0_InteractDelegate__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		class APawn*                                       User                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EInteractionMode                                   Mode                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -237,9 +263,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.UpdateVisuals
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_EntitlementObject_C::UpdateVisuals()
 	{
@@ -256,9 +282,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.ReceiveBeginPlay
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
 	void ABP_Base_EntitlementObject_C::ReceiveBeginPlay()
 	{
@@ -275,9 +301,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.ReceiveUpdateVisibility
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               bVisible                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -297,9 +323,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.BndEvt__Pickupable_K2Node_ComponentBoundEvent_3_InteractionEnabledStateChangedDelegate__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsEnabled                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -319,9 +345,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_EntitlementObject.BP_Base_EntitlementObject_C.ExecuteUbergraph_BP_Base_EntitlementObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

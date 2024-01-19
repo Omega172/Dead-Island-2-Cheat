@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -25,7 +25,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnContextRemoved;                                        // 0x00F8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		TArray<class UStatWhiteListDataAsset*>                     StatWhitelistDataAssets;                                 // 0x0108(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic
 		class UStatsRuntimeState*                                  ScratchData;                                             // 0x0118(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_TTCN[0x180];                                 // 0x0120(0x0180) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_37FF[0x180];                                 // 0x0120(0x0180) MISSED OFFSET (PADDING)
 
 	public:
 		void SetParent(class UStatsComponent* Parent);

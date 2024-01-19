@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,20 +16,20 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * AnimBlueprintGeneratedClass ABP_ZombiePreview.ABP_ZombiePreview_C
-	 * Size -> 0x0390 (FullSize[0x0F50] - InheritedSize[0x0BC0])
+	 * Size -> 0x0390 (FullSize[0x0EF0] - InheritedSize[0x0B60])
 	 */
 	class UABP_ZombiePreview_C : public UDIAnimInstance
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0BC0(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x0BC8(0x0030)
-		struct FAnimNode_Slot                                      AnimGraphNode_Slot_3;                                    // 0x0BF8(0x0058)
-		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace;                     // 0x0C50(0x0020)
-		struct FAnimNode_SmartBoneDriver                           AnimGraphNode_SmartBoneDriver;                           // 0x0C70(0x0150)
-		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x0DC0(0x0020)
-		struct FAnimNode_Slot                                      AnimGraphNode_Slot_2;                                    // 0x0DE0(0x0058)
-		struct FAnimNode_Slot                                      AnimGraphNode_Slot;                                      // 0x0E38(0x0058)
-		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend;                          // 0x0E90(0x00C0)
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0B60(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x0B68(0x0030)
+		struct FAnimNode_Slot                                      AnimGraphNode_Slot_3;                                    // 0x0B98(0x0058)
+		struct FAnimNode_ConvertLocalToComponentSpace              AnimGraphNode_LocalToComponentSpace;                     // 0x0BF0(0x0020)
+		struct FAnimNode_SmartBoneDriver                           AnimGraphNode_SmartBoneDriver;                           // 0x0C10(0x0150)
+		struct FAnimNode_ConvertComponentToLocalSpace              AnimGraphNode_ComponentToLocalSpace;                     // 0x0D60(0x0020)
+		struct FAnimNode_Slot                                      AnimGraphNode_Slot_2;                                    // 0x0D80(0x0058)
+		struct FAnimNode_Slot                                      AnimGraphNode_Slot;                                      // 0x0DD8(0x0058)
+		struct FAnimNode_LayeredBoneBlend                          AnimGraphNode_LayeredBoneBlend;                          // 0x0E30(0x00C0)
 
 	public:
 		void AnimGraph(struct FPoseLink* AnimGraph);

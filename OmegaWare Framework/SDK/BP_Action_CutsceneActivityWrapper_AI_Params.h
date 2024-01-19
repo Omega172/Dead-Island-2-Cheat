@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,9 +21,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function BP_Action_CutsceneActivityWrapper_AI.BP_Action_CutsceneActivityWrapper_AI_C.ActionEndCleanup
+	 * Function BP_Action_CutsceneActivityWrapper_AI.BP_Action_CutsceneActivityWrapper_AI_C.ActionEndCleanUp
 	 */
-	struct UBP_Action_CutsceneActivityWrapper_AI_C_ActionEndCleanup_Params
+	struct UBP_Action_CutsceneActivityWrapper_AI_C_ActionEndCleanUp_Params
 	{	};
 
 	/**

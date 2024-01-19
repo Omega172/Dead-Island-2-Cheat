@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,10 +21,10 @@ namespace CG
 	class UBP_MenusFunctionLibrary_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		void ShowUnavailableInDemoDialog(class UObject* __WorldContext);
-		void OpenVendorMenu(class UVendorComponent* Vendor, class APlayerController* PlayerController, class UObject* __WorldContext);
-		class UMenuInstance* OpenMenu(class UMenuType* Menu, const struct FMenuOpeningParams& OpeningParams, class UObject* __WorldContext);
-		void OpenCloseInGameMenu(bool Opened, const class FName& ActionFilterReason, class UInputMapperActionFilterDefinition* ActionFilter, class UClass* HUDState, struct FGuid* GameMenuAudioStateId, class UObject* WorldContextObject, class UObject* __WorldContext);
+		void STATIC_ShowUnavailableInDemoDialog(class UObject* __WorldContext);
+		void STATIC_OpenVendorMenu(class UVendorComponent* Vendor, class APlayerController* PlayerController, class UObject* __WorldContext);
+		class UMenuInstance* STATIC_OpenMenu(class UMenuType* Menu, const struct FMenuOpeningParams& OpeningParams, class UObject* __WorldContext);
+		void STATIC_OpenCloseInGameMenu(bool Opened, const class FName& ActionFilterReason, class UInputMapperActionFilterDefinition* ActionFilter, class UClass* HUDState, struct FGuid* GameMenuAudioStateId, class UObject* WorldContextObject, class UObject* __WorldContext);
 		static UClass* StaticClass();
 	};
 

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -40,15 +40,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CE1F00
 	 * 		Name   -> Function SpawnHandler.SpawnHandlerLibrary.RequestSpawn
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FSpawnParams                                SpawnParams                                                (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              SpawnCallback                                              (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool USpawnHandlerLibrary::RequestSpawn(class UObject* WorldContext, const struct FSpawnParams& SpawnParams, const class FScriptDelegate& SpawnCallback)
+	bool USpawnHandlerLibrary::STATIC_RequestSpawn(class UObject* WorldContext, const struct FSpawnParams& SpawnParams, const class FScriptDelegate& SpawnCallback)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -60,6 +60,7 @@ namespace CG
 		params.SpawnCallback = SpawnCallback;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -68,15 +69,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CE1D90
 	 * 		Name   -> Function SpawnHandler.SpawnHandlerLibrary.RequestBatchSpawn
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FBatchSpawnRequestItem>              SpawnsAndParams                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              SpawnCallback                                              (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool USpawnHandlerLibrary::RequestBatchSpawn(class UObject* WorldContext, TArray<struct FBatchSpawnRequestItem> SpawnsAndParams, const class FScriptDelegate& SpawnCallback)
+	bool USpawnHandlerLibrary::STATIC_RequestBatchSpawn(class UObject* WorldContext, TArray<struct FBatchSpawnRequestItem> SpawnsAndParams, const class FScriptDelegate& SpawnCallback)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -88,6 +89,7 @@ namespace CG
 		params.SpawnCallback = SpawnCallback;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

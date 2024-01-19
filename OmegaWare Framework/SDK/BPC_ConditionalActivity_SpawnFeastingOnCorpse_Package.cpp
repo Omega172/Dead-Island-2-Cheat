@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.DestroyOrOrphanActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::DestroyOrOrphanActivity()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.PlayDeadPosingDebug
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::PlayDeadPosingDebug()
 	{
@@ -50,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.BindKnowledgeBaseListeners
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::BindKnowledgeBaseListeners()
 	{
@@ -69,9 +69,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.SetupActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::SetupActivity()
 	{
@@ -88,9 +88,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.SetActivityTransform
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class USceneComponent*                             Target                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     LocationOffset                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -123,9 +123,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.RemoveFeastingCorpseLingerReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::RemoveFeastingCorpseLingerReason()
 	{
@@ -142,9 +142,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.AddFeastingCorpseLingerReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::AddFeastingCorpseLingerReason()
 	{
@@ -161,9 +161,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.OnParticipantWillBeReleased
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UParticipantSlotComponent*                   Participant                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -183,9 +183,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.OnParticipantWillArrive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UParticipantSlotComponent*                   Participant                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -205,9 +205,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.UpdateTargetTransform
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::UpdateTargetTransform()
 	{
@@ -224,9 +224,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.IsStationary
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsStationary                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -248,9 +248,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.IsActivityActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               ActivityActive                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -272,9 +272,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.DisableActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::DisableActivity()
 	{
@@ -291,9 +291,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.SpawnActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::SpawnActivity()
 	{
@@ -310,9 +310,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.UpdateActivityPositionAndEnable
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::UpdateActivityPositionAndEnable()
 	{
@@ -329,9 +329,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.SetActivityActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               Active                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -351,9 +351,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.SetupExpressionListenerForActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -373,9 +373,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.CleanUpAndDestroyActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::CleanUpAndDestroyActivity()
 	{
@@ -392,9 +392,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.On Evaluate Expression
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               bResult                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -414,9 +414,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.UpdateActivityState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UBPC_ConditionalActivity_SpawnFeastingOnCorpse_C::UpdateActivityState()
 	{
@@ -433,9 +433,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPC_ConditionalActivity_SpawnFeastingOnCorpse.BPC_ConditionalActivity_SpawnFeastingOnCorpse_C.ExecuteUbergraph_BPC_ConditionalActivity_SpawnFeastingOnCorpse
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

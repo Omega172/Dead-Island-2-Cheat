@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Action_GroupDistraction_Movement_Screamer_Electric.BP_Action_GroupDistraction_Movement_Screamer_Electric_C
-	 * Size -> 0x0000 (FullSize[0x0388] - InheritedSize[0x0388])
+	 * Size -> 0x0000 (FullSize[0x0398] - InheritedSize[0x0398])
 	 */
 	class UBP_Action_GroupDistraction_Movement_Screamer_Electric_C : public UBP_Action_GroupDistraction_Movement_AI_C
 	{

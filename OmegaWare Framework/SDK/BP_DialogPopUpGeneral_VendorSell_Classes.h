@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_DialogPopUpGeneral_VendorSell.BP_DialogPopUpGeneral_VendorSell_C
-	 * Size -> 0x0000 (FullSize[0x09F0] - InheritedSize[0x09F0])
+	 * Size -> 0x0000 (FullSize[0x0A78] - InheritedSize[0x0A78])
 	 */
 	class UBP_DialogPopUpGeneral_VendorSell_C : public UDialogPopUpItemCountSell
 	{

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_UIEventSystem.BPFL_UIEventSystem_C.IsInteractorLocallyControlled
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
 	 * 		class UTriggerInteractorComponent*                 Interactor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -38,9 +38,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_UIEventSystem.BPFL_UIEventSystem_C.SetPlayerInAreaHideIconReasonOnObjective
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ADIObjectiveActor*                           ObjectiveActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UTriggerInteractorComponent*                 Interactor                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -72,15 +72,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_UIEventSystem.BPFL_UIEventSystem_C.AddUIIcon
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UClass*                                      Icon                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_UIEventSystem_C::AddUIIcon(class AActor* Actor, class UClass* Icon, class UObject* __WorldContext)
+	void UBPFL_UIEventSystem_C::STATIC_AddUIIcon(class AActor* Actor, class UClass* Icon, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -98,14 +98,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_UIEventSystem.BPFL_UIEventSystem_C.HideUIIcons
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_UIEventSystem_C::HideUIIcons(class AActor* Actor, class UObject* __WorldContext)
+	void UBPFL_UIEventSystem_C::STATIC_HideUIIcons(class AActor* Actor, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -122,16 +122,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_UIEventSystem.BPFL_UIEventSystem_C.CallLocalCharacterOnFuryUpdated
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ADIPlayerCharacter*                          PlayerCharacter                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              FuryMeter                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               FuryMode                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_UIEventSystem_C::CallLocalCharacterOnFuryUpdated(class ADIPlayerCharacter* PlayerCharacter, float FuryMeter, bool FuryMode, class UObject* __WorldContext)
+	void UBPFL_UIEventSystem_C::STATIC_CallLocalCharacterOnFuryUpdated(class ADIPlayerCharacter* PlayerCharacter, float FuryMeter, bool FuryMode, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -150,14 +150,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_UIEventSystem.BPFL_UIEventSystem_C.GetBPEventDispatcher
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UBP_UIEventDispatcher_C*                     BPEventDispatcher                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_UIEventSystem_C::GetBPEventDispatcher(class UObject* __WorldContext, class UBP_UIEventDispatcher_C** BPEventDispatcher)
+	void UBPFL_UIEventSystem_C::STATIC_GetBPEventDispatcher(class UObject* __WorldContext, class UBP_UIEventDispatcher_C** BPEventDispatcher)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

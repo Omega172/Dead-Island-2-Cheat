@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,15 +16,15 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_PerkCondition_ActorHasBeenKilledBy.BP_PerkCondition_ActorHasBeenKilledBy_C
-	 * Size -> 0x0050 (FullSize[0x00A8] - InheritedSize[0x0058])
+	 * Size -> 0x0050 (FullSize[0x00B0] - InheritedSize[0x0060])
 	 */
 	class UBP_PerkCondition_ActorHasBeenKilledBy_C : public UPerkCondition
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0058(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class UClass*                                              VictimClass;                                             // 0x0060(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		class UClass*                                              KillerActorClass;                                        // 0x0068(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		struct FKnowledgeBaseExpression                            KillerActorExpression;                                   // 0x0070(0x0038) Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0060(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class UClass*                                              VictimClass;                                             // 0x0068(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class UClass*                                              KillerActorClass;                                        // 0x0070(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FKnowledgeBaseExpression                            KillerActorExpression;                                   // 0x0078(0x0038) Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash
 
 	public:
 		void Enable(const struct FBlueprintPerkConditionParams& Params);

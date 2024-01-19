@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F9A250
 	 * 		Name   -> Function Gateway.AirlockActor.RequestGatewayOpen
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        GatewayName                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -28,15 +28,16 @@ namespace CG
 		params.GatewayName = GatewayName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A86630
 	 * 		Name   -> Function Gateway.AirlockActor.OpenGateway
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void AAirlockActor::OpenGateway()
 	{
@@ -47,15 +48,16 @@ namespace CG
 		AAirlockActor_OpenGateway_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F9A1A0
 	 * 		Name   -> Function Gateway.AirlockActor.GatherBlueprintLinks
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Protected, HasOutParms, Const)
 	 * Parameters:
 	 * 		TArray<class AActor*>                              ActorsToPointTo                                            (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
@@ -68,6 +70,7 @@ namespace CG
 		AAirlockActor_GatherBlueprintLinks_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

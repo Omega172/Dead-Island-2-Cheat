@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_EntitlementObject_SkillCard.BP_EntitlementObject_SkillCard_C
-	 * Size -> 0x0000 (FullSize[0x03B0] - InheritedSize[0x03B0])
+	 * Size -> 0x0000 (FullSize[0x03B8] - InheritedSize[0x03B8])
 	 */
 	class ABP_EntitlementObject_SkillCard_C : public ABP_Base_EntitlementObject_C
 	{

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.CollectBlueprintLinks
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	TArray<class AActor*> ABP_Base_InventoryItemHolder_C::CollectBlueprintLinks()
 	{
@@ -33,9 +33,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.MoveTo150cmOffTheGround
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_InventoryItemHolder_C::MoveTo150cmOffTheGround()
 	{
@@ -52,9 +52,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.StopPoweredAudio
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_InventoryItemHolder_C::StopPoweredAudio()
 	{
@@ -71,9 +71,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.StartPoweredAudio
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_InventoryItemHolder_C::StartPoweredAudio()
 	{
@@ -90,9 +90,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.PowerStatusChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsPowered                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -112,9 +112,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.UserConstructionScript
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_InventoryItemHolder_C::UserConstructionScript()
 	{
@@ -131,9 +131,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.DoorCloseTL__FinishedFunc
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void ABP_Base_InventoryItemHolder_C::DoorCloseTL__FinishedFunc()
 	{
@@ -150,9 +150,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.DoorCloseTL__UpdateFunc
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void ABP_Base_InventoryItemHolder_C::DoorCloseTL__UpdateFunc()
 	{
@@ -169,9 +169,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.ReceiveBeginPlay
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
 	void ABP_Base_InventoryItemHolder_C::ReceiveBeginPlay()
 	{
@@ -188,9 +188,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.CloseDoor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_InventoryItemHolder_C::CloseDoor()
 	{
@@ -207,9 +207,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.BndEvt__BPC_InventoryItem_DockingPoint_K2Node_ComponentBoundEvent_0_InventoryItemDockComponentMulticast__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		class AItemPickupActor*                            Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EDockStateChangeSource                             Source                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -231,9 +231,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.BndEvt__BPC_InventoryItem_DockingPoint_K2Node_ComponentBoundEvent_1_InventoryItemDockComponentMulticast__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 * Parameters:
 	 * 		class AItemPickupActor*                            Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EDockStateChangeSource                             Source                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -255,9 +255,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.ExecuteUbergraph_BP_Base_InventoryItemHolder
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -277,9 +277,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_InventoryItemHolder.BP_Base_InventoryItemHolder_C.PowerChanged__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsPowered                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */

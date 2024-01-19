@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,14 +12,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.AddErrorDebugForUnsupportedSpawn
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UParticipantSlotComponent*                   ParticipantSlotComponent                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::AddErrorDebugForUnsupportedSpawn(class UParticipantSlotComponent* ParticipantSlotComponent, class UObject* __WorldContext)
+	void UBPFL_Activities_C::STATIC_AddErrorDebugForUnsupportedSpawn(class UParticipantSlotComponent* ParticipantSlotComponent, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -36,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.GetTableEntryForArchetype
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ABP_Base_Zombie_C*                           Zombie                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        SequenceName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,7 +47,7 @@ namespace CG
 	 * 		struct FSActivityData                              TableRow                                                   (Parm, OutParm, ContainsInstancedReference, HasGetValueTypeHash)
 	 * 		bool                                               Success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_Activities_C::GetTableEntryForArchetype(class ABP_Base_Zombie_C* Zombie, const class FName& SequenceName, bool UseDefaultTable, class UObject* __WorldContext, struct FSActivityData* TableRow, bool* Success)
+	void UBPFL_Activities_C::STATIC_GetTableEntryForArchetype(class ABP_Base_Zombie_C* Zombie, const class FName& SequenceName, bool UseDefaultTable, class UObject* __WorldContext, struct FSActivityData* TableRow, bool* Success)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -71,16 +71,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.ToggleCinematicActivityFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsApplied                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class ADIAICharacter*                              Character                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        InvokerName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::ToggleCinematicActivityFact(bool IsApplied, class ADIAICharacter* Character, const class FName& InvokerName, class UObject* __WorldContext)
+	void UBPFL_Activities_C::STATIC_ToggleCinematicActivityFact(bool IsApplied, class ADIAICharacter* Character, const class FName& InvokerName, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -99,16 +99,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.ToggleAIHUDVisibility
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               IsVisible                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class ADIAICharacter*                              Character                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        InvokerName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::ToggleAIHUDVisibility(bool IsVisible, class ADIAICharacter* Character, const class FName& InvokerName, class UObject* __WorldContext)
+	void UBPFL_Activities_C::STATIC_ToggleAIHUDVisibility(bool IsVisible, class ADIAICharacter* Character, const class FName& InvokerName, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -127,16 +127,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.GetAttackSequenceFromAssetLinkage
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UAssetLinkage*                               AssetLinkageobj                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        Name                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UAttackSequence*                             AsAttackSequence                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::GetAttackSequenceFromAssetLinkage(class UAssetLinkage* AssetLinkageobj, const class FName& Name, class UObject* __WorldContext, class UAttackSequence** AsAttackSequence)
+	void UBPFL_Activities_C::STATIC_GetAttackSequenceFromAssetLinkage(class UAssetLinkage* AssetLinkageobj, const class FName& Name, class UObject* __WorldContext, class UAttackSequence** AsAttackSequence)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -157,16 +157,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.GetLevelSequenceFromAssetLinkage
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UAssetLinkage*                               AssetLinkageobj                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        Name                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class ULevelSequence*                              LevelSequence                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::GetLevelSequenceFromAssetLinkage(class UAssetLinkage* AssetLinkageobj, const class FName& Name, class UObject* __WorldContext, class ULevelSequence** LevelSequence)
+	void UBPFL_Activities_C::STATIC_GetLevelSequenceFromAssetLinkage(class UAssetLinkage* AssetLinkageobj, const class FName& Name, class UObject* __WorldContext, class ULevelSequence** LevelSequence)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -187,9 +187,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.GetBoundAssetEntryForActivityType
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UParticipantSlotComponent*                   ParticipantSlot                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        SequenceName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -197,7 +197,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UAssetLinkage*                               AssetLinkage                                               (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::GetBoundAssetEntryForActivityType(class UParticipantSlotComponent** ParticipantSlot, const class FName& SequenceName, bool UseDefaultTable, class UObject* __WorldContext, class UAssetLinkage** AssetLinkage)
+	void UBPFL_Activities_C::STATIC_GetBoundAssetEntryForActivityType(class UParticipantSlotComponent** ParticipantSlot, const class FName& SequenceName, bool UseDefaultTable, class UObject* __WorldContext, class UAssetLinkage** AssetLinkage)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -220,9 +220,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.GetActivityAnimSetData_WithNameAndTable
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UDataTable*                                  DataTable                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        ActivityAnimationTable                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -230,7 +230,7 @@ namespace CG
 	 * 		TMap<class FName, struct FAnimSetCollectionItem>   AnimSetMap                                                 (Parm, OutParm, ContainsInstancedReference)
 	 * 		class FName                                        ActivityAnimationRowName                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::GetActivityAnimSetData_WithNameAndTable(class UDataTable* DataTable, const class FName& ActivityAnimationTable, class UObject* __WorldContext, TMap<class FName, struct FAnimSetCollectionItem>* AnimSetMap, class FName* ActivityAnimationRowName)
+	void UBPFL_Activities_C::STATIC_GetActivityAnimSetData_WithNameAndTable(class UDataTable* DataTable, const class FName& ActivityAnimationTable, class UObject* __WorldContext, TMap<class FName, struct FAnimSetCollectionItem>* AnimSetMap, class FName* ActivityAnimationRowName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -253,15 +253,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.UnloadAnimSet
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UDIAnimInstance*                             CharacterAnimInstance                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            AnimSetID                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::UnloadAnimSet(class UDIAnimInstance* CharacterAnimInstance, int32_t AnimSetID, class UObject* __WorldContext)
+	void UBPFL_Activities_C::STATIC_UnloadAnimSet(class UDIAnimInstance* CharacterAnimInstance, int32_t AnimSetID, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -279,15 +279,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.SetupActivitiesLogger
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActivityActor*                              Activity                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UDSLogChannelHandle*                         ActivitiesLogger                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::SetupActivitiesLogger(class AActivityActor* Activity, class UObject* __WorldContext, class UDSLogChannelHandle** ActivitiesLogger)
+	void UBPFL_Activities_C::STATIC_SetupActivitiesLogger(class AActivityActor* Activity, class UObject* __WorldContext, class UDSLogChannelHandle** ActivitiesLogger)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -307,9 +307,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.DisplayActivitiesLog
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActivityActor*                              Activity                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FString                                      LogMessage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
@@ -317,7 +317,7 @@ namespace CG
 	 * 		EDSLogVerbosity                                    LogVerbosity                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::DisplayActivitiesLog(class AActivityActor* Activity, const class FString& LogMessage, class UDSLogChannelHandle* ActivityLogger, EDSLogVerbosity LogVerbosity, class UObject* __WorldContext)
+	void UBPFL_Activities_C::STATIC_DisplayActivitiesLog(class AActivityActor* Activity, const class FString& LogMessage, class UDSLogChannelHandle* ActivityLogger, EDSLogVerbosity LogVerbosity, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -337,15 +337,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.UpdateEditorPreviewAnimation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FFixedDataTableEditableRowHandle            ActivityAnimationTable                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 	 * 		class USkeletalMeshComponent*                      AnimationPreview                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::UpdateEditorPreviewAnimation(const struct FFixedDataTableEditableRowHandle& ActivityAnimationTable, class USkeletalMeshComponent* AnimationPreview, class UObject* __WorldContext)
+	void UBPFL_Activities_C::STATIC_UpdateEditorPreviewAnimation(const struct FFixedDataTableEditableRowHandle& ActivityAnimationTable, class USkeletalMeshComponent* AnimationPreview, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -363,16 +363,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.SetupActivityCharacterRefs
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UParticipantSlotComponent*                   Participant                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class ADIAICharacter*                              CharacterRef                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UDIAnimInstance*                             CharacterAnimInstanceRef                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::SetupActivityCharacterRefs(class UParticipantSlotComponent* Participant, class UObject* __WorldContext, class ADIAICharacter** CharacterRef, class UDIAnimInstance** CharacterAnimInstanceRef)
+	void UBPFL_Activities_C::STATIC_SetupActivityCharacterRefs(class UParticipantSlotComponent* Participant, class UObject* __WorldContext, class ADIAICharacter** CharacterRef, class UDIAnimInstance** CharacterAnimInstanceRef)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -394,9 +394,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.LoadAndResolveActivityLS
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UDIAnimInstance*                             CharacterAnimInstance                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		TMap<class FName, struct FAnimSetCollectionItem>   AnimSetMap                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
@@ -407,7 +407,7 @@ namespace CG
 	 * 		class ULevelSequence*                              LoopLevelSequence                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class ULevelSequence*                              OutOfLevelSequence                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::LoadAndResolveActivityLS(class UDIAnimInstance* CharacterAnimInstance, TMap<class FName, struct FAnimSetCollectionItem> AnimSetMap, const class FName& ActivityAnimationRowName, class UObject* __WorldContext, int32_t* AnimSetID, class ULevelSequence** IntoLevelSequence, class ULevelSequence** LoopLevelSequence, class ULevelSequence** OutOfLevelSequence)
+	void UBPFL_Activities_C::STATIC_LoadAndResolveActivityLS(class UDIAnimInstance* CharacterAnimInstance, TMap<class FName, struct FAnimSetCollectionItem> AnimSetMap, const class FName& ActivityAnimationRowName, class UObject* __WorldContext, int32_t* AnimSetID, class ULevelSequence** IntoLevelSequence, class ULevelSequence** LoopLevelSequence, class ULevelSequence** OutOfLevelSequence)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -435,16 +435,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_Activities.BPFL_Activities_C.GetActivityAnimSetData
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FFixedDataTableEditableRowHandle            ActivityAnimationTable                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		TMap<class FName, struct FAnimSetCollectionItem>   AnimSetMap                                                 (Parm, OutParm, ContainsInstancedReference)
 	 * 		class FName                                        ActivityAnimationRowName                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_Activities_C::GetActivityAnimSetData(const struct FFixedDataTableEditableRowHandle& ActivityAnimationTable, class UObject* __WorldContext, TMap<class FName, struct FAnimSetCollectionItem>* AnimSetMap, class FName* ActivityAnimationRowName)
+	void UBPFL_Activities_C::STATIC_GetActivityAnimSetData(const struct FFixedDataTableEditableRowHandle& ActivityAnimationTable, class UObject* __WorldContext, TMap<class FName, struct FAnimSetCollectionItem>* AnimSetMap, class FName* ActivityAnimationRowName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

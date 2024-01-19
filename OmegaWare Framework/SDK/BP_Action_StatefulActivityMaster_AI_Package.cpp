@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.SetupEmotion
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ABP_Base_Human_C*                            Participant                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -34,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.GameEventResponse_OnStateEnded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::GameEventResponse_OnStateEnded()
 	{
@@ -53,9 +53,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.SetupNarrativeInteract
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::SetupNarrativeInteract()
 	{
@@ -72,9 +72,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.SelectSubActionDefinition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UActionDefinition*                           ActionDefinition                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -96,9 +96,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.SelectSequenceSpecificParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		EStatefulActivitySequences                         Sequence                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            NumLoops                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -134,9 +134,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.LocalInit
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnBeginParams               Params                                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	 */
@@ -156,9 +156,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.ResolveLevelSequences
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               InTo                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               Loop                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -186,9 +186,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.ShouldLoopContinue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               ContinueLooping                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -210,9 +210,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.SetupLoggers
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::SetupLoggers()
 	{
@@ -229,9 +229,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.GetGameSequenceConfig
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
 	 * 		class UGameSequenceConfig*                         ParamsConfig                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -253,17 +253,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.ActionEndCleanup
-	 * 		Flags  -> ()
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.ActionEndCleanUp
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
-	void UBP_Action_StatefulActivityMaster_AI_C::ActionEndCleanup()
+	void UBP_Action_StatefulActivityMaster_AI_C::ActionEndCleanUp()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.ActionEndCleanup");
+			fn = UObject::FindObject<UFunction>("Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.ActionEndCleanUp");
 		
-		UBP_Action_StatefulActivityMaster_AI_C_ActionEndCleanup_Params params {};
+		UBP_Action_StatefulActivityMaster_AI_C_ActionEndCleanUp_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -272,9 +272,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.GameEventResponse_OnStateStarted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::GameEventResponse_OnStateStarted()
 	{
@@ -291,9 +291,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.SetupProps
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::SetupProps()
 	{
@@ -310,9 +310,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.StopLoopSequenceOnTimerEnded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::StopLoopSequenceOnTimerEnded()
 	{
@@ -329,9 +329,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.ParamsInit
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UCustomActionParamsBase*                     ActionParams                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -351,9 +351,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.LogSkippedSequence
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class FString                                      SequenceName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	 */
@@ -373,9 +373,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.SetupParticipants
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::SetupParticipants()
 	{
@@ -392,9 +392,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.ProcessAnimationData
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FStatefulActivityAnimation                  NewState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 	 */
@@ -414,9 +414,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnRequestFailed_7FAB5FA24BEB8678F5252E845437F80B
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::OnRequestFailed_7FAB5FA24BEB8678F5252E845437F80B()
 	{
@@ -433,9 +433,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnCustomSignal_7FAB5FA24BEB8678F5252E845437F80B
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnCustomSignalParams        CustomSignalParams                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -455,9 +455,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnEnd_7FAB5FA24BEB8678F5252E845437F80B
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnEndParams                 EndParams                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -477,9 +477,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnBegin_7FAB5FA24BEB8678F5252E845437F80B
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnBeginParams               BeginParams                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -499,9 +499,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnCancelled_7FAB5FA24BEB8678F5252E845437F80B
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnCancelledParams           CancelledParams                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -521,9 +521,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnResolved_7FAB5FA24BEB8678F5252E845437F80B
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnResolvedParams            ResolvedParams                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -543,9 +543,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnRequestFailed_7FAB5FA24BEB8678F5252E84DB7337F6
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::OnRequestFailed_7FAB5FA24BEB8678F5252E84DB7337F6()
 	{
@@ -562,9 +562,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnCustomSignal_7FAB5FA24BEB8678F5252E84DB7337F6
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnCustomSignalParams        CustomSignalParams                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -584,9 +584,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnEnd_7FAB5FA24BEB8678F5252E84DB7337F6
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnEndParams                 EndParams                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -606,9 +606,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnBegin_7FAB5FA24BEB8678F5252E84DB7337F6
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnBeginParams               BeginParams                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -628,9 +628,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnCancelled_7FAB5FA24BEB8678F5252E84DB7337F6
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnCancelledParams           CancelledParams                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -650,9 +650,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnResolved_7FAB5FA24BEB8678F5252E84DB7337F6
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnResolvedParams            ResolvedParams                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -672,9 +672,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnRequestFailed_7FAB5FA24BEB8678F5252E84749E3EB2
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::OnRequestFailed_7FAB5FA24BEB8678F5252E84749E3EB2()
 	{
@@ -691,9 +691,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnCustomSignal_7FAB5FA24BEB8678F5252E84749E3EB2
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnCustomSignalParams        CustomSignalParams                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -713,9 +713,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnEnd_7FAB5FA24BEB8678F5252E84749E3EB2
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnEndParams                 EndParams                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -735,9 +735,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnBegin_7FAB5FA24BEB8678F5252E84749E3EB2
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnBeginParams               BeginParams                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -757,9 +757,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnCancelled_7FAB5FA24BEB8678F5252E84749E3EB2
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnCancelledParams           CancelledParams                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -779,9 +779,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnResolved_7FAB5FA24BEB8678F5252E84749E3EB2
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FCharacterActionOnResolvedParams            ResolvedParams                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	 */
@@ -801,9 +801,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnBegin
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnBeginParams               Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -825,9 +825,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnConstruct
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		class UCustomActionParamsBase*                     InitParams                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -847,9 +847,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.OnEnd
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnEndParams                 Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -871,9 +871,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.EndRequestedBy
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       QueuedActionId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -893,9 +893,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.RequestIntoSequence
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::RequestIntoSequence()
 	{
@@ -912,9 +912,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.RequestLoopSequence
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::RequestLoopSequence()
 	{
@@ -931,9 +931,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.RequestOutOfSequence
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_StatefulActivityMaster_AI_C::RequestOutOfSequence()
 	{
@@ -950,9 +950,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_StatefulActivityMaster_AI.BP_Action_StatefulActivityMaster_AI_C.ExecuteUbergraph_BP_Action_StatefulActivityMaster_AI
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

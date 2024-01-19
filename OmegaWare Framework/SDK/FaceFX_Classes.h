@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,11 +21,11 @@ namespace CG
 	class UFaceFXCharacter : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_4VTK[0x68];                                  // 0x0028(0x0068) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_40DL[0x68];                                  // 0x0028(0x0068) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UFaceFXActor*                                        FaceFXActor;                                             // 0x0090(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_5TJM[0xC0];                                  // 0x0098(0x00C0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UZGA[0xC0];                                  // 0x0098(0x00C0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UFaceFXAnim*                                         CurrentAnim;                                             // 0x0158(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_R2O6[0x8];                                   // 0x0160(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QUXD[0x8];                                   // 0x0160(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -38,7 +38,7 @@ namespace CG
 	class UDSFaceFXCharacter : public UFaceFXCharacter
 	{
 	public:
-		unsigned char                                              UnknownData_296N[0x38];                                  // 0x0168(0x0038) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_CHNC[0x38];                                  // 0x0168(0x0038) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -65,7 +65,7 @@ namespace CG
 		struct FFaceFXActorData                                    ActorData;                                               // 0x0038(0x0030) Edit, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPrivate
 		TArray<class UFaceFXAnim*>                                 Animations;                                              // 0x0068(0x0010) Edit, ZeroConstructor, DisableEditOnTemplate, NativeAccessSpecifierPrivate
 		EFaceFXActorBlendMode                                      BlendMode;                                               // 0x0078(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_28A9[0x7];                                   // 0x0079(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_39P7[0x7];                                   // 0x0079(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -101,12 +101,12 @@ namespace CG
 	public:
 		struct FFaceFXSkelMeshComponentId                          SkelMeshComponentId;                                     // 0x00E0(0x000C) Edit, NoDestructor, NativeAccessSpecifierPrivate
 		struct FFaceFXAnimId                                       AnimationId;                                             // 0x00EC(0x0010) Edit, NoDestructor, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_SDMU[0x4];                                   // 0x00FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IH92[0x4];                                   // 0x00FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              Animation[0x28];                                         // 0x0100(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		float                                                      StartOffset;                                             // 0x0128(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		float                                                      EndOffset;                                               // 0x012C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bIsAnimationDurationLoaded : 1;                          // 0x0130(0x0001) BIT_FIELD Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_X551[0x3];                                   // 0x0131(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_78F2[0x3];                                   // 0x0131(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      AnimationDuration;                                       // 0x0134(0x0004) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 
 	public:
@@ -133,7 +133,7 @@ namespace CG
 	class UFaceFXBlueprintLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool GetAnimationBounds(class UFaceFXAnim* Animation, float* Start, float* End, float* Duration);
+		bool STATIC_GetAnimationBounds(class UFaceFXAnim* Animation, float* Start, float* End, float* Duration);
 		static UClass* StaticClass();
 	};
 
@@ -148,7 +148,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnPlaybackAudioStart;                                    // 0x00F8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnPlaybackStopped;                                       // 0x0108(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		TArray<struct FFaceFXEntry>                                Entries;                                                 // 0x0118(0x0010) ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_1MTM[0x8];                                   // 0x0128(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_MG4C[0x8];                                   // 0x0128(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void StopAll();
@@ -178,7 +178,7 @@ namespace CG
 	{
 	public:
 		EFaceFXBlendMode                                           DefaultBlendMode;                                        // 0x0028(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_YYNU[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_UMFX[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

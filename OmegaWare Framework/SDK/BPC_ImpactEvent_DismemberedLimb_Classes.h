@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_ImpactEvent_DismemberedLimb.BPC_ImpactEvent_DismemberedLimb_C
-	 * Size -> 0x0000 (FullSize[0x0408] - InheritedSize[0x0408])
+	 * Size -> 0x0000 (FullSize[0x0458] - InheritedSize[0x0458])
 	 */
 	class UBPC_ImpactEvent_DismemberedLimb_C : public UImpactEventComponent
 	{

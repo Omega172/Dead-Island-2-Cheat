@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0107F450
 	 * 		Name   -> Function AudioCapture.AudioCapture.StopCapturingAudio
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UAudioCapture::StopCapturingAudio()
 	{
@@ -25,15 +25,16 @@ namespace CG
 		UAudioCapture_StopCapturingAudio_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0107F430
 	 * 		Name   -> Function AudioCapture.AudioCapture.StartCapturingAudio
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UAudioCapture::StartCapturingAudio()
 	{
@@ -44,15 +45,16 @@ namespace CG
 		UAudioCapture_StartCapturingAudio_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0107F400
 	 * 		Name   -> Function AudioCapture.AudioCapture.IsCapturingAudio
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	bool UAudioCapture::IsCapturingAudio()
 	{
@@ -63,6 +65,7 @@ namespace CG
 		UAudioCapture_IsCapturingAudio_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -71,9 +74,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0107F360
 	 * 		Name   -> Function AudioCapture.AudioCapture.GetAudioCaptureDeviceInfo
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FAudioCaptureDeviceInfo                     OutInfo                                                    (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -86,6 +89,7 @@ namespace CG
 		UAudioCapture_GetAudioCaptureDeviceInfo_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -111,11 +115,11 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0107F330
 	 * 		Name   -> Function AudioCapture.AudioCaptureFunctionLibrary.CreateAudioCapture
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
-	class UAudioCapture* UAudioCaptureFunctionLibrary::CreateAudioCapture()
+	class UAudioCapture* UAudioCaptureFunctionLibrary::STATIC_CreateAudioCapture()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -124,6 +128,7 @@ namespace CG
 		UAudioCaptureFunctionLibrary_CreateAudioCapture_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

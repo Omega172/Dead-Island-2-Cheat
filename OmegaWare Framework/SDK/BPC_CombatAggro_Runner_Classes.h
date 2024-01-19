@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_CombatAggro_Runner.BPC_CombatAggro_Runner_C
-	 * Size -> 0x0000 (FullSize[0x03E4] - InheritedSize[0x03E4])
+	 * Size -> 0x0000 (FullSize[0x03F4] - InheritedSize[0x03F4])
 	 */
 	class UBPC_CombatAggro_Runner_C : public UBPC_Base_CombatAggro_C
 	{

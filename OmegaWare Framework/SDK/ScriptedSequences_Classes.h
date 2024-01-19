@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -53,9 +53,9 @@ namespace CG
 	{
 	public:
 		struct FVector                                             NavProjectionExtent;                                     // 0x00E8(0x000C) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_KP5X[0x4];                                   // 0x00F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RB4P[0x4];                                   // 0x00F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AActor*                                              ActorOnNavMeshToTarget;                                  // 0x00F8(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FUFJ[0x8];                                   // 0x0100(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_V21K[0x8];                                   // 0x0100(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -63,20 +63,20 @@ namespace CG
 
 	/**
 	 * Class ScriptedSequences.ScriptedSequenceComponent
-	 * Size -> 0x0088 (FullSize[0x0190] - InheritedSize[0x0108])
+	 * Size -> 0x0090 (FullSize[0x0198] - InheritedSize[0x0108])
 	 */
 	class UScriptedSequenceComponent : public UScriptedComponent
 	{
 	public:
-		unsigned char                                              UnknownData_PC2V[0x8];                                   // 0x0108(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class FScriptMulticastDelegate                             OnScriptedSequenceStarted;                               // 0x0110(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
-		class FScriptMulticastDelegate                             OnScriptedSequenceEnded;                                 // 0x0120(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
-		class FScriptMulticastDelegate                             OnScriptedStageStarted;                                  // 0x0130(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
-		class FScriptMulticastDelegate                             OnScriptedStageEnded;                                    // 0x0140(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
-		TArray<class UScriptedSequenceStage*>                      Stages;                                                  // 0x0150(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		TArray<class UScriptedSequenceStage*>                      OverriddenStages;                                        // 0x0160(0x0010) ZeroConstructor, Transient, NativeAccessSpecifierPrivate
-		TArray<class UScriptedSequenceStage*>                      PendingStages;                                           // 0x0170(0x0010) ZeroConstructor, Transient, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_AMUL[0x10];                                  // 0x0180(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3IGS[0x10];                                  // 0x0108(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class FScriptMulticastDelegate                             OnScriptedSequenceStarted;                               // 0x0118(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
+		class FScriptMulticastDelegate                             OnScriptedSequenceEnded;                                 // 0x0128(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
+		class FScriptMulticastDelegate                             OnScriptedStageStarted;                                  // 0x0138(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
+		class FScriptMulticastDelegate                             OnScriptedStageEnded;                                    // 0x0148(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
+		TArray<class UScriptedSequenceStage*>                      Stages;                                                  // 0x0158(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
+		TArray<class UScriptedSequenceStage*>                      OverriddenStages;                                        // 0x0168(0x0010) ZeroConstructor, Transient, NativeAccessSpecifierPrivate
+		TArray<class UScriptedSequenceStage*>                      PendingStages;                                           // 0x0178(0x0010) ZeroConstructor, Transient, NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_RORZ[0x10];                                  // 0x0188(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		void RequestStopSequence();
@@ -109,7 +109,7 @@ namespace CG
 	public:
 		TArray<class UScriptedSequenceExitCondition*>              ExitConditions;                                          // 0x0028(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
 		int32_t                                                    NumberOfRequiredConditions;                              // 0x0038(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_2RUQ[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_74YQ[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -117,16 +117,17 @@ namespace CG
 
 	/**
 	 * Class ScriptedSequences.ScriptedSequenceStage
-	 * Size -> 0x00F0 (FullSize[0x0118] - InheritedSize[0x0028])
+	 * Size -> 0x00F8 (FullSize[0x0120] - InheritedSize[0x0028])
 	 */
 	class UScriptedSequenceStage : public UBaseScriptedSequenceStage
 	{
 	public:
-		class UScriptedSequenceExitCondition*                      ExitCondition;                                           // 0x0028(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UGameEvent*                                          OnStageStartedGameEvent;                                 // 0x0030(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UGameEvent*                                          OnStageEndedGameEvent;                                   // 0x0038(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UGameEventState*                                     WhilstStageIsActiveGameEventState;                       // 0x0040(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_O5SY[0xD0];                                  // 0x0048(0x00D0) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_B8SK[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class UScriptedSequenceExitCondition*                      ExitCondition;                                           // 0x0030(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UGameEvent*                                          OnStageStartedGameEvent;                                 // 0x0038(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UGameEvent*                                          OnStageEndedGameEvent;                                   // 0x0040(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UGameEventState*                                     WhilstStageIsActiveGameEventState;                       // 0x0048(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_ETMB[0xD0];                                  // 0x0050(0x00D0) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -141,7 +142,7 @@ namespace CG
 	public:
 		TMap<class FName, struct FScriptedState>                   NamedStates;                                             // 0x0108(0x0050) Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate
 		TArray<struct FScriptedTransitionState>                    TransitionStates;                                        // 0x0158(0x0010) Edit, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_HM04[0x30];                                  // 0x0168(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6C0O[0x30];                                  // 0x0168(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,14 +12,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081F620
 	 * 		Name   -> Function DebugToolkit.DebugText.ShouldDrawDebug
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bValueForNoComponent                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UDebugText::ShouldDrawDebug(class AActor* Actor, bool bValueForNoComponent)
+	bool UDebugText::STATIC_ShouldDrawDebug(class AActor* Actor, bool bValueForNoComponent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -30,6 +30,7 @@ namespace CG
 		params.bValueForNoComponent = bValueForNoComponent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -38,14 +39,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081F560
 	 * 		Name   -> Function DebugToolkit.DebugText.Select
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bExclusive                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UDebugText::Select(class AActor* Actor, bool bExclusive)
+	bool UDebugText::STATIC_Select(class AActor* Actor, bool bExclusive)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -56,6 +57,7 @@ namespace CG
 		params.bExclusive = bExclusive;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -64,14 +66,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081F330
 	 * 		Name   -> Function DebugToolkit.DebugText.MakeSelectable
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Client                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDebugText::MakeSelectable(class AActor* Actor, const class FName& Client)
+	void UDebugText::STATIC_MakeSelectable(class AActor* Actor, const class FName& Client)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -82,19 +84,20 @@ namespace CG
 		params.Client = Client;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081F2B0
 	 * 		Name   -> Function DebugToolkit.DebugText.IsSelected
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UDebugText::IsSelected(class AActor* Actor)
+	bool UDebugText::STATIC_IsSelected(class AActor* Actor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -104,6 +107,7 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -112,14 +116,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081F1A0
 	 * 		Name   -> Function DebugToolkit.DebugText.GetSelectedActors
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Client                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	TArray<class AActor*> UDebugText::GetSelectedActors(class UObject* WorldContextObject, const class FName& Client)
+	TArray<class AActor*> UDebugText::STATIC_GetSelectedActors(class UObject* WorldContextObject, const class FName& Client)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -130,6 +134,7 @@ namespace CG
 		params.Client = Client;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -138,13 +143,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081F120
 	 * 		Name   -> Function DebugToolkit.DebugText.GetPrimarySelectedActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class AActor* UDebugText::GetPrimarySelectedActor(class UObject* WorldContextObject)
+	class AActor* UDebugText::STATIC_GetPrimarySelectedActor(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -154,6 +159,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -162,14 +168,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081F060
 	 * 		Name   -> Function DebugToolkit.DebugText.ClearSelectedActors
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Client                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDebugText::ClearSelectedActors(class UObject* WorldContextObject, const class FName& Client)
+	void UDebugText::STATIC_ClearSelectedActors(class UObject* WorldContextObject, const class FName& Client)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -180,20 +186,21 @@ namespace CG
 		params.Client = Client;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081EF70
 	 * 		Name   -> Function DebugToolkit.DebugText.AddDebugText
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDebugTextParams                            DebugText                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	void UDebugText::AddDebugText(class AActor* Actor, const struct FDebugTextParams& DebugText)
+	void UDebugText::STATIC_AddDebugText(class AActor* Actor, const struct FDebugTextParams& DebugText)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -204,20 +211,21 @@ namespace CG
 		params.DebugText = DebugText;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081EE40
 	 * 		Name   -> Function DebugToolkit.DebugText.AddColourMarkup
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FString                                      Text                                                       (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLinearColor                                Colour                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class FString UDebugText::AddColourMarkup(const class FString& Text, const struct FLinearColor& Colour)
+	class FString UDebugText::STATIC_AddColourMarkup(const class FString& Text, const struct FLinearColor& Colour)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -228,6 +236,7 @@ namespace CG
 		params.Colour = Colour;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -306,9 +315,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081F4C0
 	 * 		Name   -> Function DebugToolkit.WebDebugger.OnTextMessageReceived
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class FString                                      Message                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -322,15 +331,16 @@ namespace CG
 		params.Message = Message;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081F4A0
 	 * 		Name   -> Function DebugToolkit.WebDebugger.OnDisconnected
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void AWebDebugger::OnDisconnected()
 	{
@@ -341,15 +351,16 @@ namespace CG
 		AWebDebugger_OnDisconnected_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0081F3F0
 	 * 		Name   -> Function DebugToolkit.WebDebugger.OnBinaryMessageReceived
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasOutParms)
 	 * Parameters:
 	 * 		TArray<unsigned char>                              Message                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -363,6 +374,7 @@ namespace CG
 		params.Message = Message;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

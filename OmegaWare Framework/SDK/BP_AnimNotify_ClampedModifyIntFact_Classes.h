@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -23,7 +23,7 @@ namespace CG
 	public:
 		struct FKnowledgeBaseFactKey                               FactToIncrement;                                         // 0x0038(0x000C) Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash
 		bool                                                       ClampValue;                                              // 0x0044(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_W790[0x3];                                   // 0x0045(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Q6W1[0x3];                                   // 0x0045(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FKnowledgeBaseExpression                            IncrementAmountExpression;                               // 0x0048(0x0038) Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash
 		struct FKnowledgeBaseExpression                            MinClampExpression;                                      // 0x0080(0x0038) Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash
 		struct FKnowledgeBaseExpression                            MaxClampExpression;                                      // 0x00B8(0x0038) Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash

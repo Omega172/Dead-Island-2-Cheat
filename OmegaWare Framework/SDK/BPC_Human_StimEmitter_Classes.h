@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -27,7 +27,7 @@ namespace CG
 		class UStimTemplate*                                       SurvivorStimTemplate;                                    // 0x0330(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FSStimOverrideParams                                SurvivorStimParams;                                      // 0x0338(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash
 		struct FStimID                                             SurvivorStimID;                                          // 0x0340(0x0004) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_LSTU[0x4];                                   // 0x0344(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MAY5[0x4];                                   // 0x0344(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class UStimTemplate*, struct FSStimOverrideParams>    PassiveStims;                                            // 0x0348(0x0050) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
 		TMap<class UStimTemplate*, struct FStimID>                 ActivePassiveStimList;                                   // 0x0398(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 

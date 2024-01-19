@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UBPFL_ActionRequests_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		void RequestExplosion(class UObject* Outer, class UExplosionActionArchetype* ExplosionArchetype, class AActor* Causer, class AController* InstigatorController, const struct FVector& Position, const struct FRotator& Rotation, bool IgnoreInstigator, class AActor* EquippedWeapon, class UObject* __WorldContext);
+		void STATIC_RequestExplosion(class UObject* Outer, class UExplosionActionArchetype* ExplosionArchetype, class AActor* Causer, class AController* InstigatorController, const struct FVector& Position, const struct FRotator& Rotation, bool IgnoreInstigator, class AActor* EquippedWeapon, class UObject* __WorldContext);
 		static UClass* StaticClass();
 	};
 

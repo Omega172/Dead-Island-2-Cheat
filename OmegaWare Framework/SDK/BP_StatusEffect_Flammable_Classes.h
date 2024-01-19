@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,6 +21,8 @@ namespace CG
 	class UBP_StatusEffect_Flammable_C : public UBP_Base_StatusEffect_ApplyDebuff_C
 	{
 	public:
+		void ReceiveEnd(class UStatusEffectComponent* Component, class UStatusEffectTypeState* TypeState);
+		void ReceiveBegin(class UStatusEffectComponent* Component, class UStatusEffectTypeState* TypeState, class UStatusEffectInstance* FirstInstance);
 		static UClass* StaticClass();
 	};
 

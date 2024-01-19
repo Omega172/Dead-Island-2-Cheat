@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_MenuScreen_MapBrowser.BP_MenuScreen_MapBrowser_C
-	 * Size -> 0x0000 (FullSize[0x0218] - InheritedSize[0x0218])
+	 * Size -> 0x0000 (FullSize[0x0220] - InheritedSize[0x0220])
 	 */
 	class UBP_MenuScreen_MapBrowser_C : public UMenuScreenMapBrowser
 	{

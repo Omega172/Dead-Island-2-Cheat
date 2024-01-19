@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_DialogPopUpTutorial_ProsSignIn.BP_DialogPopUpTutorial_ProsSignIn_C
-	 * Size -> 0x0000 (FullSize[0x0288] - InheritedSize[0x0288])
+	 * Size -> 0x0000 (FullSize[0x0308] - InheritedSize[0x0308])
 	 */
 	class UBP_DialogPopUpTutorial_ProsSignIn_C : public UDialogPopUpPros
 	{

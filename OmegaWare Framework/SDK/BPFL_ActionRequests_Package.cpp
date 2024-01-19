@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_ActionRequests.BPFL_ActionRequests_C.RequestExplosion
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UObject*                                     Outer                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UExplosionActionArchetype*                   ExplosionArchetype                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -26,7 +26,7 @@ namespace CG
 	 * 		class AActor*                                      EquippedWeapon                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_ActionRequests_C::RequestExplosion(class UObject* Outer, class UExplosionActionArchetype* ExplosionArchetype, class AActor* Causer, class AController* InstigatorController, const struct FVector& Position, const struct FRotator& Rotation, bool IgnoreInstigator, class AActor* EquippedWeapon, class UObject* __WorldContext)
+	void UBPFL_ActionRequests_C::STATIC_RequestExplosion(class UObject* Outer, class UExplosionActionArchetype* ExplosionArchetype, class AActor* Causer, class AController* InstigatorController, const struct FVector& Position, const struct FRotator& Rotation, bool IgnoreInstigator, class AActor* EquippedWeapon, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

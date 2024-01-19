@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -26,9 +26,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00C89BD0
 	 * 		Name   -> Function Cooldown.BaseCooldownCondition.OnStartCooldown
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      OwnerActor                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -42,15 +42,16 @@ namespace CG
 		params.OwnerActor = OwnerActor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CDC530
 	 * 		Name   -> Function Cooldown.BaseCooldownCondition.OnReset
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void UBaseCooldownCondition::OnReset()
 	{
@@ -61,15 +62,16 @@ namespace CG
 		UBaseCooldownCondition_OnReset_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CDC510
 	 * 		Name   -> Function Cooldown.BaseCooldownCondition.InformCooldownCompleted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, RequiredAPI, Native, Protected, BlueprintCallable)
 	 */
 	void UBaseCooldownCondition::InformCooldownCompleted()
 	{
@@ -80,6 +82,7 @@ namespace CG
 		UBaseCooldownCondition_InformCooldownCompleted_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -170,9 +173,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CDC480
 	 * 		Name   -> Function Cooldown.UniversalCooldownDataAsset.GenerateCooldownObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     Outer                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -186,6 +189,7 @@ namespace CG
 		params.Outer = Outer;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -208,9 +212,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CDC6B0
 	 * 		Name   -> Function Cooldown.UniversalCooldownObject.StartCooldown
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FScriptDelegate                              InCooldownCallback                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -224,6 +228,7 @@ namespace CG
 		params.InCooldownCallback = InCooldownCallback;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -232,9 +237,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CDC5F0
 	 * 		Name   -> Function Cooldown.UniversalCooldownObject.SetupPersistence
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FScriptDelegate                              InCooldownCallback                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -248,6 +253,7 @@ namespace CG
 		params.InCooldownCallback = InCooldownCallback;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -256,9 +262,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CDC570
 	 * 		Name   -> Function Cooldown.UniversalCooldownObject.Setup
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      InOwnerActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -272,15 +278,16 @@ namespace CG
 		params.InOwnerActor = InOwnerActor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CDC550
 	 * 		Name   -> Function Cooldown.UniversalCooldownObject.Reset
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UUniversalCooldownObject::Reset()
 	{
@@ -291,15 +298,16 @@ namespace CG
 		UUniversalCooldownObject_Reset_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CDC460
 	 * 		Name   -> Function Cooldown.UniversalCooldownObject.EndPlay
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UUniversalCooldownObject::EndPlay()
 	{
@@ -310,6 +318,7 @@ namespace CG
 		UUniversalCooldownObject_EndPlay_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,10 +21,10 @@ namespace CG
 	class UAudioCurveSourceComponent : public UAudioComponent
 	{
 	public:
-		unsigned char                                              UnknownData_YNZC[0x8];                                   // 0x08C0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_H60F[0x8];                                   // 0x08C0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                CurveSourceBindingName;                                  // 0x08C8(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      CurveSyncOffset;                                         // 0x08D0(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JF0H[0x2C];                                  // 0x08D4(0x002C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_TQV9[0x2C];                                  // 0x08D4(0x002C) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

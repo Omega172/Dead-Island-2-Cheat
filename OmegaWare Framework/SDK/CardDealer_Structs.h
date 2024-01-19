@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		class UCardGenerator*                                      Generator;                                               // 0x0000(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_W94Q[0x10];                                  // 0x0008(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PNP5[0x10];                                  // 0x0008(0x0010) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -34,7 +34,7 @@ namespace CG
 	public:
 		class UDeck*                                               Deck;                                                    // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<struct FCardGeneratorWrapper>                       Generators;                                              // 0x0008(0x0010) ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_051M[0xC8];                                  // 0x0018(0x00C8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_O1SZ[0xC8];                                  // 0x0018(0x00C8) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -68,7 +68,7 @@ namespace CG
 	public:
 		struct FCardGeneratorWrapper                               Result;                                                  // 0x0000(0x0018) Edit, ContainsInstancedReference, NativeAccessSpecifierPublic
 		int32_t                                                    Frequency;                                               // 0x0018(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FY0H[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_A7BA[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (PADDING)
 	};
 
 }

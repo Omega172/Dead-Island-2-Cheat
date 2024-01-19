@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -42,7 +42,7 @@ namespace CG
 		void GetInstanceTickDamageFromCurve(class UStatusEffectInstance* StatusEffectInstance, float DeltaTime, float* DamageToApply);
 		void AddPerkToOwner(class UBP_StatusEffectTypeState_DamageOverTime_C* StatusEffectState, class ADICharacter* Character);
 		void StopCosmeticEffect(class UBP_StatusEffectTypeState_DamageOverTime_C* TypeState);
-		void ApplyDamageToOwner(class AActor* Owner, float DamageToApply, const struct FWeakEventInstigator& Instigator, class AActor* DamageCauser, bool FriendlyFireAllowed);
+		void ApplyDamageToOwner(class AActor* Owner, float DamageToApply, const struct FWeakEventInstigator& Instigator, class AActor* DamageCauser, class UClass* DamageCauserClass, bool FriendlyFireAllowed);
 		void ReceiveEnd(class UStatusEffectComponent* Component, class UStatusEffectTypeState* TypeState);
 		void ReceiveBegin(class UStatusEffectComponent* Component, class UStatusEffectTypeState* TypeState, class UStatusEffectInstance* FirstInstance);
 		static UClass* StaticClass();

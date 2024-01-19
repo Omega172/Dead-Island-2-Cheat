@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -33,7 +33,7 @@ namespace CG
 	class UBehaviourModifierComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_WK9U[0x50];                                  // 0x00E8(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_THI0[0x50];                                  // 0x00E8(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		void EndBehaviourModifier(class UClass* BehaviourModifierClass);

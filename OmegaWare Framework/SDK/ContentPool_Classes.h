@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,10 +21,10 @@ namespace CG
 	class UAssetRootPool : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_W1L4[0x58];                                  // 0x0028(0x0058) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UETI[0x58];                                  // 0x0028(0x0058) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAssetPoolDefinition*                                Definition;                                              // 0x0080(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<class UAssetSubPool*>                               SubPools;                                                // 0x0088(0x0010) ZeroConstructor, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_NGC5[0x70];                                  // 0x0098(0x0070) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_J3OW[0x70];                                  // 0x0098(0x0070) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -37,9 +37,9 @@ namespace CG
 	class UAssetSubPool : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_ZTMY[0x70];                                  // 0x0028(0x0070) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QN0I[0x70];                                  // 0x0028(0x0070) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAssetSubPoolDefinition*                             Definition;                                              // 0x0098(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_URD7[0x130];                                 // 0x00A0(0x0130) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_C3A2[0x130];                                 // 0x00A0(0x0130) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FRandomStream                                       RandomStream;                                            // 0x01D0(0x0008) Net, ZeroConstructor, NoDestructor, NativeAccessSpecifierPrivate
 		TArray<struct FPrimaryAssetId>                             LoadedAssets;                                            // 0x01D8(0x0010) Net, ZeroConstructor, RepNotify, NativeAccessSpecifierPrivate
 
@@ -88,9 +88,9 @@ namespace CG
 		bool                                                       bReplicateLoading;                                       // 0x0044(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bPreferLoading;                                          // 0x0045(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bFixedSeed;                                              // 0x0046(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3GNM[0x1];                                   // 0x0047(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XMV3[0x1];                                   // 0x0047(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    RandomSeed;                                              // 0x0048(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_WODM[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_W9JP[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UBasePreCachePolicy*                                 PreCachePolicy;                                          // 0x0050(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UBaseEvictionPolicy*                                 EvictionPolicy;                                          // 0x0058(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UBaseContentPolicy*                                  ContentPolicy;                                           // 0x0060(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -108,14 +108,14 @@ namespace CG
 	public:
 		TMap<struct FPrimaryAssetType, class UAssetRootPool*>      Pools;                                                   // 0x02B0(0x0050) NativeAccessSpecifierPrivate
 		TArray<class UAssetSubPool*>                               ReplicatedData;                                          // 0x0300(0x0010) ZeroConstructor, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_RI1C[0xD0];                                  // 0x0310(0x00D0) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_UFPC[0xD0];                                  // 0x0310(0x00D0) MISSED OFFSET (PADDING)
 
 	public:
 		bool IsAssetTypePooled(const struct FPrimaryAssetType& Type);
 		bool IsAssetTagPooled(const struct FPrimaryAssetType& Type, const class FName& Tag);
 		class UAssetSubPool* GetPoolBlueprint(const struct FAssetPoolHandle& Handle);
 		TArray<struct FAssetPoolHandle> GetAvailablePools(const struct FPrimaryAssetType& Type);
-		class AAssetPoolManager* GetAssetPoolManager(class UObject* WorldContextObject);
+		class AAssetPoolManager* STATIC_GetAssetPoolManager(class UObject* WorldContextObject);
 		static UClass* StaticClass();
 	};
 
@@ -131,9 +131,9 @@ namespace CG
 		bool                                                       bReplicateLoading;                                       // 0x003C(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bPreferLoading;                                          // 0x003D(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bFixedSeed;                                              // 0x003E(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_X9VJ[0x1];                                   // 0x003F(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_A9MG[0x1];                                   // 0x003F(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    RandomSeed;                                              // 0x0040(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NEA9[0x4];                                   // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JIPB[0x4];                                   // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UBaseContentPolicy*                                  ContentPolicy;                                           // 0x0048(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UBaseEvictionPolicy*                                 EvictionPolicy;                                          // 0x0050(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UBasePreCachePolicy*                                 PreCachePolicy;                                          // 0x0058(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -149,7 +149,7 @@ namespace CG
 	class UBaseContentPolicy : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_S8N8[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ICGE[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -185,7 +185,7 @@ namespace CG
 	class UBaseEvictionPolicy : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_Y5CT[0x18];                                  // 0x0028(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3609[0x18];                                  // 0x0028(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -242,7 +242,7 @@ namespace CG
 	class UBasePreCachePolicy : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_9YOD[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_CCQ8[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -275,7 +275,7 @@ namespace CG
 	class UFullPreCachePolicy : public UBasePreCachePolicy
 	{
 	public:
-		unsigned char                                              UnknownData_OKP1[0x20];                                  // 0x0030(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_0L4Z[0x20];                                  // 0x0030(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

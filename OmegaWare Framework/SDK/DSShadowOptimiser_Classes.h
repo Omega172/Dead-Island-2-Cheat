@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -29,13 +29,10 @@ namespace CG
 
 	/**
 	 * Class DSShadowOptimiser.ShadowOptimiserBuildVolumeComponent
-	 * Size -> 0x0008 (FullSize[0x0530] - InheritedSize[0x0528])
+	 * Size -> 0x0000 (FullSize[0x0530] - InheritedSize[0x0530])
 	 */
 	class UShadowOptimiserBuildVolumeComponent : public UPrimitiveComponent
 	{
-	public:
-		unsigned char                                              UnknownData_0ZUZ[0x8];                                   // 0x0528(0x0008) Fix Super Size
-
 	public:
 		static UClass* StaticClass();
 	};

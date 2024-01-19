@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -35,7 +35,7 @@ namespace CG
 	{
 	public:
 		struct FMaterialQualityOverrides                           QualityOverrides[0x3];                                   // 0x0028(0x001B) Edit, Config, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Q5H1[0x15];                                  // 0x0043(0x0015) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_UI3J[0x15];                                  // 0x0043(0x0015) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

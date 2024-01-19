@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Facial_NPC.ABP_Facial_NPC_C.AnimGraph
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FPoseLink                                   InPose                                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	 * 		struct FPoseLink                                   AnimGraph                                                  (Parm, OutParm, NoDestructor)
@@ -38,9 +38,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Facial_NPC.ABP_Facial_NPC_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Facial_NPC_AnimGraphNode_Fabrik_A734A7FD418D7F33CD24BDB821CBA869
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_Facial_NPC_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Facial_NPC_AnimGraphNode_Fabrik_A734A7FD418D7F33CD24BDB821CBA869()
 	{
@@ -57,9 +57,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Facial_NPC.ABP_Facial_NPC_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Facial_NPC_AnimGraphNode_Fabrik_6BD586FA4FC5AC2619FE86BF0A4D4F07
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_Facial_NPC_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Facial_NPC_AnimGraphNode_Fabrik_6BD586FA4FC5AC2619FE86BF0A4D4F07()
 	{
@@ -76,9 +76,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Facial_NPC.ABP_Facial_NPC_C.ExecuteUbergraph_ABP_Facial_NPC
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

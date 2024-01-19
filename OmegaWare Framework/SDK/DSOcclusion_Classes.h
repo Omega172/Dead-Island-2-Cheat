@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -39,13 +39,14 @@ namespace CG
 
 	/**
 	 * Class DSOcclusion.BlockerComponent
-	 * Size -> 0x0018 (FullSize[0x0540] - InheritedSize[0x0528])
+	 * Size -> 0x0020 (FullSize[0x0550] - InheritedSize[0x0530])
 	 */
 	class UBlockerComponent : public UPrimitiveComponent
 	{
 	public:
-		class UMaterial*                                           Material;                                                // 0x0528(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		TArray<struct FVector>                                     CornersLocal;                                            // 0x0530(0x0010) ZeroConstructor, NativeAccessSpecifierPrivate
+		class UMaterial*                                           Material;                                                // 0x0530(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		TArray<struct FVector>                                     CornersLocal;                                            // 0x0538(0x0010) ZeroConstructor, NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_5MNC[0x8];                                   // 0x0548(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

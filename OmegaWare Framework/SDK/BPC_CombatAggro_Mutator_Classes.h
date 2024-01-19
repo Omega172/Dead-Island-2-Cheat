@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,13 +16,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_CombatAggro_Mutator.BPC_CombatAggro_Mutator_C
-	 * Size -> 0x000C (FullSize[0x03F0] - InheritedSize[0x03E4])
+	 * Size -> 0x000C (FullSize[0x0400] - InheritedSize[0x03F4])
 	 */
 	class UBPC_CombatAggro_Mutator_C : public UBPC_Base_CombatAggro_C
 	{
 	public:
-		unsigned char                                              UnknownData_UMQP[0x4];                                   // 0x03E4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x03E8(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		unsigned char                                              UnknownData_ZQ0R[0x4];                                   // 0x03F4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x03F8(0x0008) ZeroConstructor, Transient, DuplicateTransient
 
 	public:
 		void ExecuteUbergraph_BPC_CombatAggro_Mutator(int32_t EntryPoint);

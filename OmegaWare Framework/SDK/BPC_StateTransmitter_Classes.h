@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,14 +16,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_StateTransmitter.BPC_StateTransmitter_C
-	 * Size -> 0x0028 (FullSize[0x0648] - InheritedSize[0x0620])
+	 * Size -> 0x0028 (FullSize[0x0698] - InheritedSize[0x0670])
 	 */
 	class UBPC_StateTransmitter_C : public UStateTransmitterComponent
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0620(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class FScriptMulticastDelegate                             ServerActivated;                                         // 0x0628(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
-		class FScriptMulticastDelegate                             ServerDeactivated;                                       // 0x0638(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0670(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class FScriptMulticastDelegate                             ServerActivated;                                         // 0x0678(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
+		class FScriptMulticastDelegate                             ServerDeactivated;                                       // 0x0688(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 
 	public:
 		void OnServerActivated(ETransmittableStatus StatusType, float Strength);

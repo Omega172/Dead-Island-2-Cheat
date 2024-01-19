@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,26 +16,26 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_OBJ_Base_KillTargets.BP_OBJ_Base_KillTargets_C
-	 * Size -> 0x00D0 (FullSize[0x0440] - InheritedSize[0x0370])
+	 * Size -> 0x00D0 (FullSize[0x0448] - InheritedSize[0x0378])
 	 */
 	class ABP_OBJ_Base_KillTargets_C : public ABP_OBJ_ScriptedSequence_C
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0370(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class UObjectiveIconComponent*                             ObjectiveIcon;                                           // 0x0378(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class UBPC_Goal_C*                                         Goal;                                                    // 0x0380(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		TMap<class AActor*, bool>                                  TargetAgentsKilled;                                      // 0x0388(0x0050) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
-		class UDIObjectiveData*                                    DIObjectiveData;                                         // 0x03D8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TMap<ELootDropBehaviour, struct FLootDropUpdatingConfig>   LastTargetDropsOnDeath;                                  // 0x03E0(0x0050) Edit, BlueprintVisible, ContainsInstancedReference
-		bool                                                       UseGoal;                                                 // 0x0430(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		bool                                                       AllowTargetIndicators;                                   // 0x0431(0x0001) Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor
-		bool                                                       AutomaticallySetProgressData;                            // 0x0432(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_BQAF[0x1];                                   // 0x0433(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		int32_t                                                    ProgressUIKillsRequired;                                 // 0x0434(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       ObjectiveIsLive;                                         // 0x0438(0x0001) Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		bool                                                       StartWithVisibleUI;                                      // 0x0439(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_ZNVG[0x2];                                   // 0x043A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FColor                                              QuestColour;                                             // 0x043C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0378(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class UObjectiveIconComponent*                             ObjectiveIcon;                                           // 0x0380(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class UBPC_Goal_C*                                         Goal;                                                    // 0x0388(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		TMap<class AActor*, bool>                                  TargetAgentsKilled;                                      // 0x0390(0x0050) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
+		class UDIObjectiveData*                                    DIObjectiveData;                                         // 0x03E0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		TMap<ELootDropBehaviour, struct FLootDropUpdatingConfig>   LastTargetDropsOnDeath;                                  // 0x03E8(0x0050) Edit, BlueprintVisible, ContainsInstancedReference
+		bool                                                       UseGoal;                                                 // 0x0438(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       AllowTargetIndicators;                                   // 0x0439(0x0001) Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor
+		bool                                                       AutomaticallySetProgressData;                            // 0x043A(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_AM3C[0x1];                                   // 0x043B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    ProgressUIKillsRequired;                                 // 0x043C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		bool                                                       ObjectiveIsLive;                                         // 0x0440(0x0001) Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       StartWithVisibleUI;                                      // 0x0441(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_0MQZ[0x2];                                   // 0x0442(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FColor                                              QuestColour;                                             // 0x0444(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void HideTargetUI(class AActor* Actor);

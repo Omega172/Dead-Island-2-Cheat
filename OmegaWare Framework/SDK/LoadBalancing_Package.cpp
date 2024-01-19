@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -110,9 +110,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BF3D90
 	 * 		Name   -> Function LoadBalancing.ObjectCountCoordinator.OnManagedObjectBudgetUpdated
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		class ULoadBalancedFeature*                        Feature                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PreviousCount                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -130,6 +130,7 @@ namespace CG
 		params.NewCount = NewCount;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -178,9 +179,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BF3F10
 	 * 		Name   -> Function LoadBalancing.LoadBalancingManager.UnregisterLoadBalancingFeature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class ULoadBalancedFeature*                        Feature                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -194,15 +195,16 @@ namespace CG
 		params.Feature = Feature;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BF3E90
 	 * 		Name   -> Function LoadBalancing.LoadBalancingManager.RegisterLoadBalancingFeature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class ULoadBalancedFeature*                        Feature                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -216,6 +218,7 @@ namespace CG
 		params.Feature = Feature;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -250,9 +253,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BF3B90
 	 * 		Name   -> Function LoadBalancing.ObjectBehaviourManager.OnManagedObjectBudgetUpdated
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		class ULoadBalancedFeature*                        Feature                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PreviousCount                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -270,6 +273,7 @@ namespace CG
 		params.NewCount = NewCount;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -290,9 +294,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BF3C90
 	 * 		Name   -> Function LoadBalancing.ObjectBudgetManager.OnManagedObjectBudgetUpdated
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		class ULoadBalancedFeature*                        Feature                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            PreviousCount                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -310,6 +314,7 @@ namespace CG
 		params.NewCount = NewCount;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -344,9 +349,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BF3A20
 	 * 		Name   -> Function LoadBalancing.ObjectScoreGenerator.GenerateScore
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, Const)
 	 * Parameters:
 	 * 		struct FBudgetedObjectInfo                         ObjectInfo                                                 (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FTransform                                  Viewport                                                   (Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -361,6 +366,7 @@ namespace CG
 		params.ObjectInfo = ObjectInfo;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

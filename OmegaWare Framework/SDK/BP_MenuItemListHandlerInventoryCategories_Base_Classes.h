@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_MenuItemListHandlerInventoryCategories_Base.BP_MenuItemListHandlerInventoryCategories_Base_C
-	 * Size -> 0x0000 (FullSize[0x01C8] - InheritedSize[0x01C8])
+	 * Size -> 0x0000 (FullSize[0x01D8] - InheritedSize[0x01D8])
 	 */
 	class UBP_MenuItemListHandlerInventoryCategories_Base_C : public UMenuItemListHandlerInventoryCategories
 	{

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -40,9 +40,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function KnowledgeBase.ConditionalListRequirement.ReceiveGetDebugDescription
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent, Const)
 	 */
 	class FString UConditionalListRequirement::ReceiveGetDebugDescription()
 	{
@@ -117,9 +117,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7F660
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.SetReplicateFacts
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -133,15 +133,16 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7F5A0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.ServerOwnerFactRemoved
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, Private, NetServer, NetValidate)
 	 * Parameters:
 	 * 		class FString                                      FactName                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -155,15 +156,16 @@ namespace CG
 		params.FactName = FactName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7F4B0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.ServerOwnerFactChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, Private, NetServer, NetValidate)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseNetworkedData                 DataArray                                                  (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -177,15 +179,16 @@ namespace CG
 		params.DataArray = DataArray;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7E9B0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BueprintGetFloatFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              FactValue                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -201,6 +204,7 @@ namespace CG
 		params.FactKey = FactKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -212,9 +216,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7E870
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintSetVectorFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -231,6 +235,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -240,9 +245,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7E730
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintSetStringFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Value                                                      (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -259,6 +264,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -268,9 +274,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7E600
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintSetIntegerFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -287,6 +293,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -296,9 +303,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7E4D0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintSetFloatFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -315,6 +322,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -324,9 +332,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7E3A0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintSetDateTimeFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDateTime                                   Value                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -343,6 +351,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -352,9 +361,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7E270
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintSetBoolFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -371,6 +380,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -380,9 +390,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7E140
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintRemoveFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               Success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -399,6 +409,7 @@ namespace CG
 		params.Delay = Delay;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -408,9 +419,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7DFC0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintModifyVectorFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Delta                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -428,6 +439,7 @@ namespace CG
 		params.Delta = Delta;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -439,9 +451,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7DE30
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintModifyIntegerFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Delta                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -459,6 +471,7 @@ namespace CG
 		params.Delta = Delta;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -470,9 +483,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7DCA0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintModifyFloatFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Delta                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -490,6 +503,7 @@ namespace CG
 		params.Delta = Delta;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -501,9 +515,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7DB10
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintIncrementCounterFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               Success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -522,6 +536,7 @@ namespace CG
 		params.InvokerName = InvokerName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -531,9 +546,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7D9D0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintGetVectorFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     FactValue                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -549,6 +564,7 @@ namespace CG
 		params.FactKey = FactKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -560,9 +576,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7D870
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintGetStringFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      FactValue                                                  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -578,6 +594,7 @@ namespace CG
 		params.FactKey = FactKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -589,9 +606,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7D740
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintGetIntegerFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            FactValue                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -607,6 +624,7 @@ namespace CG
 		params.FactKey = FactKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -618,9 +636,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7D710
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintGetExpressionListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	class UKnowledgeBaseExpressionListener* UKnowledgeBaseComponent::BlueprintGetExpressionListener()
 	{
@@ -631,6 +649,7 @@ namespace CG
 		UKnowledgeBaseComponent_BlueprintGetExpressionListener_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -639,9 +658,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7D5E0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintGetDateTimeFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDateTime                                   FactValue                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -657,6 +676,7 @@ namespace CG
 		params.FactKey = FactKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -668,9 +688,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7D4B0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintGetCounterFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            FactValue                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -686,6 +706,7 @@ namespace CG
 		params.FactKey = FactKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -697,9 +718,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7D370
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintGetBoolFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               FactValue                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -715,6 +736,7 @@ namespace CG
 		params.FactKey = FactKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -726,9 +748,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7D0E0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintEvaluateNumericExpression
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -742,6 +764,7 @@ namespace CG
 		params.Expression = Expression;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -750,9 +773,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7CE50
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintEvaluateExpression
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -766,6 +789,7 @@ namespace CG
 		params.Expression = Expression;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -774,9 +798,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7CCA0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintDecrementCounterFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               Success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -797,6 +821,7 @@ namespace CG
 		params.Delay = Delay;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -806,9 +831,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7CBB0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintCancelDeferredRemoval
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       Fact                                                       (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               Success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -823,6 +848,7 @@ namespace CG
 		params.Fact = Fact;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -832,9 +858,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7CA80
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintCancelDeferredDecrement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       Fact                                                       (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        DecrementerName                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -851,6 +877,7 @@ namespace CG
 		params.DecrementerName = DecrementerName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -860,9 +887,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7C940
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintAddVectorFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -879,6 +906,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -888,9 +916,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7C800
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintAddStringFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Value                                                      (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -907,6 +935,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -916,9 +945,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7C6D0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintAddIntegerFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -935,6 +964,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -944,9 +974,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7C5A0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintAddFloatFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -963,6 +993,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -972,9 +1003,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7C470
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintAddDateTimeFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDateTime                                   Value                                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -991,6 +1022,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1000,9 +1032,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7C340
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseComponent.BlueprintAddBoolFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1019,6 +1051,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1182,9 +1215,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7F6F0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionCache.UpdateTimeExpressions
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void UKnowledgeBaseExpressionCache::UpdateTimeExpressions()
 	{
@@ -1195,6 +1228,7 @@ namespace CG
 		UKnowledgeBaseExpressionCache_UpdateTimeExpressions_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -1215,9 +1249,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7F430
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionListener.RemoveObjectForActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      ActorToRemove                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1231,15 +1265,16 @@ namespace CG
 		params.ActorToRemove = ActorToRemove;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7F3B0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionListener.RemoveObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     KBObject                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1253,15 +1288,16 @@ namespace CG
 		params.KBObject = KBObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7F2F0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionListener.RemoveNamedObjectForActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      ActorToRemove                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ObjectName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1277,15 +1313,16 @@ namespace CG
 		params.ObjectName = ObjectName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7F230
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionListener.RemoveNamedObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     KBObject                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ObjectName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1301,15 +1338,16 @@ namespace CG
 		params.ObjectName = ObjectName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7F150
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionListener.OnGameplayEventFired
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasOutParms)
 	 * Parameters:
 	 * 		struct FGameplayEvent                              GameplayEvent                                              (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -1323,15 +1361,16 @@ namespace CG
 		params.GameplayEvent = GameplayEvent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7EE20
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionListener.ListenToNumericExpressionByFunctionName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1351,15 +1390,16 @@ namespace CG
 		params.bCallOnRegister = bCallOnRegister;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7EAF0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionListener.ListenToExpressionByFunctionName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1379,15 +1419,16 @@ namespace CG
 		params.bCallOnRegister = bCallOnRegister;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7C2C0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionListener.AddObjectForActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      ActorToAdd                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1401,15 +1442,16 @@ namespace CG
 		params.ActorToAdd = ActorToAdd;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7C240
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionListener.AddObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     KBObject                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1423,15 +1465,16 @@ namespace CG
 		params.KBObject = KBObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7C180
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionListener.AddNamedObjectForActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      ActorToAdd                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ObjectName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1447,15 +1490,16 @@ namespace CG
 		params.ObjectName = ObjectName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A7C0C0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseExpressionListener.AddNamedObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     KBObject                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ObjectName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1471,6 +1515,7 @@ namespace CG
 		params.ObjectName = ObjectName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -1519,16 +1564,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A87520
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.RemoveNumericExpressionListenerEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::RemoveNumericExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate)
+	void UKnowledgeBaseNodes::STATIC_RemoveNumericExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1541,22 +1586,23 @@ namespace CG
 		params.Delegate = Delegate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A87210
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.RemoveNumericExpressionListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        FunctionName                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::RemoveNumericExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName)
+	void UKnowledgeBaseNodes::STATIC_RemoveNumericExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1569,22 +1615,23 @@ namespace CG
 		params.FunctionName = FunctionName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A87030
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.RemoveFactListenerEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseFactKey                       FactName                                                   (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::RemoveFactListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, const class FScriptDelegate& Delegate)
+	void UKnowledgeBaseNodes::STATIC_RemoveFactListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, const class FScriptDelegate& Delegate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1597,22 +1644,23 @@ namespace CG
 		params.Delegate = Delegate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A86EE0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.RemoveFactListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseFactKey                       FactName                                                   (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        FunctionName                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::RemoveFactListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, class UObject* Object, const class FName& FunctionName)
+	void UKnowledgeBaseNodes::STATIC_RemoveFactListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, class UObject* Object, const class FName& FunctionName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1625,22 +1673,23 @@ namespace CG
 		params.FunctionName = FunctionName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A86BB0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.RemoveExpressionListenerEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::RemoveExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate)
+	void UKnowledgeBaseNodes::STATIC_RemoveExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1653,22 +1702,23 @@ namespace CG
 		params.Delegate = Delegate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A868A0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.RemoveExpressionListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        FunctionName                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::RemoveExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName)
+	void UKnowledgeBaseNodes::STATIC_RemoveExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1681,15 +1731,16 @@ namespace CG
 		params.FunctionName = FunctionName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A86650
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.RegisterFactKey
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        FactName                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1698,7 +1749,7 @@ namespace CG
 	 * 		EKnowledgeBaseFactReplication                      ReplicationType                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bSuccess                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::RegisterFactKey(class UObject* WorldContextObject, const class FName& FactName, EKnowledgeBaseFactType Type, struct FKnowledgeBaseFactKey* FactKey, EKnowledgeBaseFactReplication ReplicationType, bool* bSuccess)
+	void UKnowledgeBaseNodes::STATIC_RegisterFactKey(class UObject* WorldContextObject, const class FName& FactName, EKnowledgeBaseFactType Type, struct FKnowledgeBaseFactKey* FactKey, EKnowledgeBaseFactReplication ReplicationType, bool* bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1711,6 +1762,7 @@ namespace CG
 		params.ReplicationType = ReplicationType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1722,13 +1774,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A86350
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.IsExpressionValidAndNotEmpty
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UKnowledgeBaseNodes::IsExpressionValidAndNotEmpty(const struct FKnowledgeBaseExpression& Expression)
+	bool UKnowledgeBaseNodes::STATIC_IsExpressionValidAndNotEmpty(const struct FKnowledgeBaseExpression& Expression)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1738,6 +1790,7 @@ namespace CG
 		params.Expression = Expression;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1746,13 +1799,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84580
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.GetFactKey
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FKnowledgeBaseFactKey UKnowledgeBaseNodes::GetFactKey(const class FName& Name)
+	struct FKnowledgeBaseFactKey UKnowledgeBaseNodes::STATIC_GetFactKey(const class FName& Name)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1762,6 +1815,7 @@ namespace CG
 		params.Name = Name;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1770,16 +1824,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A85FA0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.EvaluateNumericExpressionForWorldPositionAndObjects
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     WorldPosition                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<class UKnowledgeBaseComponent*>             AdditionalObjects                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	float UKnowledgeBaseNodes::EvaluateNumericExpressionForWorldPositionAndObjects(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition, TArray<class UKnowledgeBaseComponent*> AdditionalObjects)
+	float UKnowledgeBaseNodes::STATIC_EvaluateNumericExpressionForWorldPositionAndObjects(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition, TArray<class UKnowledgeBaseComponent*> AdditionalObjects)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1792,6 +1846,7 @@ namespace CG
 		params.AdditionalObjects = AdditionalObjects;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1800,15 +1855,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A85C90
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.EvaluateNumericExpressionForWorldPosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     WorldPosition                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	float UKnowledgeBaseNodes::EvaluateNumericExpressionForWorldPosition(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition)
+	float UKnowledgeBaseNodes::STATIC_EvaluateNumericExpressionForWorldPosition(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1820,6 +1875,7 @@ namespace CG
 		params.WorldPosition = WorldPosition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1828,15 +1884,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A85970
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.EvaluateNumericExpression
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<class UKnowledgeBaseComponent*>             Objects                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	float UKnowledgeBaseNodes::EvaluateNumericExpression(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, TArray<class UKnowledgeBaseComponent*> Objects)
+	float UKnowledgeBaseNodes::STATIC_EvaluateNumericExpression(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, TArray<class UKnowledgeBaseComponent*> Objects)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1848,6 +1904,7 @@ namespace CG
 		params.Objects = Objects;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1856,16 +1913,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A855F0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.EvaluateExpressionForWorldPositionAndObjects
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     WorldPosition                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<class UKnowledgeBaseComponent*>             AdditionalObjects                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	bool UKnowledgeBaseNodes::EvaluateExpressionForWorldPositionAndObjects(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition, TArray<class UKnowledgeBaseComponent*> AdditionalObjects)
+	bool UKnowledgeBaseNodes::STATIC_EvaluateExpressionForWorldPositionAndObjects(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition, TArray<class UKnowledgeBaseComponent*> AdditionalObjects)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1878,6 +1935,7 @@ namespace CG
 		params.AdditionalObjects = AdditionalObjects;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1886,15 +1944,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A852E0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.EvaluateExpressionForWorldPosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     WorldPosition                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UKnowledgeBaseNodes::EvaluateExpressionForWorldPosition(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition)
+	bool UKnowledgeBaseNodes::STATIC_EvaluateExpressionForWorldPosition(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1906,6 +1964,7 @@ namespace CG
 		params.WorldPosition = WorldPosition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1914,15 +1973,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84FC0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.EvaluateExpression
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<class UKnowledgeBaseComponent*>             Objects                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	bool UKnowledgeBaseNodes::EvaluateExpression(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, TArray<class UKnowledgeBaseComponent*> Objects)
+	bool UKnowledgeBaseNodes::STATIC_EvaluateExpression(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, TArray<class UKnowledgeBaseComponent*> Objects)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1934,6 +1993,7 @@ namespace CG
 		params.Objects = Objects;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1942,14 +2002,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84ED0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.EqualEqual_FactKeyFactKey
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       A                                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseFactKey                       B                                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UKnowledgeBaseNodes::EqualEqual_FactKeyFactKey(const struct FKnowledgeBaseFactKey& A, const struct FKnowledgeBaseFactKey& B)
+	bool UKnowledgeBaseNodes::STATIC_EqualEqual_FactKeyFactKey(const struct FKnowledgeBaseFactKey& A, const struct FKnowledgeBaseFactKey& B)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1960,6 +2020,7 @@ namespace CG
 		params.B = B;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1968,13 +2029,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84720
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.Conv_StringToFactKey
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FString                                      inString                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FKnowledgeBaseFactKey UKnowledgeBaseNodes::Conv_StringToFactKey(const class FString& inString)
+	struct FKnowledgeBaseFactKey UKnowledgeBaseNodes::STATIC_Conv_StringToFactKey(const class FString& inString)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1984,6 +2045,7 @@ namespace CG
 		params.inString = inString;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1992,13 +2054,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84610
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.Conv_StringToExpression
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FString                                      inString                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FKnowledgeBaseExpression UKnowledgeBaseNodes::Conv_StringToExpression(const class FString& inString)
+	struct FKnowledgeBaseExpression UKnowledgeBaseNodes::STATIC_Conv_StringToExpression(const class FString& inString)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2008,6 +2070,7 @@ namespace CG
 		params.inString = inString;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2016,13 +2079,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84580
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.Conv_NameToFactKey
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FName                                        InName                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FKnowledgeBaseFactKey UKnowledgeBaseNodes::Conv_NameToFactKey(const class FName& InName)
+	struct FKnowledgeBaseFactKey UKnowledgeBaseNodes::STATIC_Conv_NameToFactKey(const class FName& InName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2032,6 +2095,7 @@ namespace CG
 		params.InName = InName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2040,13 +2104,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A844D0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.Conv_NameToExpression
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FName                                        InName                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FKnowledgeBaseExpression UKnowledgeBaseNodes::Conv_NameToExpression(const class FName& InName)
+	struct FKnowledgeBaseExpression UKnowledgeBaseNodes::STATIC_Conv_NameToExpression(const class FName& InName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2056,6 +2120,7 @@ namespace CG
 		params.InName = InName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2064,13 +2129,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A843F0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.Conv_FactKeyToString
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       InKey                                                      (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class FString UKnowledgeBaseNodes::Conv_FactKeyToString(const struct FKnowledgeBaseFactKey& InKey)
+	class FString UKnowledgeBaseNodes::STATIC_Conv_FactKeyToString(const struct FKnowledgeBaseFactKey& InKey)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2080,6 +2145,7 @@ namespace CG
 		params.InKey = InKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2088,13 +2154,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84350
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.Conv_FactKeyToName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseFactKey                       InKey                                                      (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class FName UKnowledgeBaseNodes::Conv_FactKeyToName(const struct FKnowledgeBaseFactKey& InKey)
+	class FName UKnowledgeBaseNodes::STATIC_Conv_FactKeyToName(const struct FKnowledgeBaseFactKey& InKey)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2104,6 +2170,7 @@ namespace CG
 		params.InKey = InKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2112,13 +2179,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84090
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.Conv_ExpressionToString
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseExpression                    InExpression                                               (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class FString UKnowledgeBaseNodes::Conv_ExpressionToString(const struct FKnowledgeBaseExpression& InExpression)
+	class FString UKnowledgeBaseNodes::STATIC_Conv_ExpressionToString(const struct FKnowledgeBaseExpression& InExpression)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2128,6 +2195,7 @@ namespace CG
 		params.InExpression = InExpression;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2136,13 +2204,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A83E10
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.Conv_ExpressionToName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseExpression                    InExpression                                               (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class FName UKnowledgeBaseNodes::Conv_ExpressionToName(const struct FKnowledgeBaseExpression& InExpression)
+	class FName UKnowledgeBaseNodes::STATIC_Conv_ExpressionToName(const struct FKnowledgeBaseExpression& InExpression)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2152,6 +2220,7 @@ namespace CG
 		params.InExpression = InExpression;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2160,9 +2229,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A83A90
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.AddNumericExpressionListenerEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2170,7 +2239,7 @@ namespace CG
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bCallOnRegister                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::AddNumericExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate, bool bCallOnRegister)
+	void UKnowledgeBaseNodes::STATIC_AddNumericExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate, bool bCallOnRegister)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2184,15 +2253,16 @@ namespace CG
 		params.bCallOnRegister = bCallOnRegister;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A83720
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.AddNumericExpressionListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2200,7 +2270,7 @@ namespace CG
 	 * 		class FName                                        FunctionName                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bCallOnRegister                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::AddNumericExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister)
+	void UKnowledgeBaseNodes::STATIC_AddNumericExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2214,15 +2284,16 @@ namespace CG
 		params.bCallOnRegister = bCallOnRegister;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A83500
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.AddFactListenerEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2230,7 +2301,7 @@ namespace CG
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bCallOnRegister                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::AddFactListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, const class FScriptDelegate& Delegate, bool bCallOnRegister)
+	void UKnowledgeBaseNodes::STATIC_AddFactListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, const class FScriptDelegate& Delegate, bool bCallOnRegister)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2244,15 +2315,16 @@ namespace CG
 		params.bCallOnRegister = bCallOnRegister;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A83370
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.AddFactListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseFactKey                       FactName                                                   (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2260,7 +2332,7 @@ namespace CG
 	 * 		class FName                                        FunctionName                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bCallOnRegister                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::AddFactListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister)
+	void UKnowledgeBaseNodes::STATIC_AddFactListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2274,15 +2346,16 @@ namespace CG
 		params.bCallOnRegister = bCallOnRegister;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A82FF0
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.AddExpressionListenerEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2290,7 +2363,7 @@ namespace CG
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bCallOnRegister                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::AddExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate, bool bCallOnRegister)
+	void UKnowledgeBaseNodes::STATIC_AddExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate, bool bCallOnRegister)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2304,15 +2377,16 @@ namespace CG
 		params.bCallOnRegister = bCallOnRegister;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A82C80
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseNodes.AddExpressionListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     KnowledgeBaseComponent                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (Parm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2320,7 +2394,7 @@ namespace CG
 	 * 		class FName                                        FunctionName                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bCallOnRegister                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UKnowledgeBaseNodes::AddExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister)
+	void UKnowledgeBaseNodes::STATIC_AddExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2334,6 +2408,7 @@ namespace CG
 		params.bCallOnRegister = bCallOnRegister;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -2368,14 +2443,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84C80
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseValueFunctionLibrary.CreateVec3FactValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Value                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FKnowledgeBaseValueSelector UKnowledgeBaseValueFunctionLibrary::CreateVec3FactValue(const class FName& Name, const struct FVector& Value)
+	struct FKnowledgeBaseValueSelector UKnowledgeBaseValueFunctionLibrary::STATIC_CreateVec3FactValue(const class FName& Name, const struct FVector& Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2386,6 +2461,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2394,14 +2470,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84B20
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseValueFunctionLibrary.CreateStringFactValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Value                                                      (ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FKnowledgeBaseValueSelector UKnowledgeBaseValueFunctionLibrary::CreateStringFactValue(const class FName& Name, const class FString& Value)
+	struct FKnowledgeBaseValueSelector UKnowledgeBaseValueFunctionLibrary::STATIC_CreateStringFactValue(const class FName& Name, const class FString& Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2412,6 +2488,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2420,14 +2497,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84A20
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseValueFunctionLibrary.CreateIntFactValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Value                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FKnowledgeBaseValueSelector UKnowledgeBaseValueFunctionLibrary::CreateIntFactValue(const class FName& Name, int32_t Value)
+	struct FKnowledgeBaseValueSelector UKnowledgeBaseValueFunctionLibrary::STATIC_CreateIntFactValue(const class FName& Name, int32_t Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2438,6 +2515,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2446,14 +2524,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84910
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseValueFunctionLibrary.CreateFloatFactValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Value                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FKnowledgeBaseValueSelector UKnowledgeBaseValueFunctionLibrary::CreateFloatFactValue(const class FName& Name, float Value)
+	struct FKnowledgeBaseValueSelector UKnowledgeBaseValueFunctionLibrary::STATIC_CreateFloatFactValue(const class FName& Name, float Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2464,6 +2542,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2472,14 +2551,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84810
 	 * 		Name   -> Function KnowledgeBase.KnowledgeBaseValueFunctionLibrary.CreateBoolFactValue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FName                                        Name                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bValue                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FKnowledgeBaseValueSelector UKnowledgeBaseValueFunctionLibrary::CreateBoolFactValue(const class FName& Name, bool bValue)
+	struct FKnowledgeBaseValueSelector UKnowledgeBaseValueFunctionLibrary::STATIC_CreateBoolFactValue(const class FName& Name, bool bValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2490,6 +2569,7 @@ namespace CG
 		params.bValue = bValue;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2512,9 +2592,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A87190
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionActor.RemoveLocalDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2528,15 +2608,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A86820
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionActor.RemoveDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2550,15 +2631,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A86630
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionActor.OnReset
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void AScopedKnowledgeBaseExpressionActor::OnReset()
 	{
@@ -2569,15 +2651,16 @@ namespace CG
 		AScopedKnowledgeBaseExpressionActor_OnReset_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A86610
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionActor.OnRep_IsActorActiveOnServer
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void AScopedKnowledgeBaseExpressionActor::OnRep_IsActorActiveOnServer()
 	{
@@ -2588,15 +2671,16 @@ namespace CG
 		AScopedKnowledgeBaseExpressionActor_OnRep_IsActorActiveOnServer_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A865F0
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionActor.OnEnabled
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void AScopedKnowledgeBaseExpressionActor::OnEnabled()
 	{
@@ -2607,15 +2691,16 @@ namespace CG
 		AScopedKnowledgeBaseExpressionActor_OnEnabled_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A865D0
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionActor.OnDisabled
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void AScopedKnowledgeBaseExpressionActor::OnDisabled()
 	{
@@ -2626,15 +2711,16 @@ namespace CG
 		AScopedKnowledgeBaseExpressionActor_OnDisabled_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A86320
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionActor.IsActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool AScopedKnowledgeBaseExpressionActor::IsActive()
 	{
@@ -2645,6 +2731,7 @@ namespace CG
 		AScopedKnowledgeBaseExpressionActor_IsActive_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2653,9 +2740,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84D90
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionActor.EditorSetActiveExpression
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FKnowledgeBaseExpression                    Expression                                                 (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2669,15 +2756,16 @@ namespace CG
 		params.Expression = Expression;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A836A0
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionActor.AddLocalDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2691,15 +2779,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A82C00
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionActor.AddDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -2713,6 +2802,7 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -2733,13 +2823,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A87B80
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionListenerFunctionLibrary.ShutdownExpressionListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FScopedKnowledgeBaseExpressionListener      Expression                                                 (Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	void UScopedKnowledgeBaseExpressionListenerFunctionLibrary::ShutdownExpressionListener(struct FScopedKnowledgeBaseExpressionListener* Expression)
+	void UScopedKnowledgeBaseExpressionListenerFunctionLibrary::STATIC_ShutdownExpressionListener(struct FScopedKnowledgeBaseExpressionListener* Expression)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2748,6 +2838,7 @@ namespace CG
 		UScopedKnowledgeBaseExpressionListenerFunctionLibrary_ShutdownExpressionListener_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2757,15 +2848,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A87A10
 	 * 		Name   -> Function KnowledgeBase.ScopedKnowledgeBaseExpressionListenerFunctionLibrary.SetupExpressionListener
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FScopedKnowledgeBaseExpressionListener      Expression                                                 (Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      Owner                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UScopedKnowledgeBaseExpressionListenerFunctionLibrary::SetupExpressionListener(struct FScopedKnowledgeBaseExpressionListener* Expression, class AActor* Owner, const class FScriptDelegate& Delegate)
+	void UScopedKnowledgeBaseExpressionListenerFunctionLibrary::STATIC_SetupExpressionListener(struct FScopedKnowledgeBaseExpressionListener* Expression, class AActor* Owner, const class FScriptDelegate& Delegate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2776,6 +2867,7 @@ namespace CG
 		params.Delegate = Delegate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

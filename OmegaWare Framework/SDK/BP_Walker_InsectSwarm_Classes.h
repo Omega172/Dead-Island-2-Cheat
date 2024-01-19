@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,14 +16,14 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Walker_InsectSwarm.BP_Walker_InsectSwarm_C
-	 * Size -> 0x0018 (FullSize[0x1030] - InheritedSize[0x1018])
+	 * Size -> 0x0018 (FullSize[0x10C0] - InheritedSize[0x10A8])
 	 */
 	class ABP_Walker_InsectSwarm_C : public ABP_Base_Walker_C
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x1018(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class USceneComponent*                                     SwarmHomingLocation;                                     // 0x1020(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class URangedWeaponModulesComponent*                       RangedWeaponModules;                                     // 0x1028(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x10A8(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class USceneComponent*                                     SwarmHomingLocation;                                     // 0x10B0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class URangedWeaponModulesComponent*                       RangedWeaponModules;                                     // 0x10B8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
 		void SetSwarmLocationBasedIfCrawler(bool bResult);

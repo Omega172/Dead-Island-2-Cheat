@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.CleanUpActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C::CleanUpActivity()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.UpdateActorsToIgnoreForHandsTraceTesting
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C::UpdateActorsToIgnoreForHandsTraceTesting()
 	{
@@ -50,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.SetActorsToIgnoreTraceTests
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C::SetActorsToIgnoreTraceTests()
 	{
@@ -69,9 +69,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.GetAttachmentActors
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 	 */
 	TArray<class AActor*> UBP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C::GetAttachmentActors()
 	{
@@ -90,9 +90,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.DebugForTracing
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 	 */
 	EDrawDebugTrace UBP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C::DebugForTracing()
 	{
@@ -111,9 +111,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.DSLogCombatTargetWithinDistanceOfActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		bool                                               WithinAcceptableDistance                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		float                                              DebugDuration                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -135,9 +135,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.DSLogActivityFacingAngle
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		bool                                               Success                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		float                                              CurrentFacingDegree                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -163,9 +163,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.RemoveWallHeightFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C::RemoveWallHeightFact()
 	{
@@ -182,9 +182,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.AddWallHeightFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     ImpactPoint                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -204,9 +204,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.FindAndGetCentralWallData
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FRotator                                    WallSearchRotation                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		float                                              Distance                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -238,9 +238,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.GetTraceLocationsForHands
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		struct FVector                                     StartLocationOffset                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     EndLocationOffset                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -271,9 +271,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.GetWallSearchDirection
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
 	struct FRotator UBP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C::GetWallSearchDirection()
 	{
@@ -292,9 +292,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.CheckCombatTargetsHeightConditions
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
 	bool UBP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C::CheckCombatTargetsHeightConditions()
 	{
@@ -313,9 +313,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.OnOpenableStateChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		EOpenableState                                     NewState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -335,9 +335,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.OnNavigationStateChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UNavBarrierComponent*                        NavBarrier                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        OldState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -361,9 +361,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.UnbindMoveableSurfaceEvents
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C::UnbindMoveableSurfaceEvents()
 	{
@@ -380,9 +380,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.BindMoveableSurfaceEvents
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               Success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -404,9 +404,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.OnBeginEarly
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
 	bool UBP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C::OnBeginEarly()
 	{
@@ -425,9 +425,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.IsCombatTargetWithinFacingAngleOfPotentialActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FRotator                                    WallSearchRotation                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FVector                                     WallCentreImpactLocation                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -453,9 +453,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.FindAndGetWallData
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     StartLocationOffset                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     EndLocationOffset                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -495,9 +495,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.GetWallSearchLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FRotator                                    DirectionRotation                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		ECharacterBodyPartHeights                          BodyPartOrigin                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -525,9 +525,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.SpawnActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     WallCentreLocation                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     WallCentreImpactNormal                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -555,9 +555,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.CheckForCharacterCollisions
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               NoOverlap                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -579,9 +579,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.CheckForParallelWall
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               ValidWallSurface                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FVector                                     CentreLocation                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -609,9 +609,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.SphereTraceByChannelFromCharacterLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     StartLocationOffset                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     EndLocationOffset                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -651,9 +651,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.LineTraceByChannelFromCharacterLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     StartLocationOffset                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     EndLocationOffset                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -691,9 +691,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.OnEnd
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnEndParams                 Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -715,9 +715,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.OnBegin
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnBeginParams               Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -739,9 +739,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI.BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI_C.ExecuteUbergraph_BP_Action_SpawnActivity_CannotReachTargetBangOnSurface_AI
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

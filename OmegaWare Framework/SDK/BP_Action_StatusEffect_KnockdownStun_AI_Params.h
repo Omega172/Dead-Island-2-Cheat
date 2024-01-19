@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -15,6 +15,16 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function BP_Action_StatusEffect_KnockdownStun_AI.BP_Action_StatusEffect_KnockdownStun_AI_C.OnBeginEarly
+	 */
+	struct UBP_Action_StatusEffect_KnockdownStun_AI_C_OnBeginEarly_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+		unsigned char                                              UnknownData_GS2D[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+	};
+
+	/**
 	 * Function BP_Action_StatusEffect_KnockdownStun_AI.BP_Action_StatusEffect_KnockdownStun_AI_C.OnInterruptionConditionsMet
 	 */
 	struct UBP_Action_StatusEffect_KnockdownStun_AI_C_OnInterruptionConditionsMet_Params
@@ -25,16 +35,6 @@ namespace CG
 	 */
 	struct UBP_Action_StatusEffect_KnockdownStun_AI_C_ActivateStabilityRecharge_Params
 	{	};
-
-	/**
-	 * Function BP_Action_StatusEffect_KnockdownStun_AI.BP_Action_StatusEffect_KnockdownStun_AI_C.OnBeginEarly
-	 */
-	struct UBP_Action_StatusEffect_KnockdownStun_AI_C_OnBeginEarly_Params
-	{
-	public:
-		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-		unsigned char                                              UnknownData_2D1A[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
-	};
 
 	/**
 	 * Function BP_Action_StatusEffect_KnockdownStun_AI.BP_Action_StatusEffect_KnockdownStun_AI_C.OnBegin

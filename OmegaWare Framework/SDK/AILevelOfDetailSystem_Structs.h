@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -67,7 +67,7 @@ namespace CG
 	struct FAILevelOfDetailPreTickFunction : public FTickFunction
 	{
 	public:
-		unsigned char                                              UnknownData_VGD7[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_P3S6[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (PADDING)
 	};
 
 }

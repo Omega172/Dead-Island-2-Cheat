@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_MenuItemListHandler_Quests.BP_MenuItemListHandler_Quests_C
-	 * Size -> 0x0000 (FullSize[0x02E0] - InheritedSize[0x02E0])
+	 * Size -> 0x0000 (FullSize[0x02F0] - InheritedSize[0x02F0])
 	 */
 	class UBP_MenuItemListHandler_Quests_C : public UMenuItemListHandlerQuest
 	{

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -28,7 +28,7 @@ namespace CG
 	public:
 		void OnOpenableStateChanged(EOpenableState NewState);
 		void OnTriggerEvent(unsigned char Event);
-		void SetRelatedActor(class AActor* Actor);
+		void AssignActivityData(class AActor* SpawningActor, class UGeneratingActorConfigDataAsset* Config);
 		void ReceiveBeginPlay();
 		void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 		void ExecuteUbergraph_BP_SpawnActivity_BangOnSurface(int32_t EntryPoint);

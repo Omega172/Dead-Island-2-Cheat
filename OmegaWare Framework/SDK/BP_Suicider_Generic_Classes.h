@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Suicider_Generic.BP_Suicider_Generic_C
-	 * Size -> 0x0000 (FullSize[0x1114] - InheritedSize[0x1114])
+	 * Size -> 0x0000 (FullSize[0x11A4] - InheritedSize[0x11A4])
 	 */
 	class ABP_Suicider_Generic_C : public ABP_Base_Suicider_C
 	{

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -31,7 +31,7 @@ namespace CG
 	class UMeshDescriptionBase : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_BUYN[0x368];                                 // 0x0028(0x0368) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_HGAX[0x368];                                 // 0x0028(0x0368) MISSED OFFSET (PADDING)
 
 	public:
 		void SetVertexPosition(const struct FVertexID& VertexID, const struct FVector& Position);

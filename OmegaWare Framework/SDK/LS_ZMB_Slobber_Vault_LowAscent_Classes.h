@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -27,6 +27,7 @@ namespace CG
 		static UClass* StaticClass();
 	};
 	*/
+
 }
 
 #ifdef _MSC_VER

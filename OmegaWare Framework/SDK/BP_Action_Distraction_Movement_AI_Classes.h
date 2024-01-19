@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,17 +16,18 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Action_Distraction_Movement_AI.BP_Action_Distraction_Movement_AI_C
-	 * Size -> 0x0034 (FullSize[0x036C] - InheritedSize[0x0338])
+	 * Size -> 0x0038 (FullSize[0x037C] - InheritedSize[0x0344])
 	 */
 	class UBP_Action_Distraction_Movement_AI_C : public UBP_Action_WaitMovingEQS_AI_C
 	{
 	public:
-		class UBP_ActionParams_Distraction_Movement_AI_C*          DistractionMovementParams;                               // 0x0338(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		struct FKnowledgeBaseFactKey                               DistractionLocationContextFact;                          // 0x0340(0x000C) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
-		class FName                                                DistractionStimBBInstigatorName;                         // 0x034C(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_UEN1[0x4];                                   // 0x0354(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class UKnowledgeBaseComponent*                             StimOwnersKnowledgeBase;                                 // 0x0358(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		struct FKnowledgeBaseFactKey                               StimOwnersBoundsFact;                                    // 0x0360(0x000C) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_Z353[0x4];                                   // 0x0344(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class UBP_ActionParams_Distraction_Movement_AI_C*          DistractionMovementParams;                               // 0x0348(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FKnowledgeBaseFactKey                               DistractionLocationContextFact;                          // 0x0350(0x000C) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
+		class FName                                                DistractionStimBBInstigatorName;                         // 0x035C(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_2736[0x4];                                   // 0x0364(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class UKnowledgeBaseComponent*                             StimOwnersKnowledgeBase;                                 // 0x0368(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FKnowledgeBaseFactKey                               StimOwnersBoundsFact;                                    // 0x0370(0x000C) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 
 	public:
 		bool CastAndStoreParams(class UCustomActionParamsBase* BaseParams);

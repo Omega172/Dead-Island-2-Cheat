@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UDiagnosticsSubsystem : public UGameInstanceSubsystem
 	{
 	public:
-		unsigned char                                              UnknownData_P1S5[0x240];                                 // 0x0030(0x0240) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_CBHN[0x240];                                 // 0x0030(0x0240) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -30,7 +30,7 @@ namespace CG
 		class UBehaviorTree*                                       BT_Attacks;                                              // 0x0588(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UBehaviorTree*                                       BT_Idle;                                                 // 0x0590(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       ValueOfStopExpression;                                   // 0x0598(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_78LZ[0x7];                                   // 0x0599(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7JQ6[0x7];                                   // 0x0599(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UBehaviorTree*                                       BT_OuterRing;                                            // 0x05A0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UBehaviorTree*                                       BT_Alert;                                                // 0x05A8(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UBehaviorTree*                                       BT_Search;                                               // 0x05B0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -39,12 +39,12 @@ namespace CG
 		TArray<struct FKnowledgeBaseFactKey>                       CombatDateTimeFacts;                                     // 0x05C8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		class ADICharacter*                                        CombatTarget;                                            // 0x05D8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       CombatTargetFactIncreased;                               // 0x05E0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_S3G4[0x7];                                   // 0x05E1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CXHS[0x7];                                   // 0x05E1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FKnowledgeBaseFactKey>                       CombatTargetAggressorIdentifiers;                        // 0x05E8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		TArray<struct FKnowledgeBaseFactKey>                       CombatTargetAggressorFacts;                              // 0x05F8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		bool                                                       CrawlerAggressorFactIncremented;                         // 0x0608(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 		bool                                                       NonCrawlerAggressorFactIncremented;                      // 0x0609(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_K2R5[0x2];                                   // 0x060A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TVUS[0x2];                                   // 0x060A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FKnowledgeBaseFactKey                               SelectedCrawlerIncrementFact;                            // 0x060C(0x000C) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 		TMap<ECombatState, struct FSEnemyKnowledgeBaseFacts>       LifetimeFactsBasedCombatState;                           // 0x0618(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 		unsigned char                                              KnowledgeBaseFactsAdded[0x50];                           // 0x0668(0x0050) UNKNOWN PROPERTY: SetProperty

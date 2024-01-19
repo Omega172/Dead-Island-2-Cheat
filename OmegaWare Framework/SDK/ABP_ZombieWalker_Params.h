@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -39,12 +39,6 @@ namespace CG
 	 * Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_2ECD65C04DC72896DB3858942796C7D8
 	 */
 	struct UABP_ZombieWalker_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_2ECD65C04DC72896DB3858942796C7D8_Params
-	{	};
-
-	/**
-	 * Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_ModifyBone_8708D44944D2412786BBDA973C877A34
-	 */
-	struct UABP_ZombieWalker_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_ModifyBone_8708D44944D2412786BBDA973C877A34_Params
 	{	};
 
 	/**
@@ -138,7 +132,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bEnable;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		unsigned char                                              UnknownData_VF00[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_OCD3[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UAnimMontage*                                        BeginMontage;                                            // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bSkipIntoAnimation;                                      // 0x0010(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
@@ -193,7 +187,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_96MH[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_M95N[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

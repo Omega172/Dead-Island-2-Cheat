@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -24,13 +24,13 @@ namespace CG
 		class FScriptMulticastDelegate                             OnAccountStateChanged;                                   // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnAccountStatusUpdated;                                  // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnQrReceived;                                            // 0x0048(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1FN3[0xC8];                                  // 0x0058(0x00C8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XIBM[0xC8];                                  // 0x0058(0x00C8) MISSED OFFSET (PADDING)
 
 	public:
 		void RequestQRLink(int32_t LocalUserNum);
 		struct FProsAccountServiceStatus GetStatus(int32_t LocalUserNum);
 		EProsErrorCode GetLink(int32_t LocalUserNum);
-		class UProsAccountService* Get();
+		class UProsAccountService* STATIC_Get();
 		void ExpiredQrCode(int32_t LocalUserNum);
 		void Disconnect(int32_t LocalUserNum);
 		void Connect(int32_t LocalUserNum);
@@ -45,10 +45,10 @@ namespace CG
 	{
 	public:
 		class FScriptMulticastDelegate                             OnProsClientServiceStateChanged;                         // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_GZKE[0x18];                                  // 0x0038(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Z7TT[0x18];                                  // 0x0038(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnProsServiceStateChanged;                               // 0x0050(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnProsXboxXstoreCustomDevString;                         // 0x0060(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4ZZR[0x140];                                 // 0x0070(0x0140) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_Q9RH[0x140];                                 // 0x0070(0x0140) MISSED OFFSET (PADDING)
 
 	public:
 		EProsErrorCode XboxXstoreCustomDevStringRequest(const class FString& XboxToken);
@@ -57,10 +57,10 @@ namespace CG
 		EProsErrorCode XboxXstoreCustomDevStringCreateOnceFromConfig(int32_t LocalUserNum);
 		EProsErrorCode XboxXstoreCustomDevStringCreateOnce(int32_t LocalUserNum, const class FString& TitleSecret);
 		bool IsClientCreated(int32_t LocalUserNum);
-		struct FProsXSTSTokenConf GetXSTSTokenConf();
+		struct FProsXSTSTokenConf STATIC_GetXSTSTokenConf();
 		int32_t GetLocalUserNum(int32_t AuthorizationIndex);
 		int32_t GetAuthorizationIndex(int32_t LocalUserNum);
-		class UProsAuthorizationService* Get();
+		class UProsAuthorizationService* STATIC_Get();
 		class FString ClientGetProsUserId(int32_t LocalUserNum);
 		struct FPluginEndpoint ClientGetPluginEndpoint(int32_t LocalUserNum, const class FString& PluginName);
 		class FString ClientGetKernelSessionIdVisualAlias(int32_t LocalUserNum);
@@ -94,14 +94,14 @@ namespace CG
 	{
 	public:
 		class FScriptMulticastDelegate                             OnGetBanners;                                            // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3YBO[0x18];                                  // 0x0038(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_L568[0x18];                                  // 0x0038(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnGetBannersFromCache;                                   // 0x0050(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_2J3Q[0x30];                                  // 0x0060(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EX5I[0x30];                                  // 0x0060(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		bool GetBannersFromCache(int32_t LocalUserNum);
 		EProsErrorCode GetBanners(int32_t LocalUserNum, TArray<class FString> EntitlementIds, const class FString& ReferenceId);
-		class UProsBannerService* Get();
+		class UProsBannerService* STATIC_Get();
 		static UClass* StaticClass();
 	};
 
@@ -116,7 +116,7 @@ namespace CG
 		EProsErrorCode SkipTransfer(int32_t LocalUserNum, const class FString& TransferId, const class FScriptDelegate& Delegate);
 		EProsErrorCode GetTransferInfo(int32_t LocalUserNum, const class FScriptDelegate& Delegate);
 		int64_t GetCooldownMs(int32_t LocalUserNum);
-		class UProsCrossSaveService* Get();
+		class UProsCrossSaveService* STATIC_Get();
 		EProsErrorCode CompleteTransfer(int32_t LocalUserNum, const class FString& TransferId, const struct FProsCrossSaveSnapshot& Snapshot, const class FScriptDelegate& Delegate);
 		static UClass* StaticClass();
 	};
@@ -130,11 +130,11 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnGetEntitlements;                                       // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnConsumeEntitlement;                                    // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_VKO4[0x30];                                  // 0x0048(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_8F0E[0x30];                                  // 0x0048(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		EProsErrorCode GetEntitlements(int32_t LocalUserNum);
-		class UProsEntitlementsService* Get();
+		class UProsEntitlementsService* STATIC_Get();
 		EProsErrorCode ConsumeEntitlement(int32_t LocalUserNum, const class FString& ID);
 		static UClass* StaticClass();
 	};
@@ -146,17 +146,17 @@ namespace CG
 	class UProsInterface : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_0S5S[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LG4X[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnProsLog;                                               // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_56JQ[0x18];                                  // 0x0048(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DH6O[0x18];                                  // 0x0048(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnStartQRFlow;                                           // 0x0060(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QTTO[0x18];                                  // 0x0070(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7WQQ[0x18];                                  // 0x0070(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnGetEntitlements;                                       // 0x0088(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_J1TR[0x68];                                  // 0x0098(0x0068) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NZHA[0x68];                                  // 0x0098(0x0068) MISSED OFFSET (PADDING)
 
 	public:
 		void Update();
-		void Terminate();
+		void STATIC_Terminate();
 		bool TelemetryEvent(const class FString& EventType, int32_t EventTypeVersion, const class FString& EventParams);
 		bool TelemetryContextRemove(const class FString& Name);
 		bool TelemetryContextAdd(const class FString& Name, const class FString& Value);
@@ -176,8 +176,8 @@ namespace CG
 		EProsConnectionState GetConnectionState(int32_t LocalUserNum);
 		struct FTimespan GetBackendTimeOffset();
 		struct FDateTime GetBackendTime();
-		class UProsInterface* Get();
-		void Disconnect();
+		class UProsInterface* STATIC_Get();
+		void STATIC_Disconnect();
 		static UClass* StaticClass();
 	};
 
@@ -189,18 +189,18 @@ namespace CG
 	{
 	public:
 		float                                                      SessionUpdateInterval;                                   // 0x0028(0x0004) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_IJKX[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_GZRG[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              TitleName;                                               // 0x0030(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              TitleId;                                                 // 0x0040(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              TitleSecret;                                             // 0x0050(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              Version;                                                 // 0x0060(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              SubmissiveOSSName;                                       // 0x0070(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bSubmissiveOSSEnabledAutoLoginInEditor;                  // 0x0080(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_S3OY[0x7];                                   // 0x0081(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JLHE[0x7];                                   // 0x0081(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              UserLogin;                                               // 0x0088(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<struct FPluginVersioned>                            Plugins;                                                 // 0x0098(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, NativeAccessSpecifierPublic
 		bool                                                       bEnableVerboseLogging;                                   // 0x00A8(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0M5U[0x7];                                   // 0x00A9(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EKFV[0x7];                                   // 0x00A9(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

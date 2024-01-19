@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -26,7 +26,7 @@ namespace CG
 		class UBodyProxyTreeAsset*                                 BodyProxyTreeOverride;                                   // 0x0118(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TMap<class FName, class UCosmeticEffectsDefinition*>       PropagationCosmeticEffectOverrides;                      // 0x0120(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 		struct FKnowledgeBaseFactKey                               FeastingFact;                                            // 0x0170(0x000C) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_TQ03[0x4];                                   // 0x017C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_39ON[0x4];                                   // 0x017C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UDataTable*                                          ActivityDataTable;                                       // 0x0180(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		unsigned char                                              Ak[0x28];                                                // 0x0188(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 

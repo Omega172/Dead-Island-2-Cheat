@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Fluid_Puddle_Water.BP_Fluid_Puddle_Water_C
-	 * Size -> 0x0000 (FullSize[0x052C] - InheritedSize[0x052C])
+	 * Size -> 0x0000 (FullSize[0x055C] - InheritedSize[0x055C])
 	 */
 	class ABP_Fluid_Puddle_Water_C : public ABP_Fluid_Puddle_C
 	{

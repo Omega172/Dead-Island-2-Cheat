@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.AnimGraph
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FPoseLink                                   AnimGraph                                                  (Parm, OutParm, NoDestructor)
 	 */
@@ -36,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.GetLocomotionTransitionOverride
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		ELocomotionState                                   OldState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		ELocomotionState                                   NewState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -67,9 +67,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_2ECD65C04DC72896DB3858942796C7D8
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_2ECD65C04DC72896DB3858942796C7D8()
 	{
@@ -86,28 +86,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_ModifyBone_8708D44944D2412786BBDA973C877A34
-	 * 		Flags  -> ()
-	 */
-	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_ModifyBone_8708D44944D2412786BBDA973C877A34()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_ModifyBone_8708D44944D2412786BBDA973C877A34");
-		
-		UABP_ZombieWalker_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_ModifyBone_8708D44944D2412786BBDA973C877A34_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_34D475A1448FBCDFF0DEBA82906F4B84
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_34D475A1448FBCDFF0DEBA82906F4B84()
 	{
@@ -124,9 +105,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_LinkedAnimGraph_36BA661D4284D50ACDE1E1B0381C5327
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_LinkedAnimGraph_36BA661D4284D50ACDE1E1B0381C5327()
 	{
@@ -143,9 +124,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetSequencePlayer_9232E14145B7FC7AD65F0B9833EA2C6E
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetSequencePlayer_9232E14145B7FC7AD65F0B9833EA2C6E()
 	{
@@ -162,9 +143,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_BlendListByBool_1ABE12964F72558C7BC58A9FBB20266C
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_BlendListByBool_1ABE12964F72558C7BC58A9FBB20266C()
 	{
@@ -181,9 +162,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_E81E06DB435BB167D1A2F1A6C19C181B
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_E81E06DB435BB167D1A2F1A6C19C181B()
 	{
@@ -200,9 +181,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_TransitionResult_1762574C4CA12E8B04235BB5BAF2F023
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_TransitionResult_1762574C4CA12E8B04235BB5BAF2F023()
 	{
@@ -219,9 +200,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_139388184E4B90828FF7C79A5E6D8B91
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_139388184E4B90828FF7C79A5E6D8B91()
 	{
@@ -238,9 +219,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_383BEA4D4E0FD15DA89E69AB318AE4A3
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_AnimSetBlendSpacePlayer_383BEA4D4E0FD15DA89E69AB318AE4A3()
 	{
@@ -257,9 +238,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_TransitionResult_5E3FD07048B88BEF325159866FBC9B81
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_TransitionResult_5E3FD07048B88BEF325159866FBC9B81()
 	{
@@ -276,9 +257,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_BlendSpacePlayer_57B8563F4331065F58901593A9110C21
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_BlendSpacePlayer_57B8563F4331065F58901593A9110C21()
 	{
@@ -295,9 +276,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_SequenceEvaluator_50992E5B49F39FD2811763A6982451D7
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_SequenceEvaluator_50992E5B49F39FD2811763A6982451D7()
 	{
@@ -314,9 +295,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_ApplyAdditive_4021464543B5647FEFE607AF928A0620
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_ApplyAdditive_4021464543B5647FEFE607AF928A0620()
 	{
@@ -333,9 +314,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.AnimNotify_LevitateRandom
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::AnimNotify_LevitateRandom()
 	{
@@ -352,9 +333,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.BlueprintInitializeAnimation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::BlueprintInitializeAnimation()
 	{
@@ -371,9 +352,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EnableAirborne
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               bEnable                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class UAnimMontage*                                BeginMontage                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -397,9 +378,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.AnimNotify_Landing
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::AnimNotify_Landing()
 	{
@@ -416,9 +397,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.AlphaLayerChange
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
 	 * 		class FName                                        LayerName                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Alpha                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -440,9 +421,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.CycleBreakEnable
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::CycleBreakEnable()
 	{
@@ -459,9 +440,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_SequenceEvaluator_7F502D0D443E66DD8B5FCDA18EA84C22
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_SequenceEvaluator_7F502D0D443E66DD8B5FCDA18EA84C22()
 	{
@@ -478,9 +459,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.TickAirborne
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              DeltaSeconds                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -500,9 +481,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_ApplyAdditive_51C26F024095E79995F0D0A0D2B40D4A
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_ZombieWalker_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ZombieWalker_AnimGraphNode_ApplyAdditive_51C26F024095E79995F0D0A0D2B40D4A()
 	{
@@ -519,9 +500,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_ZombieWalker.ABP_ZombieWalker_C.ExecuteUbergraph_ABP_ZombieWalker
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Action_Player_Downed.BP_Action_Player_Downed_C
-	 * Size -> 0x0000 (FullSize[0x01E0] - InheritedSize[0x01E0])
+	 * Size -> 0x0000 (FullSize[0x01F0] - InheritedSize[0x01F0])
 	 */
 	class UBP_Action_Player_Downed_C : public UPlayerDownedCharacterAction
 	{

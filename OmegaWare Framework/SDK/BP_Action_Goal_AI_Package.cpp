@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,69 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.RemoveParticipantLocation
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void UBP_Action_Goal_AI_C::RemoveParticipantLocation()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.RemoveParticipantLocation");
+		
+		UBP_Action_Goal_AI_C_RemoveParticipantLocation_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.AddParticipantLocation
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void UBP_Action_Goal_AI_C::AddParticipantLocation()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.AddParticipantLocation");
+		
+		UBP_Action_Goal_AI_C_AddParticipantLocation_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.GoToState
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		EWaitMovingEQSStates                               NewState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UBP_Action_Goal_AI_C::GoToState(EWaitMovingEQSStates NewState)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.GoToState");
+		
+		UBP_Action_Goal_AI_C_GoToState_Params params {};
+		params.NewState = NewState;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.EndTurningMoveTargetState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Goal_AI_C::EndTurningMoveTargetState()
 	{
@@ -31,9 +91,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.EndStandardMoveTargetState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Goal_AI_C::EndStandardMoveTargetState()
 	{
@@ -50,9 +110,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.EndMaintainLastMoveTargetState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Goal_AI_C::EndMaintainLastMoveTargetState()
 	{
@@ -69,9 +129,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.EndFollowingMoveTargetState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Goal_AI_C::EndFollowingMoveTargetState()
 	{
@@ -88,9 +148,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.GetGoal
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
 	class UGoalComponent* UBP_Action_Goal_AI_C::GetGoal()
 	{
@@ -109,9 +169,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.BeginTurningMoveTargetState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Goal_AI_C::BeginTurningMoveTargetState()
 	{
@@ -128,9 +188,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.BeginMaintainLastMoveTargetState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Goal_AI_C::BeginMaintainLastMoveTargetState()
 	{
@@ -147,9 +207,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.BeginFollowingMoveTargetState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Goal_AI_C::BeginFollowingMoveTargetState()
 	{
@@ -166,9 +226,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.BeginStandardMoveTargetState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_Goal_AI_C::BeginStandardMoveTargetState()
 	{
@@ -185,9 +245,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.SetQueryParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UEnvQueryInstanceBlueprintWrapper*           ActiveQuery                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -207,9 +267,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.OnBeginEarly
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 */
 	bool UBP_Action_Goal_AI_C::OnBeginEarly()
 	{
@@ -228,9 +288,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_Goal_AI.BP_Action_Goal_AI_C.GetAreaRadius
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
 	float UBP_Action_Goal_AI_C::GetAreaRadius()
 	{

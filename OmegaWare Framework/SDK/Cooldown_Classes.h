@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -31,7 +31,7 @@ namespace CG
 	class UBaseCooldownCondition : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_6UMI[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_A2TY[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		void OnStartCooldown(class AActor* OwnerActor);
@@ -58,10 +58,10 @@ namespace CG
 	{
 	public:
 		bool                                                       bUseRow;                                                 // 0x0048(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_J7TA[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_W8NF[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FDataTableRowHandle                                 DistanceRowHandle;                                       // 0x0050(0x0010) Edit, NoDestructor, NativeAccessSpecifierPublic
 		float                                                      DistanceRequired;                                        // 0x0060(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_U846[0xC];                                   // 0x0064(0x000C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RQSH[0xC];                                   // 0x0064(0x000C) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -85,7 +85,7 @@ namespace CG
 	{
 	public:
 		float                                                      TimeOfCooldown;                                          // 0x0048(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_AAWS[0xC];                                   // 0x004C(0x000C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_E94M[0xC];                                   // 0x004C(0x000C) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -99,7 +99,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsOnCooldown;                                           // 0x0048(0x0001) ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_LW15[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_OE78[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -128,7 +128,7 @@ namespace CG
 	public:
 		TArray<class UCooldownCondition*>                          AllOfConditions;                                         // 0x0028(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
 		TArray<class UCooldownCondition*>                          AnyOfConditions;                                         // 0x0038(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_CRPB[0x38];                                  // 0x0048(0x0038) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_P1J5[0x38];                                  // 0x0048(0x0038) MISSED OFFSET (PADDING)
 
 	public:
 		bool StartCooldown(const class FScriptDelegate& InCooldownCallback);

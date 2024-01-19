@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,15 +12,15 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_HUDFunctionLibrary.BP_HUDFunctionLibrary_C.GetRarityData
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
 	 * 		EItemRarity                                        Rarity                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FLinearColor                                Color                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBP_HUDFunctionLibrary_C::GetRarityData(EItemRarity Rarity, class UObject* __WorldContext, struct FLinearColor* Color)
+	void UBP_HUDFunctionLibrary_C::STATIC_GetRarityData(EItemRarity Rarity, class UObject* __WorldContext, struct FLinearColor* Color)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -40,14 +40,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_HUDFunctionLibrary.BP_HUDFunctionLibrary_C.SetTextShadowOpacityToTextOpacity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UTextBlock*                                  TextWidget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBP_HUDFunctionLibrary_C::SetTextShadowOpacityToTextOpacity(class UTextBlock* TextWidget, class UObject* __WorldContext)
+	void UBP_HUDFunctionLibrary_C::STATIC_SetTextShadowOpacityToTextOpacity(class UTextBlock* TextWidget, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -64,9 +64,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_HUDFunctionLibrary.BP_HUDFunctionLibrary_C.OpenInGameMenu
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               Opened                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class FName                                        ActionFilterReason                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -74,7 +74,7 @@ namespace CG
 	 * 		class UObject*                                     WorldContextObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBP_HUDFunctionLibrary_C::OpenInGameMenu(bool Opened, const class FName& ActionFilterReason, class UInputMapperActionFilterDefinition* ActionFilter, class UObject* WorldContextObject, class UObject* __WorldContext)
+	void UBP_HUDFunctionLibrary_C::STATIC_OpenInGameMenu(bool Opened, const class FName& ActionFilterReason, class UInputMapperActionFilterDefinition* ActionFilter, class UObject* WorldContextObject, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -94,14 +94,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_HUDFunctionLibrary.BP_HUDFunctionLibrary_C.Get DIHUD
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class ADIHUD*                                      HUD                                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBP_HUDFunctionLibrary_C::GetDIHUD(class UObject* __WorldContext, class ADIHUD** HUD)
+	void UBP_HUDFunctionLibrary_C::STATIC_GetDIHUD(class UObject* __WorldContext, class ADIHUD** HUD)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

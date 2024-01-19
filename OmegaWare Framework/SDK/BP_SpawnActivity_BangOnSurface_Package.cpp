@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_SpawnActivity_BangOnSurface.BP_SpawnActivity_BangOnSurface_C.OnOpenableStateChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		EOpenableState                                     NewState                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -34,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_SpawnActivity_BangOnSurface.BP_SpawnActivity_BangOnSurface_C.OnTriggerEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		unsigned char                                      Event                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -56,20 +56,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function BP_SpawnActivity_BangOnSurface.BP_SpawnActivity_BangOnSurface_C.SetRelatedActor
-	 * 		Flags  -> ()
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BP_SpawnActivity_BangOnSurface.BP_SpawnActivity_BangOnSurface_C.AssignActivityData
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
-	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class AActor*                                      SpawningActor                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class UGeneratingActorConfigDataAsset*             Config                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void ABP_SpawnActivity_BangOnSurface_C::SetRelatedActor(class AActor* Actor)
+	void ABP_SpawnActivity_BangOnSurface_C::AssignActivityData(class AActor* SpawningActor, class UGeneratingActorConfigDataAsset* Config)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function BP_SpawnActivity_BangOnSurface.BP_SpawnActivity_BangOnSurface_C.SetRelatedActor");
+			fn = UObject::FindObject<UFunction>("Function BP_SpawnActivity_BangOnSurface.BP_SpawnActivity_BangOnSurface_C.AssignActivityData");
 		
-		ABP_SpawnActivity_BangOnSurface_C_SetRelatedActor_Params params {};
-		params.Actor = Actor;
+		ABP_SpawnActivity_BangOnSurface_C_AssignActivityData_Params params {};
+		params.SpawningActor = SpawningActor;
+		params.Config = Config;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -78,9 +80,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_SpawnActivity_BangOnSurface.BP_SpawnActivity_BangOnSurface_C.ReceiveBeginPlay
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
 	void ABP_SpawnActivity_BangOnSurface_C::ReceiveBeginPlay()
 	{
@@ -97,9 +99,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_SpawnActivity_BangOnSurface.BP_SpawnActivity_BangOnSurface_C.ReceiveEndPlay
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
 	 * 		EEndPlayReason                                     EndPlayReason                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -119,9 +121,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_SpawnActivity_BangOnSurface.BP_SpawnActivity_BangOnSurface_C.ExecuteUbergraph_BP_SpawnActivity_BangOnSurface
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

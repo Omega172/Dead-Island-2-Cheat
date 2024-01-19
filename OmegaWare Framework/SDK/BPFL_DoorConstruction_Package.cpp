@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.CalculateDoorBounds
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Door                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UDoorDataAsset*                              DoorDataAsset                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -22,7 +22,7 @@ namespace CG
 	 * 		struct FVector                                     Center                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Extents                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::CalculateDoorBounds(class AActor* Door, class UDoorDataAsset* DoorDataAsset, class UObject* __WorldContext, struct FVector* Center, struct FVector* Extents)
+	void UBPFL_DoorConstruction_C::STATIC_CalculateDoorBounds(class AActor* Door, class UDoorDataAsset* DoorDataAsset, class UObject* __WorldContext, struct FVector* Center, struct FVector* Extents)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -45,15 +45,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.RemoveSideSpecificComponents
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EDoorSides                                         DoorSide                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::RemoveSideSpecificComponents(class AActor** Actor, EDoorSides DoorSide, class UObject* __WorldContext)
+	void UBPFL_DoorConstruction_C::STATIC_RemoveSideSpecificComponents(class AActor** Actor, EDoorSides DoorSide, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -73,14 +73,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.GetBillboardDescriptorName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Private, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        DescriptorComponentName                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::GetBillboardDescriptorName(class UObject* __WorldContext, class FName* DescriptorComponentName)
+	void UBPFL_DoorConstruction_C::STATIC_GetBillboardDescriptorName(class UObject* __WorldContext, class FName* DescriptorComponentName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -99,14 +99,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.GetBillboardComponentName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Private, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        BillboardComponentName                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::GetBillboardComponentName(class UObject* __WorldContext, class FName* BillboardComponentName)
+	void UBPFL_DoorConstruction_C::STATIC_GetBillboardComponentName(class UObject* __WorldContext, class FName* BillboardComponentName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -125,14 +125,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.RemoveMarkedAsStaticBillboard
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      ActorRef                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::RemoveMarkedAsStaticBillboard(class AActor* ActorRef, class UObject* __WorldContext)
+	void UBPFL_DoorConstruction_C::STATIC_RemoveMarkedAsStaticBillboard(class AActor* ActorRef, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -149,9 +149,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.AddMarkedAsStaticBillboard
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actorroot                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UDoorDataAsset*                              DoorDataAsset                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -160,7 +160,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UBillboardComponent*                         BillboardComponent                                         (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::AddMarkedAsStaticBillboard(class AActor* Actorroot, class UDoorDataAsset* DoorDataAsset, float AdditionalHeightOffset, const class FText& OptionalDescriptor, class UObject* __WorldContext, class UBillboardComponent** BillboardComponent)
+	void UBPFL_DoorConstruction_C::STATIC_AddMarkedAsStaticBillboard(class AActor* Actorroot, class UDoorDataAsset* DoorDataAsset, float AdditionalHeightOffset, const class FText& OptionalDescriptor, class UObject* __WorldContext, class UBillboardComponent** BillboardComponent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -183,16 +183,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.Set Material Colour
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Private, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		int32_t                                            ElementIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UStaticMeshComponent*                        Mesh                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FLinearColor                                Colour                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::SetMaterialColour(int32_t ElementIndex, class UStaticMeshComponent* Mesh, const struct FLinearColor& Colour, class UObject* __WorldContext)
+	void UBPFL_DoorConstruction_C::STATIC_SetMaterialColour(int32_t ElementIndex, class UStaticMeshComponent* Mesh, const struct FLinearColor& Colour, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -211,16 +211,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.Calculate Frame Position
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Private, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
 	 * 		class UDoorDataAsset*                              DoorDataAsset                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EDoorSides                                         DoorOrientation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     FramePos                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::CalculateFramePosition(class UDoorDataAsset* DoorDataAsset, EDoorSides DoorOrientation, class UObject* __WorldContext, struct FVector* FramePos)
+	void UBPFL_DoorConstruction_C::STATIC_CalculateFramePosition(class UDoorDataAsset* DoorDataAsset, EDoorSides DoorOrientation, class UObject* __WorldContext, struct FVector* FramePos)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -241,15 +241,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.DestroyComponentByName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class FName                                        ComponentName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::DestroyComponentByName(const class FName& ComponentName, class AActor** Actor, class UObject* __WorldContext)
+	void UBPFL_DoorConstruction_C::STATIC_DestroyComponentByName(const class FName& ComponentName, class AActor** Actor, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -269,9 +269,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.Add Door
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class USceneComponent*                             RootComponent                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UDoorDataAsset*                              DoorDataAsset                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -281,7 +281,7 @@ namespace CG
 	 * 		class UStaticMeshComponent*                        RightDoor                                                  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UStaticMeshComponent*                        Frame                                                      (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::AddDoor(class USceneComponent** RootComponent, class UDoorDataAsset** DoorDataAsset, const struct FDoorInstanceConfig& DoorInstancedData, class UObject* __WorldContext, class UStaticMeshComponent** LeftDoor, class UStaticMeshComponent** RightDoor, class UStaticMeshComponent** Frame)
+	void UBPFL_DoorConstruction_C::STATIC_AddDoor(class USceneComponent** RootComponent, class UDoorDataAsset** DoorDataAsset, const struct FDoorInstanceConfig& DoorInstancedData, class UObject* __WorldContext, class UStaticMeshComponent** LeftDoor, class UStaticMeshComponent** RightDoor, class UStaticMeshComponent** Frame)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -309,9 +309,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.FindOrAddComponentOfTypeWithName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UClass*                                      ClassType                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        ComponentName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -319,7 +319,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class USceneComponent*                             RequestedComponent                                         (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::FindOrAddComponentOfTypeWithName(class UClass* ClassType, const class FName& ComponentName, class USceneComponent** ParentComponent, class UObject* __WorldContext, class USceneComponent** RequestedComponent)
+	void UBPFL_DoorConstruction_C::STATIC_FindOrAddComponentOfTypeWithName(class UClass* ClassType, const class FName& ComponentName, class USceneComponent** ParentComponent, class UObject* __WorldContext, class USceneComponent** RequestedComponent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -342,9 +342,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.Set Up Door Scene Components
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class USceneComponent*                             RootComponent                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UDoorDataAsset*                              DoorDataAsset                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -353,7 +353,7 @@ namespace CG
 	 * 		class UStaticMeshComponent*                        LeftDoor                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UStaticMeshComponent*                        RightDoor                                                  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::SetUpDoorSceneComponents(class USceneComponent** RootComponent, class UDoorDataAsset** DoorDataAsset, struct FDoorInstanceConfig* InstanceData, class UObject* __WorldContext, class UStaticMeshComponent** LeftDoor, class UStaticMeshComponent** RightDoor)
+	void UBPFL_DoorConstruction_C::STATIC_SetUpDoorSceneComponents(class USceneComponent** RootComponent, class UDoorDataAsset** DoorDataAsset, struct FDoorInstanceConfig* InstanceData, class UObject* __WorldContext, class UStaticMeshComponent** LeftDoor, class UStaticMeshComponent** RightDoor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -380,16 +380,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.Position Door Pivots
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Private, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UDoorDataAsset*                              DoorDataAsset                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class USceneComponent*                             LeftPivot                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class USceneComponent*                             RightPivot                                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::PositionDoorPivots(class UDoorDataAsset** DoorDataAsset, class USceneComponent** LeftPivot, class USceneComponent** RightPivot, class UObject* __WorldContext)
+	void UBPFL_DoorConstruction_C::STATIC_PositionDoorPivots(class UDoorDataAsset** DoorDataAsset, class USceneComponent** LeftPivot, class USceneComponent** RightPivot, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -412,9 +412,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.GetDoorMeshFromDataAsset
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Private, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UDoorDataAsset*                              DoorDataAsset                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EDoorSides                                         DoorSide                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -422,7 +422,7 @@ namespace CG
 	 * 		bool                                               Mirrored                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class UStaticMesh*                                 Doormesh                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::GetDoorMeshFromDataAsset(class UDoorDataAsset** DoorDataAsset, EDoorSides DoorSide, class UObject* __WorldContext, bool* Mirrored, class UStaticMesh** Doormesh)
+	void UBPFL_DoorConstruction_C::STATIC_GetDoorMeshFromDataAsset(class UDoorDataAsset** DoorDataAsset, EDoorSides DoorSide, class UObject* __WorldContext, bool* Mirrored, class UStaticMesh** Doormesh)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -446,9 +446,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.SetupFrame
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UDoorDataAsset*                              DoorDataAsset                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FDoorInstanceConfig                         InstanceData                                               (BlueprintVisible, BlueprintReadOnly, Parm)
@@ -456,7 +456,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UStaticMeshComponent*                        FrameComponent                                             (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::SetupFrame(class UDoorDataAsset** DoorDataAsset, const struct FDoorInstanceConfig& InstanceData, class USceneComponent* RootComponent, class UObject* __WorldContext, class UStaticMeshComponent** FrameComponent)
+	void UBPFL_DoorConstruction_C::STATIC_SetupFrame(class UDoorDataAsset** DoorDataAsset, const struct FDoorInstanceConfig& InstanceData, class USceneComponent* RootComponent, class UObject* __WorldContext, class UStaticMeshComponent** FrameComponent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -479,9 +479,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_DoorConstruction.BPFL_DoorConstruction_C.AddDoorElement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Private, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UDoorDataAsset*                              DoorDataAsset                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EDoorSides                                         DoorSide                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -489,7 +489,7 @@ namespace CG
 	 * 		struct FDoorInstanceConfig                         DoorInstancedata                                           (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_DoorConstruction_C::AddDoorElement(class UDoorDataAsset** DoorDataAsset, EDoorSides DoorSide, class UStaticMeshComponent** DoorMeshComponent, struct FDoorInstanceConfig* DoorInstancedata, class UObject* __WorldContext)
+	void UBPFL_DoorConstruction_C::STATIC_AddDoorElement(class UDoorDataAsset** DoorDataAsset, EDoorSides DoorSide, class UStaticMeshComponent** DoorMeshComponent, struct FDoorInstanceConfig* DoorInstancedata, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

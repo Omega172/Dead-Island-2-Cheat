@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A91F20
 	 * 		Name   -> Function GameplayEvents.GameplayEventComponent.ServerMulticastDispatchEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, Private, NetServer, NetValidate)
 	 * Parameters:
 	 * 		struct FGameplayEvent                              GameplayEvent                                              (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -28,15 +28,16 @@ namespace CG
 		params.GameplayEvent = GameplayEvent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A91E30
 	 * 		Name   -> Function GameplayEvents.GameplayEventComponent.ServerDispatchEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, Private, NetServer, NetValidate)
 	 * Parameters:
 	 * 		struct FGameplayEvent                              GameplayEvent                                              (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -50,15 +51,16 @@ namespace CG
 		params.GameplayEvent = GameplayEvent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A91D20
 	 * 		Name   -> Function GameplayEvents.GameplayEventComponent.NetMulticastDispatchEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 	 * Parameters:
 	 * 		struct FGameplayEvent                              GameplayEvent                                              (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		EGameplayEventInstigator                           Instigator                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -74,15 +76,16 @@ namespace CG
 		params.Instigator = Instigator;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A91C50
 	 * 		Name   -> Function GameplayEvents.GameplayEventComponent.ClientDispatchEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, Private, NetClient)
 	 * Parameters:
 	 * 		struct FGameplayEvent                              GameplayEvent                                              (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
@@ -96,6 +99,7 @@ namespace CG
 		params.GameplayEvent = GameplayEvent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

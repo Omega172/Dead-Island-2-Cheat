@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.UpdateMinimumAcceptableDistanceInFrontOwner
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::UpdateMinimumAcceptableDistanceInFrontOwner()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.OnBeginEarly
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	bool UBP_Action_AnimSet_CannotReachTarget_AI_C::OnBeginEarly()
 	{
@@ -52,9 +52,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.DisablePeekCardCheck
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::DisablePeekCardCheck()
 	{
@@ -71,9 +71,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.EnablePeekedCardCheck
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::EnablePeekedCardCheck()
 	{
@@ -90,9 +90,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.OnCombatStateExpressionChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               bResult                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
@@ -112,9 +112,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.Post Resolve
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::PostResolve()
 	{
@@ -131,9 +131,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.EndActionOnCardNotPeeked
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::EndActionOnCardNotPeeked()
 	{
@@ -150,9 +150,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.InitialiseVariables
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::InitialiseVariables()
 	{
@@ -169,9 +169,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.Pre Resolve
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::PreResolve()
 	{
@@ -188,9 +188,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.RemoveDistanceFacts
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::RemoveDistanceFacts()
 	{
@@ -207,9 +207,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.AddDistanceFacts
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::AddDistanceFacts()
 	{
@@ -226,9 +226,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.CacheDistanceInFrontOfCharacterToFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::CacheDistanceInFrontOfCharacterToFact()
 	{
@@ -245,9 +245,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.CacheVerticalAngleToTargetFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::CacheVerticalAngleToTargetFact()
 	{
@@ -264,9 +264,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.CacheHorizontalDistanceToTargetFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_AnimSet_CannotReachTarget_AI_C::CacheHorizontalDistanceToTargetFact()
 	{
@@ -283,9 +283,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.OnBegin
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnBeginParams               Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -307,9 +307,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.OnEnd
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnEndParams                 Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -331,9 +331,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_AnimSet_CannotReachTarget_AI.BP_Action_AnimSet_CannotReachTarget_AI_C.ExecuteUbergraph_BP_Action_AnimSet_CannotReachTarget_AI
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

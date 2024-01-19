@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -40,13 +40,6 @@ namespace CG
 	};
 
 	/**
-	 * ScriptStruct MeshDescription.PolygonGroupID
-	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
-	 */
-	struct FPolygonGroupID : public FElementID
-	{	};
-
-	/**
 	 * ScriptStruct MeshDescription.PolygonID
 	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
 	 */
@@ -54,17 +47,17 @@ namespace CG
 	{	};
 
 	/**
-	 * ScriptStruct MeshDescription.VertexID
+	 * ScriptStruct MeshDescription.PolygonGroupID
 	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
 	 */
-	struct FVertexID : public FElementID
+	struct FPolygonGroupID : public FElementID
 	{	};
 
 	/**
-	 * ScriptStruct MeshDescription.VertexInstanceID
+	 * ScriptStruct MeshDescription.TriangleID
 	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
 	 */
-	struct FVertexInstanceID : public FElementID
+	struct FTriangleID : public FElementID
 	{	};
 
 	/**
@@ -75,10 +68,17 @@ namespace CG
 	{	};
 
 	/**
-	 * ScriptStruct MeshDescription.TriangleID
+	 * ScriptStruct MeshDescription.VertexInstanceID
 	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
 	 */
-	struct FTriangleID : public FElementID
+	struct FVertexInstanceID : public FElementID
+	{	};
+
+	/**
+	 * ScriptStruct MeshDescription.VertexID
+	 * Size -> 0x0000 (FullSize[0x0004] - InheritedSize[0x0004])
+	 */
+	struct FVertexID : public FElementID
 	{	};
 
 }

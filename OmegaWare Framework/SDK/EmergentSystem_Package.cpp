@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68F80
 	 * 		Name   -> Function EmergentSystem.ActivityActor.RequestAllAgentsToLeave
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void AActivityActor::RequestAllAgentsToLeave()
 	{
@@ -25,15 +25,16 @@ namespace CG
 		AActivityActor_RequestAllAgentsToLeave_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68D70
 	 * 		Name   -> Function EmergentSystem.ActivityActor.RemoveDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -47,15 +48,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68BE0
 	 * 		Name   -> Function EmergentSystem.ActivityActor.ReleaseAgent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
 	 * 		class UAgentComponent*                             AgentComponent                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EAgentReleasedReason                               ReleaseReason                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -71,15 +73,16 @@ namespace CG
 		params.ReleaseReason = ReleaseReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68A60
 	 * 		Name   -> Function EmergentSystem.ActivityActor.OnNewComponentAdded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class UActorComponent*                             ActorComponent                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -93,15 +96,16 @@ namespace CG
 		params.ActorComponent = ActorComponent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function EmergentSystem.ActivityActor.OnActivityUnregistered
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActivityActor*                              Activity                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -121,9 +125,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F688D0
 	 * 		Name   -> Function EmergentSystem.ActivityActor.OnActivityStarted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActivityActor*                              Activity                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -137,15 +141,16 @@ namespace CG
 		params.Activity = Activity;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68800
 	 * 		Name   -> Function EmergentSystem.ActivityActor.OnActivityEnded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActivityActor*                              Activity                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EActivityEndedReason                               EndReason                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -161,15 +166,16 @@ namespace CG
 		params.EndReason = EndReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68310
 	 * 		Name   -> Function EmergentSystem.ActivityActor.IsRunning
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool AActivityActor::IsRunning()
 	{
@@ -180,6 +186,7 @@ namespace CG
 		AActivityActor_IsRunning_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -188,9 +195,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F67E00
 	 * 		Name   -> Function EmergentSystem.ActivityActor.ExitActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
 	 * 		EActivityEndedReason                               ActivityEndedReason                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -204,15 +211,16 @@ namespace CG
 		params.ActivityEndedReason = ActivityEndedReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F67BA0
 	 * 		Name   -> Function EmergentSystem.ActivityActor.AddDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -226,6 +234,7 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -274,9 +283,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F69030
 	 * 		Name   -> Function EmergentSystem.ActivityRegistrationComponent.UpdateDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bActivityActive                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Reason                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -292,6 +301,7 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -326,9 +336,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68280
 	 * 		Name   -> Function EmergentSystem.ActivitySuppressionAreaManager.IsActivityTypeSuppressed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		EActivityType                                      ActivityType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -342,6 +352,7 @@ namespace CG
 		params.ActivityType = ActivityType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -350,9 +361,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68110
 	 * 		Name   -> Function EmergentSystem.ActivitySuppressionAreaManager.GloballyEnableActivityType
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EActivityType                                      ActivityType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      DebugCallerInformation                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -368,15 +379,16 @@ namespace CG
 		params.DebugCallerInformation = DebugCallerInformation;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68030
 	 * 		Name   -> Function EmergentSystem.ActivitySuppressionAreaManager.GloballyDisableActivityType
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EActivityType                                      ActivityType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      DebugCallerInformation                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -392,19 +404,20 @@ namespace CG
 		params.DebugCallerInformation = DebugCallerInformation;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F67F80
 	 * 		Name   -> Function EmergentSystem.ActivitySuppressionAreaManager.Get
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class AActivitySuppressionAreaManager* AActivitySuppressionAreaManager::Get(class UObject* WorldContextObject)
+	class AActivitySuppressionAreaManager* AActivitySuppressionAreaManager::STATIC_Get(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -414,6 +427,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -450,9 +464,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68FA0
 	 * 		Name   -> Function EmergentSystem.AgentComponent.UnhideAgent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bWithFade                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -466,15 +480,16 @@ namespace CG
 		params.bWithFade = bWithFade;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68EF0
 	 * 		Name   -> Function EmergentSystem.AgentComponent.RemoveReasonCannotMarkForRemoval
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -488,15 +503,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68E70
 	 * 		Name   -> Function EmergentSystem.AgentComponent.RemoveReasonCannotBeInterrupted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -510,15 +526,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68DF0
 	 * 		Name   -> Function EmergentSystem.AgentComponent.RemoveReasonCannotBeDirected
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -532,15 +549,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68CA0
 	 * 		Name   -> Function EmergentSystem.AgentComponent.RemoveAgentPriority
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        PriorityName                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DelayTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -556,15 +574,16 @@ namespace CG
 		params.DelayTime = DelayTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68B60
 	 * 		Name   -> Function EmergentSystem.AgentComponent.OptOutOfSpatialManagement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -578,15 +597,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68AE0
 	 * 		Name   -> Function EmergentSystem.AgentComponent.OptInToSpatialManagement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -600,15 +620,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F681F0
 	 * 		Name   -> Function EmergentSystem.AgentComponent.HideAgent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bWithFade                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -622,15 +643,16 @@ namespace CG
 		params.bWithFade = bWithFade;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68000
 	 * 		Name   -> Function EmergentSystem.AgentComponent.GetCurrentAgentActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	class AActivityActor* UAgentComponent::GetCurrentAgentActivity()
 	{
@@ -641,6 +663,7 @@ namespace CG
 		UAgentComponent_GetCurrentAgentActivity_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -649,9 +672,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F67DE0
 	 * 		Name   -> Function EmergentSystem.AgentComponent.DespawnAgent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
 	void UAgentComponent::DespawnAgent()
 	{
@@ -662,15 +685,16 @@ namespace CG
 		UAgentComponent_DespawnAgent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F67D40
 	 * 		Name   -> Function EmergentSystem.AgentComponent.AddReasonCannotMarkForRemoval
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -684,6 +708,7 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -692,9 +717,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F67CB0
 	 * 		Name   -> Function EmergentSystem.AgentComponent.AddReasonCannotBeInterrupted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -708,6 +733,7 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -716,9 +742,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F67C20
 	 * 		Name   -> Function EmergentSystem.AgentComponent.AddReasonCannotBeDirected
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -732,6 +758,7 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -740,9 +767,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F67AE0
 	 * 		Name   -> Function EmergentSystem.AgentComponent.AddAgentPriority
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        PriorityName                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EParticipantPriority                               Priority                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -758,6 +785,7 @@ namespace CG
 		params.Priority = Priority;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -806,15 +834,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F67E80
 	 * 		Name   -> Function EmergentSystem.AgentFunctionLibrary.FindAgentInWorld
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      ClassToFind                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      OutActor                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAgentFunctionLibrary::FindAgentInWorld(class UObject* WorldContextObject, class UClass* ClassToFind, class AActor** OutActor)
+	void UAgentFunctionLibrary::STATIC_FindAgentInWorld(class UObject* WorldContextObject, class UClass* ClassToFind, class AActor** OutActor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -825,6 +853,7 @@ namespace CG
 		params.ClassToFind = ClassToFind;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -890,9 +919,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F690F0
 	 * 		Name   -> Function EmergentSystem.AmbientActivityRegistrationComponent.UseTriggerActivation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UTriggerShapeComponent*                      ShapeComponent                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -906,15 +935,16 @@ namespace CG
 		params.ShapeComponent = ShapeComponent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F689E0
 	 * 		Name   -> Function EmergentSystem.AmbientActivityRegistrationComponent.OnInteractorLeftArea
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class UTriggerInteractorComponent*                 Interactor                                                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -928,15 +958,16 @@ namespace CG
 		params.Interactor = Interactor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68960
 	 * 		Name   -> Function EmergentSystem.AmbientActivityRegistrationComponent.OnInteractorEnteredArea
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class UTriggerInteractorComponent*                 Interactor                                                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -950,6 +981,7 @@ namespace CG
 		params.Interactor = Interactor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -1026,9 +1058,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DA90
 	 * 		Name   -> Function EmergentSystem.ExistingAgentSource.CheckAdvertising
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected)
 	 */
 	void UExistingAgentSource::CheckAdvertising()
 	{
@@ -1039,6 +1071,7 @@ namespace CG
 		UExistingAgentSource_CheckAdvertising_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -1129,15 +1162,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F686E0
 	 * 		Name   -> Function EmergentSystem.EmergentActivitiesLibrary.LaunchActivityWithSingleParticipant
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActivityActor*                              Activity                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UAgentComponent*                             Participant                                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FParticipantLaunchParameters                OverrideParticipantLaunchParameters                        (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UEmergentActivitiesLibrary::LaunchActivityWithSingleParticipant(class AActivityActor* Activity, class UAgentComponent* Participant, const struct FParticipantLaunchParameters& OverrideParticipantLaunchParameters)
+	bool UEmergentActivitiesLibrary::STATIC_LaunchActivityWithSingleParticipant(class AActivityActor* Activity, class UAgentComponent* Participant, const struct FParticipantLaunchParameters& OverrideParticipantLaunchParameters)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1149,6 +1182,7 @@ namespace CG
 		params.OverrideParticipantLaunchParameters = OverrideParticipantLaunchParameters;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1157,14 +1191,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F685F0
 	 * 		Name   -> Function EmergentSystem.EmergentActivitiesLibrary.LaunchActivityWithParticipants
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActivityActor*                              Activity                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<class UAgentComponent*>                     Participants                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	bool UEmergentActivitiesLibrary::LaunchActivityWithParticipants(class AActivityActor* Activity, TArray<class UAgentComponent*> Participants)
+	bool UEmergentActivitiesLibrary::STATIC_LaunchActivityWithParticipants(class AActivityActor* Activity, TArray<class UAgentComponent*> Participants)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1175,6 +1209,7 @@ namespace CG
 		params.Participants = Participants;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1183,9 +1218,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F68340
 	 * 		Name   -> Function EmergentSystem.EmergentActivitiesLibrary.LaunchActivity
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActivityActor*                              Activity                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FSpawnConstraints                           SpawnConstraints                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -1193,7 +1228,7 @@ namespace CG
 	 * 		bool                                               bForceDespawnNonVitalAgentsIfNeeded                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EAgentRequestInterruptionReasons                   InterruptionReasonsToIgnore                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UEmergentActivitiesLibrary::LaunchActivity(class AActivityActor* Activity, const struct FSpawnConstraints& SpawnConstraints, bool bForceInstantSpawn, bool bForceDespawnNonVitalAgentsIfNeeded, EAgentRequestInterruptionReasons InterruptionReasonsToIgnore)
+	bool UEmergentActivitiesLibrary::STATIC_LaunchActivity(class AActivityActor* Activity, const struct FSpawnConstraints& SpawnConstraints, bool bForceInstantSpawn, bool bForceDespawnNonVitalAgentsIfNeeded, EAgentRequestInterruptionReasons InterruptionReasonsToIgnore)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1207,6 +1242,7 @@ namespace CG
 		params.InterruptionReasonsToIgnore = InterruptionReasonsToIgnore;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1257,14 +1293,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6E290
 	 * 		Name   -> Function EmergentSystem.EmergentSpatialLibrary.RemoveCustomActivePosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UEmergentSpatialLibrary::RemoveCustomActivePosition(class UObject* WorldContext, const struct FVector& Position)
+	void UEmergentSpatialLibrary::STATIC_RemoveCustomActivePosition(class UObject* WorldContext, const struct FVector& Position)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1275,20 +1311,21 @@ namespace CG
 		params.Position = Position;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DF10
 	 * 		Name   -> Function EmergentSystem.EmergentSpatialLibrary.IsLocationSpatiallyActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Location                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UEmergentSpatialLibrary::IsLocationSpatiallyActive(class UObject* WorldContext, const struct FVector& Location)
+	bool UEmergentSpatialLibrary::STATIC_IsLocationSpatiallyActive(class UObject* WorldContext, const struct FVector& Location)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1299,6 +1336,7 @@ namespace CG
 		params.Location = Location;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1307,15 +1345,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DB40
 	 * 		Name   -> Function EmergentSystem.EmergentSpatialLibrary.EnableDefaultActivePositions
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bEnable                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UEmergentSpatialLibrary::EnableDefaultActivePositions(class UObject* WorldContext, bool bEnable, const class FName& Reason)
+	void UEmergentSpatialLibrary::STATIC_EnableDefaultActivePositions(class UObject* WorldContext, bool bEnable, const class FName& Reason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1327,21 +1365,22 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6D980
 	 * 		Name   -> Function EmergentSystem.EmergentSpatialLibrary.AddCustomActivePosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Size                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UEmergentSpatialLibrary::AddCustomActivePosition(class UObject* WorldContext, const struct FVector& Position, float Size)
+	void UEmergentSpatialLibrary::STATIC_AddCustomActivePosition(class UObject* WorldContext, const struct FVector& Position, float Size)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1353,6 +1392,7 @@ namespace CG
 		params.Size = Size;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -1387,14 +1427,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6E1B0
 	 * 		Name   -> Function EmergentSystem.SpawnableGroupsLibrary.PickSpawnableFromSet
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FSpawnableGroupHandle                       SpawnableGroup                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void USpawnableGroupsLibrary::PickSpawnableFromSet(class UObject* WorldContext, const struct FSpawnableGroupHandle& SpawnableGroup)
+	void USpawnableGroupsLibrary::STATIC_PickSpawnableFromSet(class UObject* WorldContext, const struct FSpawnableGroupHandle& SpawnableGroup)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1405,20 +1445,21 @@ namespace CG
 		params.SpawnableGroup = SpawnableGroup;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DD00
 	 * 		Name   -> Function EmergentSystem.SpawnableGroupsLibrary.GetGroupSetFromName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        GroupName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FSpawnableGroupHandle USpawnableGroupsLibrary::GetGroupSetFromName(class UObject* WorldContext, const class FName& GroupName)
+	struct FSpawnableGroupHandle USpawnableGroupsLibrary::STATIC_GetGroupSetFromName(class UObject* WorldContext, const class FName& GroupName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1429,6 +1470,7 @@ namespace CG
 		params.GroupName = GroupName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1437,14 +1479,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DC40
 	 * 		Name   -> Function EmergentSystem.SpawnableGroupsLibrary.GetGroupSetFromAsset
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContext                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UEmergentSpawnableGroupObject*               GroupAsset                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FSpawnableGroupHandle USpawnableGroupsLibrary::GetGroupSetFromAsset(class UObject* WorldContext, class UEmergentSpawnableGroupObject* GroupAsset)
+	struct FSpawnableGroupHandle USpawnableGroupsLibrary::STATIC_GetGroupSetFromAsset(class UObject* WorldContext, class UEmergentSpawnableGroupObject* GroupAsset)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1455,6 +1497,7 @@ namespace CG
 		params.GroupAsset = GroupAsset;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1477,9 +1520,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6E0A0
 	 * 		Name   -> Function EmergentSystem.EntryActivityRegistrationComponent.OnActivityStarted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class AActivityActor*                              Activity                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1493,15 +1536,16 @@ namespace CG
 		params.Activity = Activity;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DFE0
 	 * 		Name   -> Function EmergentSystem.EntryActivityRegistrationComponent.OnActivityEnded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class AActivityActor*                              Activity                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		EActivityEndedReason                               EndReason                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1517,6 +1561,7 @@ namespace CG
 		params.EndReason = EndReason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -1635,9 +1680,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6E600
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.ShouldSkipIntro
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UParticipantSlotComponent::ShouldSkipIntro()
 	{
@@ -1648,6 +1693,7 @@ namespace CG
 		UParticipantSlotComponent_ShouldSkipIntro_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1656,9 +1702,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6E580
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.SetTravelToLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FParticipantMoveToLocation                  Location                                                   (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -1672,15 +1718,16 @@ namespace CG
 		params.Location = Location;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6E4F0
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.SetSpawnHidden
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bSpawnHidden                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1694,15 +1741,16 @@ namespace CG
 		params.bSpawnHidden = bSpawnHidden;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6E470
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.SetParticipantSpawnableGroup
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UEmergentSpawnableGroupObject*               InSpawnableGroup                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1716,15 +1764,16 @@ namespace CG
 		params.InSpawnableGroup = InSpawnableGroup;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6E3F0
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.SetParticipantPriority
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EParticipantPriority                               InPriority                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1738,15 +1787,16 @@ namespace CG
 		params.InPriority = InPriority;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6E350
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.SetLaunchParameters
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FParticipantLaunchParameters                Params                                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -1760,15 +1810,16 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6E120
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.OptOutOf
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		ESpawnConstraintTypes                              Flag                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1782,15 +1833,16 @@ namespace CG
 		params.Flag = Flag;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DEE0
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.GetTravelToLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FParticipantMoveToLocation UParticipantSlotComponent::GetTravelToLocation()
 	{
@@ -1801,6 +1853,7 @@ namespace CG
 		UParticipantSlotComponent_GetTravelToLocation_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1809,9 +1862,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DEB0
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.GetParticipantState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	EParticipantState UParticipantSlotComponent::GetParticipantState()
 	{
@@ -1822,6 +1875,7 @@ namespace CG
 		UParticipantSlotComponent_GetParticipantState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1830,9 +1884,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DE80
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.GetParticipantSpawnedGameEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	class UGameEvent* UParticipantSlotComponent::GetParticipantSpawnedGameEvent()
 	{
@@ -1843,6 +1897,7 @@ namespace CG
 		UParticipantSlotComponent_GetParticipantSpawnedGameEvent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1851,9 +1906,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DE60
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.GetParticipantSpawnableGroup
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class UEmergentSpawnableGroupObject* UParticipantSlotComponent::GetParticipantSpawnableGroup()
 	{
@@ -1864,6 +1919,7 @@ namespace CG
 		UParticipantSlotComponent_GetParticipantSpawnableGroup_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1872,9 +1928,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DDD0
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.GetParticipantGameEvent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EParticipantEvent                                  Event                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1888,6 +1944,7 @@ namespace CG
 		params.Event = Event;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1896,9 +1953,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F6DAB0
 	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.EditorShouldCheckForValidAgentSelection
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bShouldCheck                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1912,6 +1969,27 @@ namespace CG
 		params.bShouldCheck = bShouldCheck;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00EB73B0
+	 * 		Name   -> Function EmergentSystem.ParticipantSlotComponent.EditorForceAlignNavPositionWithGround
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
+	 */
+	void UParticipantSlotComponent::EditorForceAlignNavPositionWithGround()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function EmergentSystem.ParticipantSlotComponent.EditorForceAlignNavPositionWithGround");
+		
+		UParticipantSlotComponent_EditorForceAlignNavPositionWithGround_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -1932,9 +2010,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F71E30
 	 * 		Name   -> Function EmergentSystem.PopulationArea.SetEnabled
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bInValue                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1948,15 +2026,16 @@ namespace CG
 		params.bInValue = bInValue;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F71E10
 	 * 		Name   -> Function EmergentSystem.PopulationArea.ResetAllConstraints
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void APopulationArea::ResetAllConstraints()
 	{
@@ -1967,15 +2046,16 @@ namespace CG
 		APopulationArea_ResetAllConstraints_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F71D80
 	 * 		Name   -> Function EmergentSystem.PopulationArea.OnPopulationStateChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		bool                                               bPopulationAreaEnabled                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -1989,6 +2069,7 @@ namespace CG
 		params.bPopulationAreaEnabled = bPopulationAreaEnabled;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -2135,15 +2216,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F71EE0
 	 * 		Name   -> Function EmergentSystem.RequestSpawnActorTask.SpawnActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FSpawnParams                                SpawnHandlerParams                                         (Parm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      Class                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class URequestSpawnActorTask* URequestSpawnActorTask::SpawnActor(class UObject* WorldContextObject, const struct FSpawnParams& SpawnHandlerParams, class UClass* Class)
+	class URequestSpawnActorTask* URequestSpawnActorTask::STATIC_SpawnActor(class UObject* WorldContextObject, const struct FSpawnParams& SpawnHandlerParams, class UClass* Class)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2155,6 +2236,7 @@ namespace CG
 		params.Class = Class;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2163,9 +2245,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F71CB0
 	 * 		Name   -> Function EmergentSystem.RequestSpawnActorTask.FinishSpawningActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Protected, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      SpawnedActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2181,15 +2263,16 @@ namespace CG
 		params.SpawnedActor = SpawnedActor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F71BD0
 	 * 		Name   -> Function EmergentSystem.RequestSpawnActorTask.BeginSpawningActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Protected, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class AActor*                                      SpawnedActor                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2204,6 +2287,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2383,9 +2467,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00F720A0
 	 * 		Name   -> Function EmergentSystem.VisibleToPlayersTracker.UpdateVisibility
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void UVisibleToPlayersTracker::UpdateVisibility()
 	{
@@ -2396,6 +2480,7 @@ namespace CG
 		UVisibleToPlayersTracker_UpdateVisibility_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

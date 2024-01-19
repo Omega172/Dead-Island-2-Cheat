@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -29,17 +29,17 @@ namespace CG
 		TMap<struct FKnowledgeBaseFactKey, struct FAttachmentPieceSettings> AttachmentPieces;                                        // 0x0110(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 		TArray<struct FKnowledgeBaseFactKey>                       AttachmentKeys;                                          // 0x0160(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		float                                                      CurrentMaxHealth;                                        // 0x0170(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_Z7K1[0x4];                                   // 0x0174(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LBCT[0x4];                                   // 0x0174(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class ADIAICharacter*                                      Character;                                               // 0x0178(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TArray<struct FAttachmentPieceSettings>                    AttachmentValues;                                        // 0x0180(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		float                                                      RegisteredLevel;                                         // 0x0190(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_AYJ4[0x4];                                   // 0x0194(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UHOF[0x4];                                   // 0x0194(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UVisceraComponent*                                   VisceraComponent;                                        // 0x0198(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UDSLogChannelHandle*                                 Logger;                                                  // 0x01A0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FAttachmentPieceSettings                            PointImpactedAttachmentPiece;                            // 0x01A8(0x00A8) Edit, BlueprintVisible, DisableEditOnInstance
 		class FString                                              DebugTagString;                                          // 0x0250(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash
 		bool                                                       PointImpactAttachmentHit;                                // 0x0260(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_BF05[0x7];                                   // 0x0261(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9I4P[0x7];                                   // 0x0261(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UPerksComponent*                                     PerkComponent;                                           // 0x0268(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TArray<struct FKnowledgeBaseFactKey>                       ForceDetachmentKeys;                                     // 0x0270(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		struct FPointImpactEventResult                             PointImpactEventResult;                                  // 0x0280(0x0300) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
@@ -47,13 +47,13 @@ namespace CG
 		struct FGeneralImpactEventResult                           GeneralImpactEventResult;                                // 0x07F8(0x0240) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
 		TArray<struct FAttachmentPieceSettings>                    RadialImpactedAttachmentPieces;                          // 0x0A38(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		bool                                                       RadialImpactAttachmentHit;                               // 0x0A48(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_JRUL[0x7];                                   // 0x0A49(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_KXH8[0x7];                                   // 0x0A49(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAttachmentPieceSettings                            ImpactedAttachmentPieceRef;                              // 0x0A50(0x00A8) Edit, BlueprintVisible, DisableEditOnInstance
 		TArray<struct FUniqueAttachmentPerksStorage>               UniquePerksList;                                         // 0x0AF8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		class UModifiableValuesComponent*                          ModifiableValuesComponent;                               // 0x0B08(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class ADICharacter*                                        ImpactInstigator;                                        // 0x0B10(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       BlockImpactsBasedOnDamageRequirement;                    // 0x0B18(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_2GBT[0x3];                                   // 0x0B19(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3HXO[0x3];                                   // 0x0B19(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      BlockDamageLessThan;                                     // 0x0B1C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FGuid                                               ActionId;                                                // 0x0B20(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UCharacterActionRequestHelper*                       DetachmentActionHelper;                                  // 0x0B30(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UWwiseAlexaAudioComponent : public UAkAudioInputComponent
 	{
 	public:
-		unsigned char                                              UnknownData_GNZT[0x20];                                  // 0x0590(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RL0J[0x20];                                  // 0x0590(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

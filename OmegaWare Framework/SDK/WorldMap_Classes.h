@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -26,12 +26,12 @@ namespace CG
 
 	/**
 	 * Class WorldMap.WorldMapStaticMeshComponent
-	 * Size -> 0x0010 (FullSize[0x05F0] - InheritedSize[0x05E0])
+	 * Size -> 0x0008 (FullSize[0x05F0] - InheritedSize[0x05E8])
 	 */
 	class UWorldMapStaticMeshComponent : public UStaticMeshComponent
 	{
 	public:
-		unsigned char                                              UnknownData_HY1N[0x10];                                  // 0x05E0(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YY47[0x8];                                   // 0x05E8(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();
@@ -59,7 +59,7 @@ namespace CG
 	public:
 		class UWorldMapInstanceDatabase*                           InstanceDatabase;                                        // 0x02B0(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bKeepOriginalScale;                                      // 0x02B8(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_EG5E[0x3];                                   // 0x02B9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_GFX0[0x3];                                   // 0x02B9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      WorldMapScale;                                           // 0x02BC(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      MinCameraDistance;                                       // 0x02C0(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      MaxCameraDistance;                                       // 0x02C4(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -67,12 +67,12 @@ namespace CG
 		class FScriptMulticastDelegate                             OnWorldMapReady;                                         // 0x02D0(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class UBoxComponent*                                       CameraFocusBounds;                                       // 0x02E0(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bDebugDrawCameraBounds;                                  // 0x02E8(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_3JNR[0x67];                                  // 0x02E9(0x0067) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XJ6F[0x67];                                  // 0x02E9(0x0067) MISSED OFFSET (PADDING)
 
 	public:
 		void RevealMeshesWithID(const class FName& ID, bool bRevealedByLocalPlayer);
 		bool IsMapVisible();
-		class AWorldMapActor* GetWorldMapActor(class UObject* WorldContextObject);
+		class AWorldMapActor* STATIC_GetWorldMapActor(class UObject* WorldContextObject);
 		class USceneComponent* GetCameraFocusComponent();
 		struct FBox GetCameraFocusBounds();
 		class UCameraComponent* GetCameraComponent();

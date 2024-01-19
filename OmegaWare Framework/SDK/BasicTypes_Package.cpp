@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -36,7 +36,7 @@ namespace CG
 	 */
 	bool InitSdk()
 	{
-		return InitSdk(L"DeadIsland-Win64-Shipping.exe", 0x775FF80, 0x7720E40, 0x7939A98);
+		return InitSdk(L"DeadIsland-Win64-Shipping.exe", 0x73B45B0, 0x7375400, 0x758E018);
 	}
 
 	// --------------------------------------------------

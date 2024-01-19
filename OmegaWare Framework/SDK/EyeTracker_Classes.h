@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,11 +21,11 @@ namespace CG
 	class UEyeTrackerFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void SetEyeTrackedPlayer(class APlayerController* PlayerController);
-		bool IsStereoGazeDataAvailable();
-		bool IsEyeTrackerConnected();
-		bool GetStereoGazeData(struct FEyeTrackerStereoGazeData* OutGazeData);
-		bool GetGazeData(struct FEyeTrackerGazeData* OutGazeData);
+		void STATIC_SetEyeTrackedPlayer(class APlayerController* PlayerController);
+		bool STATIC_IsStereoGazeDataAvailable();
+		bool STATIC_IsEyeTrackerConnected();
+		bool STATIC_GetStereoGazeData(struct FEyeTrackerStereoGazeData* OutGazeData);
+		bool STATIC_GetGazeData(struct FEyeTrackerGazeData* OutGazeData);
 		static UClass* StaticClass();
 	};
 

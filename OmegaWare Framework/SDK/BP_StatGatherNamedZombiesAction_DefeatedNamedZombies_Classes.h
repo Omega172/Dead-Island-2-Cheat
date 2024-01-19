@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_StatGatherNamedZombiesAction_DefeatedNamedZombies.BP_StatGatherNamedZombiesAction_DefeatedNamedZombies_C
-	 * Size -> 0x0000 (FullSize[0x0128] - InheritedSize[0x0128])
+	 * Size -> 0x0000 (FullSize[0x0130] - InheritedSize[0x0130])
 	 */
 	class UBP_StatGatherNamedZombiesAction_DefeatedNamedZombies_C : public UStatGatherNamedZombiesAction
 	{

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_MenuMapItemListPaneHandler_FastTravel.BP_MenuMapItemListPaneHandler_FastTravel_C
-	 * Size -> 0x0000 (FullSize[0x0168] - InheritedSize[0x0168])
+	 * Size -> 0x0000 (FullSize[0x0178] - InheritedSize[0x0178])
 	 */
 	class UBP_MenuMapItemListPaneHandler_FastTravel_C : public UMenuItemListContainerLAMapHandlerFastTravel
 	{

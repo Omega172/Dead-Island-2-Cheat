@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CFA040
 	 * 		Name   -> Function Openable.OpenableComponent.SetOverrideSpeedModifier
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              NewSpeedModifier                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -28,15 +28,16 @@ namespace CG
 		params.NewSpeedModifier = NewSpeedModifier;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9FB0
 	 * 		Name   -> Function Openable.OpenableComponent.SetControlObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UOpenableControlObject*                      Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -50,6 +51,7 @@ namespace CG
 		params.Object = Object;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -58,9 +60,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9F10
 	 * 		Name   -> Function Openable.OpenableComponent.SetAssetCollection
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FOpenableDataAssetCollection                InAssetCollection                                          (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -74,15 +76,16 @@ namespace CG
 		params.InAssetCollection = InAssetCollection;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9EC0
 	 * 		Name   -> Function Openable.OpenableComponent.RequestOpen
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	bool UOpenableComponent::RequestOpen()
 	{
@@ -93,6 +96,7 @@ namespace CG
 		UOpenableComponent_RequestOpen_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -101,9 +105,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF99B0
 	 * 		Name   -> Function Openable.OpenableComponent.RequestClose
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	bool UOpenableComponent::RequestClose()
 	{
@@ -114,6 +118,7 @@ namespace CG
 		UOpenableComponent_RequestClose_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -122,9 +127,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9920
 	 * 		Name   -> Function Openable.OpenableComponent.RemoveDisableOpenReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -138,15 +143,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF98A0
 	 * 		Name   -> Function Openable.OpenableComponent.RemoveControlObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UOpenableControlObject*                      Object                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -160,15 +166,16 @@ namespace CG
 		params.Object = Object;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9410
 	 * 		Name   -> Function Openable.OpenableComponent.OnEndAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasDefaults)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ActionType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -186,15 +193,16 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9380
 	 * 		Name   -> Function Openable.OpenableComponent.OnBlockMessageStateChanged
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		bool                                               bIsBlocked                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -208,15 +216,16 @@ namespace CG
 		params.bIsBlocked = bIsBlocked;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF92B0
 	 * 		Name   -> Function Openable.OpenableComponent.OnBeginAction
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasDefaults)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        ActionType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -232,15 +241,16 @@ namespace CG
 		params.ActionType = ActionType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9180
 	 * 		Name   -> Function Openable.OpenableComponent.GetCurrentState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	EOpenableState UOpenableComponent::GetCurrentState()
 	{
@@ -251,6 +261,7 @@ namespace CG
 		UOpenableComponent_GetCurrentState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -259,9 +270,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF90D0
 	 * 		Name   -> Function Openable.OpenableComponent.AddDisableOpenReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        Reason                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -275,6 +286,7 @@ namespace CG
 		params.Reason = Reason;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -295,9 +307,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9EF0
 	 * 		Name   -> Function Openable.OpenableControlObject.RequestOpen
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 */
 	void UOpenableControlObject::RequestOpen()
 	{
@@ -308,15 +320,16 @@ namespace CG
 		UOpenableControlObject_RequestOpen_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF99E0
 	 * 		Name   -> Function Openable.OpenableControlObject.RequestClosed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 */
 	void UOpenableControlObject::RequestClosed()
 	{
@@ -327,15 +340,16 @@ namespace CG
 		UOpenableControlObject_RequestClosed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9800
 	 * 		Name   -> Function Openable.OpenableControlObject.OnOpenRequested
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void UOpenableControlObject::OnOpenRequested()
 	{
@@ -346,15 +360,16 @@ namespace CG
 		UOpenableControlObject_OnOpenRequested_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CDC530
 	 * 		Name   -> Function Openable.OpenableControlObject.OnCloseRequested
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void UOpenableControlObject::OnCloseRequested()
 	{
@@ -365,6 +380,7 @@ namespace CG
 		UOpenableControlObject_OnCloseRequested_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -399,9 +415,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CFA1E0
 	 * 		Name   -> Function Openable.OpenableObject.StopMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void UOpenableObject::StopMovement()
 	{
@@ -412,15 +428,16 @@ namespace CG
 		UOpenableObject_StopMovement_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CFA1C0
 	 * 		Name   -> Function Openable.OpenableObject.StartMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void UOpenableObject::StartMovement()
 	{
@@ -431,15 +448,16 @@ namespace CG
 		UOpenableObject_StartMovement_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CFA0C0
 	 * 		Name   -> Function Openable.OpenableObject.Start
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      InOwnerActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              InOpenableObjectCallback                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -455,6 +473,7 @@ namespace CG
 		params.InOpenableObjectCallback = InOpenableObjectCallback;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -463,9 +482,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9C60
 	 * 		Name   -> Function Openable.OpenableObject.RequestInformWhenPercentageThroughMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FScriptDelegate                              Callback                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		TArray<float>                                      PercentagesThrough                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -481,6 +500,7 @@ namespace CG
 		params.PercentagesThrough = PercentagesThrough;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -489,9 +509,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9A00
 	 * 		Name   -> Function Openable.OpenableObject.RequestInformWhenPercentageRemainingMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FScriptDelegate                              Callback                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		TArray<float>                                      PercentagesRemaining                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -507,6 +527,7 @@ namespace CG
 		params.PercentagesRemaining = PercentagesRemaining;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -515,9 +536,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9860
 	 * 		Name   -> Function Openable.OpenableObject.RemoveAllCallbacks
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UOpenableObject::RemoveAllCallbacks()
 	{
@@ -528,15 +549,16 @@ namespace CG
 		UOpenableObject_RemoveAllCallbacks_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9840
 	 * 		Name   -> Function Openable.OpenableObject.OnRemoveAllCallbacks
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void UOpenableObject::OnRemoveAllCallbacks()
 	{
@@ -547,15 +569,16 @@ namespace CG
 		UOpenableObject_OnRemoveAllCallbacks_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF96D0
 	 * 		Name   -> Function Openable.OpenableObject.OnInformWhenPercentageThroughMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		class FScriptDelegate                              Callback                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		TArray<float>                                      PercentagesThrough                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -571,6 +594,7 @@ namespace CG
 		params.PercentagesThrough = PercentagesThrough;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -579,9 +603,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF95A0
 	 * 		Name   -> Function Openable.OpenableObject.OnInformWhenPercentageRemainingMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		class FScriptDelegate                              Callback                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		TArray<float>                                      PercentagesRemaining                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -597,6 +621,7 @@ namespace CG
 		params.PercentagesRemaining = PercentagesRemaining;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -605,9 +630,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9560
 	 * 		Name   -> Function Openable.OpenableObject.OnGetPercentageThroughMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent, Const)
 	 */
 	float UOpenableObject::OnGetPercentageThroughMovement()
 	{
@@ -618,6 +643,7 @@ namespace CG
 		UOpenableObject_OnGetPercentageThroughMovement_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -626,9 +652,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9520
 	 * 		Name   -> Function Openable.OpenableObject.OnGetPercentageRemainingMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent, Const)
 	 */
 	float UOpenableObject::OnGetPercentageRemainingMovement()
 	{
@@ -639,6 +665,7 @@ namespace CG
 		UOpenableObject_OnGetPercentageRemainingMovement_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -647,9 +674,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9290
 	 * 		Name   -> Function Openable.OpenableObject.InformMovementFinished
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 */
 	void UOpenableObject::InformMovementFinished()
 	{
@@ -660,15 +687,16 @@ namespace CG
 		UOpenableObject_InformMovementFinished_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9230
 	 * 		Name   -> Function Openable.OpenableObject.GetPercentageThroughMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UOpenableObject::GetPercentageThroughMovement()
 	{
@@ -679,6 +707,7 @@ namespace CG
 		UOpenableObject_GetPercentageThroughMovement_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -687,9 +716,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF91D0
 	 * 		Name   -> Function Openable.OpenableObject.GetPercentageRemainingMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UOpenableObject::GetPercentageRemainingMovement()
 	{
@@ -700,6 +729,7 @@ namespace CG
 		UOpenableObject_GetPercentageRemainingMovement_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -708,9 +738,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF91A0
 	 * 		Name   -> Function Openable.OpenableObject.GetOwningActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class AActor* UOpenableObject::GetOwningActor()
 	{
@@ -721,6 +751,7 @@ namespace CG
 		UOpenableObject_GetOwningActor_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -729,9 +760,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9160
 	 * 		Name   -> Function Openable.OpenableObject.ForceStop
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UOpenableObject::ForceStop()
 	{
@@ -742,6 +773,7 @@ namespace CG
 		UOpenableObject_ForceStop_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -776,9 +808,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9D90
 	 * 		Name   -> Function Openable.OpenableObjectAction.RequestInformWhenPercentageThroughMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FScriptDelegate                              Callback                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		TArray<float>                                      PercentagesThrough                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -794,6 +826,7 @@ namespace CG
 		params.PercentagesThrough = PercentagesThrough;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -802,9 +835,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9B30
 	 * 		Name   -> Function Openable.OpenableObjectAction.RequestInformWhenPercentageRemainingMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FScriptDelegate                              Callback                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		TArray<float>                                      PercentagesRemaining                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -820,6 +853,7 @@ namespace CG
 		params.PercentagesRemaining = PercentagesRemaining;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -828,9 +862,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9880
 	 * 		Name   -> Function Openable.OpenableObjectAction.RemoveAllCallbacks
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 */
 	void UOpenableObjectAction::RemoveAllCallbacks()
 	{
@@ -841,15 +875,16 @@ namespace CG
 		UOpenableObjectAction_RemoveAllCallbacks_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9820
 	 * 		Name   -> Function Openable.OpenableObjectAction.OnOpenableObjectMovementComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void UOpenableObjectAction::OnOpenableObjectMovementComponent()
 	{
@@ -860,15 +895,16 @@ namespace CG
 		UOpenableObjectAction_OnOpenableObjectMovementComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9260
 	 * 		Name   -> Function Openable.OpenableObjectAction.GetPercentageThroughMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UOpenableObjectAction::GetPercentageThroughMovement()
 	{
@@ -879,6 +915,7 @@ namespace CG
 		UOpenableObjectAction_GetPercentageThroughMovement_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -887,9 +924,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9200
 	 * 		Name   -> Function Openable.OpenableObjectAction.GetPercentageRemainingMovement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
 	float UOpenableObjectAction::GetPercentageRemainingMovement()
 	{
@@ -900,6 +937,7 @@ namespace CG
 		UOpenableObjectAction_GetPercentageRemainingMovement_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

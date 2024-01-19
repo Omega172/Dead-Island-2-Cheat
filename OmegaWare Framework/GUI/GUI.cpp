@@ -62,6 +62,25 @@ void GUI::Render()
 		//thread.detach();
 	}
 
+	CG::ADIPlayerCharacter* DIPlayer = pUnreal->GetDIPlayer();
+	if (DIPlayer)
+	{
+		CG::USimpleHealthComponent* HealthComponent = DIPlayer->HealthComponent;
+		if (HealthComponent)
+		{
+			HealthComponent->bInvincible = true;
+			HealthComponent->Health = HealthComponent->MaxHealth;
+		}
+
+		CG::UStaminaComponent* StaminaComponent = DIPlayer->StaminaComponent;
+		if (StaminaComponent)
+		{
+			StaminaComponent->Stamina = StaminaComponent->MaxStamina;
+		}
+
+		CG::UDamageableComponent* DamageComponent = DIPlayer->DamageComponent;
+	}
+
 	//
 	// End Other Render Stuff
 	//

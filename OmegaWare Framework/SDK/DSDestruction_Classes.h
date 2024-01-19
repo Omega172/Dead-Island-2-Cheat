@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,30 +16,29 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Class DSDestruction.DSDestructibleComponent
-	 * Size -> 0x00F0 (FullSize[0x06D0] - InheritedSize[0x05E0])
+	 * Size -> 0x00F8 (FullSize[0x06E0] - InheritedSize[0x05E8])
 	 */
 	class UDSDestructibleComponent : public UStaticMeshComponent
 	{
 	public:
-		bool                                                       bSpawnNewPiecesAsActors;                                 // 0x05E0(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_DTGK[0x3];                                   // 0x05E1(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		float                                                      ScaleBreakingImpulse;                                    // 0x05E4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		float                                                      ScaleBreakingCollisionImpulse;                           // 0x05E8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		float                                                      ScalePhysicsImpulse;                                     // 0x05EC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bPassOnComponentHitToRootComponent;                      // 0x05F0(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		class FMulticastSparseDelegate                             OnDestructionBreak;                                      // 0x05F1(0x0001) InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic
-		class FMulticastSparseDelegate                             OnRuleSatisfied;                                         // 0x05F2(0x0001) InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic
-		class FMulticastSparseDelegate                             OnDestructionSpawnActor;                                 // 0x05F3(0x0001) InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic
-		class FName                                                SpawnedCollisionProfile;                                 // 0x05F4(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_RNH1[0x4];                                   // 0x05FC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FDSDestructionChunkID                               ChunkID;                                                 // 0x0600(0x0018) Edit, NoDestructor, Protected, NativeAccessSpecifierProtected
-		bool                                                       bDestructionInited;                                      // 0x0618(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_L0RM[0x7];                                   // 0x0619(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FDSDestructionPieceMask                             BrokenChunks;                                            // 0x0620(0x0008) Edit, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected
-		uint64_t                                                   SatisifiedRules;                                         // 0x0628(0x0008) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_IDE9[0x20];                                  // 0x0630(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		bool                                                       bIsStartingComp;                                         // 0x0650(0x0001) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_UXEZ[0x7F];                                  // 0x0651(0x007F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SAMJ[0x4];                                   // 0x05E8(0x0004) Fix Super Size
+		float                                                      ScaleBreakingImpulse;                                    // 0x05EC(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		float                                                      ScaleBreakingCollisionImpulse;                           // 0x05F0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		float                                                      ScalePhysicsImpulse;                                     // 0x05F4(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bPassOnComponentHitToRootComponent;                      // 0x05F8(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		class FMulticastSparseDelegate                             OnDestructionBreak;                                      // 0x05F9(0x0001) InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic
+		class FMulticastSparseDelegate                             OnRuleSatisfied;                                         // 0x05FA(0x0001) InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic
+		class FMulticastSparseDelegate                             OnDestructionSpawnActor;                                 // 0x05FB(0x0001) InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic
+		class FName                                                SpawnedCollisionProfile;                                 // 0x05FC(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_CXME[0x4];                                   // 0x0604(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FDSDestructionChunkID                               ChunkID;                                                 // 0x0608(0x0018) Edit, NoDestructor, Protected, NativeAccessSpecifierProtected
+		bool                                                       bDestructionInited;                                      // 0x0620(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
+		unsigned char                                              UnknownData_EYQY[0x7];                                   // 0x0621(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FDSDestructionPieceMask                             BrokenChunks;                                            // 0x0628(0x0008) Edit, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected
+		uint64_t                                                   SatisifiedRules;                                         // 0x0630(0x0008) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
+		unsigned char                                              UnknownData_PKQT[0x20];                                  // 0x0638(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		bool                                                       bIsStartingComp;                                         // 0x0658(0x0001) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
+		unsigned char                                              UnknownData_8BI3[0x87];                                  // 0x0659(0x0087) MISSED OFFSET (PADDING)
 
 	public:
 		void ToggleEnableReason(const class FName& Reason);
@@ -66,7 +65,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    VersionIndex;                                            // 0x0028(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1BTB[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_M6NN[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UStaticMesh*>                                 Meshes;                                                  // 0x0030(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
 		TArray<struct FDSDestructionCompiledChunk>                 CompiledChunks;                                          // 0x0040(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
 		TArray<struct FDSDestructionCompiledBodyJoints>            CompiledBodyJointList;                                   // 0x0050(0x0010) ZeroConstructor, NativeAccessSpecifierPublic

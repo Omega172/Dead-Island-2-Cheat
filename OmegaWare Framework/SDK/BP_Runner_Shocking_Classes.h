@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Runner_Shocking.BP_Runner_Shocking_C
-	 * Size -> 0x0000 (FullSize[0x1018] - InheritedSize[0x1018])
+	 * Size -> 0x0000 (FullSize[0x10A8] - InheritedSize[0x10A8])
 	 */
 	class ABP_Runner_Shocking_C : public ABP_Base_Runner_C
 	{

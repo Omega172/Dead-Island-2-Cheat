@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Base_EntitlementObject.BP_Base_EntitlementObject_C
-	 * Size -> 0x0080 (FullSize[0x03B0] - InheritedSize[0x0330])
+	 * Size -> 0x0088 (FullSize[0x03B8] - InheritedSize[0x0330])
 	 */
 	class ABP_Base_EntitlementObject_C : public AEntitlementActor
 	{
@@ -31,15 +31,16 @@ namespace CG
 		TArray<class UGameEventResponse*>                          Responses;                                               // 0x0368(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		class UDSLogChannelHandle*                                 Logger;                                                  // 0x0378(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                EntitlementReason;                                       // 0x0380(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		class UGameEntitlementsDataTable*                          ValidDataTableForDisplayName;                            // 0x0388(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       bActorVisibility;                                        // 0x0390(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_BK2Z[0x7];                                   // 0x0391(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class UCosmeticEffectsDefinition*                          CosmeticEffectDefinition;                                // 0x0398(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		struct FCosmeticEffectsID                                  CosmeticEffectID;                                        // 0x03A0(0x0004) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_HXV5[0x4];                                   // 0x03A4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FTimerHandle                                        TickTimerHandle;                                         // 0x03A8(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
+		bool                                                       bActorVisibility;                                        // 0x0388(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_32HY[0x7];                                   // 0x0389(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class UCosmeticEffectsDefinition*                          CosmeticEffectDefinition;                                // 0x0390(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FCosmeticEffectsID                                  CosmeticEffectID;                                        // 0x0398(0x0004) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
+		unsigned char                                              UnknownData_5EYB[0x4];                                   // 0x039C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FTimerHandle                                        TickTimerHandle;                                         // 0x03A0(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
+		TArray<class UGameEntitlementsDataTable*>                  ValidDataTablesForDisplayName;                           // 0x03A8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
+		void CheckEntitlementIsValidForDisplayName(const struct FDataTableRowHandle& Entitlement, bool* IsValid);
 		void UpdateCosmeticEffectVisibility();
 		void GetEntitlementForDisplayName(bool* ValidEntitlementFound, struct FDataTableRowHandle* EntitlementToUse);
 		void GetEntitlementDisplayName(const struct FDataTableRowHandle& Entitlement, bool* EntitlementFoundInRegistry, class FText* DisplayName);

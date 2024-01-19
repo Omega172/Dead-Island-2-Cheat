@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UBP_Action_Distaction_ControlledAnimStateMachine_AI_C : public UBP_Action_Distraction_AnimStateMachine_AI_C
 	{
 	public:
-		unsigned char                                              UnknownData_S8WS[0x3];                                   // 0x0201(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_J5FS[0x3];                                   // 0x0201(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FAccumulatingEffectTypeAndValue                     SelfElectrocuteParams;                                   // 0x0204(0x000C) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor
 
 	public:

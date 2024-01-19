@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -54,9 +54,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7CF0
 	 * 		Name   -> Function WorldMap.WorldMapActor.RevealMeshesWithID
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FName                                        ID                                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bRevealedByLocalPlayer                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -72,15 +72,16 @@ namespace CG
 		params.bRevealedByLocalPlayer = bRevealedByLocalPlayer;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7CC0
 	 * 		Name   -> Function WorldMap.WorldMapActor.IsMapVisible
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool AWorldMapActor::IsMapVisible()
 	{
@@ -91,6 +92,7 @@ namespace CG
 		AWorldMapActor_IsMapVisible_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -99,13 +101,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7C40
 	 * 		Name   -> Function WorldMap.WorldMapActor.GetWorldMapActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class AWorldMapActor* AWorldMapActor::GetWorldMapActor(class UObject* WorldContextObject)
+	class AWorldMapActor* AWorldMapActor::STATIC_GetWorldMapActor(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -115,6 +117,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -123,9 +126,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7C10
 	 * 		Name   -> Function WorldMap.WorldMapActor.GetCameraFocusComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	class USceneComponent* AWorldMapActor::GetCameraFocusComponent()
 	{
@@ -136,6 +139,7 @@ namespace CG
 		AWorldMapActor_GetCameraFocusComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -144,9 +148,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7BC0
 	 * 		Name   -> Function WorldMap.WorldMapActor.GetCameraFocusBounds
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FBox AWorldMapActor::GetCameraFocusBounds()
 	{
@@ -157,6 +161,7 @@ namespace CG
 		AWorldMapActor_GetCameraFocusBounds_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -165,9 +170,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7B90
 	 * 		Name   -> Function WorldMap.WorldMapActor.GetCameraComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	class UCameraComponent* AWorldMapActor::GetCameraComponent()
 	{
@@ -178,6 +183,7 @@ namespace CG
 		AWorldMapActor_GetCameraComponent_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -186,9 +192,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7B70
 	 * 		Name   -> Function WorldMap.WorldMapActor.ExitWorldMap
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void AWorldMapActor::ExitWorldMap()
 	{
@@ -199,15 +205,16 @@ namespace CG
 		AWorldMapActor_ExitWorldMap_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7B50
 	 * 		Name   -> Function WorldMap.WorldMapActor.EnterWorldMap
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void AWorldMapActor::EnterWorldMap()
 	{
@@ -218,15 +225,16 @@ namespace CG
 		AWorldMapActor_EnterWorldMap_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7B30
 	 * 		Name   -> Function WorldMap.WorldMapActor.CreateWorldMap
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void AWorldMapActor::CreateWorldMap()
 	{
@@ -237,15 +245,16 @@ namespace CG
 		AWorldMapActor_CreateWorldMap_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7B10
 	 * 		Name   -> Function WorldMap.WorldMapActor.CleanWorldMap
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void AWorldMapActor::CleanWorldMap()
 	{
@@ -256,15 +265,16 @@ namespace CG
 		AWorldMapActor_CleanWorldMap_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7AF0
 	 * 		Name   -> Function WorldMap.WorldMapActor.BeginDestroyMap
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void AWorldMapActor::BeginDestroyMap()
 	{
@@ -275,15 +285,16 @@ namespace CG
 		AWorldMapActor_BeginDestroyMap_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BB7AD0
 	 * 		Name   -> Function WorldMap.WorldMapActor.BeginCreatedMap
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void AWorldMapActor::BeginCreatedMap()
 	{
@@ -294,6 +305,7 @@ namespace CG
 		AWorldMapActor_BeginCreatedMap_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

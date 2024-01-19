@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_MultiPartHealth_Runner.BPC_MultiPartHealth_Runner_C
-	 * Size -> 0x0000 (FullSize[0x0568] - InheritedSize[0x0568])
+	 * Size -> 0x0000 (FullSize[0x05A8] - InheritedSize[0x05A8])
 	 */
 	class UBPC_MultiPartHealth_Runner_C : public UBPC_Base_MultiPartHealth_AI_C
 	{

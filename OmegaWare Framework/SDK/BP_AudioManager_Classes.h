@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_AudioManager.BP_AudioManager_C
-	 * Size -> 0x0000 (FullSize[0x0460] - InheritedSize[0x0460])
+	 * Size -> 0x0000 (FullSize[0x0450] - InheritedSize[0x0450])
 	 */
 	class ABP_AudioManager_C : public AAudioManager
 	{

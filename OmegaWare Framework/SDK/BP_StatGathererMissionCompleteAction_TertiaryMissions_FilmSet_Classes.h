@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_StatGathererMissionCompleteAction_TertiaryMissions_FilmSet.BP_StatGathererMissionCompleteAction_TertiaryMissions_FilmSet_C
-	 * Size -> 0x0000 (FullSize[0x0190] - InheritedSize[0x0190])
+	 * Size -> 0x0000 (FullSize[0x0198] - InheritedSize[0x0198])
 	 */
 	class UBP_StatGathererMissionCompleteAction_TertiaryMissions_FilmSet_C : public UStatGathererMissionsCompleteAction
 	{

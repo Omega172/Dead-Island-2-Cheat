@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,20 +16,15 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Frontend_PlayerController.BP_Frontend_PlayerController_C
-	 * Size -> 0x0018 (FullSize[0x0BF8] - InheritedSize[0x0BE0])
+	 * Size -> 0x0010 (FullSize[0x0C20] - InheritedSize[0x0C10])
 	 */
 	class ABP_Frontend_PlayerController_C : public AFrontendPlayerController
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0BE0(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class UKnowledgeBaseComponent*                             KnowledgeBase;                                           // 0x0BE8(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		class UBPC_BaseStatsComponent_C*                           BPC_BaseStatsComponent;                                  // 0x0BF0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class UKnowledgeBaseComponent*                             KnowledgeBase;                                           // 0x0C10(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
+		class UBPC_BaseStatsComponent_C*                           BPC_BaseStatsComponent;                                  // 0x0C18(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnStartFindSession();
-		void OnStartCreateSession();
-		void OpenGameLobbyWidget(EGameType InGameType);
-		void ExecuteUbergraph_BP_Frontend_PlayerController(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};
 

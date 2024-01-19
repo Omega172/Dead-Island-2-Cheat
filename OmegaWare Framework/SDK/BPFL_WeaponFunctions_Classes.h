@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,12 +21,12 @@ namespace CG
 	class UBPFL_WeaponFunctions_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		void IsActorWeapon(class AActor* Actor, class UObject* __WorldContext, bool* IsWeapon, class AWeaponItemActor** Weapon);
-		void GetWeaponItemEquippableComponent(class AActor* Actor, class UObject* __WorldContext, class UWeaponEquippableComponent** EquippableComponent, bool* ComponentFound);
-		void IsHeldWeaponUsingWeaponPose(class AActor* Owner, class UObject* __WorldContext, bool* IsUsingAdditive);
-		void ResetAttackAnticMontages(class AActor* Player, class UObject* __WorldContext);
-		void SetInChainFact(class ADICharacter* Character, bool FactValue, class UObject* __WorldContext, bool* Success);
-		void UpdateAIWeaponPose(ECosmeticCombatState CombatState, class ADICharacter* Character, class UObject* Weapon, class UObject* __WorldContext);
+		void STATIC_IsActorWeapon(class AActor* Actor, class UObject* __WorldContext, bool* IsWeapon, class AWeaponItemActor** Weapon);
+		void STATIC_GetWeaponItemEquippableComponent(class AActor* Actor, class UObject* __WorldContext, class UWeaponEquippableComponent** EquippableComponent, bool* ComponentFound);
+		void STATIC_IsHeldWeaponUsingWeaponPose(class AActor* Owner, class UObject* __WorldContext, bool* IsUsingAdditive);
+		void STATIC_ResetAttackAnticMontages(class AActor* Player, class UObject* __WorldContext);
+		void STATIC_SetInChainFact(class ADICharacter* Character, bool FactValue, class UObject* __WorldContext, bool* Success);
+		void STATIC_UpdateAIWeaponPose(ECosmeticCombatState CombatState, class ADICharacter* Character, class UObject* Weapon, class UObject* __WorldContext);
 		static UClass* StaticClass();
 	};
 

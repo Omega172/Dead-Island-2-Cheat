@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_AIMovement_Common.BPC_AIMovement_Common_C
-	 * Size -> 0x0000 (FullSize[0x0510] - InheritedSize[0x0510])
+	 * Size -> 0x0000 (FullSize[0x0530] - InheritedSize[0x0530])
 	 */
 	class UBPC_AIMovement_Common_C : public UBPC_AIMovement_AI_C
 	{

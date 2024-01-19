@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Human.ABP_Human_C.AnimGraph
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FPoseLink                                   AnimGraph                                                  (Parm, OutParm, NoDestructor)
 	 */
@@ -36,47 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_24E1E77E4B7116FA4C8D668ECA12D438
-	 * 		Flags  -> ()
-	 */
-	void UABP_Human_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_24E1E77E4B7116FA4C8D668ECA12D438()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_24E1E77E4B7116FA4C8D668ECA12D438");
-		
-		UABP_Human_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_24E1E77E4B7116FA4C8D668ECA12D438_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_2BC4449645630F6040116E8693216053
-	 * 		Flags  -> ()
-	 */
-	void UABP_Human_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_2BC4449645630F6040116E8693216053()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_2BC4449645630F6040116E8693216053");
-		
-		UABP_Human_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_ModifyBone_2BC4449645630F6040116E8693216053_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_AnimSetSequencePlayer_07D2435846AD5D64140B0AB3F687F7F8
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_Human_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_AnimSetSequencePlayer_07D2435846AD5D64140B0AB3F687F7F8()
 	{
@@ -93,9 +55,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_AnimSetSequencePlayer_E9E3C6964209FEB160ECF8B25C8C6534
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_Human_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_AnimSetSequencePlayer_E9E3C6964209FEB160ECF8B25C8C6534()
 	{
@@ -112,9 +74,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_AnimSetSequencePlayer_51B99D084C1778C852A311858AAD6FC0
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_Human_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_AnimSetSequencePlayer_51B99D084C1778C852A311858AAD6FC0()
 	{
@@ -131,9 +93,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_LayeredBoneBlend_9DDAA45546A23EB1F401E38BA36AE401
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_Human_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_LayeredBoneBlend_9DDAA45546A23EB1F401E38BA36AE401()
 	{
@@ -150,9 +112,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_AnimSetSequencePlayer_232AB8EB481718768336E2AD6C4B3253
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_Human_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_AnimSetSequencePlayer_232AB8EB481718768336E2AD6C4B3253()
 	{
@@ -169,9 +131,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_LayeredBoneBlend_C0B26A8D4D4EA8F389F41EB68ECF7F47
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_Human_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_LayeredBoneBlend_C0B26A8D4D4EA8F389F41EB68ECF7F47()
 	{
@@ -188,9 +150,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Human.ABP_Human_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_AnimSetBlendSpacePlayer_F19B5FE246D4BA8505B9B58E9E4EE4F9
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void UABP_Human_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Human_AnimGraphNode_AnimSetBlendSpacePlayer_F19B5FE246D4BA8505B9B58E9E4EE4F9()
 	{
@@ -207,9 +169,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Human.ABP_Human_C.AlphaLayerChange
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
 	 * 		class FName                                        LayerName                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Alpha                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -231,9 +193,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_Human.ABP_Human_C.ExecuteUbergraph_ABP_Human
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

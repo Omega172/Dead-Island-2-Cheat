@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_AttackSequenceUnitAction_Melee.BP_AttackSequenceUnitAction_Melee_C.RemoveModifier
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		struct FModifierAndValue                           ModifierAndValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	 * 		class ADICharacter*                                Target                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -38,9 +38,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_AttackSequenceUnitAction_Melee.BP_AttackSequenceUnitAction_Melee_C.ApplyModifier
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		struct FModifierAndValue                           ModifierAndValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	 * 		class ADICharacter*                                Target                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -69,9 +69,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_AttackSequenceUnitAction_Melee.BP_AttackSequenceUnitAction_Melee_C.ReceiveEndUnit
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class UAttackSequenceUnitState*                    State                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -93,9 +93,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_AttackSequenceUnitAction_Melee.BP_AttackSequenceUnitAction_Melee_C.ReceiveBeginUnit
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintCallable, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		class UAttackSequenceUnitState*                    State                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

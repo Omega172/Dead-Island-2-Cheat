@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -26,9 +26,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> DelegateFunction LevelStreaming.LevelStreamingComponent.StreamingSetEvent__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		int32_t                                            Index                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -48,9 +48,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA4C40
 	 * 		Name   -> Function LevelStreaming.LevelStreamingComponent.SetStreamingEnabled
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		EEnabledState                                      State                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -64,15 +64,16 @@ namespace CG
 		params.State = State;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA4C20
 	 * 		Name   -> Function LevelStreaming.LevelStreamingComponent.OnRep_LevelStreamingState
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void ULevelStreamingComponent::OnRep_LevelStreamingState()
 	{
@@ -83,15 +84,16 @@ namespace CG
 		ULevelStreamingComponent_OnRep_LevelStreamingState_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA4B70
 	 * 		Name   -> Function LevelStreaming.LevelStreamingComponent.AreAllLevelsUnloaded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool ULevelStreamingComponent::AreAllLevelsUnloaded()
 	{
@@ -102,6 +104,7 @@ namespace CG
 		ULevelStreamingComponent_AreAllLevelsUnloaded_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -110,9 +113,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA4B40
 	 * 		Name   -> Function LevelStreaming.LevelStreamingComponent.AreAllLevelsShown
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool ULevelStreamingComponent::AreAllLevelsShown()
 	{
@@ -123,6 +126,7 @@ namespace CG
 		ULevelStreamingComponent_AreAllLevelsShown_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -131,9 +135,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA4B10
 	 * 		Name   -> Function LevelStreaming.LevelStreamingComponent.AreAllLevelsLoaded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool ULevelStreamingComponent::AreAllLevelsLoaded()
 	{
@@ -144,6 +148,7 @@ namespace CG
 		ULevelStreamingComponent_AreAllLevelsLoaded_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -152,9 +157,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> DelegateFunction LevelStreaming.LevelStreamingComponent.AllLevelsEvent__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
 	void ULevelStreamingComponent::AllLevelsEvent__DelegateSignature()
 	{
@@ -213,9 +218,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA4C00
 	 * 		Name   -> Function LevelStreaming.LevelStreamingElement.NotifyLevelUnloaded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	void ULevelStreamingElement::NotifyLevelUnloaded()
 	{
@@ -226,15 +231,16 @@ namespace CG
 		ULevelStreamingElement_NotifyLevelUnloaded_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA4BE0
 	 * 		Name   -> Function LevelStreaming.LevelStreamingElement.NotifyLevelShown
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	void ULevelStreamingElement::NotifyLevelShown()
 	{
@@ -245,15 +251,16 @@ namespace CG
 		ULevelStreamingElement_NotifyLevelShown_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA4BC0
 	 * 		Name   -> Function LevelStreaming.LevelStreamingElement.NotifyLevelLoaded
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	void ULevelStreamingElement::NotifyLevelLoaded()
 	{
@@ -264,15 +271,16 @@ namespace CG
 		ULevelStreamingElement_NotifyLevelLoaded_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FA4BA0
 	 * 		Name   -> Function LevelStreaming.LevelStreamingElement.NotifyLevelHidden
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	void ULevelStreamingElement::NotifyLevelHidden()
 	{
@@ -283,6 +291,7 @@ namespace CG
 		ULevelStreamingElement_NotifyLevelHidden_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

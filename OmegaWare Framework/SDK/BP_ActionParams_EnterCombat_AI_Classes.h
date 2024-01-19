@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,15 +16,15 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_ActionParams_EnterCombat_AI.BP_ActionParams_EnterCombat_AI_C
-	 * Size -> 0x0023 (FullSize[0x0124] - InheritedSize[0x0101])
+	 * Size -> 0x0023 (FullSize[0x0114] - InheritedSize[0x00F1])
 	 */
 	class UBP_ActionParams_EnterCombat_AI_C : public UBP_ActionParams_AnimSet_AI_C
 	{
 	public:
-		bool                                                       ApplyEngagementRingsMovementMode;                        // 0x0101(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn
-		unsigned char                                              UnknownData_ZSX3[0x6];                                   // 0x0102(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<struct FKnowledgeBaseExpression>                    CancellationExpressions;                                 // 0x0108(0x0010) Edit, BlueprintVisible, ContainsInstancedReference, ExposeOnSpawn
-		struct FKnowledgeBaseFactKey                               AttackRulesCommitFact;                                   // 0x0118(0x000C) Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
+		bool                                                       ApplyEngagementRingsMovementMode;                        // 0x00F1(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn
+		unsigned char                                              UnknownData_JSUV[0x6];                                   // 0x00F2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<struct FKnowledgeBaseExpression>                    CancellationExpressions;                                 // 0x00F8(0x0010) Edit, BlueprintVisible, ContainsInstancedReference, ExposeOnSpawn
+		struct FKnowledgeBaseFactKey                               AttackRulesCommitFact;                                   // 0x0108(0x000C) Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
 
 	public:
 		static UClass* StaticClass();

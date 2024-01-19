@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Slobber_PostalService.BP_Slobber_PostalService_C
-	 * Size -> 0x0000 (FullSize[0x1028] - InheritedSize[0x1028])
+	 * Size -> 0x0000 (FullSize[0x10B8] - InheritedSize[0x10B8])
 	 */
 	class ABP_Slobber_PostalService_C : public ABP_Slobber_Generic_C
 	{

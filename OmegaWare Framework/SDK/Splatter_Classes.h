@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -31,7 +31,7 @@ namespace CG
 		bool                                                       bSharesResources;                                        // 0x004B(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      BleedTickRate;                                           // 0x004C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      BleedGrowthPercentage;                                   // 0x0050(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_KDWE[0x4];                                   // 0x0054(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_Z812[0x4];                                   // 0x0054(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -39,21 +39,22 @@ namespace CG
 
 	/**
 	 * Class Splatter.SplatterMeshComponent
-	 * Size -> 0x0118 (FullSize[0x0640] - InheritedSize[0x0528])
+	 * Size -> 0x0150 (FullSize[0x0680] - InheritedSize[0x0530])
 	 */
 	class USplatterMeshComponent : public UPrimitiveComponent
 	{
 	public:
-		class USplatterMeshParameters*                             Parameters;                                              // 0x0528(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JHT2[0x30];                                  // 0x0530(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class FScriptMulticastDelegate                             SplatterProcessingCompletedDelegate;                     // 0x0560(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_WYQ4[0x10];                                  // 0x0570(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		TArray<class UTextureRenderTarget2D*>                      DiffuseRenderTargets;                                    // 0x0580(0x0010) ZeroConstructor, Transient, NativeAccessSpecifierPrivate
-		TArray<class UTextureRenderTarget2D*>                      DisplacementRenderTargets;                               // 0x0590(0x0010) ZeroConstructor, Transient, NativeAccessSpecifierPrivate
-		TArray<class UTextureRenderTarget2D*>                      DilationRenderTargets;                                   // 0x05A0(0x0010) ZeroConstructor, Transient, NativeAccessSpecifierPrivate
-		class UPrimitiveComponent*                                 TargetComponent;                                         // 0x05B0(0x0008) ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UDIEngineMaterialMasks*                              MaterialMasks;                                           // 0x05B8(0x0008) ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_6ED2[0x80];                                  // 0x05C0(0x0080) MISSED OFFSET (PADDING)
+		class USplatterMeshParameters*                             Parameters;                                              // 0x0530(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_W0GT[0x30];                                  // 0x0538(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class FScriptMulticastDelegate                             SplatterProcessingCompletedDelegate;                     // 0x0568(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_7TQJ[0x10];                                  // 0x0578(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FSplatterMeshComponentTickFunction                  AssignTexturesTick;                                      // 0x0588(0x0040) Protected, NativeAccessSpecifierProtected
+		TArray<class UTextureRenderTarget2D*>                      DiffuseRenderTargets;                                    // 0x05C8(0x0010) ZeroConstructor, Transient, NativeAccessSpecifierPrivate
+		TArray<class UTextureRenderTarget2D*>                      DisplacementRenderTargets;                               // 0x05D8(0x0010) ZeroConstructor, Transient, NativeAccessSpecifierPrivate
+		TArray<class UTextureRenderTarget2D*>                      DilationRenderTargets;                                   // 0x05E8(0x0010) ZeroConstructor, Transient, NativeAccessSpecifierPrivate
+		class UPrimitiveComponent*                                 TargetComponent;                                         // 0x05F8(0x0008) ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UDIEngineMaterialMasks*                              MaterialMasks;                                           // 0x0600(0x0008) ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_FJO1[0x78];                                  // 0x0608(0x0078) MISSED OFFSET (PADDING)
 
 	public:
 		void UpdateSoftInfluences(TArray<struct FSplatterSoftPrimitive>* SoftUpdatePrims);
@@ -94,7 +95,7 @@ namespace CG
 		TArray<struct FSplatterEntry>                              SplatterEntries;                                         // 0x0028(0x0010) Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic
 		TArray<struct FSplatterGroup>                              SplatterGroups;                                          // 0x0038(0x0010) Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic
 		int32_t                                                    DismembermentSectionIndexOverride;                       // 0x0048(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_6Y25[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_73O3[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<int32_t>                                            CutBones;                                                // 0x0050(0x0010) Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic
 		TArray<int32_t>                                            BrokenBones;                                             // 0x0060(0x0010) Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic
 		TArray<struct FDataTableRowHandle>                         PersonalityFacts;                                        // 0x0070(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic

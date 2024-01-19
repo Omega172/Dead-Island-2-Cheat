@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_AOE_StatusEffect_ArcFromSource.BP_AOE_StatusEffect_ArcFromSource_C
-	 * Size -> 0x0000 (FullSize[0x0760] - InheritedSize[0x0760])
+	 * Size -> 0x0000 (FullSize[0x0770] - InheritedSize[0x0770])
 	 */
 	class UBP_AOE_StatusEffect_ArcFromSource_C : public UBPC_Base_AOE_StatusEffect_ArcFromSource_C
 	{

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_StateTransmitter_Player.BPC_StateTransmitter_Player_C
-	 * Size -> 0x0000 (FullSize[0x0620] - InheritedSize[0x0620])
+	 * Size -> 0x0000 (FullSize[0x0670] - InheritedSize[0x0670])
 	 */
 	class UBPC_StateTransmitter_Player_C : public UStateTransmitterComponent
 	{

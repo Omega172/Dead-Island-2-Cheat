@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -35,18 +35,6 @@ namespace CG
 	};
 
 	/**
-	 * Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_DAC4025C45284965F9F00DBF4EB769C7
-	 */
-	struct UABP_PlayerCharacter_1P_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_DAC4025C45284965F9F00DBF4EB769C7_Params
-	{	};
-
-	/**
-	 * Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_4681ED5242A19C0AF6CB908DED1C41B0
-	 */
-	struct UABP_PlayerCharacter_1P_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_4681ED5242A19C0AF6CB908DED1C41B0_Params
-	{	};
-
-	/**
 	 * Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.AnimNotify_AttackDecisionEntered
 	 */
 	struct UABP_PlayerCharacter_1P_C_AnimNotify_AttackDecisionEntered_Params
@@ -59,6 +47,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		unsigned char                                              UnknownData_X5A1[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

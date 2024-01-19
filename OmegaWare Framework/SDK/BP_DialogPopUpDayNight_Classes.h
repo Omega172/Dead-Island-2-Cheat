@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_DialogPopUpDayNight.BP_DialogPopUpDayNight_C
-	 * Size -> 0x0000 (FullSize[0x0590] - InheritedSize[0x0590])
+	 * Size -> 0x0000 (FullSize[0x0618] - InheritedSize[0x0618])
 	 */
 	class UBP_DialogPopUpDayNight_C : public UDialogPopUpDayNight
 	{

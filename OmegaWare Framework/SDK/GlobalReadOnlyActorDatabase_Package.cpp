@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -68,13 +68,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00B96EB0
 	 * 		Name   -> Function GlobalReadOnlyActorDatabase.GlobalReadOnlyActorDatabaseRuntimeManager.GetGlobalReadOnlyActorDatabaseManager
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class AGlobalReadOnlyActorDatabaseRuntimeManager* AGlobalReadOnlyActorDatabaseRuntimeManager::GetGlobalReadOnlyActorDatabaseManager(class UObject* WorldContextObject)
+	class AGlobalReadOnlyActorDatabaseRuntimeManager* AGlobalReadOnlyActorDatabaseRuntimeManager::STATIC_GetGlobalReadOnlyActorDatabaseManager(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -84,6 +84,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -92,9 +93,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00B96D60
 	 * 		Name   -> Function GlobalReadOnlyActorDatabase.GlobalReadOnlyActorDatabaseRuntimeManager.GetAllActorDataInLevel_BP
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FString                                      InMapPath                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TMap<struct FSoftObjectPath, class UGlobalActorDatabaseDataContainer*> OutActorData                                               (Parm, OutParm, NativeAccessSpecifierPublic)
@@ -109,6 +110,7 @@ namespace CG
 		params.InMapPath = InMapPath;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -120,9 +122,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00B96990
 	 * 		Name   -> Function GlobalReadOnlyActorDatabase.GlobalReadOnlyActorDatabaseRuntimeManager.GetActorDataOfTypeInLevel_BP
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class FString                                      InMapURL                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      InClass                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -140,6 +142,7 @@ namespace CG
 		params.OutActorData = OutActorData;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -148,9 +151,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00B96B10
 	 * 		Name   -> Function GlobalReadOnlyActorDatabase.GlobalReadOnlyActorDatabaseRuntimeManager.GetActorDataOfType_BP
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class UClass*                                      InClass                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TMap<struct FSoftObjectPath, class UGlobalActorDatabaseData*> OutActorData                                               (ConstParm, Parm, OutParm, NativeAccessSpecifierPublic)
@@ -166,6 +169,7 @@ namespace CG
 		params.OutActorData = OutActorData;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -174,9 +178,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00B96C60
 	 * 		Name   -> Function GlobalReadOnlyActorDatabase.GlobalReadOnlyActorDatabaseRuntimeManager.GetActorData_BP
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -190,6 +194,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

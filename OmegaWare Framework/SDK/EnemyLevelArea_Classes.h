@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		TArray<struct FEnemyLevelAreaEntry>                        Entries;                                                 // 0x00A8(0x0010) Edit, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_982V[0x18];                                  // 0x00B8(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ZGDW[0x18];                                  // 0x00B8(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -94,7 +94,7 @@ namespace CG
 		int32_t                                                    Flags;                                                   // 0x0008(0x0004)
 		int32_t                                                    ClusterIndex;                                            // 0x000C(0x0004)
 		int32_t                                                    SerialNumber;                                            // 0x0010(0x0004)
-		unsigned char                                              pad_T6H1BK1YH8[0x04];                                    // 0x0014(0x0004)
+		unsigned char                                              pad_KVGC2VDKBK[0x04];                                    // 0x0014(0x0004)
 
 	public:
 		bool IsUnreachable() const;

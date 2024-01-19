@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -37,7 +37,7 @@ namespace CG
 	class UAnimationLayerComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_EVI2[0x10];                                  // 0x00E8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SZZR[0x10];                                  // 0x00E8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UNamedPriorityConfig*                                RequestPriorities;                                       // 0x00F8(0x0008) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<class UAnimationLayer*>                             LayerDefinitions;                                        // 0x0100(0x0010) Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPrivate
 		class FName                                                BaselineRequestReason;                                   // 0x0110(0x0008) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
@@ -48,7 +48,7 @@ namespace CG
 		TMap<struct FGuid, class UAnimationLayer*>                 LayerRequests;                                           // 0x01C8(0x0050) Transient, NativeAccessSpecifierPrivate
 		TMap<struct FGuid, struct FLayerGroupRequest>              LayerGroupRequests;                                      // 0x0218(0x0050) Transient, NativeAccessSpecifierPrivate
 		unsigned char                                              LayersToProcess[0x50];                                   // 0x0268(0x0050) UNKNOWN PROPERTY: SetProperty
-		unsigned char                                              UnknownData_DTZZ[0x18];                                  // 0x02B8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_2Q45[0x18];                                  // 0x02B8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class UAnimationLayer*, float>                        CachedLayerWeights;                                      // 0x02D0(0x0050) Transient, NativeAccessSpecifierPrivate
 
 	public:
@@ -85,13 +85,13 @@ namespace CG
 	{
 	public:
 		EAnimLayerRequestType                                      RequestType;                                             // 0x0030(0x0001) Edit, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_BPGS[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UJG5[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimationLayer*                                     Layer;                                                   // 0x0038(0x0008) Edit, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                RequestReason;                                           // 0x0040(0x0008) Edit, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      OverrideTransitionTime;                                  // 0x0048(0x0004) Edit, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7P4Q[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_AIVN[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class ULayerWeightProvider*                                Provider;                                                // 0x0050(0x0008) Edit, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_VX7I[0x50];                                  // 0x0058(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_J5R4[0x50];                                  // 0x0058(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		void OnActorEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason);
@@ -106,13 +106,13 @@ namespace CG
 	{
 	public:
 		EAnimLayerRequestType                                      RequestType;                                             // 0x0030(0x0001) Edit, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_RBB8[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UDJP[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimationLayerGroup*                                LayerGroup;                                              // 0x0038(0x0008) Edit, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                RequestReason;                                           // 0x0040(0x0008) Edit, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      OverrideTransitionTime;                                  // 0x0048(0x0004) Edit, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_KAAN[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_O7K6[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class ULayerWeightProvider*                                Provider;                                                // 0x0050(0x0008) Edit, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Q4OV[0x50];                                  // 0x0058(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_Y1OE[0x50];                                  // 0x0058(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		void OnActorEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason);
@@ -136,7 +136,7 @@ namespace CG
 	class ULayerWeightProvider : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_4RUR[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_4046[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -152,7 +152,7 @@ namespace CG
 		float                                                      DesiredLayerWeight;                                      // 0x0030(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      TransitionTime;                                          // 0x0034(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		float                                                      InverseTransitionTime;                                   // 0x0038(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_W3QD[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7SMJ[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		void SetTransitionTime(float InTransitionTime);

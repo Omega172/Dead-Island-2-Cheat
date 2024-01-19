@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UGameplayEventComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_QVG6[0x50];                                  // 0x00E8(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_2HV9[0x50];                                  // 0x00E8(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		void ServerMulticastDispatchEvent(const struct FGameplayEvent& GameplayEvent);
@@ -39,7 +39,7 @@ namespace CG
 	{
 	public:
 		class UGameplayEventComponent*                             GameplayEventComponent;                                  // 0x02B0(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_68BK[0x8];                                   // 0x02B8(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_JGCP[0x8];                                   // 0x02B8(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

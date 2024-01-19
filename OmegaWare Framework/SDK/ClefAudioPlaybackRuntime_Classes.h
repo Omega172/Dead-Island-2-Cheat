@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -40,7 +40,7 @@ namespace CG
 	class UClefAudioPlaybackStreamerSoundWave : public USoundWaveProcedural
 	{
 	public:
-		unsigned char                                              UnknownData_BLCQ[0x20];                                  // 0x0360(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_4XNR[0x20];                                  // 0x0360(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

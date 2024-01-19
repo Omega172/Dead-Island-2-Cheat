@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_Player_SimpleHealth.BPC_Player_SimpleHealth_C
-	 * Size -> 0x0000 (FullSize[0x0258] - InheritedSize[0x0258])
+	 * Size -> 0x0000 (FullSize[0x0270] - InheritedSize[0x0270])
 	 */
 	class UBPC_Player_SimpleHealth_C : public USimpleHealthComponent
 	{

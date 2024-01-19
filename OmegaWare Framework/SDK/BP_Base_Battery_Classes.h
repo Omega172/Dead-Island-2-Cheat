@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Base_Battery.BP_Base_Battery_C
-	 * Size -> 0x02D9 (FullSize[0x0659] - InheritedSize[0x0380])
+	 * Size -> 0x0110 (FullSize[0x0490] - InheritedSize[0x0380])
 	 */
 	class ABP_Base_Battery_C : public ACarryableActor
 	{
@@ -45,29 +45,19 @@ namespace CG
 		struct FGuid                                               HitDetectionGUID;                                        // 0x0438(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FGuid                                               OverlapDetectionGUID;                                    // 0x0448(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       bInstigatorSet;                                          // 0x0458(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_H3OC[0x3];                                   // 0x0459(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_1TWH[0x3];                                   // 0x0459(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      InstigatorPersistenceTimeAfterFirstImpact;               // 0x045C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FTimerHandle                                        TimerHandle;                                             // 0x0460(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 		float                                                      OverlapSphereExtraRadius;                                // 0x0468(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FGuid                                               DisableRequestID;                                        // 0x046C(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class FName                                                DisableRequestName;                                      // 0x047C(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_838W[0x4];                                   // 0x0484(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class UMeleeSweepComponent*                                MeleeSweep;                                              // 0x0488(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		float                                                      MeleeForceAmount;                                        // 0x0490(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		float                                                      MeleeDamageAmount;                                       // 0x0494(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		class UClass*                                              MeleeDamageType;                                         // 0x0498(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		struct FImpactConfiguration                                MeleeImpactConfiguration;                                // 0x04A0(0x00D8) Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference
-		struct FImpactSettings                                     MeleeImpactSettings;                                     // 0x0578(0x00C8) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
-		struct FEventInstigator                                    MeleeImpactInstigator;                                   // 0x0640(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor
-		class ADIPlayerCharacter*                                  CurrentCarrier;                                          // 0x0650(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		bool                                                       IsHeld;                                                  // 0x0658(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		unsigned char                                              UnknownData_08WM[0x4];                                   // 0x0484(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class ADIPlayerCharacter*                                  CurrentCarrier;                                          // 0x0488(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		TArray<struct FKnowledgeBaseFactKey> GetNoDestructionFilters();
 		TArray<struct FKnowledgeBaseFactKey> GetNoImpulseFilters();
-		void ToggleOutline();
 		void OnRep_CurrentCarrier();
-		void MeleeHit(TArray<struct FHitResult> HitResults, const struct FVector& SweepDirection, const struct FVector& AttackOrigin);
 		void SetupImpactOnCollisionDetection();
 		void ResetImpactData();
 		void OnBeginHolding();
@@ -79,7 +69,6 @@ namespace CG
 		void DisableImpacts();
 		void SetupActionHelpers();
 		void UserConstructionScript();
-		void ReceiveBeginPlay();
 		void BndEvt__SpatialTick_K2Node_ComponentBoundEvent_0_OnSpatialCellDeativatedSignature__DelegateSignature(class USpatialTickComponent* Component);
 		void BndEvt__SpatialTick_K2Node_ComponentBoundEvent_1_OnSpatialCellActivatedSignature__DelegateSignature(class USpatialTickComponent* Component);
 		void AddRadialImpulse(class UPrimitiveComponent* Component, const struct FVector& Origin, float Radius, float Strength, ERadialImpulseFalloff Falloff, bool bVelChange);
@@ -88,10 +77,9 @@ namespace CG
 		void BndEvt__BPC_CarryableInteractive_K2Node_ComponentBoundEvent_2_InteractDelegate__DelegateSignature(class APawn* User, EInteractionMode Mode, class UCustomInteractionActionParams* CustomParams);
 		void BndEvt__Mesh_K2Node_ComponentBoundEvent_6_ComponentSleepSignature__DelegateSignature(class UPrimitiveComponent* SleepingComponent, const class FName& BoneName);
 		void BndEvt__BPC_Carryable_K2Node_ComponentBoundEvent_7_ComponentDestroyedDelegate__DelegateSignature(class UActorComponent* Component);
-		void BndEvt__BPC_Carryable_K2Node_ComponentBoundEvent_8_PaperDollEventMulticastDelegate__DelegateSignature(class UPaperDollSlot* PaperDollSlot);
-		void OnMeleeHit(TArray<struct FHitResult> HitResults, const struct FVector& SweepDirection, const struct FVector& AttackOrigin);
+		void ReceiveBeginPlay();
 		void RequestMeleeImpactEvent(TArray<struct FHitResult> HitResults, const struct FVector& SweepDirection, const struct FVector& AttackOrigin);
-		void BndEvt__BPC_CarryableInteractive_K2Node_ComponentBoundEvent_0_InteractionEnabledStateChangedDelegate__DelegateSignature(bool IsEnabled);
+		void BndEvt__BPC_Carryable_K2Node_ComponentBoundEvent_2_SetSimulatePhysicsDelegate__DelegateSignature(bool bSimulate);
 		void ExecuteUbergraph_BP_Base_Battery(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

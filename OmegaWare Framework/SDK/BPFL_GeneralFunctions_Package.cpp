@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,69 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.UnbindActionDelegates
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class UCharacterActionRequestHelper*               CharacterActionHelper                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class FScriptDelegate                              OnActionEnded                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+	 * 		class FScriptDelegate                              OnActionResolved                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+	 * 		class FScriptDelegate                              OnActionCancelled                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UBPFL_GeneralFunctions_C::STATIC_UnbindActionDelegates(class UCharacterActionRequestHelper* CharacterActionHelper, const class FScriptDelegate& OnActionEnded, const class FScriptDelegate& OnActionResolved, const class FScriptDelegate& OnActionCancelled, class UObject* __WorldContext)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.UnbindActionDelegates");
+		
+		UBPFL_GeneralFunctions_C_UnbindActionDelegates_Params params {};
+		params.CharacterActionHelper = CharacterActionHelper;
+		params.OnActionEnded = OnActionEnded;
+		params.OnActionResolved = OnActionResolved;
+		params.OnActionCancelled = OnActionCancelled;
+		params.__WorldContext = __WorldContext;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.BindActionDelegates
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class UCharacterActionRequestHelper*               CharacterActionHelper                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		class FScriptDelegate                              OnActionEnded                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+	 * 		class FScriptDelegate                              OnActionResolved                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+	 * 		class FScriptDelegate                              OnActionCancelled                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UBPFL_GeneralFunctions_C::STATIC_BindActionDelegates(class UCharacterActionRequestHelper* CharacterActionHelper, const class FScriptDelegate& OnActionEnded, const class FScriptDelegate& OnActionResolved, const class FScriptDelegate& OnActionCancelled, class UObject* __WorldContext)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.BindActionDelegates");
+		
+		UBPFL_GeneralFunctions_C_BindActionDelegates_Params params {};
+		params.CharacterActionHelper = CharacterActionHelper;
+		params.OnActionEnded = OnActionEnded;
+		params.OnActionResolved = OnActionResolved;
+		params.OnActionCancelled = OnActionCancelled;
+		params.__WorldContext = __WorldContext;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.ResetAllReleventStaticMeshsCollisionResponsesToStaticMeshDefaults
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		TArray<class UStaticMeshComponent*>                StaticMeshComponents                                       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	 * 		TArray<ECollisionChannel>                          CollisionChannelsToOverride                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
@@ -41,9 +101,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.ResetCollisionResponsesToStaticMeshDefaults
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UStaticMeshComponent*                        StaticMeshComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		TArray<ECollisionChannel>                          CollisionChannelsToReset                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
@@ -69,9 +129,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.SphereTraceFromLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     LocationToTraceFrom                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -89,7 +149,7 @@ namespace CG
 	 * 		bool                                               AcceptedAngleToleranceMet                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FHitResult                                  OutHit                                                     (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	 */
-	void UBPFL_GeneralFunctions_C::SphereTraceFromLocation(class UObject* WorldContextObject, const struct FVector& LocationToTraceFrom, const struct FVector& LocationForTraceEnd, float SphereRadius, ETraceTypeQuery TraceChannel, TArray<class AActor*> ActorsToIgnore, const struct FVector& UpVector, float AcceptedAngleTolerance, float AcceptedAngleErrorMargin, EDrawDebugTrace DrawDebugType, class UObject* __WorldContext, bool* ConditionsMet, bool* HitObject, bool* AcceptedAngleToleranceMet, struct FHitResult* OutHit)
+	void UBPFL_GeneralFunctions_C::STATIC_SphereTraceFromLocation(class UObject* WorldContextObject, const struct FVector& LocationToTraceFrom, const struct FVector& LocationForTraceEnd, float SphereRadius, ETraceTypeQuery TraceChannel, TArray<class AActor*> ActorsToIgnore, const struct FVector& UpVector, float AcceptedAngleTolerance, float AcceptedAngleErrorMargin, EDrawDebugTrace DrawDebugType, class UObject* __WorldContext, bool* ConditionsMet, bool* HitObject, bool* AcceptedAngleToleranceMet, struct FHitResult* OutHit)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -124,16 +184,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.Find Or Add Actor Component
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UClass*                                      InClass                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UActorComponent*                             Component                                                  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::FindOrAddActorComponent(class AActor* Actor, class UClass* InClass, class UObject* __WorldContext, class UActorComponent** Component)
+	void UBPFL_GeneralFunctions_C::STATIC_FindOrAddActorComponent(class AActor* Actor, class UClass* InClass, class UObject* __WorldContext, class UActorComponent** Component)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -154,9 +214,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.DetermineVerticalFacingPositionOffset
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Position                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -165,7 +225,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              FacingDegree                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::DetermineVerticalFacingPositionOffset(class AActor* Actor, const struct FVector& Position, float RotationalOffset, ECharacterLocationType CharacterLocationType, class UObject* __WorldContext, float* FacingDegree)
+	void UBPFL_GeneralFunctions_C::STATIC_DetermineVerticalFacingPositionOffset(class AActor* Actor, const struct FVector& Position, float RotationalOffset, ECharacterLocationType CharacterLocationType, class UObject* __WorldContext, float* FacingDegree)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -188,9 +248,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.IsLocationFacingLocation2D
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     SourceLocation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -203,7 +263,7 @@ namespace CG
 	 * 		bool                                               Result                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		float                                              FacingDegree                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::IsLocationFacingLocation2D(const struct FVector& SourceLocation, const struct FVector& Direction, const struct FVector& TargetLocation, float RotationalOffset, float MaxFacingAngle, bool Inverse, class AActor* UpwardVectorActor, class UObject* __WorldContext, bool* Result, float* FacingDegree)
+	void UBPFL_GeneralFunctions_C::STATIC_IsLocationFacingLocation2D(const struct FVector& SourceLocation, const struct FVector& Direction, const struct FVector& TargetLocation, float RotationalOffset, float MaxFacingAngle, bool Inverse, class AActor* UpwardVectorActor, class UObject* __WorldContext, bool* Result, float* FacingDegree)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -231,9 +291,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.DetermineLocationAndDirectionFacingLocationOffset2D
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     SourcePosition                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -243,7 +303,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              FacingDegree                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::DetermineLocationAndDirectionFacingLocationOffset2D(const struct FVector& SourcePosition, const struct FVector& Direction, const struct FVector& TargetPosition, float RotationalOffset, class AActor* UpwardVectorActor, class UObject* __WorldContext, float* FacingDegree)
+	void UBPFL_GeneralFunctions_C::STATIC_DetermineLocationAndDirectionFacingLocationOffset2D(const struct FVector& SourcePosition, const struct FVector& Direction, const struct FVector& TargetPosition, float RotationalOffset, class AActor* UpwardVectorActor, class UObject* __WorldContext, float* FacingDegree)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -267,9 +327,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.IsLocationFacingActor2D
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     SourceLocation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     SourceDirection                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -281,7 +341,7 @@ namespace CG
 	 * 		bool                                               Result                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		float                                              FacingDegree                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::IsLocationFacingActor2D(const struct FVector& SourceLocation, const struct FVector& SourceDirection, class AActor* Target, float MaxFacingAngle, bool Inverse, float RotationalOffset, class UObject* __WorldContext, bool* Result, float* FacingDegree)
+	void UBPFL_GeneralFunctions_C::STATIC_IsLocationFacingActor2D(const struct FVector& SourceLocation, const struct FVector& SourceDirection, class AActor* Target, float MaxFacingAngle, bool Inverse, float RotationalOffset, class UObject* __WorldContext, bool* Result, float* FacingDegree)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -308,9 +368,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.DetermineLocationAndDirectionFacingActorOffset2D
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     Position                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Direction                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -319,7 +379,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              FacingDegree                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::DetermineLocationAndDirectionFacingActorOffset2D(const struct FVector& Position, const struct FVector& Direction, class AActor* Actor, float RotationalOffset, class UObject* __WorldContext, float* FacingDegree)
+	void UBPFL_GeneralFunctions_C::STATIC_DetermineLocationAndDirectionFacingActorOffset2D(const struct FVector& Position, const struct FVector& Direction, class AActor* Actor, float RotationalOffset, class UObject* __WorldContext, float* FacingDegree)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -342,9 +402,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.CompareFloat
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
 	 * 		float                                              Left                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		EComparisonOperator                                Operator                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -353,7 +413,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               ComparisonReturnValue                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::CompareFloat(float Left, EComparisonOperator Operator, float Right, float EqualityErrorTolerance, class UObject* __WorldContext, bool* ComparisonReturnValue)
+	void UBPFL_GeneralFunctions_C::STATIC_CompareFloat(float Left, EComparisonOperator Operator, float Right, float EqualityErrorTolerance, class UObject* __WorldContext, bool* ComparisonReturnValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -376,9 +436,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.IsActorFacingLocation2D
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Source                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Target                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -389,7 +449,7 @@ namespace CG
 	 * 		bool                                               Result                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		float                                              FacingDegree                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::IsActorFacingLocation2D(class AActor* Source, const struct FVector& Target, float MaxFacingAngle, bool Inverse, float RotationalOffset, class UObject* __WorldContext, bool* Result, float* FacingDegree)
+	void UBPFL_GeneralFunctions_C::STATIC_IsActorFacingLocation2D(class AActor* Source, const struct FVector& Target, float MaxFacingAngle, bool Inverse, float RotationalOffset, class UObject* __WorldContext, bool* Result, float* FacingDegree)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -415,9 +475,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.SafeModifyFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UKnowledgeBaseComponent*                     Target                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FKnowledgeBaseFactKey                       FactKey                                                    (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
@@ -426,7 +486,7 @@ namespace CG
 	 * 		int32_t                                            NewValue                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::SafeModifyFact(class UKnowledgeBaseComponent* Target, const struct FKnowledgeBaseFactKey& FactKey, int32_t Delta, class UObject* __WorldContext, int32_t* NewValue, bool* Success)
+	void UBPFL_GeneralFunctions_C::STATIC_SafeModifyFact(class UKnowledgeBaseComponent* Target, const struct FKnowledgeBaseFactKey& FactKey, int32_t Delta, class UObject* __WorldContext, int32_t* NewValue, bool* Success)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -450,9 +510,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.GetDistanceBetweenLocations
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     LocationOne                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     LocationTwo                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -463,7 +523,7 @@ namespace CG
 	 * 		float                                              DistanceBetween                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               ComparisonReturnValue                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::GetDistanceBetweenLocations(const struct FVector& LocationOne, const struct FVector& LocationTwo, EComparisonOperator ComparisonOperator, float ComparisonValue, float ErrorTolerance, class UObject* __WorldContext, float* DistanceBetween, bool* ComparisonReturnValue)
+	void UBPFL_GeneralFunctions_C::STATIC_GetDistanceBetweenLocations(const struct FVector& LocationOne, const struct FVector& LocationTwo, EComparisonOperator ComparisonOperator, float ComparisonValue, float ErrorTolerance, class UObject* __WorldContext, float* DistanceBetween, bool* ComparisonReturnValue)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -489,9 +549,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.LineTraceFromLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     LocationToTraceFrom                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -508,7 +568,7 @@ namespace CG
 	 * 		bool                                               AcceptedAngleToleranceMet                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FHitResult                                  OutHit                                                     (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	 */
-	void UBPFL_GeneralFunctions_C::LineTraceFromLocation(class UObject* WorldContextObject, const struct FVector& LocationToTraceFrom, const struct FVector& LocationForTraceEnd, ETraceTypeQuery TraceChannel, TArray<class AActor*> ActorsToIgnore, const struct FVector& UpVector, float AcceptedAngleTolerance, float AcceptedAngleErrorMargin, EDrawDebugTrace DrawDebugType, class UObject* __WorldContext, bool* ConditionsMet, bool* HitObject, bool* AcceptedAngleToleranceMet, struct FHitResult* OutHit)
+	void UBPFL_GeneralFunctions_C::STATIC_LineTraceFromLocation(class UObject* WorldContextObject, const struct FVector& LocationToTraceFrom, const struct FVector& LocationForTraceEnd, ETraceTypeQuery TraceChannel, TArray<class AActor*> ActorsToIgnore, const struct FVector& UpVector, float AcceptedAngleTolerance, float AcceptedAngleErrorMargin, EDrawDebugTrace DrawDebugType, class UObject* __WorldContext, bool* ConditionsMet, bool* HitObject, bool* AcceptedAngleToleranceMet, struct FHitResult* OutHit)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -542,9 +602,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.GetFinalImpactDamage
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UBaseImpactEventResultWrapper*               ImpactEvent                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      AffectedActor                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -552,7 +612,7 @@ namespace CG
 	 * 		struct FAffectedActorRecord                        FinalDamageParams                                          (Parm, OutParm)
 	 * 		bool                                               ReturnSuccess                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::GetFinalImpactDamage(class UBaseImpactEventResultWrapper* ImpactEvent, class AActor* AffectedActor, class UObject* __WorldContext, struct FAffectedActorRecord* FinalDamageParams, bool* ReturnSuccess)
+	void UBPFL_GeneralFunctions_C::STATIC_GetFinalImpactDamage(class UBaseImpactEventResultWrapper* ImpactEvent, class AActor* AffectedActor, class UObject* __WorldContext, struct FAffectedActorRecord* FinalDamageParams, bool* ReturnSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -575,16 +635,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.FindComponentByName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class FName                                        ComponentName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UActorComponent*                             ComponentOut                                               (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::FindComponentByName(class AActor* Actor, const class FName& ComponentName, class UObject* __WorldContext, class UActorComponent** ComponentOut)
+	void UBPFL_GeneralFunctions_C::STATIC_FindComponentByName(class AActor* Actor, const class FName& ComponentName, class UObject* __WorldContext, class UActorComponent** ComponentOut)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -605,9 +665,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.GetCommonImpactFactFloat
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UBaseImpactEventResultWrapper*               ImpactEvent                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      AffectedActor                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -616,7 +676,7 @@ namespace CG
 	 * 		float                                              FactValue                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               IsValid                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::GetCommonImpactFactFloat(class UBaseImpactEventResultWrapper* ImpactEvent, class AActor* AffectedActor, const struct FKnowledgeBaseFactKey& FactKey, class UObject* __WorldContext, float* FactValue, bool* IsValid)
+	void UBPFL_GeneralFunctions_C::STATIC_GetCommonImpactFactFloat(class UBaseImpactEventResultWrapper* ImpactEvent, class AActor* AffectedActor, const struct FKnowledgeBaseFactKey& FactKey, class UObject* __WorldContext, float* FactValue, bool* IsValid)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -640,9 +700,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.GetCommonImpactFactBool
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UBaseImpactEventResultWrapper*               ImpactEvent                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      AffectedActor                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -651,7 +711,7 @@ namespace CG
 	 * 		bool                                               FactValue                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		bool                                               IsValid                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::GetCommonImpactFactBool(class UBaseImpactEventResultWrapper* ImpactEvent, class AActor* AffectedActor, const struct FKnowledgeBaseFactKey& FactKey, class UObject* __WorldContext, bool* FactValue, bool* IsValid)
+	void UBPFL_GeneralFunctions_C::STATIC_GetCommonImpactFactBool(class UBaseImpactEventResultWrapper* ImpactEvent, class AActor* AffectedActor, const struct FKnowledgeBaseFactKey& FactKey, class UObject* __WorldContext, bool* FactValue, bool* IsValid)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -675,16 +735,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.GetCommonImpactAndDamageParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UBaseImpactEventResultWrapper*               ImpactEvent                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FGeneralImpactEventResultParams             ImpactParams                                               (Parm, OutParm)
 	 * 		struct FCommonImpactDamageResultParams             CommonDamageParams                                         (Parm, OutParm, ContainsInstancedReference)
 	 */
-	void UBPFL_GeneralFunctions_C::GetCommonImpactAndDamageParams(class UBaseImpactEventResultWrapper* ImpactEvent, class UObject* __WorldContext, struct FGeneralImpactEventResultParams* ImpactParams, struct FCommonImpactDamageResultParams* CommonDamageParams)
+	void UBPFL_GeneralFunctions_C::STATIC_GetCommonImpactAndDamageParams(class UBaseImpactEventResultWrapper* ImpactEvent, class UObject* __WorldContext, struct FGeneralImpactEventResultParams* ImpactParams, struct FCommonImpactDamageResultParams* CommonDamageParams)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -706,16 +766,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.FindComponentOfType
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UClass*                                      Component                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UActorComponent*                             ComponentOut                                               (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::FindComponentOfType(class AActor* Actor, class UClass* Component, class UObject* __WorldContext, class UActorComponent** ComponentOut)
+	void UBPFL_GeneralFunctions_C::STATIC_FindComponentOfType(class AActor* Actor, class UClass* Component, class UObject* __WorldContext, class UActorComponent** ComponentOut)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -736,16 +796,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.SetInteractiveDisableReason
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UInteractiveComponent*                       TargetComponent                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               bInteractable                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class FName                                        DisableReason                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::SetInteractiveDisableReason(class UInteractiveComponent* TargetComponent, bool bInteractable, const class FName& DisableReason, class UObject* __WorldContext)
+	void UBPFL_GeneralFunctions_C::STATIC_SetInteractiveDisableReason(class UInteractiveComponent* TargetComponent, bool bInteractable, const class FName& DisableReason, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -764,9 +824,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.TransitionPlayerCamera
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UObject*                                     Target                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class ADIPlayerCharacter*                          Player                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -778,7 +838,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UActorFeed*                                  CameraFeedOut                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::TransitionPlayerCamera(class UObject* Target, class ADIPlayerCharacter* Player, bool bTransitionFromPlayerView, class AActor* ViewTarget, float BlendDuration, bool bUseBlend, class UActorFeed* CameraFeedIn, class UObject* __WorldContext, class UActorFeed** CameraFeedOut)
+	void UBPFL_GeneralFunctions_C::STATIC_TransitionPlayerCamera(class UObject* Target, class ADIPlayerCharacter* Player, bool bTransitionFromPlayerView, class AActor* ViewTarget, float BlendDuration, bool bUseBlend, class UActorFeed* CameraFeedIn, class UObject* __WorldContext, class UActorFeed** CameraFeedOut)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -804,15 +864,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.PointImpactCausedDamage
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
 	 * 		struct FPointImpactEventResult                     PointImpact                                                (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               DamageCaused                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::PointImpactCausedDamage(const struct FPointImpactEventResult& PointImpact, class UObject* __WorldContext, bool* DamageCaused)
+	void UBPFL_GeneralFunctions_C::STATIC_PointImpactCausedDamage(const struct FPointImpactEventResult& PointImpact, class UObject* __WorldContext, bool* DamageCaused)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -832,15 +892,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.GetCommonImpactDamageParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UBaseImpactEventResultWrapper*               ImpactEvent                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCommonImpactDamageResultParams             CommonDamageParams                                         (Parm, OutParm, ContainsInstancedReference)
 	 */
-	void UBPFL_GeneralFunctions_C::GetCommonImpactDamageParams(class UBaseImpactEventResultWrapper* ImpactEvent, class UObject* __WorldContext, struct FCommonImpactDamageResultParams* CommonDamageParams)
+	void UBPFL_GeneralFunctions_C::STATIC_GetCommonImpactDamageParams(class UBaseImpactEventResultWrapper* ImpactEvent, class UObject* __WorldContext, struct FCommonImpactDamageResultParams* CommonDamageParams)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -860,9 +920,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.DetermineFacingPositionOffset2D
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Position                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -870,7 +930,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              FacingDegree                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::DetermineFacingPositionOffset2D(class AActor* Actor, const struct FVector& Position, float RotationalOffset, class UObject* __WorldContext, float* FacingDegree)
+	void UBPFL_GeneralFunctions_C::STATIC_DetermineFacingPositionOffset2D(class AActor* Actor, const struct FVector& Position, float RotationalOffset, class UObject* __WorldContext, float* FacingDegree)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -892,9 +952,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.IsActorFacingActor2D
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Source                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Target                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -905,7 +965,7 @@ namespace CG
 	 * 		bool                                               Result                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		float                                              FacingDegree                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::IsActorFacingActor2D(class AActor* Source, class AActor* Target, float MaxFacingAngle, bool Inverse, float RotationalOffset, class UObject* __WorldContext, bool* Result, float* FacingDegree)
+	void UBPFL_GeneralFunctions_C::STATIC_IsActorFacingActor2D(class AActor* Source, class AActor* Target, float MaxFacingAngle, bool Inverse, float RotationalOffset, class UObject* __WorldContext, bool* Result, float* FacingDegree)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -931,9 +991,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.DetermineFacingActorOffset2D
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Source                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Target                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -941,7 +1001,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              FacingDegree                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::DetermineFacingActorOffset2D(class AActor* Source, class AActor* Target, float RotationalOffset, class UObject* __WorldContext, float* FacingDegree)
+	void UBPFL_GeneralFunctions_C::STATIC_DetermineFacingActorOffset2D(class AActor* Source, class AActor* Target, float RotationalOffset, class UObject* __WorldContext, float* FacingDegree)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -963,16 +1023,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.MoveTo150cmOffTheGround
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UInteractiveComponent*                       InteractiveComponent                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               HeightLocked                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::MoveTo150cmOffTheGround(class AActor* Actor, class UInteractiveComponent* InteractiveComponent, bool HeightLocked, class UObject* __WorldContext)
+	void UBPFL_GeneralFunctions_C::STATIC_MoveTo150cmOffTheGround(class AActor* Actor, class UInteractiveComponent* InteractiveComponent, bool HeightLocked, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -991,16 +1051,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.RemoveParamsFromStack
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UCustomParamsStackContainer*                 Stack                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FGuid                                       ParamGUID                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               SuccessfullyRemoved                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::RemoveParamsFromStack(class UCustomParamsStackContainer* Stack, const struct FGuid& ParamGUID, class UObject* __WorldContext, bool* SuccessfullyRemoved)
+	void UBPFL_GeneralFunctions_C::STATIC_RemoveParamsFromStack(class UCustomParamsStackContainer* Stack, const struct FGuid& ParamGUID, class UObject* __WorldContext, bool* SuccessfullyRemoved)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1021,9 +1081,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.SelectClosestLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     TestLocation1                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1032,7 +1092,7 @@ namespace CG
 	 * 		struct FVector                                     ClosestLocation                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               WasLocation1Closest                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::SelectClosestLocation(const struct FVector& Location, const struct FVector& TestLocation1, const struct FVector& TestLocation2, class UObject* __WorldContext, struct FVector* ClosestLocation, bool* WasLocation1Closest)
+	void UBPFL_GeneralFunctions_C::STATIC_SelectClosestLocation(const struct FVector& Location, const struct FVector& TestLocation1, const struct FVector& TestLocation2, class UObject* __WorldContext, struct FVector* ClosestLocation, bool* WasLocation1Closest)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1056,9 +1116,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.PlayerLookingAndFacingLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ADIPlayerCharacter*                          Player                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1068,7 +1128,7 @@ namespace CG
 	 * 		float                                              LookingAtDotResult                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              FacingDotResult                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::PlayerLookingAndFacingLocation(class ADIPlayerCharacter* Player, const struct FVector& Location, const struct FVector& Direction, class UObject* __WorldContext, bool* LookingAndFacing, float* LookingAtDotResult, float* FacingDotResult)
+	void UBPFL_GeneralFunctions_C::STATIC_PlayerLookingAndFacingLocation(class ADIPlayerCharacter* Player, const struct FVector& Location, const struct FVector& Direction, class UObject* __WorldContext, bool* LookingAndFacing, float* LookingAtDotResult, float* FacingDotResult)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1094,9 +1154,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.PlayerLookingAtLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ADIPlayerCharacter*                          Player                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     LocationToTest                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1104,7 +1164,7 @@ namespace CG
 	 * 		float                                              DotResult                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               LookingAt                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::PlayerLookingAtLocation(class ADIPlayerCharacter* Player, const struct FVector& LocationToTest, class UObject* __WorldContext, float* DotResult, bool* LookingAt)
+	void UBPFL_GeneralFunctions_C::STATIC_PlayerLookingAtLocation(class ADIPlayerCharacter* Player, const struct FVector& LocationToTest, class UObject* __WorldContext, float* DotResult, bool* LookingAt)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1127,15 +1187,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.GetCharacterAnimInstance
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ADIPlayerCharacter*                          Player                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UDIAnimInstance*                             AnimInstance                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::GetCharacterAnimInstance(class ADIPlayerCharacter* Player, class UObject* __WorldContext, class UDIAnimInstance** AnimInstance)
+	void UBPFL_GeneralFunctions_C::STATIC_GetCharacterAnimInstance(class ADIPlayerCharacter* Player, class UObject* __WorldContext, class UDIAnimInstance** AnimInstance)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1155,9 +1215,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.SubtractFloatWithFloor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              Value                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Decrement                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1165,7 +1225,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               IsAtLimit                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	float UBPFL_GeneralFunctions_C::SubtractFloatWithFloor(float Value, float Decrement, float Limit, class UObject* __WorldContext, bool* IsAtLimit)
+	float UBPFL_GeneralFunctions_C::STATIC_SubtractFloatWithFloor(float Value, float Decrement, float Limit, class UObject* __WorldContext, bool* IsAtLimit)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1189,9 +1249,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.AddFloatWithCeiling
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              Value                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		float                                              Increment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1199,7 +1259,7 @@ namespace CG
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               IsAtLimit                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	float UBPFL_GeneralFunctions_C::AddFloatWithCeiling(float Value, float Increment, float Limit, class UObject* __WorldContext, bool* IsAtLimit)
+	float UBPFL_GeneralFunctions_C::STATIC_AddFloatWithCeiling(float Value, float Increment, float Limit, class UObject* __WorldContext, bool* IsAtLimit)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1223,9 +1283,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.GeneratePointDamageData
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AController*                                 InstigatorController                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class ADICharacter*                                DamageTarget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1243,7 +1303,7 @@ namespace CG
 	 * 		class UClass*                                      DamageTypeClass                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FDSDamageData                               DSDamageData                                               (Parm, OutParm, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::GeneratePointDamageData(class AController* InstigatorController, class ADICharacter* DamageTarget, float DamageToApply, float Force, class UClass* DamageType, const class FName& HitBoneName, class UObject* __WorldContext, class AActor** DamagedActor, float* BaseDamage, struct FVector* HitFromDirecton, struct FHitResult* HitInfo, class AController** EventInstigator, class AActor** DamageCauser, class UClass** DamageTypeClass, struct FDSDamageData* DSDamageData)
+	void UBPFL_GeneralFunctions_C::STATIC_GeneratePointDamageData(class AController* InstigatorController, class ADICharacter* DamageTarget, float DamageToApply, float Force, class UClass* DamageType, const class FName& HitBoneName, class UObject* __WorldContext, class AActor** DamagedActor, float* BaseDamage, struct FVector* HitFromDirecton, struct FHitResult* HitInfo, class AController** EventInstigator, class AActor** DamageCauser, class UClass** DamageTypeClass, struct FDSDamageData* DSDamageData)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1282,15 +1342,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.GetCharacterSkeletalMesh
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ADIPlayerCharacter*                          Player                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class USkeletalMeshComponent*                      Mesh                                                       (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::GetCharacterSkeletalMesh(class ADIPlayerCharacter* Player, class UObject* __WorldContext, class USkeletalMeshComponent** Mesh)
+	void UBPFL_GeneralFunctions_C::STATIC_GetCharacterSkeletalMesh(class ADIPlayerCharacter* Player, class UObject* __WorldContext, class USkeletalMeshComponent** Mesh)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1310,15 +1370,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.IsActorAlive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Alive                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_GeneralFunctions_C::IsActorAlive(class AActor* Actor, class UObject* __WorldContext, bool* Alive)
+	void UBPFL_GeneralFunctions_C::STATIC_IsActorAlive(class AActor* Actor, class UObject* __WorldContext, bool* Alive)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1338,15 +1398,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.DisableListenToPlayerInputInObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ADIPlayerCharacter*                          Playertolistento                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     Object                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::DisableListenToPlayerInputInObject(class ADIPlayerCharacter* Playertolistento, class UObject* Object, class UObject* __WorldContext)
+	void UBPFL_GeneralFunctions_C::STATIC_DisableListenToPlayerInputInObject(class ADIPlayerCharacter* Playertolistento, class UObject* Object, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1364,15 +1424,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.ListenToPlayerInputInObject
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ADIPlayerCharacter*                          Playertolistento                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     Object                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::ListenToPlayerInputInObject(class ADIPlayerCharacter* Playertolistento, class UObject* Object, class UObject* __WorldContext)
+	void UBPFL_GeneralFunctions_C::STATIC_ListenToPlayerInputInObject(class ADIPlayerCharacter* Playertolistento, class UObject* Object, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1390,14 +1450,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.GetNumOfPlayers
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            NumPlayers                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::GetNumOfPlayers(class UObject* __WorldContext, int32_t* NumPlayers)
+	void UBPFL_GeneralFunctions_C::STATIC_GetNumOfPlayers(class UObject* __WorldContext, int32_t* NumPlayers)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1416,16 +1476,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.SetCutsceneModeOnPlayer
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AController*                                 Controller                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Enable                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class UInputMapperActionFilterDefinition*          CutsceneInputMapperFilter                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::SetCutsceneModeOnPlayer(class AController* Controller, bool Enable, class UInputMapperActionFilterDefinition* CutsceneInputMapperFilter, class UObject* __WorldContext)
+	void UBPFL_GeneralFunctions_C::STATIC_SetCutsceneModeOnPlayer(class AController* Controller, bool Enable, class UInputMapperActionFilterDefinition* CutsceneInputMapperFilter, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1444,16 +1504,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.FlattenVector
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 * Parameters:
 	 * 		struct FVector                                     Vector                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FVector                                     OutVector                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::FlattenVector(const struct FVector& Vector, class AActor* Actor, class UObject* __WorldContext, struct FVector* OutVector)
+	void UBPFL_GeneralFunctions_C::STATIC_FlattenVector(const struct FVector& Vector, class AActor* Actor, class UObject* __WorldContext, struct FVector* OutVector)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1474,15 +1534,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.GetPlayerID
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AController*                                 Controller                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		int32_t                                            PlayerID                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::GetPlayerID(class AController* Controller, class UObject* __WorldContext, int32_t* PlayerID)
+	void UBPFL_GeneralFunctions_C::STATIC_GetPlayerID(class AController* Controller, class UObject* __WorldContext, int32_t* PlayerID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1502,9 +1562,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_GeneralFunctions.BPFL_GeneralFunctions_C.FindValidGroundLocationFromPosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FVector                                     Location                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1513,7 +1573,7 @@ namespace CG
 	 * 		bool                                               Success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		struct FVector                                     ValidLocation                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_GeneralFunctions_C::FindValidGroundLocationFromPosition(const struct FVector& Location, class AActor* Actor, bool IncludePawnCollision, class UObject* __WorldContext, bool* Success, struct FVector* ValidLocation)
+	void UBPFL_GeneralFunctions_C::STATIC_FindValidGroundLocationFromPosition(const struct FVector& Location, class AActor* Actor, bool IncludePawnCollision, class UObject* __WorldContext, bool* Success, struct FVector* ValidLocation)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

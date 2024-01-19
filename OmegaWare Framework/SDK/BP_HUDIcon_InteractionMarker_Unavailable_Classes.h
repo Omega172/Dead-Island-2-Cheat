@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UBP_HUDIcon_InteractionMarker_Unavailable_C : public UHUDIcon2DGFx
 	{
 	public:
-		unsigned char                                              UnknownData_DRDU[0x8];                                   // 0x0398(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_1B2W[0x8];                                   // 0x0398(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

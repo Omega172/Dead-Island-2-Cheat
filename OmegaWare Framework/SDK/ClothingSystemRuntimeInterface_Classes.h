@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -65,7 +65,7 @@ namespace CG
 	class UClothingSimulationInteractor : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_B9QF[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_B40D[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void SetAnimDriveSpringStiffness(float InStiffness);
@@ -91,7 +91,7 @@ namespace CG
 		int32_t                                                    NumFixedVerts;                                           // 0x0078(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    MaxBoneWeights;                                          // 0x007C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<uint32_t>                                           SelfCollisionIndices;                                    // 0x0080(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MHE8[0x50];                                  // 0x0090(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_662V[0x50];                                  // 0x0090(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

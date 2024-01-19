@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,15 +16,15 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_StateTransmitter_AI.BPC_StateTransmitter_AI_C
-	 * Size -> 0x0068 (FullSize[0x0688] - InheritedSize[0x0620])
+	 * Size -> 0x0068 (FullSize[0x06D8] - InheritedSize[0x0670])
 	 */
 	class UBPC_StateTransmitter_AI_C : public UStateTransmitterComponent
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0620(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class UStateTransmitterConfig*                             DefaultSparkTransmitter;                                 // 0x0628(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		class UStateTransmitterConfig*                             ScreamerSparkTransmitter;                                // 0x0630(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		TMap<ETransmittableStatus, class UStateTransmitterConfig*> DefaultStateConfig;                                      // 0x0638(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0670(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class UStateTransmitterConfig*                             DefaultSparkTransmitter;                                 // 0x0678(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class UStateTransmitterConfig*                             ScreamerSparkTransmitter;                                // 0x0680(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		TMap<ETransmittableStatus, class UStateTransmitterConfig*> DefaultStateConfig;                                      // 0x0688(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 
 	public:
 		void ResetState(ETransmittableStatus StateType);

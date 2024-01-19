@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -32,7 +32,7 @@ namespace CG
 	struct FAssetPoolItemHandle
 	{
 	public:
-		unsigned char                                              UnknownData_WNSW[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_IFAU[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -66,7 +66,7 @@ namespace CG
 	public:
 		struct FPrimaryAssetId                                     ID;                                                      // 0x0000(0x0010) ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                Pool;                                                    // 0x0010(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Q54Q[0x10];                                  // 0x0018(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_UBR9[0x10];                                  // 0x0018(0x0010) MISSED OFFSET (PADDING)
 	};
 
 }

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_PerkEffect_Goad.BP_PerkEffect_Goad_C
-	 * Size -> 0x0000 (FullSize[0x0060] - InheritedSize[0x0060])
+	 * Size -> 0x0000 (FullSize[0x0070] - InheritedSize[0x0070])
 	 */
 	class UBP_PerkEffect_Goad_C : public UPerkEffectGoad
 	{

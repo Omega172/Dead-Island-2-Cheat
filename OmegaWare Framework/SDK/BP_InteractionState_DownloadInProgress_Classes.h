@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_InteractionState_DownloadInProgress.BP_InteractionState_DownloadInProgress_C
-	 * Size -> 0x0000 (FullSize[0x0200] - InheritedSize[0x0200])
+	 * Size -> 0x0000 (FullSize[0x0208] - InheritedSize[0x0208])
 	 */
 	class UBP_InteractionState_DownloadInProgress_C : public UInteractionStateBlockable_DownloadInProgress
 	{

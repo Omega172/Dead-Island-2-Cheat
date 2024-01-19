@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_CutsceneActivityWrapper_AI.BP_Action_CutsceneActivityWrapper_AI_C.UnhideOwner
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void UBP_Action_CutsceneActivityWrapper_AI_C::UnhideOwner()
 	{
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function BP_Action_CutsceneActivityWrapper_AI.BP_Action_CutsceneActivityWrapper_AI_C.ActionEndCleanup
-	 * 		Flags  -> ()
+	 * 		RVA    -> 0x0213CEB0
+	 * 		Name   -> Function BP_Action_CutsceneActivityWrapper_AI.BP_Action_CutsceneActivityWrapper_AI_C.ActionEndCleanUp
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
-	void UBP_Action_CutsceneActivityWrapper_AI_C::ActionEndCleanup()
+	void UBP_Action_CutsceneActivityWrapper_AI_C::ActionEndCleanUp()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function BP_Action_CutsceneActivityWrapper_AI.BP_Action_CutsceneActivityWrapper_AI_C.ActionEndCleanup");
+			fn = UObject::FindObject<UFunction>("Function BP_Action_CutsceneActivityWrapper_AI.BP_Action_CutsceneActivityWrapper_AI_C.ActionEndCleanUp");
 		
-		UBP_Action_CutsceneActivityWrapper_AI_C_ActionEndCleanup_Params params {};
+		UBP_Action_CutsceneActivityWrapper_AI_C_ActionEndCleanUp_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,9 +50,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_CutsceneActivityWrapper_AI.BP_Action_CutsceneActivityWrapper_AI_C.OnBegin
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnBeginParams               Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -74,9 +74,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_CutsceneActivityWrapper_AI.BP_Action_CutsceneActivityWrapper_AI_C.OnEnd
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGuid                                       RequestId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FCharacterActionOnEndParams                 Params                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
@@ -98,9 +98,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Action_CutsceneActivityWrapper_AI.BP_Action_CutsceneActivityWrapper_AI_C.ExecuteUbergraph_BP_Action_CutsceneActivityWrapper_AI
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

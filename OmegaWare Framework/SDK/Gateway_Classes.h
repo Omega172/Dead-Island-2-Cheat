@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,11 +21,11 @@ namespace CG
 	class AAirlockActor : public AActor
 	{
 	public:
-		unsigned char                                              UnknownData_QF2C[0x8];                                   // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SOO1[0x8];                                   // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class FName, struct FAirlockActorData>                NamedGatewayData;                                        // 0x02B8(0x0050) Edit, DisableEditOnTemplate, NativeAccessSpecifierPrivate
 		class UGameEventState*                                     WhilstAirlockChangeInProgress;                           // 0x0308(0x0008) Edit, ExportObject, ZeroConstructor, DisableEditOnTemplate, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TMap<class FName, class UGatewayComponent*>                ActiveGateways;                                          // 0x0310(0x0050) ExportObject, Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_K1M4[0x10];                                  // 0x0360(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_CKEW[0x10];                                  // 0x0360(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		void RequestGatewayOpen(const class FName& GatewayName);
@@ -41,7 +41,7 @@ namespace CG
 	class UGatewayComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_1GUA[0x8];                                   // 0x00E8(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XRU2[0x8];                                   // 0x00E8(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

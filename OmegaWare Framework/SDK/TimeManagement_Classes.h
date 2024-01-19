@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -34,23 +34,23 @@ namespace CG
 	class UTimeManagementBlueprintLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		struct FFrameTime TransformTime(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& DestinationRate);
-		struct FFrameNumber Subtract_FrameNumberInteger(const struct FFrameNumber& A, int32_t B);
-		struct FFrameNumber Subtract_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
-		struct FFrameTime SnapFrameTimeToRate(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& SnapToRate);
-		struct FFrameTime Multiply_SecondsFrameRate(float TimeInSeconds, const struct FFrameRate& FrameRate);
-		struct FFrameNumber Multiply_FrameNumberInteger(const struct FFrameNumber& A, int32_t B);
-		bool IsValid_MultipleOf(const struct FFrameRate& InFrameRate, const struct FFrameRate& OtherFramerate);
-		bool IsValid_Framerate(const struct FFrameRate& InFrameRate);
-		struct FFrameRate GetTimecodeFrameRate();
-		struct FTimecode GetTimecode();
-		struct FFrameNumber Divide_FrameNumberInteger(const struct FFrameNumber& A, int32_t B);
-		class FString Conv_TimecodeToString(const struct FTimecode& InTimecode, bool bForceSignDisplay);
-		float Conv_QualifiedFrameTimeToSeconds(const struct FQualifiedFrameTime& InFrameTime);
-		float Conv_FrameRateToSeconds(const struct FFrameRate& InFrameRate);
-		int32_t Conv_FrameNumberToInteger(const struct FFrameNumber& InFrameNumber);
-		struct FFrameNumber Add_FrameNumberInteger(const struct FFrameNumber& A, int32_t B);
-		struct FFrameNumber Add_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
+		struct FFrameTime STATIC_TransformTime(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& DestinationRate);
+		struct FFrameNumber STATIC_Subtract_FrameNumberInteger(const struct FFrameNumber& A, int32_t B);
+		struct FFrameNumber STATIC_Subtract_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
+		struct FFrameTime STATIC_SnapFrameTimeToRate(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& SnapToRate);
+		struct FFrameTime STATIC_Multiply_SecondsFrameRate(float TimeInSeconds, const struct FFrameRate& FrameRate);
+		struct FFrameNumber STATIC_Multiply_FrameNumberInteger(const struct FFrameNumber& A, int32_t B);
+		bool STATIC_IsValid_MultipleOf(const struct FFrameRate& InFrameRate, const struct FFrameRate& OtherFramerate);
+		bool STATIC_IsValid_Framerate(const struct FFrameRate& InFrameRate);
+		struct FFrameRate STATIC_GetTimecodeFrameRate();
+		struct FTimecode STATIC_GetTimecode();
+		struct FFrameNumber STATIC_Divide_FrameNumberInteger(const struct FFrameNumber& A, int32_t B);
+		class FString STATIC_Conv_TimecodeToString(const struct FTimecode& InTimecode, bool bForceSignDisplay);
+		float STATIC_Conv_QualifiedFrameTimeToSeconds(const struct FQualifiedFrameTime& InFrameTime);
+		float STATIC_Conv_FrameRateToSeconds(const struct FFrameRate& InFrameRate);
+		int32_t STATIC_Conv_FrameNumberToInteger(const struct FFrameNumber& InFrameNumber);
+		struct FFrameNumber STATIC_Add_FrameNumberInteger(const struct FFrameNumber& A, int32_t B);
+		struct FFrameNumber STATIC_Add_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
 		static UClass* StaticClass();
 	};
 
@@ -62,7 +62,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bUseForSynchronization;                                  // 0x0028(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MV0B[0x3];                                   // 0x0029(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_EVJS[0x3];                                   // 0x0029(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    FrameOffset;                                             // 0x002C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	public:

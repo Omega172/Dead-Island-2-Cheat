@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -23,10 +23,10 @@ namespace CG
 	public:
 		bool IsInteractorLocallyControlled(class UTriggerInteractorComponent* Interactor, class UObject* __WorldContext);
 		void SetPlayerInAreaHideIconReasonOnObjective(class ADIObjectiveActor* ObjectiveActor, class UTriggerInteractorComponent* Interactor, bool Hidden, bool AllPlayers, class UObject* __WorldContext, bool* Success);
-		void AddUIIcon(class AActor* Actor, class UClass* Icon, class UObject* __WorldContext);
-		void HideUIIcons(class AActor* Actor, class UObject* __WorldContext);
-		void CallLocalCharacterOnFuryUpdated(class ADIPlayerCharacter* PlayerCharacter, float FuryMeter, bool FuryMode, class UObject* __WorldContext);
-		void GetBPEventDispatcher(class UObject* __WorldContext, class UBP_UIEventDispatcher_C** BPEventDispatcher);
+		void STATIC_AddUIIcon(class AActor* Actor, class UClass* Icon, class UObject* __WorldContext);
+		void STATIC_HideUIIcons(class AActor* Actor, class UObject* __WorldContext);
+		void STATIC_CallLocalCharacterOnFuryUpdated(class ADIPlayerCharacter* PlayerCharacter, float FuryMeter, bool FuryMode, class UObject* __WorldContext);
+		void STATIC_GetBPEventDispatcher(class UObject* __WorldContext, class UBP_UIEventDispatcher_C** BPEventDispatcher);
 		static UClass* StaticClass();
 	};
 

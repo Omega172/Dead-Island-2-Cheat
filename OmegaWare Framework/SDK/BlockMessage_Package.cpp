@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CFA920
 	 * 		Name   -> Function BlockMessage.BlockMessageReceiverComponent.OnUnblocked
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void UBlockMessageReceiverComponent::OnUnblocked()
 	{
@@ -25,15 +25,16 @@ namespace CG
 		UBlockMessageReceiverComponent_OnUnblocked_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CFA900
 	 * 		Name   -> Function BlockMessage.BlockMessageReceiverComponent.OnBlocked
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void UBlockMessageReceiverComponent::OnBlocked()
 	{
@@ -44,15 +45,16 @@ namespace CG
 		UBlockMessageReceiverComponent_OnBlocked_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CFA8D0
 	 * 		Name   -> Function BlockMessage.BlockMessageReceiverComponent.IsBlocked
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UBlockMessageReceiverComponent::IsBlocked()
 	{
@@ -63,6 +65,7 @@ namespace CG
 		UBlockMessageReceiverComponent_IsBlocked_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

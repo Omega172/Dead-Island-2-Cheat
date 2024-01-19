@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_StatusEffect_Thug_Inferno.BPC_StatusEffect_Thug_Inferno_C
-	 * Size -> 0x0000 (FullSize[0x03C8] - InheritedSize[0x03C8])
+	 * Size -> 0x0000 (FullSize[0x03F0] - InheritedSize[0x03F0])
 	 */
 	class UBPC_StatusEffect_Thug_Inferno_C : public UBPC_StatusEffect_AI_C
 	{

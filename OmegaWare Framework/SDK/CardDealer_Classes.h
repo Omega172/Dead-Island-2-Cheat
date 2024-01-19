@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -44,7 +44,7 @@ namespace CG
 	class UCardGenerator_BlueprintDecorator : public UCardGenerator_Decorator
 	{
 	public:
-		unsigned char                                              UnknownData_SVJ3[0x8];                                   // 0x0040(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RQWF[0x8];                                   // 0x0040(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void OnUninitialise();
@@ -65,7 +65,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bShouldReturnCard;                                       // 0x0048(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_WX83[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_MSZU[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -102,11 +102,11 @@ namespace CG
 	class UCardDealerComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_XFDQ[0x48];                                  // 0x00E8(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_8DST[0x48];                                  // 0x00E8(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class FName, class UDeck*>                            Contexts;                                                // 0x0130(0x0050) Edit, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_IRUM[0x8];                                   // 0x0180(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_J5NU[0x8];                                   // 0x0180(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class FName, struct FDeckState>                       Decks;                                                   // 0x0188(0x0050) ContainsInstancedReference, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_1640[0x60];                                  // 0x01D8(0x0060) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_HJ98[0x60];                                  // 0x01D8(0x0060) MISSED OFFSET (PADDING)
 
 	public:
 		void SetDeck(const class FName& Context, class UDeck* InDeck);
@@ -153,7 +153,7 @@ namespace CG
 	public:
 		class FString                                              CVar;                                                    // 0x0040(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsInverse;                                              // 0x0050(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_C8MF[0xF];                                   // 0x0051(0x000F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_MN0T[0xF];                                   // 0x0051(0x000F) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -168,9 +168,9 @@ namespace CG
 	public:
 		struct FCardDealerCounterComparisonOperand                 Left;                                                    // 0x0040(0x0018) Edit, NoDestructor, NativeAccessSpecifierPublic
 		EComparisonOperator                                        Operator;                                                // 0x0058(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_DIRU[0x3];                                   // 0x0059(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DKLS[0x3];                                   // 0x0059(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FCardDealerCounterComparisonOperand                 Right;                                                   // 0x005C(0x0018) Edit, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_AD06[0x4];                                   // 0x0074(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XKYA[0x4];                                   // 0x0074(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FCardDealerCounterModification                      OnDrewCard;                                              // 0x0078(0x00A0) Edit, NativeAccessSpecifierPublic
 
 	public:
@@ -187,7 +187,7 @@ namespace CG
 		int32_t                                                    DrawIntervalMin;                                         // 0x0040(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    DrawIntervalMax;                                         // 0x0044(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bResetCounterOnNullDraw;                                 // 0x0048(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_2TLP[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LUJ5[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -213,7 +213,7 @@ namespace CG
 		class FName                                                DeckContextToInclude;                                    // 0x0028(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UDeck*                                               DeckToInclude;                                           // 0x0030(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<struct FCardGeneratorWrapper>                       Options;                                                 // 0x0038(0x0010) ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_FS1V[0x10];                                  // 0x0048(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PXRX[0x10];                                  // 0x0048(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -240,7 +240,7 @@ namespace CG
 	{
 	public:
 		TArray<struct FRandomCardGeneratorOption>                  Options;                                                 // 0x0028(0x0010) Edit, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_IYQE[0x18];                                  // 0x0038(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_10D2[0x18];                                  // 0x0038(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -254,7 +254,7 @@ namespace CG
 	{
 	public:
 		TArray<struct FKnowledgeBaseFactKey>                       Facts;                                                   // 0x0040(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_BUM8[0x18];                                  // 0x0050(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_Q7MS[0x18];                                  // 0x0050(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -280,7 +280,7 @@ namespace CG
 	class UCardPlayer : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_267K[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_MWP6[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -295,7 +295,7 @@ namespace CG
 	public:
 		TArray<class UCardPlayer*>                                 CardPlayers;                                             // 0x00E8(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
 		struct FKnowledgeBaseExpression                            AllowedToDrawExpression;                                 // 0x00F8(0x0038) Edit, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_E9AF[0x80];                                  // 0x0130(0x0080) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6LCS[0x80];                                  // 0x0130(0x0080) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -309,7 +309,7 @@ namespace CG
 	{
 	public:
 		struct FKnowledgeBaseExpression                            BehaviourRunningExpression;                              // 0x0050(0x0038) Edit, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_27IT[0x18];                                  // 0x0088(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_X2A6[0x18];                                  // 0x0088(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

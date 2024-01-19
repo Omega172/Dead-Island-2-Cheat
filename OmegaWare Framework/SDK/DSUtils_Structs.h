@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -19,59 +19,12 @@ namespace CG
 	 */
 	enum class EActorPickerSelection : uint8_t
 	{
-		HardReference     = 0,
-		SoftReference     = 1,
-		GlobalObjectLink  = 2,
-		ActorFromSupplier = 3,
-		MAX               = 4
-	};
-
-	/**
-	 * Enum DSUtils.ECharacterStance
-	 */
-	enum class ECharacterStance : uint8_t
-	{
-		Stand    = 0,
-		SitChair = 1,
-		SitFloor = 2,
-		SitBar   = 3,
-		Lying    = 4,
-		Crouch   = 5,
-		Count    = 6,
-		MAX      = 7
-	};
-
-	/**
-	 * Enum DSUtils.ECharacterEmotion
-	 */
-	enum class ECharacterEmotion : uint8_t
-	{
-		Neutral      = 0,
-		Angry        = 1,
-		Annoyed      = 2,
-		ArmedCarbine = 3,
-		Attitude     = 4,
-		Calm         = 5,
-		Confident    = 6,
-		Desperate    = 7,
-		Happy        = 8,
-		Insecure     = 9,
-		Labour       = 10,
-		Listless     = 11,
-		Pain         = 12,
-		Sad          = 13,
-		Scared       = 14,
-		Shy          = 15,
-		Sick         = 16,
-		Stressed     = 17,
-		Terrified    = 18,
-		Thoughtful   = 19,
-		Tired        = 20,
-		Untrusting   = 21,
-		Worried      = 22,
-		None         = 23,
-		Count        = 24,
-		MAX          = 25
+		HardReference         = 0,
+		SoftReference         = 1,
+		GlobalObjectLink      = 2,
+		ActorFromSupplier     = 3,
+		ActorFromSoftSupplier = 4,
+		MAX                   = 5
 	};
 
 	/**
@@ -172,18 +125,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * ScriptStruct DSUtils.DSActorPicker
-	 * Size -> 0x0050
+	 * Size -> 0x0078
 	 */
 	struct FDSActorPicker
 	{
 	public:
 		EActorPickerSelection                                      PickerSelection;                                         // 0x0000(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_FRA5[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_KXF3[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AActor*                                              Actor;                                                   // 0x0008(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		unsigned char                                              SoftActor[0x28];                                         // 0x0010(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		class FName                                                ObjectLinkNameSearcher;                                  // 0x0038(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class AActor*                                              ActorSupplier;                                           // 0x0040(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UActorPickerRecurringObject*                         RecurringObject;                                         // 0x0048(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		unsigned char                                              SoftActorSupplier[0x28];                                 // 0x0048(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+		class UActorPickerRecurringObject*                         RecurringObject;                                         // 0x0070(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 	};
 
 	/**
@@ -196,7 +150,7 @@ namespace CG
 		class UDataTable*                                          DataTable;                                               // 0x0000(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                RowName;                                                 // 0x0008(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bDataTableEditable;                                      // 0x0010(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_GMMP[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_1FT2[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -227,7 +181,7 @@ namespace CG
 	struct FDelegateHandleWrapper
 	{
 	public:
-		unsigned char                                              UnknownData_IQQR[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NX2Q[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -238,7 +192,7 @@ namespace CG
 	{
 	public:
 		ERandomIntGeneratorDistribution                            Distribution;                                            // 0x0000(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_KH3X[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_P46G[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    AbsoluteValue;                                           // 0x0004(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    Min;                                                     // 0x0008(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    Max;                                                     // 0x000C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -263,7 +217,7 @@ namespace CG
 	{
 	public:
 		EGameBalanceableType                                       Type;                                                    // 0x0000(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_J2Y2[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YOFI[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FDataTableRowHandle                                 DTRowHandle;                                             // 0x0008(0x0010) Edit, NoDestructor, NativeAccessSpecifierPublic
 	};
 
@@ -275,7 +229,7 @@ namespace CG
 	{
 	public:
 		bool                                                       Value;                                                   // 0x0018(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_XC87[0x7];                                   // 0x0019(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_IV4L[0x7];                                   // 0x0019(0x0007) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -286,7 +240,7 @@ namespace CG
 	{
 	public:
 		float                                                      Value;                                                   // 0x0018(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JC00[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_P9J9[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -297,7 +251,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    Value;                                                   // 0x0018(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_E2PV[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_W9BN[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -333,7 +287,7 @@ namespace CG
 	{
 	public:
 		struct FMultiPlatformDataSelector                          Platforms;                                               // 0x0000(0x0006) Edit, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_S77Y[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_J5UL[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    Data;                                                    // 0x0008(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -345,7 +299,7 @@ namespace CG
 	{
 	public:
 		struct FMultiPlatformDataSelector                          Platforms;                                               // 0x0000(0x0006) Edit, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FIKV[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FUS4[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      Data;                                                    // 0x0008(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -357,7 +311,7 @@ namespace CG
 	{
 	public:
 		struct FMultiPlatformDataSelector                          Platforms;                                               // 0x0000(0x0006) Edit, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_691Y[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_G6ZF[0x2];                                   // 0x0006(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              Data;                                                    // 0x0008(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -380,16 +334,16 @@ namespace CG
 	{
 	public:
 		EGameBalanceableDataTypeOfData                             DataType;                                                // 0x0000(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_YG76[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_WPE5[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    DefaultInteger;                                          // 0x0004(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<struct FPlatformsIntPair>                           IntegerPlatformOverride;                                 // 0x0008(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 		float                                                      DefaultFloat;                                            // 0x0018(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_R2WG[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OENS[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FPlatformsFloatPair>                         FloatPlatformOverride;                                   // 0x0020(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 		class FString                                              DefaultString;                                           // 0x0030(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<struct FPlatformsStringPair>                        StringPlatformOverride;                                  // 0x0040(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 		bool                                                       DefaultBoolean;                                          // 0x0050(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JUUU[0x7];                                   // 0x0051(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_C0FP[0x7];                                   // 0x0051(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FPlatformsBooleanPair>                       BoolPlatformOverride;                                    // 0x0058(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 	};
 
@@ -414,18 +368,41 @@ namespace CG
 	};
 
 	/**
-	 * ScriptStruct DSUtils.LazyUpdater
+	 * ScriptStruct DSUtils.LazyUpdaterBase
 	 * Size -> 0x0018
 	 */
-	struct FLazyUpdater
+	struct FLazyUpdaterBase
 	{
 	public:
-		float                                                      DifferenceToAlwaysUpdate;                                // 0x0000(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		float                                                      DifferenceToUpdateMantissa;                              // 0x0004(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		float                                                      TimeToAlwaysUpdate;                                      // 0x0008(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bAllowTimeBasedNoChangeUpdates;                          // 0x000C(0x0001) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bCompareToZero;                                          // 0x000D(0x0001) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Q3HQ[0xA];                                   // 0x000E(0x000A) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6PMP[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
+	};
+
+	/**
+	 * ScriptStruct DSUtils.LazyUpdater_Percentage
+	 * Size -> 0x0010 (FullSize[0x0028] - InheritedSize[0x0018])
+	 */
+	struct FLazyUpdater_Percentage : public FLazyUpdaterBase
+	{
+	public:
+		float                                                      PercentageDifferenceToUpdate;                            // 0x0018(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		float                                                      MaxTimeBetweenUpdates;                                   // 0x001C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		float                                                      MinimumDifferenceToEverUpdate;                           // 0x0020(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_HGAN[0x4];                                   // 0x0024(0x0004) MISSED OFFSET (PADDING)
+	};
+
+	/**
+	 * ScriptStruct DSUtils.LazyUpdater
+	 * Size -> 0x0018 (FullSize[0x0030] - InheritedSize[0x0018])
+	 */
+	struct FLazyUpdater : public FLazyUpdaterBase
+	{
+	public:
+		float                                                      DifferenceToAlwaysUpdate;                                // 0x0018(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		float                                                      DifferenceToUpdateMantissa;                              // 0x001C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		float                                                      TimeToAlwaysUpdate;                                      // 0x0020(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bAllowTimeBasedNoChangeUpdates;                          // 0x0024(0x0001) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bCompareToZero;                                          // 0x0025(0x0001) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_780P[0xA];                                   // 0x0026(0x000A) MISSED OFFSET (PADDING)
 	};
 
 	/**

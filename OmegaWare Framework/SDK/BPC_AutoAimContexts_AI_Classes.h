@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_AutoAimContexts_AI.BPC_AutoAimContexts_AI_C
-	 * Size -> 0x0000 (FullSize[0x04A0] - InheritedSize[0x04A0])
+	 * Size -> 0x0000 (FullSize[0x04C0] - InheritedSize[0x04C0])
 	 */
 	class UBPC_AutoAimContexts_AI_C : public UCharacterContextAutoAimTargetComponent
 	{

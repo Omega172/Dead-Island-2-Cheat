@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -64,8 +64,8 @@ namespace CG
 		class UCosmeticEffectsDefinition*                          Definition;                                              // 0x0008(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             InPosition;                                              // 0x0010(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FRotator                                            InRotation;                                              // 0x001C(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FCosmeticEffectParams                               Params;                                                  // 0x0028(0x00D0)  (Parm, NativeAccessSpecifierPublic)
-		struct FCosmeticEffectsID                                  ReturnValue;                                             // 0x00F8(0x0004)  (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		struct FCosmeticEffectParams                               Params;                                                  // 0x0028(0x00D8)  (Parm, NativeAccessSpecifierPublic)
+		struct FCosmeticEffectsID                                  ReturnValue;                                             // 0x0100(0x0004)  (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -78,7 +78,7 @@ namespace CG
 		class UCosmeticEffectsDefinition*                          Definition;                                              // 0x0008(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                                             InPosition;                                              // 0x0010(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FRotator                                            InRotation;                                              // 0x001C(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FCosmeticEffectParams                               Params;                                                  // 0x0028(0x00D0)  (Parm, NativeAccessSpecifierPublic)
+		struct FCosmeticEffectParams                               Params;                                                  // 0x0028(0x00D8)  (Parm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -94,8 +94,8 @@ namespace CG
 		struct FVector                                             InPosition;                                              // 0x0020(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FRotator                                            InRotation;                                              // 0x002C(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		class FName                                                InPointName;                                             // 0x0038(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		struct FCosmeticEffectParams                               Params;                                                  // 0x0040(0x00D0)  (Parm, NativeAccessSpecifierPublic)
-		struct FCosmeticEffectsID                                  ReturnValue;                                             // 0x0110(0x0004)  (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		struct FCosmeticEffectParams                               Params;                                                  // 0x0040(0x00D8)  (Parm, NativeAccessSpecifierPublic)
+		struct FCosmeticEffectsID                                  ReturnValue;                                             // 0x0118(0x0004)  (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -132,7 +132,7 @@ namespace CG
 		struct FVector                                             InPosition;                                              // 0x0020(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FRotator                                            InRotation;                                              // 0x002C(0x000C)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		class FName                                                InPointName;                                             // 0x0038(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		struct FCosmeticEffectParams                               Params;                                                  // 0x0040(0x00D0)  (Parm, NativeAccessSpecifierPublic)
+		struct FCosmeticEffectParams                               Params;                                                  // 0x0040(0x00D8)  (Parm, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -251,6 +251,15 @@ namespace CG
 	public:
 		class UCosmeticEffect*                                     Effect;                                                  // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class UCosmeticEffectData*                                 Data;                                                    // 0x0008(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function CosmeticEffects.FadingCosmeticEffectsManager.OnActorDestroyed
+	 */
+	struct AFadingCosmeticEffectsManager_OnActorDestroyed_Params
+	{
+	public:
+		class AActor*                                              DestroyedActor;                                          // 0x0000(0x0008)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 }

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,34 +16,36 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Class Openable.OpenableComponent
-	 * Size -> 0x01D8 (FullSize[0x02C0] - InheritedSize[0x00E8])
+	 * Size -> 0x01E0 (FullSize[0x02C8] - InheritedSize[0x00E8])
 	 */
 	class UOpenableComponent : public UActorComponent
 	{
 	public:
-		class FScriptMulticastDelegate                             OnOpened;                                                // 0x00E8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		class FScriptMulticastDelegate                             OnClosed;                                                // 0x00F8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		class FScriptMulticastDelegate                             OnOpenableStateChanged;                                  // 0x0108(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		struct FScopedKnowledgeBaseExpressionListener              OpenExpressionListener;                                  // 0x0118(0x0060) Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		struct FOpenableRuntimeData                                RuntimeData;                                             // 0x0178(0x00A8) Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		class UGameEvent*                                          OnOpenGameEvent;                                         // 0x0220(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UGameEvent*                                          OnOpeningGameEvent;                                      // 0x0228(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UGameEvent*                                          OnClosedGameEvent;                                       // 0x0230(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UGameEvent*                                          OnClosingGameEvent;                                      // 0x0238(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		struct FOpenableDataAssetCollection                        AssetCollection;                                         // 0x0240(0x0020) Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPrivate
-		EOpenableNetworkingRule                                    NetworkingRule;                                          // 0x0260(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_AP2X[0x3];                                   // 0x0261(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
-		unsigned char                                              UnknownData_3YKB[0x4];                                   // 0x0264(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class UCharacterActionComponent*                           CharacterAction;                                         // 0x0268(0x0008) ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UCharacterActionRequestHelper*                       OpenActionHelper;                                        // 0x0270(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UCharacterActionRequestHelper*                       OpeningActionHelper;                                     // 0x0278(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UCharacterActionRequestHelper*                       CloseActionHelper;                                       // 0x0280(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UCharacterActionRequestHelper*                       ClosingActionHelper;                                     // 0x0288(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class URequirementsContainer*                              DisableReasons;                                          // 0x0290(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UBlockMessageReceiverComponent*                      BlockMessageReceiverComponent;                           // 0x0298(0x0008) ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class UOpenableControlObject*                              ControlObject;                                           // 0x02A0(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		bool                                                       bRequiresPersistence;                                    // 0x02A8(0x0001) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_NSWF[0x17];                                  // 0x02A9(0x0017) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QM73[0x8];                                   // 0x00E8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class FScriptMulticastDelegate                             OnOpened;                                                // 0x00F0(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
+		class FScriptMulticastDelegate                             OnClosed;                                                // 0x0100(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
+		class FScriptMulticastDelegate                             OnOpenableStateChanged;                                  // 0x0110(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
+		struct FScopedKnowledgeBaseExpressionListener              OpenExpressionListener;                                  // 0x0120(0x0060) Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate
+		struct FOpenableRuntimeData                                RuntimeData;                                             // 0x0180(0x00A8) Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate
+		class UGameEvent*                                          OnOpenGameEvent;                                         // 0x0228(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UGameEvent*                                          OnOpeningGameEvent;                                      // 0x0230(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UGameEvent*                                          OnClosedGameEvent;                                       // 0x0238(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UGameEvent*                                          OnClosingGameEvent;                                      // 0x0240(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		struct FOpenableDataAssetCollection                        AssetCollection;                                         // 0x0248(0x0020) Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPrivate
+		EOpenableNetworkingRule                                    NetworkingRule;                                          // 0x0268(0x0001) ELEMENT_SIZE_MISMATCH Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_8ES8[0x3];                                   // 0x0269(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+		unsigned char                                              UnknownData_W1QU[0x4];                                   // 0x026C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class UCharacterActionComponent*                           CharacterAction;                                         // 0x0270(0x0008) ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UCharacterActionRequestHelper*                       OpenActionHelper;                                        // 0x0278(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UCharacterActionRequestHelper*                       OpeningActionHelper;                                     // 0x0280(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UCharacterActionRequestHelper*                       CloseActionHelper;                                       // 0x0288(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UCharacterActionRequestHelper*                       ClosingActionHelper;                                     // 0x0290(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class URequirementsContainer*                              DisableReasons;                                          // 0x0298(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UBlockMessageReceiverComponent*                      BlockMessageReceiverComponent;                           // 0x02A0(0x0008) ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class UOpenableControlObject*                              ControlObject;                                           // 0x02A8(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		bool                                                       bRequiresPersistence;                                    // 0x02B0(0x0001) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		bool                                                       bCanUsePersistence;                                      // 0x02B1(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_PMRH[0x16];                                  // 0x02B2(0x0016) MISSED OFFSET (PADDING)
 
 	public:
 		void SetOverrideSpeedModifier(float NewSpeedModifier);
@@ -68,7 +70,7 @@ namespace CG
 	class UOpenableControlObject : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_JD1O[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DO29[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void RequestOpen();
@@ -98,7 +100,7 @@ namespace CG
 	class UOpenableObject : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_XQ40[0x30];                                  // 0x0028(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YILJ[0x30];                                  // 0x0028(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		void StopMovement();
@@ -129,7 +131,7 @@ namespace CG
 	public:
 		class UOpenableDataAsset*                                  OpenableDataAsset;                                       // 0x0038(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FOpenableRuntimeResolvedData                        RuntimeData;                                             // 0x0040(0x000C) NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_EGXU[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_334J[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -162,7 +164,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsOpen;                                                 // 0x0048(0x0001) ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_GW9J[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_TH3D[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

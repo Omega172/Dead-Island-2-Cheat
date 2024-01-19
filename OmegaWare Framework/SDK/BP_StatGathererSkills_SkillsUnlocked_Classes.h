@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_StatGathererSkills_SkillsUnlocked.BP_StatGathererSkills_SkillsUnlocked_C
-	 * Size -> 0x0000 (FullSize[0x0110] - InheritedSize[0x0110])
+	 * Size -> 0x0000 (FullSize[0x0120] - InheritedSize[0x0120])
 	 */
 	class UBP_StatGathererSkills_SkillsUnlocked_C : public UStatGatherSkillsUnlockedAction
 	{

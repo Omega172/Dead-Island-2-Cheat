@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_AIMeleeTarget_Player.BPC_AIMeleeTarget_Player_C
-	 * Size -> 0x0000 (FullSize[0x0290] - InheritedSize[0x0290])
+	 * Size -> 0x0000 (FullSize[0x0298] - InheritedSize[0x0298])
 	 */
 	class UBPC_AIMeleeTarget_Player_C : public UAIMeleeTargetComponent
 	{

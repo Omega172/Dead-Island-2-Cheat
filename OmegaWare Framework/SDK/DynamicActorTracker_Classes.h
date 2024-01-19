@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class ADynamicActorTrackingManager : public AInfo
 	{
 	public:
-		unsigned char                                              UnknownData_YVVN[0x58];                                  // 0x02B0(0x0058) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NA6J[0x58];                                  // 0x02B0(0x0058) MISSED OFFSET (PADDING)
 
 	public:
 		void WriteToCSV();

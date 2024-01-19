@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -66,8 +66,14 @@ namespace CG
 	public:
 		struct FTransform                                          DockTransform;                                           // 0x0000(0x0030)  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
 		bool                                                       DisableAfterDock;                                        // 0x0030(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		unsigned char                                              UnknownData_6RWO[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_O2IO[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
+
+	/**
+	 * Function BPC_Carryable.BPC_Carryable_C.AttackHold
+	 */
+	struct UBPC_Carryable_C_AttackHold_Params
+	{	};
 
 	/**
 	 * Function BPC_Carryable.BPC_Carryable_C.EquippableAssignedToPaperDollSlot
@@ -77,12 +83,6 @@ namespace CG
 	public:
 		class UPaperDollSlot*                                      PaperDollSlot;                                           // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
-
-	/**
-	 * Function BPC_Carryable.BPC_Carryable_C.AttackHold
-	 */
-	struct UBPC_Carryable_C_AttackHold_Params
-	{	};
 
 	/**
 	 * Function BPC_Carryable.BPC_Carryable_C.AttackReleased
@@ -118,12 +118,6 @@ namespace CG
 	{	};
 
 	/**
-	 * Function BPC_Carryable.BPC_Carryable_C.SkipToHold
-	 */
-	struct UBPC_Carryable_C_SkipToHold_Params
-	{	};
-
-	/**
 	 * Function BPC_Carryable.BPC_Carryable_C.OnMeleeHit
 	 */
 	struct UBPC_Carryable_C_OnMeleeHit_Params
@@ -141,7 +135,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_S628[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_LBIJ[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

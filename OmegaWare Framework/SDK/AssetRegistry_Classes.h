@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UAssetRegistryImpl : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_BC88[0x750];                                 // 0x0028(0x0750) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_UF0G[0x750];                                 // 0x0028(0x0750) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -34,19 +34,19 @@ namespace CG
 	class UAssetRegistryHelpers : public UObject
 	{
 	public:
-		struct FSoftObjectPath ToSoftObjectPath(const struct FAssetData& InAssetData);
-		struct FARFilter SetFilterTagsAndValues(const struct FARFilter& InFilter, TArray<struct FTagAndValue> InTagsAndValues);
-		bool IsValid(const struct FAssetData& InAssetData);
-		bool IsUAsset(const struct FAssetData& InAssetData);
-		bool IsRedirector(const struct FAssetData& InAssetData);
-		bool IsAssetLoaded(const struct FAssetData& InAssetData);
-		bool GetTagValue(const struct FAssetData& InAssetData, const class FName& InTagName, class FString* OutTagValue);
-		class FString GetFullName(const struct FAssetData& InAssetData);
-		class FString GetExportTextName(const struct FAssetData& InAssetData);
-		class UClass* GetClass(const struct FAssetData& InAssetData);
-		void GetAssetRegistry();
-		class UObject* GetAsset(const struct FAssetData& InAssetData);
-		struct FAssetData CreateAssetData(class UObject* InAsset, bool bAllowBlueprintClass);
+		struct FSoftObjectPath STATIC_ToSoftObjectPath(const struct FAssetData& InAssetData);
+		struct FARFilter STATIC_SetFilterTagsAndValues(const struct FARFilter& InFilter, TArray<struct FTagAndValue> InTagsAndValues);
+		bool STATIC_IsValid(const struct FAssetData& InAssetData);
+		bool STATIC_IsUAsset(const struct FAssetData& InAssetData);
+		bool STATIC_IsRedirector(const struct FAssetData& InAssetData);
+		bool STATIC_IsAssetLoaded(const struct FAssetData& InAssetData);
+		bool STATIC_GetTagValue(const struct FAssetData& InAssetData, const class FName& InTagName, class FString* OutTagValue);
+		class FString STATIC_GetFullName(const struct FAssetData& InAssetData);
+		class FString STATIC_GetExportTextName(const struct FAssetData& InAssetData);
+		class UClass* STATIC_GetClass(const struct FAssetData& InAssetData);
+		void STATIC_GetAssetRegistry();
+		class UObject* STATIC_GetAsset(const struct FAssetData& InAssetData);
+		struct FAssetData STATIC_CreateAssetData(class UObject* InAsset, bool bAllowBlueprintClass);
 		static UClass* StaticClass();
 	};
 

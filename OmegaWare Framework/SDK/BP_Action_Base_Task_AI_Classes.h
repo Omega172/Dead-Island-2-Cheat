@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -28,7 +28,7 @@ namespace CG
 		TArray<struct FThresholdTrackingParams>                    InterruptionParamsDuringActivityReached;                 // 0x00F8(0x0010) Edit, BlueprintVisible
 		float                                                      HealthPortionRequiredToRequestTaskExit;                  // 0x0108(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       InterruptTaskOnCombatTargetChanged;                      // 0x010C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_QEFW[0x3];                                   // 0x010D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VFOZ[0x3];                                   // 0x010D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class ADIAIController*                                     Controller;                                              // 0x0110(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UCombatAggroComponent*                               Aggro;                                                   // 0x0118(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class USimpleHealthComponent*                              HealthComponent;                                         // 0x0120(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -36,14 +36,14 @@ namespace CG
 		class AActivityActor*                                      ActivityActor;                                           // 0x0130(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UEnvQuery*                                           EnvQuery;                                                // 0x0138(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		EEnvQueryRunMode                                           RunMode;                                                 // 0x0140(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_BC17[0x3];                                   // 0x0141(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CEWB[0x3];                                   // 0x0141(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    NumberTimesToLookForEmptyActivity;                       // 0x0144(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    RerunQueryTrys;                                          // 0x0148(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       ValidInterrupt;                                          // 0x014C(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_CYK0[0x3];                                   // 0x014D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RYFY[0x3];                                   // 0x014D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UKnowledgeBaseComponent*                             KB;                                                      // 0x0150(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash
 		bool                                                       FailedToLaunchActivity;                                  // 0x0158(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay
-		unsigned char                                              UnknownData_BRWL[0x7];                                   // 0x0159(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_O0DP[0x7];                                   // 0x0159(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              DebugTagString;                                          // 0x0160(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, AdvancedDisplay, HasGetValueTypeHash
 		struct FKnowledgeBaseFactKey                               ActivitySuccessfullyLaunchedAttackRulesFact;             // 0x0170(0x000C) Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash
 		struct FKnowledgeBaseFactKey                               ActivityFailedToLaunchAttackRulesFact;                   // 0x017C(0x000C) Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash
@@ -53,12 +53,12 @@ namespace CG
 		struct FCardDealerCounterModification                      CardDealerCounterModifierOnSuccess;                      // 0x01A8(0x00A0) Edit, BlueprintVisible
 		struct FCardDealerCounterModification                      CardDealerCounterModifierOnCancellation;                 // 0x0248(0x00A0) Edit, BlueprintVisible
 		bool                                                       EndActivityOnActionEnd;                                  // 0x02E8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_VVNM[0x7];                                   // 0x02E9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_W1FC[0x7];                                   // 0x02E9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UEnvQueryInstanceBlueprintWrapper*                   QueryInstance;                                           // 0x02F0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class AActor*                                              CombatTarget;                                            // 0x02F8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UAIMovementComponent*                                AIMovementComponent;                                     // 0x0300(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash
-		class UObservableComponent*                                CombatTargetObservableComponent;                         // 0x0308(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		class UObserverComponent*                                  AIObserverComponent;                                     // 0x0310(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class UDIObservableComponent*                              CombatTargetObservableComponent;                         // 0x0308(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class UDIObserverComponent*                                AIObserverComponent;                                     // 0x0310(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FParticipantLaunchParameters                        DefaultParticipantLaunchParameters;                      // 0x0318(0x0018) Edit, BlueprintVisible, NoDestructor
 		class UBPC_ThresholdTracking_AI_C*                         ThresholdTrackingComponent;                              // 0x0330(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		TArray<struct FGuid>                                       ThresholdTrackingIDs;                                    // 0x0338(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
@@ -69,7 +69,7 @@ namespace CG
 		float                                                      EfficiencyDecreasePerModIncrement;                       // 0x0390(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      MaxEfficiencyDecrease;                                   // 0x0394(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FKnowledgeBaseFactKey                               CurrentRegenRateFact;                                    // 0x0398(0x000C) Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_ELF2[0x4];                                   // 0x03A4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SBCR[0x4];                                   // 0x03A4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UKnowledgeBaseComponent*                             LinkedActorKB;                                           // 0x03A8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FCardDealerCounterModification                      SuccessfullyLaunchedActivityCounterModification;         // 0x03B0(0x00A0) Edit, BlueprintVisible
 		struct FCardDealerCounterModification                      FailedToLaunchActivityCounterModification;               // 0x0450(0x00A0) Edit, BlueprintVisible

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UTelemetryClient : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_YQSI[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_2PDS[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void SetState(const class FString& StateName, ETelemetryEventCategory StateCategory, struct FGenericStruct* Data);
@@ -36,7 +36,7 @@ namespace CG
 	class UDSOnlineTelemetryFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		class UTelemetryClient* GetLocalPlayerClient();
+		class UTelemetryClient* STATIC_GetLocalPlayerClient();
 		static UClass* StaticClass();
 	};
 

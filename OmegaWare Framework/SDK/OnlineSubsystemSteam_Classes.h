@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -32,7 +32,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsPassthrough;                                          // 0x1B68(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_76Y9[0x7];                                   // 0x1B69(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_4AHH[0x7];                                   // 0x1B69(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -40,12 +40,12 @@ namespace CG
 
 	/**
 	 * Class OnlineSubsystemSteam.SteamNetDriver
-	 * Size -> 0x0008 (FullSize[0x0960] - InheritedSize[0x0958])
+	 * Size -> 0x0010 (FullSize[0x09A0] - InheritedSize[0x0990])
 	 */
 	class USteamNetDriver : public UIpNetDriver
 	{
 	public:
-		unsigned char                                              UnknownData_GA9N[0x8];                                   // 0x0958(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_VP8U[0x10];                                  // 0x0990(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

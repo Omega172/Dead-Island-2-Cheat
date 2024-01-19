@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_HUDIcon_WeaponCompareSlate.BP_HUDIcon_WeaponCompareSlate_C
-	 * Size -> 0x0000 (FullSize[0x04C0] - InheritedSize[0x04C0])
+	 * Size -> 0x0000 (FullSize[0x04D0] - InheritedSize[0x04D0])
 	 */
 	class UBP_HUDIcon_WeaponCompareSlate_C : public UHUDIconWeaponCompareSlate
 	{

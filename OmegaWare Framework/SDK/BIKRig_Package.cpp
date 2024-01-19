@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -40,9 +40,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D089A0
 	 * 		Name   -> Function BIKRig.BIKRigJointConstraint.GetBoneName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class FName UBIKRigJointConstraint::GetBoneName()
 	{
@@ -53,6 +53,7 @@ namespace CG
 		UBIKRigJointConstraint_GetBoneName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -89,14 +90,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D08AE0
 	 * 		Name   -> Function BIKRig.BIKRigBlueprintFunctions.SetBIKRigGoals
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FBIKRigNodeInput                            BIKParams                                                  (Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		TArray<class UBIKRigGoalObject*>                   Goals                                                      (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FBIKRigNodeInput UBIKRigBlueprintFunctions::SetBIKRigGoals(struct FBIKRigNodeInput* BIKParams, TArray<class UBIKRigGoalObject*>* Goals)
+	struct FBIKRigNodeInput UBIKRigBlueprintFunctions::STATIC_SetBIKRigGoals(struct FBIKRigNodeInput* BIKParams, TArray<class UBIKRigGoalObject*>* Goals)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -105,6 +106,7 @@ namespace CG
 		UBIKRigBlueprintFunctions_SetBIKRigGoals_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -118,14 +120,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D089E0
 	 * 		Name   -> Function BIKRig.BIKRigBlueprintFunctions.GetLocalMovementVector
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Owner                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     MovementInput                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FVector UBIKRigBlueprintFunctions::GetLocalMovementVector(class AActor* Owner, const struct FVector& MovementInput)
+	struct FVector UBIKRigBlueprintFunctions::STATIC_GetLocalMovementVector(class AActor* Owner, const struct FVector& MovementInput)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -136,6 +138,7 @@ namespace CG
 		params.MovementInput = MovementInput;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -144,13 +147,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D08870
 	 * 		Name   -> Function BIKRig.BIKRigBlueprintFunctions.FindBIKRigSolverComponentAndGoals
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FBIKRigNodeInput UBIKRigBlueprintFunctions::FindBIKRigSolverComponentAndGoals(class AActor* Actor)
+	struct FBIKRigNodeInput UBIKRigBlueprintFunctions::STATIC_FindBIKRigSolverComponentAndGoals(class AActor* Actor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -160,6 +163,7 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -168,13 +172,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D087C0
 	 * 		Name   -> Function BIKRig.BIKRigBlueprintFunctions.FindBIKRigSolverComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FBIKRigNodeInput UBIKRigBlueprintFunctions::FindBIKRigSolverComponent(class AActor* Actor)
+	struct FBIKRigNodeInput UBIKRigBlueprintFunctions::STATIC_FindBIKRigSolverComponent(class AActor* Actor)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -184,6 +188,7 @@ namespace CG
 		params.Actor = Actor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -192,14 +197,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D08700
 	 * 		Name   -> Function BIKRig.BIKRigBlueprintFunctions.DuplicateBIKRigGoalTemplate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     Owner                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UBIKRigTargetTransformGoalObject*            TemplateObject                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class UBIKRigTargetTransformGoalObject* UBIKRigBlueprintFunctions::DuplicateBIKRigGoalTemplate(class UObject* Owner, class UBIKRigTargetTransformGoalObject* TemplateObject)
+	class UBIKRigTargetTransformGoalObject* UBIKRigBlueprintFunctions::STATIC_DuplicateBIKRigGoalTemplate(class UObject* Owner, class UBIKRigTargetTransformGoalObject* TemplateObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -210,6 +215,7 @@ namespace CG
 		params.TemplateObject = TemplateObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -218,14 +224,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D08610
 	 * 		Name   -> Function BIKRig.BIKRigBlueprintFunctions.ConfigureGoalsForFootPlacement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		TArray<class UBIKRigGoalObject*>                   Goals                                                      (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		float                                              TargetAlpha                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBIKRigBlueprintFunctions::ConfigureGoalsForFootPlacement(TArray<class UBIKRigGoalObject*>* Goals, float TargetAlpha)
+	void UBIKRigBlueprintFunctions::STATIC_ConfigureGoalsForFootPlacement(TArray<class UBIKRigGoalObject*>* Goals, float TargetAlpha)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -235,6 +241,7 @@ namespace CG
 		params.TargetAlpha = TargetAlpha;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -244,13 +251,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D08540
 	 * 		Name   -> Function BIKRig.BIKRigBlueprintFunctions.ClearBIKRigGoals
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FBIKRigNodeInput                            BIKParams                                                  (Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	struct FBIKRigNodeInput UBIKRigBlueprintFunctions::ClearBIKRigGoals(struct FBIKRigNodeInput* BIKParams)
+	struct FBIKRigNodeInput UBIKRigBlueprintFunctions::STATIC_ClearBIKRigGoals(struct FBIKRigNodeInput* BIKParams)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -259,6 +266,7 @@ namespace CG
 		UBIKRigBlueprintFunctions_ClearBIKRigGoals_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -326,9 +334,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D08980
 	 * 		Name   -> Function BIKRig.BIKRigJointBody.GetBoneName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	class FName UBIKRigJointBody::GetBoneName()
 	{
@@ -339,6 +347,7 @@ namespace CG
 		UBIKRigJointBody_GetBoneName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -347,9 +356,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D08920
 	 * 		Name   -> Function BIKRig.BIKRigJointBody.GetBodyLocalTransform
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FTransform UBIKRigJointBody::GetBodyLocalTransform()
 	{
@@ -360,6 +369,7 @@ namespace CG
 		UBIKRigJointBody_GetBodyLocalTransform_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -396,9 +406,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D08AC0
 	 * 		Name   -> Function BIKRig.BIKRigSolverComponent.ResetSolvedPose
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UBIKRigSolverComponent::ResetSolvedPose()
 	{
@@ -409,6 +419,7 @@ namespace CG
 		UBIKRigSolverComponent_ResetSolvedPose_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -443,9 +454,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D08E80
 	 * 		Name   -> Function BIKRig.BIKRigTargetTransformGoalObject.SetupForFootPlacement
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		float                                              NewTargetAlpha                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -459,15 +470,16 @@ namespace CG
 		params.NewTargetAlpha = NewTargetAlpha;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D08D00
 	 * 		Name   -> Function BIKRig.BIKRigTargetTransformGoalObject.SetupForFlinch
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     NewLocation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    NewRotation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -487,15 +499,16 @@ namespace CG
 		params.RotationAlpha = RotationAlpha;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D08C20
 	 * 		Name   -> Function BIKRig.BIKRigTargetTransformGoalObject.SetLocationAndRotation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FVector                                     NewLocation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FRotator                                    NewRotation                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -511,6 +524,7 @@ namespace CG
 		params.NewRotation = NewRotation;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

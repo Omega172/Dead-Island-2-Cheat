@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_StatGathererUpgradesCrafted_Perks.BP_StatGathererUpgradesCrafted_Perks_C
-	 * Size -> 0x0000 (FullSize[0x0148] - InheritedSize[0x0148])
+	 * Size -> 0x0000 (FullSize[0x0150] - InheritedSize[0x0150])
 	 */
 	class UBP_StatGathererUpgradesCrafted_Perks_C : public UStatGatherNamedUpgradeBlueprintUsedAction
 	{

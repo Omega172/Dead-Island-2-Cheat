@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.AnimGraph
-	 * 		Flags  -> ()
+	 * 		Flags  -> (HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FPoseLink                                   AnimGraph                                                  (Parm, OutParm, NoDestructor)
 	 */
@@ -36,9 +36,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.WeaponHit
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Attacker                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class AActor*                                      Defender                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,47 +62,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_DAC4025C45284965F9F00DBF4EB769C7
-	 * 		Flags  -> ()
-	 */
-	void UABP_PlayerCharacter_1P_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_DAC4025C45284965F9F00DBF4EB769C7()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_DAC4025C45284965F9F00DBF4EB769C7");
-		
-		UABP_PlayerCharacter_1P_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_DAC4025C45284965F9F00DBF4EB769C7_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_4681ED5242A19C0AF6CB908DED1C41B0
-	 * 		Flags  -> ()
-	 */
-	void UABP_PlayerCharacter_1P_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_4681ED5242A19C0AF6CB908DED1C41B0()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_4681ED5242A19C0AF6CB908DED1C41B0");
-		
-		UABP_PlayerCharacter_1P_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerCharacter_1P_AnimGraphNode_ModifyBone_4681ED5242A19C0AF6CB908DED1C41B0_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.AnimNotify_AttackDecisionEntered
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void UABP_PlayerCharacter_1P_C::AnimNotify_AttackDecisionEntered()
 	{
@@ -119,9 +81,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.ExecuteUbergraph_ABP_PlayerCharacter_1P
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
@@ -141,9 +103,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.ThrowWeapon__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
 	void UABP_PlayerCharacter_1P_C::ThrowWeapon__DelegateSignature()
 	{
@@ -160,9 +122,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.Knockback__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
 	void UABP_PlayerCharacter_1P_C::Knockback__DelegateSignature()
 	{
@@ -179,9 +141,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function ABP_PlayerCharacter_1P.ABP_PlayerCharacter_1P_C.WeaponSwinging__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
 	void UABP_PlayerCharacter_1P_C::WeaponSwinging__DelegateSignature()
 	{

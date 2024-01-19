@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -29,7 +29,7 @@ namespace CG
 
 	public:
 		void AddCallbackForSequenceEnd(class UGameSequence* GameSequence);
-		void ActionEndCleanup();
+		void ActionEndCleanUp();
 		void Interrupted_C85427844376243611D8368B53F62BBB();
 		void Completed_C85427844376243611D8368B53F62BBB();
 		void OnBegin(const struct FGuid& RequestId, const struct FCharacterActionOnBeginParams& Params);

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -22,11 +22,11 @@ namespace CG
 	{
 	public:
 		TArray<ECollisionChannel> GetAIEnvironmentCollisionChannels(class UObject* __WorldContext);
-		void GetHitStimLocation(class AActor* Target, class AController* Instigator, class UObject* __WorldContext, struct FVector* StimLocation);
-		void EmitHitStims(class AController* Attacker, class AActor* Target, class UObject* __WorldContext);
-		void GetCombatTargetFromActor(class APawn* Actor, class UObject* __WorldContext, class AActor** CombatTarget, class AAIController** AIController);
-		void GetCombatTarget(class AAIController* AIController, class UObject* __WorldContext, class AActor** CombatTarget);
-		void EmitStimFromAI(class ABP_Base_AI_C* Receiver, class AController* Instigator, float Duration, class UStimTemplate* Stim, class UObject* __WorldContext);
+		void STATIC_GetHitStimLocation(class AActor* Target, class AController* Instigator, class UObject* __WorldContext, struct FVector* StimLocation);
+		void STATIC_EmitHitStims(class AController* Attacker, class AActor* Target, class UObject* __WorldContext);
+		void STATIC_GetCombatTargetFromActor(class APawn* Actor, class UObject* __WorldContext, class AActor** CombatTarget, class AAIController** AIController);
+		void STATIC_GetCombatTarget(class AAIController* AIController, class UObject* __WorldContext, class AActor** CombatTarget);
+		void STATIC_EmitStimFromAI(class ABP_Base_AI_C* Receiver, class AController* Instigator, float Duration, class UStimTemplate* Stim, class UObject* __WorldContext);
 		static UClass* StaticClass();
 	};
 

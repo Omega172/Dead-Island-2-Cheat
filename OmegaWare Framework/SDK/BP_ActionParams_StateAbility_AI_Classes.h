@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		ETransmittableStatus                                       TransmitterStatusType;                                   // 0x0038(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
-		unsigned char                                              UnknownData_FTLV[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7X1X[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class FName>                                        AlteredBoneNames;                                        // 0x0040(0x0010) Edit, BlueprintVisible, ExposeOnSpawn
 		TArray<class UCosmeticEffectsDefinition*>                  AlteredBoneCosmeticEffects;                              // 0x0050(0x0010) Edit, BlueprintVisible, ExposeOnSpawn
 

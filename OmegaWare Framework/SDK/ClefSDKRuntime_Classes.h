@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -36,7 +36,7 @@ namespace CG
 	{
 	public:
 		class FString                                              DeviceSerialNumber;                                      // 0x0028(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_5MTT[0x20];                                  // 0x0038(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_KHJU[0x20];                                  // 0x0038(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -51,7 +51,7 @@ namespace CG
 	public:
 		struct FClefDeviceInfo                                     DeviceInfo;                                              // 0x0028(0x0040) Edit, Config, NativeAccessSpecifierPublic
 		struct FClefRegionConfig                                   RegionConfig;                                            // 0x0068(0x0148) Edit, Config, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_18Z4[0x20];                                  // 0x01B0(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_58ZV[0x20];                                  // 0x01B0(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -85,7 +85,7 @@ namespace CG
 		bool                                                       bRemoteVoiceCaptureDeviceEnabled;                        // 0x0028(0x0001) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bAVSClientOnly;                                          // 0x0029(0x0001) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EClefAVSLogLevel                                           AVSLogLevel;                                             // 0x002A(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_RIXC[0x1];                                   // 0x002B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JRQ6[0x1];                                   // 0x002B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    MaxVoiceCaptureLengthSeconds;                            // 0x002C(0x0004) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint32_t                                                   EndCaptureDelayMs;                                       // 0x0030(0x0004) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		uint32_t                                                   ExpectSpeachTimeoutSeconds;                              // 0x0034(0x0004) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic

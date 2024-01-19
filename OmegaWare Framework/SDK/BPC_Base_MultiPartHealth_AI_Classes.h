@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,16 +16,16 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_Base_MultiPartHealth_AI.BPC_Base_MultiPartHealth_AI_C
-	 * Size -> 0x0060 (FullSize[0x0568] - InheritedSize[0x0508])
+	 * Size -> 0x0060 (FullSize[0x05A8] - InheritedSize[0x0548])
 	 */
 	class UBPC_Base_MultiPartHealth_AI_C : public UMultiPartHealthComponent
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0508(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		class ABP_Base_AI_C*                                       Pawn;                                                    // 0x0510(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		struct FKnowledgeBaseExpression                            BodyPartExpressionRequiredToLive;                        // 0x0518(0x0038) Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash
-		struct FEventInstigator                                    LastDamageInstigator;                                    // 0x0550(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor
-		class UCharacterActionRequestHelper*                       CrawlerActionRequestHelper;                              // 0x0560(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0548(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		class ABP_Base_AI_C*                                       Pawn;                                                    // 0x0550(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FKnowledgeBaseExpression                            BodyPartExpressionRequiredToLive;                        // 0x0558(0x0038) Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash
+		struct FEventInstigator                                    LastDamageInstigator;                                    // 0x0590(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor
+		class UCharacterActionRequestHelper*                       CrawlerActionRequestHelper;                              // 0x05A0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void EvaluateBodyPartExpressionRequiredtoLive();

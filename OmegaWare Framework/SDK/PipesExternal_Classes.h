@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,12 +16,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Class PipesExternal.GameEventResponse_StartPipeFlow
-	 * Size -> 0x0050 (FullSize[0x0088] - InheritedSize[0x0038])
+	 * Size -> 0x0078 (FullSize[0x00B8] - InheritedSize[0x0040])
 	 */
 	class UGameEventResponse_StartPipeFlow : public UGameEventResponse
 	{
 	public:
-		struct FDSActorPicker                                      PipeOriginToStartViaPicker;                              // 0x0038(0x0050) Edit, NativeAccessSpecifierPublic
+		struct FDSActorPicker                                      PipeOriginToStartViaPicker;                              // 0x0040(0x0078) Edit, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();
@@ -29,12 +29,12 @@ namespace CG
 
 	/**
 	 * Class PipesExternal.GameEventResponse_StopPipeFlow
-	 * Size -> 0x0050 (FullSize[0x0088] - InheritedSize[0x0038])
+	 * Size -> 0x0078 (FullSize[0x00B8] - InheritedSize[0x0040])
 	 */
 	class UGameEventResponse_StopPipeFlow : public UGameEventResponse
 	{
 	public:
-		struct FDSActorPicker                                      PipeOriginToStopViaPicker;                               // 0x0038(0x0050) Edit, NativeAccessSpecifierPublic
+		struct FDSActorPicker                                      PipeOriginToStopViaPicker;                               // 0x0040(0x0078) Edit, NativeAccessSpecifierPublic
 
 	public:
 		static UClass* StaticClass();
@@ -48,7 +48,7 @@ namespace CG
 	{
 	public:
 		class ABasePipe*                                           PipeToCheck;                                             // 0x0028(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_763Q[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_8D4G[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void OnPipeFlowStarted(class ABasePipe* Pipe);
@@ -63,7 +63,7 @@ namespace CG
 	{
 	public:
 		class ABasePipe*                                           PipeToCheck;                                             // 0x0028(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_C87E[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_MFNT[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void OnPipeFlowStopped(class ABasePipe* Pipe);

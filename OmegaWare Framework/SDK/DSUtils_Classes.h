@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -31,7 +31,7 @@ namespace CG
 	class UDSActorBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		class AActor* CreateActor(class AActor* ActorProvidingTransform, class UClass* ActorClass);
+		class AActor* STATIC_CreateActor(class AActor* ActorProvidingTransform, class UClass* ActorClass);
 		static UClass* StaticClass();
 	};
 
@@ -42,7 +42,7 @@ namespace CG
 	class UActorPickerRecurringObject : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_LQ0R[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3KFA[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		void OnOwningActorDestroyed(class AActor* Actor, EEndPlayReason EndPlayReason);
@@ -59,9 +59,9 @@ namespace CG
 	class UDSActorPickerFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		class AActor* TryToGetActor(class UObject* WorldContextObject, struct FDSActorPicker* ActorPicker, const class FScriptDelegate& Callback);
-		void ShutdownRecurringActor(struct FDSActorPicker* ActorPicker);
-		class AActor* GetActor(class UObject* WorldContextObject, const struct FDSActorPicker& ActorPicker);
+		class AActor* STATIC_TryToGetActor(class UObject* WorldContextObject, struct FDSActorPicker* ActorPicker, const class FScriptDelegate& Callback);
+		void STATIC_ShutdownRecurringActor(struct FDSActorPicker* ActorPicker);
+		class AActor* STATIC_GetActor(class UObject* WorldContextObject, const struct FDSActorPicker& ActorPicker);
 		static UClass* StaticClass();
 	};
 
@@ -72,7 +72,7 @@ namespace CG
 	class UDSLogChannelHandle : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_AQ0D[0x50];                                  // 0x0028(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_B7SN[0x50];                                  // 0x0028(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -85,8 +85,8 @@ namespace CG
 	class UDSLogBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		class UDSLogChannelHandle* SetupLogger(class UObject* WorldContextObject, EDSLogDepartmentChannel DepartmentChannel, const class FString& AdditionalChannelSpecifier, EDSLogUploadBugsSetting UploadBugs, bool NoTelemetry, bool ShowOnce, bool ShowOnlyInPIE, bool ShowOncePerPIEInstance);
-		void DSLog(class UObject* WorldContextObject, const class FString& LogText, class UDSLogChannelHandle* LoggerHandle, EDSLogVerbosity Verbosity, bool Condition);
+		class UDSLogChannelHandle* STATIC_SetupLogger(class UObject* WorldContextObject, EDSLogDepartmentChannel DepartmentChannel, const class FString& AdditionalChannelSpecifier, EDSLogUploadBugsSetting UploadBugs, bool NoTelemetry, bool ShowOnce, bool ShowOnlyInPIE, bool ShowOncePerPIEInstance);
+		void STATIC_DSLog(class UObject* WorldContextObject, const class FString& LogText, class UDSLogChannelHandle* LoggerHandle, EDSLogVerbosity Verbosity, bool Condition);
 		static UClass* StaticClass();
 	};
 
@@ -97,18 +97,18 @@ namespace CG
 	class UEventInstigatorUtilities : public UBlueprintFunctionLibrary
 	{
 	public:
-		struct FWeakEventInstigator MakeWeakEventInstigator(class AController* Controller, class APawn* Pawn);
-		struct FEventInstigator MakeEventInstigator(class AController* Controller, class APawn* Pawn);
-		bool IsWeakInstigatorValid(const struct FWeakEventInstigator& Instigator);
-		bool IsInstigatorValid(const struct FEventInstigator& Instigator);
-		class APawn* GetWeakInstigatorPawn(const struct FWeakEventInstigator& Instigator);
-		class AController* GetWeakInstigatorController(const struct FWeakEventInstigator& Instigator);
-		class APawn* GetInstigatorPawn(const struct FEventInstigator& Instigator);
-		class AController* GetInstigatorController(const struct FEventInstigator& Instigator);
-		struct FEventInstigator EventInstigator_WeakToRaw(const struct FWeakEventInstigator& Instigator);
-		struct FWeakEventInstigator EventInstigator_RawToWeak(const struct FEventInstigator& Instigator);
-		void BreakWeakEventInstigator(const struct FWeakEventInstigator& Instigator, class AController** Controller, class APawn** Pawn);
-		void BreakEventInstigator(const struct FEventInstigator& Instigator, class AController** Controller, class APawn** Pawn);
+		struct FWeakEventInstigator STATIC_MakeWeakEventInstigator(class AController* Controller, class APawn* Pawn);
+		struct FEventInstigator STATIC_MakeEventInstigator(class AController* Controller, class APawn* Pawn);
+		bool STATIC_IsWeakInstigatorValid(const struct FWeakEventInstigator& Instigator);
+		bool STATIC_IsInstigatorValid(const struct FEventInstigator& Instigator);
+		class APawn* STATIC_GetWeakInstigatorPawn(const struct FWeakEventInstigator& Instigator);
+		class AController* STATIC_GetWeakInstigatorController(const struct FWeakEventInstigator& Instigator);
+		class APawn* STATIC_GetInstigatorPawn(const struct FEventInstigator& Instigator);
+		class AController* STATIC_GetInstigatorController(const struct FEventInstigator& Instigator);
+		struct FEventInstigator STATIC_EventInstigator_WeakToRaw(const struct FWeakEventInstigator& Instigator);
+		struct FWeakEventInstigator STATIC_EventInstigator_RawToWeak(const struct FEventInstigator& Instigator);
+		void STATIC_BreakWeakEventInstigator(const struct FWeakEventInstigator& Instigator, class AController** Controller, class APawn** Pawn);
+		void STATIC_BreakEventInstigator(const struct FEventInstigator& Instigator, class AController** Controller, class APawn** Pawn);
 		static UClass* StaticClass();
 	};
 
@@ -152,7 +152,7 @@ namespace CG
 	class UNetworkUtils : public UBlueprintFunctionLibrary
 	{
 	public:
-		float GetServerWorldTime(class UObject* WorldContextObject);
+		float STATIC_GetServerWorldTime(class UObject* WorldContextObject);
 		static UClass* StaticClass();
 	};
 
@@ -168,7 +168,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnObjectLinkActorRemoved;                                // 0x0108(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnObjectLinkComponentRemoved;                            // 0x0118(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		TMap<class FName, struct FDSActorPicker>                   LinkedActorsViaPicker;                                   // 0x0128(0x0050) Edit, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_56V9[0xB8];                                  // 0x0178(0x00B8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_1B9I[0xB8];                                  // 0x0178(0x00B8) MISSED OFFSET (PADDING)
 
 	public:
 		void UnregisterLinkedActorsFromBP();
@@ -208,9 +208,9 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnRequirementsActiveDelegates;                           // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnRequirementsClearedDelegates;                          // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_II8M[0x30];                                  // 0x0048(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9EMP[0x30];                                  // 0x0048(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bHasRequirements;                                        // 0x0078(0x0001) Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_EPQ3[0x2F];                                  // 0x0079(0x002F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6CNY[0x2F];                                  // 0x0079(0x002F) MISSED OFFSET (PADDING)
 
 	public:
 		void RemoveByName(const class FName& Requirement);
@@ -219,10 +219,20 @@ namespace CG
 		bool HasRequirements();
 		bool HasRequirement(const class FName& Requirement);
 		struct FGuid FindIDByName(const class FName& Requirement);
-		class URequirementsContainer* CreateRequirementsContainer(class UObject* WorldContextObject, const class FName& Name);
+		class URequirementsContainer* STATIC_CreateRequirementsContainer(class UObject* WorldContextObject, const class FName& Name);
 		void Clear();
 		struct FGuid AddTemporary(const class FName& Requirement, bool bUnique, float Duration);
 		struct FGuid Add(const class FName& Requirement, bool bUnique);
+		static UClass* StaticClass();
+	};
+
+	/**
+	 * Class DSUtils.SparseCustomParamsBase
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class USparseCustomParamsBase : public UCustomParamsBase
+	{
+	public:
 		static UClass* StaticClass();
 	};
 
@@ -236,7 +246,7 @@ namespace CG
 		bool                                                       bReadOnly;                                               // 0x0028(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bCantDelete;                                             // 0x0029(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bHideDetailsView;                                        // 0x002A(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4F5I[0x5];                                   // 0x002B(0x0005) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_X25L[0x5];                                   // 0x002B(0x0005) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -251,7 +261,7 @@ namespace CG
 	public:
 		class FName                                                Name;                                                    // 0x0028(0x0008) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bPermanent;                                              // 0x0030(0x0001) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_IJ7R[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_50QN[0x3];                                   // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    TypeID;                                                  // 0x0034(0x0004) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                Parent;                                                  // 0x0038(0x0008) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
@@ -266,7 +276,7 @@ namespace CG
 	class UTable2DBase : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_HV8J[0x40];                                  // 0x0028(0x0040) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_8AD0[0x40];                                  // 0x0028(0x0040) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_DIAgent.BPC_DIAgent_C
-	 * Size -> 0x0000 (FullSize[0x0208] - InheritedSize[0x0208])
+	 * Size -> 0x0000 (FullSize[0x0218] - InheritedSize[0x0218])
 	 */
 	class UBPC_DIAgent_C : public UDIAgentComponent
 	{

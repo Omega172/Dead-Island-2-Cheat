@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UUserAuthData : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_OOJF[0x38];                                  // 0x0028(0x0038) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_H8Y9[0x38];                                  // 0x0028(0x0038) MISSED OFFSET (PADDING)
 
 	public:
 		void SetRefreshToken(const class FString& NewToken);

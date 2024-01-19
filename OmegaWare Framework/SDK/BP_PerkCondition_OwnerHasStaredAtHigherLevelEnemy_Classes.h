@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,13 +16,13 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_PerkCondition_OwnerHasStaredAtHigherLevelEnemy.BP_PerkCondition_OwnerHasStaredAtHigherLevelEnemy_C
-	 * Size -> 0x000C (FullSize[0x0064] - InheritedSize[0x0058])
+	 * Size -> 0x000C (FullSize[0x006C] - InheritedSize[0x0060])
 	 */
 	class UBP_PerkCondition_OwnerHasStaredAtHigherLevelEnemy_C : public UPerkCondition
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0058(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		int32_t                                                    LevelDifference;                                         // 0x0060(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0060(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		int32_t                                                    LevelDifference;                                         // 0x0068(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
 		void Enable(const struct FBlueprintPerkConditionParams& Params);

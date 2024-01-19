@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FAD1A0
 	 * 		Name   -> Function ScriptedSequences.ScriptedSequenceExitCondition.Setup
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 * Parameters:
 	 * 		class UScriptedSequenceStage*                      InOwningStage                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -28,15 +28,16 @@ namespace CG
 		params.InOwningStage = InOwningStage;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9840
 	 * 		Name   -> Function ScriptedSequences.ScriptedSequenceExitCondition.Reset
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
 	void UScriptedSequenceExitCondition::Reset()
 	{
@@ -47,15 +48,16 @@ namespace CG
 		UScriptedSequenceExitCondition_Reset_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FACEE0
 	 * 		Name   -> Function ScriptedSequences.ScriptedSequenceExitCondition.IsConditionMet
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 */
 	bool UScriptedSequenceExitCondition::IsConditionMet()
 	{
@@ -66,6 +68,7 @@ namespace CG
 		UScriptedSequenceExitCondition_IsConditionMet_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -74,9 +77,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BCC200
 	 * 		Name   -> Function ScriptedSequences.ScriptedSequenceExitCondition.GetLinkedActors
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 */
 	TArray<class AActor*> UScriptedSequenceExitCondition::GetLinkedActors()
 	{
@@ -87,6 +90,7 @@ namespace CG
 		UScriptedSequenceExitCondition_GetLinkedActors_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -95,9 +99,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FACE30
 	 * 		Name   -> Function ScriptedSequences.ScriptedSequenceExitCondition.GetDebuggingText
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 */
 	class FString UScriptedSequenceExitCondition::GetDebuggingText()
 	{
@@ -108,6 +112,7 @@ namespace CG
 		UScriptedSequenceExitCondition_GetDebuggingText_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -130,9 +135,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FAD0D0
 	 * 		Name   -> Function ScriptedSequences.BaseScriptedSequenceStage.OnTick
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 * Parameters:
 	 * 		float                                              DeltaTime                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -146,15 +151,16 @@ namespace CG
 		params.DeltaTime = DeltaTime;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FAD030
 	 * 		Name   -> Function ScriptedSequences.BaseScriptedSequenceStage.OnRequestStartStage
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      InOwningActor                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -168,6 +174,7 @@ namespace CG
 		params.InOwningActor = InOwningActor;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -176,9 +183,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FACEE0
 	 * 		Name   -> Function ScriptedSequences.BaseScriptedSequenceStage.OnRequestEndStage
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	bool UBaseScriptedSequenceStage::OnRequestEndStage()
 	{
@@ -189,6 +196,7 @@ namespace CG
 		UBaseScriptedSequenceStage_OnRequestEndStage_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -197,9 +205,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FACF40
 	 * 		Name   -> Function ScriptedSequences.BaseScriptedSequenceStage.OnGetFactsWithDescriptions
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent, Const)
 	 */
 	TMap<class FName, class FString> UBaseScriptedSequenceStage::OnGetFactsWithDescriptions()
 	{
@@ -210,6 +218,7 @@ namespace CG
 		UBaseScriptedSequenceStage_OnGetFactsWithDescriptions_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -218,9 +227,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00BCC110
 	 * 		Name   -> Function ScriptedSequences.BaseScriptedSequenceStage.OnGetDebuggingText
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent, Const)
 	 */
 	TArray<class FString> UBaseScriptedSequenceStage::OnGetDebuggingText()
 	{
@@ -231,6 +240,7 @@ namespace CG
 		UBaseScriptedSequenceStage_OnGetDebuggingText_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -239,9 +249,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9840
 	 * 		Name   -> Function ScriptedSequences.BaseScriptedSequenceStage.OnCleanUp
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void UBaseScriptedSequenceStage::OnCleanUp()
 	{
@@ -252,6 +262,7 @@ namespace CG
 		UBaseScriptedSequenceStage_OnCleanUp_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -286,9 +297,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FAD180
 	 * 		Name   -> Function ScriptedSequences.ScriptedSequenceComponent.RequestStopSequence
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void UScriptedSequenceComponent::RequestStopSequence()
 	{
@@ -299,15 +310,16 @@ namespace CG
 		UScriptedSequenceComponent_RequestStopSequence_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FAD150
 	 * 		Name   -> Function ScriptedSequences.ScriptedSequenceComponent.RequestStartSequence
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	bool UScriptedSequenceComponent::RequestStartSequence()
 	{
@@ -318,6 +330,7 @@ namespace CG
 		UScriptedSequenceComponent_RequestStartSequence_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -326,9 +339,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FACF10
 	 * 		Name   -> Function ScriptedSequences.ScriptedSequenceComponent.IsSequenceActive
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UScriptedSequenceComponent::IsSequenceActive()
 	{
@@ -339,6 +352,7 @@ namespace CG
 		UScriptedSequenceComponent_IsSequenceActive_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -347,9 +361,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FACEB0
 	 * 		Name   -> Function ScriptedSequences.ScriptedSequenceComponent.HasOverriddenStages
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool UScriptedSequenceComponent::HasOverriddenStages()
 	{
@@ -360,6 +374,7 @@ namespace CG
 		UScriptedSequenceComponent_HasOverriddenStages_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -368,9 +383,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00FACD80
 	 * 		Name   -> Function ScriptedSequences.ScriptedSequenceComponent.GatherComponentBlueprintLinks
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasOutParms, Const)
 	 * Parameters:
 	 * 		TArray<struct FComponentLinkInformation>           ComponentLinks                                             (Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
@@ -383,6 +398,7 @@ namespace CG
 		UScriptedSequenceComponent_GatherComponentBlueprintLinks_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

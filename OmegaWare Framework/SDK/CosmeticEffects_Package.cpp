@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -40,9 +40,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD8730
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectData.OnComplete
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 */
 	void UCosmeticEffectData::OnComplete()
 	{
@@ -53,6 +53,7 @@ namespace CG
 		UCosmeticEffectData_OnComplete_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -199,9 +200,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD8750
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectData_Decal.OnDecalComponentDestroyed
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		class UActorComponent*                             DestroyedComponent                                         (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -215,6 +216,7 @@ namespace CG
 		params.DestroyedComponent = DestroyedComponent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -389,9 +391,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD8AA0
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectPlaceableActor.RequestStopEffect
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void ACosmeticEffectPlaceableActor::RequestStopEffect()
 	{
@@ -402,15 +404,16 @@ namespace CG
 		ACosmeticEffectPlaceableActor_RequestStopEffect_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD8A10
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectPlaceableActor.RequestPlayEffect
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		bool                                               bInterruptCurrentEffect                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -424,15 +427,16 @@ namespace CG
 		params.bInterruptCurrentEffect = bInterruptCurrentEffect;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD85E0
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectPlaceableActor.NetMulticastUpdateCosmeticEffect
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Net, Native, Event, NetMulticast, Private)
 	 * Parameters:
 	 * 		bool                                               bShouldPlay                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bInterruptCurrentEffectIn                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -448,6 +452,7 @@ namespace CG
 		params.bInterruptCurrentEffectIn = bInterruptCurrentEffectIn;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -496,9 +501,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD95F0
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.SpawnLocationID
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UCosmeticEffectsDefinition*                  Definition                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -506,7 +511,7 @@ namespace CG
 	 * 		struct FRotator                                    InRotation                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FCosmeticEffectParams                       Params                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	struct FCosmeticEffectsID UCosmeticEffectsBlueprintLibrary::SpawnLocationID(class UObject* WorldContextObject, class UCosmeticEffectsDefinition* Definition, const struct FVector& InPosition, const struct FRotator& InRotation, const struct FCosmeticEffectParams& Params)
+	struct FCosmeticEffectsID UCosmeticEffectsBlueprintLibrary::STATIC_SpawnLocationID(class UObject* WorldContextObject, class UCosmeticEffectsDefinition* Definition, const struct FVector& InPosition, const struct FRotator& InRotation, const struct FCosmeticEffectParams& Params)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -520,6 +525,7 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -528,9 +534,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD9410
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.SpawnLocation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UCosmeticEffectsDefinition*                  Definition                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -538,7 +544,7 @@ namespace CG
 	 * 		struct FRotator                                    InRotation                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FCosmeticEffectParams                       Params                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	void UCosmeticEffectsBlueprintLibrary::SpawnLocation(class UObject* WorldContextObject, class UCosmeticEffectsDefinition* Definition, const struct FVector& InPosition, const struct FRotator& InRotation, const struct FCosmeticEffectParams& Params)
+	void UCosmeticEffectsBlueprintLibrary::STATIC_SpawnLocation(class UObject* WorldContextObject, class UCosmeticEffectsDefinition* Definition, const struct FVector& InPosition, const struct FRotator& InRotation, const struct FCosmeticEffectParams& Params)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -552,15 +558,16 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD9150
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.SpawnAttachedID
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UCosmeticEffectsDefinition*                  Definition                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -571,7 +578,7 @@ namespace CG
 	 * 		class FName                                        InPointName                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCosmeticEffectParams                       Params                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	struct FCosmeticEffectsID UCosmeticEffectsBlueprintLibrary::SpawnAttachedID(class UObject* WorldContextObject, class UCosmeticEffectsDefinition* Definition, class AActor* InActor, class USceneComponent* InSceneComponent, const struct FVector& InPosition, const struct FRotator& InRotation, const class FName& InPointName, const struct FCosmeticEffectParams& Params)
+	struct FCosmeticEffectsID UCosmeticEffectsBlueprintLibrary::STATIC_SpawnAttachedID(class UObject* WorldContextObject, class UCosmeticEffectsDefinition* Definition, class AActor* InActor, class USceneComponent* InSceneComponent, const struct FVector& InPosition, const struct FRotator& InRotation, const class FName& InPointName, const struct FCosmeticEffectParams& Params)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -588,6 +595,7 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -596,14 +604,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD9090
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.SpawnAttachedActorID
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UCosmeticEffectsDefinition*                  Definition                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FCosmeticEffectsID UCosmeticEffectsBlueprintLibrary::SpawnAttachedActorID(class AActor* Actor, class UCosmeticEffectsDefinition* Definition)
+	struct FCosmeticEffectsID UCosmeticEffectsBlueprintLibrary::STATIC_SpawnAttachedActorID(class AActor* Actor, class UCosmeticEffectsDefinition* Definition)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -614,6 +622,7 @@ namespace CG
 		params.Definition = Definition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -622,14 +631,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD8FE0
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.SpawnAttachedActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UCosmeticEffectsDefinition*                  Definition                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UCosmeticEffectsBlueprintLibrary::SpawnAttachedActor(class AActor* Actor, class UCosmeticEffectsDefinition* Definition)
+	void UCosmeticEffectsBlueprintLibrary::STATIC_SpawnAttachedActor(class AActor* Actor, class UCosmeticEffectsDefinition* Definition)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -640,15 +649,16 @@ namespace CG
 		params.Definition = Definition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD8D30
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.SpawnAttached
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UCosmeticEffectsDefinition*                  Definition                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -659,7 +669,7 @@ namespace CG
 	 * 		class FName                                        InPointName                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCosmeticEffectParams                       Params                                                     (Parm, NativeAccessSpecifierPublic)
 	 */
-	void UCosmeticEffectsBlueprintLibrary::SpawnAttached(class UObject* WorldContextObject, class UCosmeticEffectsDefinition* Definition, class AActor* InActor, class USceneComponent* InSceneComponent, const struct FVector& InPosition, const struct FRotator& InRotation, const class FName& InPointName, const struct FCosmeticEffectParams& Params)
+	void UCosmeticEffectsBlueprintLibrary::STATIC_SpawnAttached(class UObject* WorldContextObject, class UCosmeticEffectsDefinition* Definition, class AActor* InActor, class USceneComponent* InSceneComponent, const struct FVector& InPosition, const struct FRotator& InRotation, const class FName& InPointName, const struct FCosmeticEffectParams& Params)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -676,22 +686,23 @@ namespace CG
 		params.Params = Params;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD8BF0
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.SetVec3Parameter
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCosmeticEffectsID                          CosmeticEffectsID                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Parameter                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UCosmeticEffectsBlueprintLibrary::SetVec3Parameter(class UObject* WorldContextObject, const struct FCosmeticEffectsID& CosmeticEffectsID, const class FName& Parameter, const struct FVector& Value)
+	bool UCosmeticEffectsBlueprintLibrary::STATIC_SetVec3Parameter(class UObject* WorldContextObject, const struct FCosmeticEffectsID& CosmeticEffectsID, const class FName& Parameter, const struct FVector& Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -704,6 +715,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -712,16 +724,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD8AC0
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.SetParameter
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCosmeticEffectsID                          CosmeticEffectsID                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Parameter                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Value                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UCosmeticEffectsBlueprintLibrary::SetParameter(class UObject* WorldContextObject, const struct FCosmeticEffectsID& CosmeticEffectsID, const class FName& Parameter, float Value)
+	bool UCosmeticEffectsBlueprintLibrary::STATIC_SetParameter(class UObject* WorldContextObject, const struct FCosmeticEffectsID& CosmeticEffectsID, const class FName& Parameter, float Value)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -734,6 +746,7 @@ namespace CG
 		params.Value = Value;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -742,14 +755,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD8950
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.RelinquishID
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCosmeticEffectsID                          CosmeticEffectsID                                          (Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UCosmeticEffectsBlueprintLibrary::RelinquishID(class UObject* WorldContextObject, struct FCosmeticEffectsID* CosmeticEffectsID)
+	void UCosmeticEffectsBlueprintLibrary::STATIC_RelinquishID(class UObject* WorldContextObject, struct FCosmeticEffectsID* CosmeticEffectsID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -759,6 +772,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -768,9 +782,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD83E0
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.LerpVec3Parameter
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCosmeticEffectsID                          CosmeticEffectsID                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -780,7 +794,7 @@ namespace CG
 	 * 		float                                              Delay                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		ECosmeticEffectLerpType                            LerpType                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UCosmeticEffectsBlueprintLibrary::LerpVec3Parameter(class UObject* WorldContextObject, const struct FCosmeticEffectsID& CosmeticEffectsID, const class FName& Parameter, const struct FVector& NewValue, float LerpTime, float Delay, ECosmeticEffectLerpType LerpType)
+	bool UCosmeticEffectsBlueprintLibrary::STATIC_LerpVec3Parameter(class UObject* WorldContextObject, const struct FCosmeticEffectsID& CosmeticEffectsID, const class FName& Parameter, const struct FVector& NewValue, float LerpTime, float Delay, ECosmeticEffectLerpType LerpType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -796,6 +810,7 @@ namespace CG
 		params.LerpType = LerpType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -804,9 +819,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD81F0
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.LerpParameter
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCosmeticEffectsID                          CosmeticEffectsID                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -816,7 +831,7 @@ namespace CG
 	 * 		float                                              Delay                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		ECosmeticEffectLerpType                            LerpType                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UCosmeticEffectsBlueprintLibrary::LerpParameter(class UObject* WorldContextObject, const struct FCosmeticEffectsID& CosmeticEffectsID, const class FName& Parameter, float NewValue, float LerpTime, float Delay, ECosmeticEffectLerpType LerpType)
+	bool UCosmeticEffectsBlueprintLibrary::STATIC_LerpParameter(class UObject* WorldContextObject, const struct FCosmeticEffectsID& CosmeticEffectsID, const class FName& Parameter, float NewValue, float LerpTime, float Delay, ECosmeticEffectLerpType LerpType)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -832,6 +847,7 @@ namespace CG
 		params.LerpType = LerpType;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -840,15 +856,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD80E0
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.DestroyWithDelay
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCosmeticEffectsID                          CosmeticEffectsID                                          (Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              Delay                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UCosmeticEffectsBlueprintLibrary::DestroyWithDelay(class UObject* WorldContextObject, struct FCosmeticEffectsID* CosmeticEffectsID, float Delay)
+	void UCosmeticEffectsBlueprintLibrary::STATIC_DestroyWithDelay(class UObject* WorldContextObject, struct FCosmeticEffectsID* CosmeticEffectsID, float Delay)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -859,6 +875,7 @@ namespace CG
 		params.Delay = Delay;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -868,14 +885,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD8020
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsBlueprintLibrary.Destroy
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FCosmeticEffectsID                          CosmeticEffectsID                                          (Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UCosmeticEffectsBlueprintLibrary::Destroy(class UObject* WorldContextObject, struct FCosmeticEffectsID* CosmeticEffectsID)
+	void UCosmeticEffectsBlueprintLibrary::STATIC_Destroy(class UObject* WorldContextObject, struct FCosmeticEffectsID* CosmeticEffectsID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -885,6 +902,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -908,9 +926,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD87D0
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectDataStore.OnEffectCompleted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:
 	 * 		class UCosmeticEffect*                             Effect                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UCosmeticEffectData*                         Data                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -926,6 +944,7 @@ namespace CG
 		params.Data = Data;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -974,9 +993,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD7FA0
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsManager.DelayedDestroyCallback
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
 	 * 		struct FCosmeticEffectsID                          EffectID                                                   (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -990,6 +1009,7 @@ namespace CG
 		params.EffectID = EffectID;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -1010,9 +1030,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CD8890
 	 * 		Name   -> Function CosmeticEffects.CosmeticEffectsObject.OnEffectCompleted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
 	 * 		class UCosmeticEffect*                             Effect                                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UCosmeticEffectData*                         Data                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1028,6 +1048,7 @@ namespace CG
 		params.Data = Data;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -1141,6 +1162,57 @@ namespace CG
 		static UClass* ptr = nullptr;
 		if (!ptr)
 			ptr = UObject::FindClass("Class CosmeticEffects.CosmeticEffectsTrigger");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UFadingCosmeticEffectDataAsset.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UFadingCosmeticEffectDataAsset::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class CosmeticEffects.FadingCosmeticEffectDataAsset");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00CD86B0
+	 * 		Name   -> Function CosmeticEffects.FadingCosmeticEffectsManager.OnActorDestroyed
+	 * 		Flags  -> (Final, Native, Private)
+	 * Parameters:
+	 * 		class AActor*                                      DestroyedActor                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void AFadingCosmeticEffectsManager::OnActorDestroyed(class AActor* DestroyedActor)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function CosmeticEffects.FadingCosmeticEffectsManager.OnActorDestroyed");
+		
+		AFadingCosmeticEffectsManager_OnActorDestroyed_Params params {};
+		params.DestroyedActor = DestroyedActor;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction AFadingCosmeticEffectsManager.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* AFadingCosmeticEffectsManager::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class CosmeticEffects.FadingCosmeticEffectsManager");
 		return ptr;
 	}
 

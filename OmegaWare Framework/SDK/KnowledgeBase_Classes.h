@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		class AActor*                                              OwnerActor;                                              // 0x0028(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_O8SY[0x20];                                  // 0x0030(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_AMSI[0x20];                                  // 0x0030(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -57,7 +57,7 @@ namespace CG
 	{
 	public:
 		class FString                                              OwnerKBExpression;                                       // 0x0028(0x0010) Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FYYQ[0x48];                                  // 0x0038(0x0048) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PKD1[0x48];                                  // 0x0038(0x0048) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -93,18 +93,18 @@ namespace CG
 	class UKnowledgeBaseComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_NZL9[0xB8];                                  // 0x00E8(0x00B8) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QT4X[0xB8];                                  // 0x00E8(0x00B8) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FKnowledgeBaseValueSelector>                 InitialFacts;                                            // 0x01A0(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPrivate
 		TArray<class UAkSwitchValue*>                              AkSwitchValues;                                          // 0x01B0(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPrivate
 		bool                                                       bUseLocationInDefaultExpressionListener;                 // 0x01C0(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bAutoUpdateKBLocation;                                   // 0x01C1(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bReplicateFacts;                                         // 0x01C2(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_EIMH[0x1];                                   // 0x01C3(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DR2D[0x1];                                   // 0x01C3(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      UpdateLocationThreshold;                                 // 0x01C4(0x0004) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		struct FKnowledgeBaseNetworkedDataArray                    ServerReplicatedFacts;                                   // 0x01C8(0x0120) Net, ContainsInstancedReference, NativeAccessSpecifierPrivate
 		struct FKnowledgeBaseNetworkedDataArray                    OwnerReplicatedFacts;                                    // 0x02E8(0x0120) Net, ContainsInstancedReference, NativeAccessSpecifierPrivate
 		class UKnowledgeBaseExpressionListener*                    ExpressionListener;                                      // 0x0408(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_EYKH[0xF0];                                  // 0x0410(0x00F0) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9JBT[0xF0];                                  // 0x0410(0x00F0) MISSED OFFSET (PADDING)
 
 	public:
 		void SetReplicateFacts(bool Value);
@@ -221,7 +221,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    NumberOfTrueExpressions;                                 // 0x0038(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_WERZ[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_4TA6[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -245,7 +245,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bNOTResult;                                              // 0x0028(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_WS78[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_AUEO[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FKnowledgeBaseExpression                            EvaluatedExpression;                                     // 0x0030(0x0038) Edit, EditConst, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 
 	public:
@@ -272,7 +272,7 @@ namespace CG
 	class UKnowledgeBaseExpressionCache : public UKnowledgeBaseFactListenerObject
 	{
 	public:
-		unsigned char                                              UnknownData_S9MM[0x188];                                 // 0x0028(0x0188) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_K2D6[0x188];                                 // 0x0028(0x0188) MISSED OFFSET (PADDING)
 
 	public:
 		void UpdateTimeExpressions();
@@ -286,7 +286,7 @@ namespace CG
 	class UKnowledgeBaseExpressionListener : public UKnowledgeBaseExpressionCache
 	{
 	public:
-		unsigned char                                              UnknownData_487Q[0x50];                                  // 0x01B0(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EOOU[0x50];                                  // 0x01B0(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		void RemoveObjectForActor(class AActor* ActorToRemove);
@@ -312,9 +312,9 @@ namespace CG
 	public:
 		TArray<class UDataTable*>                                  ExpressionAliasList;                                     // 0x0028(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPrivate
 		TArray<class UKnowledgeBaseExpressionAliasDataAsset*>      ExpressionAliasAssets;                                   // 0x0038(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_387N[0xA0];                                  // 0x0048(0x00A0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7UU3[0xA0];                                  // 0x0048(0x00A0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UKnowledgeBaseExpressionCache*>               RegisteredCaches;                                        // 0x00E8(0x0010) ZeroConstructor, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_JLTF[0x10];                                  // 0x00F8(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_AMMS[0x10];                                  // 0x00F8(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -327,7 +327,7 @@ namespace CG
 	class UKnowledgeBasePersistentDataCollection : public UPersistentDataCollectionBase
 	{
 	public:
-		unsigned char                                              UnknownData_1JWF[0x18];                                  // 0x0048(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5WHW[0x18];                                  // 0x0048(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -340,36 +340,36 @@ namespace CG
 	class UKnowledgeBaseNodes : public UBlueprintFunctionLibrary
 	{
 	public:
-		void RemoveNumericExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate);
-		void RemoveNumericExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName);
-		void RemoveFactListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, const class FScriptDelegate& Delegate);
-		void RemoveFactListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, class UObject* Object, const class FName& FunctionName);
-		void RemoveExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate);
-		void RemoveExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName);
-		void RegisterFactKey(class UObject* WorldContextObject, const class FName& FactName, EKnowledgeBaseFactType Type, struct FKnowledgeBaseFactKey* FactKey, EKnowledgeBaseFactReplication ReplicationType, bool* bSuccess);
-		bool IsExpressionValidAndNotEmpty(const struct FKnowledgeBaseExpression& Expression);
-		struct FKnowledgeBaseFactKey GetFactKey(const class FName& Name);
-		float EvaluateNumericExpressionForWorldPositionAndObjects(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition, TArray<class UKnowledgeBaseComponent*> AdditionalObjects);
-		float EvaluateNumericExpressionForWorldPosition(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition);
-		float EvaluateNumericExpression(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, TArray<class UKnowledgeBaseComponent*> Objects);
-		bool EvaluateExpressionForWorldPositionAndObjects(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition, TArray<class UKnowledgeBaseComponent*> AdditionalObjects);
-		bool EvaluateExpressionForWorldPosition(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition);
-		bool EvaluateExpression(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, TArray<class UKnowledgeBaseComponent*> Objects);
-		bool EqualEqual_FactKeyFactKey(const struct FKnowledgeBaseFactKey& A, const struct FKnowledgeBaseFactKey& B);
-		struct FKnowledgeBaseFactKey Conv_StringToFactKey(const class FString& inString);
-		struct FKnowledgeBaseExpression Conv_StringToExpression(const class FString& inString);
-		struct FKnowledgeBaseFactKey Conv_NameToFactKey(const class FName& InName);
-		struct FKnowledgeBaseExpression Conv_NameToExpression(const class FName& InName);
-		class FString Conv_FactKeyToString(const struct FKnowledgeBaseFactKey& InKey);
-		class FName Conv_FactKeyToName(const struct FKnowledgeBaseFactKey& InKey);
-		class FString Conv_ExpressionToString(const struct FKnowledgeBaseExpression& InExpression);
-		class FName Conv_ExpressionToName(const struct FKnowledgeBaseExpression& InExpression);
-		void AddNumericExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate, bool bCallOnRegister);
-		void AddNumericExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister);
-		void AddFactListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, const class FScriptDelegate& Delegate, bool bCallOnRegister);
-		void AddFactListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister);
-		void AddExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate, bool bCallOnRegister);
-		void AddExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister);
+		void STATIC_RemoveNumericExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate);
+		void STATIC_RemoveNumericExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName);
+		void STATIC_RemoveFactListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, const class FScriptDelegate& Delegate);
+		void STATIC_RemoveFactListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, class UObject* Object, const class FName& FunctionName);
+		void STATIC_RemoveExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate);
+		void STATIC_RemoveExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName);
+		void STATIC_RegisterFactKey(class UObject* WorldContextObject, const class FName& FactName, EKnowledgeBaseFactType Type, struct FKnowledgeBaseFactKey* FactKey, EKnowledgeBaseFactReplication ReplicationType, bool* bSuccess);
+		bool STATIC_IsExpressionValidAndNotEmpty(const struct FKnowledgeBaseExpression& Expression);
+		struct FKnowledgeBaseFactKey STATIC_GetFactKey(const class FName& Name);
+		float STATIC_EvaluateNumericExpressionForWorldPositionAndObjects(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition, TArray<class UKnowledgeBaseComponent*> AdditionalObjects);
+		float STATIC_EvaluateNumericExpressionForWorldPosition(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition);
+		float STATIC_EvaluateNumericExpression(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, TArray<class UKnowledgeBaseComponent*> Objects);
+		bool STATIC_EvaluateExpressionForWorldPositionAndObjects(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition, TArray<class UKnowledgeBaseComponent*> AdditionalObjects);
+		bool STATIC_EvaluateExpressionForWorldPosition(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, const struct FVector& WorldPosition);
+		bool STATIC_EvaluateExpression(class UObject* WorldContextObject, const struct FKnowledgeBaseExpression& Expression, TArray<class UKnowledgeBaseComponent*> Objects);
+		bool STATIC_EqualEqual_FactKeyFactKey(const struct FKnowledgeBaseFactKey& A, const struct FKnowledgeBaseFactKey& B);
+		struct FKnowledgeBaseFactKey STATIC_Conv_StringToFactKey(const class FString& inString);
+		struct FKnowledgeBaseExpression STATIC_Conv_StringToExpression(const class FString& inString);
+		struct FKnowledgeBaseFactKey STATIC_Conv_NameToFactKey(const class FName& InName);
+		struct FKnowledgeBaseExpression STATIC_Conv_NameToExpression(const class FName& InName);
+		class FString STATIC_Conv_FactKeyToString(const struct FKnowledgeBaseFactKey& InKey);
+		class FName STATIC_Conv_FactKeyToName(const struct FKnowledgeBaseFactKey& InKey);
+		class FString STATIC_Conv_ExpressionToString(const struct FKnowledgeBaseExpression& InExpression);
+		class FName STATIC_Conv_ExpressionToName(const struct FKnowledgeBaseExpression& InExpression);
+		void STATIC_AddNumericExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate, bool bCallOnRegister);
+		void STATIC_AddNumericExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister);
+		void STATIC_AddFactListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, const class FScriptDelegate& Delegate, bool bCallOnRegister);
+		void STATIC_AddFactListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseFactKey& FactName, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister);
+		void STATIC_AddExpressionListenerEvent(class UObject* WorldContextObject, class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, const class FScriptDelegate& Delegate, bool bCallOnRegister);
+		void STATIC_AddExpressionListener(class UKnowledgeBaseComponent* KnowledgeBaseComponent, const struct FKnowledgeBaseExpression& Expression, class UObject* Object, const class FName& FunctionName, bool bCallOnRegister);
 		static UClass* StaticClass();
 	};
 
@@ -393,11 +393,11 @@ namespace CG
 	class UKnowledgeBaseValueFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		struct FKnowledgeBaseValueSelector CreateVec3FactValue(const class FName& Name, const struct FVector& Value);
-		struct FKnowledgeBaseValueSelector CreateStringFactValue(const class FName& Name, const class FString& Value);
-		struct FKnowledgeBaseValueSelector CreateIntFactValue(const class FName& Name, int32_t Value);
-		struct FKnowledgeBaseValueSelector CreateFloatFactValue(const class FName& Name, float Value);
-		struct FKnowledgeBaseValueSelector CreateBoolFactValue(const class FName& Name, bool bValue);
+		struct FKnowledgeBaseValueSelector STATIC_CreateVec3FactValue(const class FName& Name, const struct FVector& Value);
+		struct FKnowledgeBaseValueSelector STATIC_CreateStringFactValue(const class FName& Name, const class FString& Value);
+		struct FKnowledgeBaseValueSelector STATIC_CreateIntFactValue(const class FName& Name, int32_t Value);
+		struct FKnowledgeBaseValueSelector STATIC_CreateFloatFactValue(const class FName& Name, float Value);
+		struct FKnowledgeBaseValueSelector STATIC_CreateBoolFactValue(const class FName& Name, bool bValue);
 		static UClass* StaticClass();
 	};
 
@@ -410,11 +410,11 @@ namespace CG
 	public:
 		bool                                                       bShouldAllowStateReinforcement;                          // 0x02B0(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bShouldDeferDisableReasonEvaluation;                     // 0x02B1(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_SAEG[0x6];                                   // 0x02B2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FJ80[0x6];                                   // 0x02B2(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FScopedKnowledgeBaseExpressionListener              ActiveExpression;                                        // 0x02B8(0x0060) Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_5KX5[0x20];                                  // 0x0318(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_G9SV[0x20];                                  // 0x0318(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bIsActorActiveOnServer;                                  // 0x0338(0x0001) Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_1CA2[0xF];                                   // 0x0339(0x000F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_KBRM[0xF];                                   // 0x0339(0x000F) MISSED OFFSET (PADDING)
 
 	public:
 		void RemoveLocalDisableReason(const class FName& Reason);
@@ -437,8 +437,8 @@ namespace CG
 	class UScopedKnowledgeBaseExpressionListenerFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void ShutdownExpressionListener(struct FScopedKnowledgeBaseExpressionListener* Expression);
-		void SetupExpressionListener(struct FScopedKnowledgeBaseExpressionListener* Expression, class AActor* Owner, const class FScriptDelegate& Delegate);
+		void STATIC_ShutdownExpressionListener(struct FScopedKnowledgeBaseExpressionListener* Expression);
+		void STATIC_SetupExpressionListener(struct FScopedKnowledgeBaseExpressionListener* Expression, class AActor* Owner, const class FScriptDelegate& Delegate);
 		static UClass* StaticClass();
 	};
 

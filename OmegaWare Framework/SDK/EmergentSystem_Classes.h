@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,22 +21,22 @@ namespace CG
 	class AActivityActor : public AActor
 	{
 	public:
-		unsigned char                                              UnknownData_CLHF[0x8];                                   // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0K92[0x8];                                   // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnActivityStartedDelegate;                               // 0x02B8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnActivityEndedDelegate;                                 // 0x02C8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnAllParticipantsReceivedDelegate;                       // 0x02D8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		TArray<class UParticipantSlotComponent*>                   ParticipantList;                                         // 0x02E8(0x0010) BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
 		struct FActivityParameters                                 ActivityParameters;                                      // 0x02F8(0x0070) Edit, BlueprintVisible, BlueprintReadOnly, ContainsInstancedReference, NativeAccessSpecifierPublic
 		bool                                                       bIsAdvertising;                                          // 0x0368(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_YARL[0x7];                                   // 0x0369(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BU6Q[0x7];                                   // 0x0369(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FKnowledgeBaseValueSelector>                 InstanceKBFacts;                                         // 0x0370(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NativeAccessSpecifierPublic
 		TArray<struct FKnowledgeBaseValueSelector>                 DefaultKBFacts;                                          // 0x0380(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NZH5[0x168];                                 // 0x0390(0x0168) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PEB8[0x168];                                 // 0x0390(0x0168) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UKnowledgeBaseExpressionListener*                    ActivityRequirementsListener;                            // 0x04F8(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TMap<EKnowledgeBaseContextSelection, class UKnowledgeBaseExpressionCache*> ExpressionCacheMap;                                      // 0x0500(0x0050) NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_3244[0x10];                                  // 0x0550(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_X3HL[0x10];                                  // 0x0550(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UKnowledgeBaseComponent*                             KBComponent;                                             // 0x0560(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_UG6X[0x10];                                  // 0x0568(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_G5OW[0x10];                                  // 0x0568(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		void RequestAllAgentsToLeave();
@@ -69,7 +69,7 @@ namespace CG
 	class UActivityManagerSuppressionData : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_7O6H[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6DNR[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -82,12 +82,12 @@ namespace CG
 	class UActivityRegistrationComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_9OT8[0x18];                                  // 0x00E8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JGLK[0x18];                                  // 0x00E8(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSpawnConstraints                                   ActivityConstraints;                                     // 0x0100(0x0050) Edit, NativeAccessSpecifierPrivate
 		struct FKnowledgeBaseExpression                            ActivityRequirements;                                    // 0x0150(0x0038) Edit, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_HOL8[0x10];                                  // 0x0188(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5U0Z[0x10];                                  // 0x0188(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UKnowledgeBaseExpressionListener*                    ActivityRequirementsListener;                            // 0x0198(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_IPOI[0x20];                                  // 0x01A0(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_GQNX[0x20];                                  // 0x01A0(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		void UpdateDisableReason(bool bActivityActive, const class FName& Reason);
@@ -105,7 +105,7 @@ namespace CG
 		struct FKnowledgeBaseExpression                            OptOutExpression;                                        // 0x00B8(0x0038) Edit, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bAllowInstantSpawnOnAreaDisable;                         // 0x00F0(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bDespawnAgentsInAreaOnAreaEnable;                        // 0x00F1(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_UQSS[0x6];                                   // 0x00F2(0x0006) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_37EJ[0x6];                                   // 0x00F2(0x0006) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -118,16 +118,16 @@ namespace CG
 	class AActivitySuppressionAreaManager : public AGameAreaManager
 	{
 	public:
-		unsigned char                                              UnknownData_J1VB[0x8];                                   // 0x0348(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_W42E[0x8];                                   // 0x0348(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<EActivityType, struct FKnowledgeBaseExpression>       ActivityEnablingExpressions;                             // 0x0350(0x0050) Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_PHA5[0x10];                                  // 0x03A0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MA5V[0x10];                                  // 0x03A0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UKnowledgeBaseExpressionListener*                    ExpressionListener;                                      // 0x03B0(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 
 	public:
 		bool IsActivityTypeSuppressed(EActivityType ActivityType);
 		void GloballyEnableActivityType(EActivityType ActivityType, const class FString& DebugCallerInformation);
 		void GloballyDisableActivityType(EActivityType ActivityType, const class FString& DebugCallerInformation);
-		class AActivitySuppressionAreaManager* Get(class UObject* WorldContextObject);
+		class AActivitySuppressionAreaManager* STATIC_Get(class UObject* WorldContextObject);
 		static UClass* StaticClass();
 	};
 
@@ -147,24 +147,24 @@ namespace CG
 
 	/**
 	 * Class EmergentSystem.AgentComponent
-	 * Size -> 0x00E8 (FullSize[0x01D0] - InheritedSize[0x00E8])
+	 * Size -> 0x00F8 (FullSize[0x01E0] - InheritedSize[0x00E8])
 	 */
 	class UAgentComponent : public UActorComponent
 	{
 	public:
-		unsigned char                                              UnknownData_ETIU[0x28];                                  // 0x00E8(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IUK1[0x28];                                  // 0x00E8(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bOverrideMesh;                                           // 0x0110(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EParticipantPriority                                       AgentPriority;                                           // 0x0111(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_SJQG[0x6];                                   // 0x0112(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_P0ZL[0x6];                                   // 0x0112(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UAgentBehaviourDefinition*>                   HighlightedBehaviourDefinitions;                         // 0x0118(0x0010) Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3GBF[0x18];                                  // 0x0128(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JHLZ[0x18];                                  // 0x0128(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             NavProjectionExtent;                                     // 0x0140(0x000C) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_CFT6[0x5C];                                  // 0x014C(0x005C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		class URequirementsContainer*                              OptOutOfSpatialManagementReasons;                        // 0x01A8(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class URequirementsContainer*                              ReasonsCannotBeDirected;                                 // 0x01B0(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class URequirementsContainer*                              ReasonsCannotBeInterrupted;                              // 0x01B8(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		class URequirementsContainer*                              ReasonsCannotMarkForRemoval;                             // 0x01C0(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_4TT4[0x8];                                   // 0x01C8(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XZUO[0x6C];                                  // 0x014C(0x006C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		class URequirementsContainer*                              OptOutOfSpatialManagementReasons;                        // 0x01B8(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class URequirementsContainer*                              ReasonsCannotBeDirected;                                 // 0x01C0(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class URequirementsContainer*                              ReasonsCannotBeInterrupted;                              // 0x01C8(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		class URequirementsContainer*                              ReasonsCannotMarkForRemoval;                             // 0x01D0(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
+		unsigned char                                              UnknownData_N9KG[0x8];                                   // 0x01D8(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void UnhideAgent(bool bWithFade);
@@ -214,7 +214,7 @@ namespace CG
 	class UAgentFunctionLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void FindAgentInWorld(class UObject* WorldContextObject, class UClass* ClassToFind, class AActor** OutActor);
+		void STATIC_FindAgentInWorld(class UObject* WorldContextObject, class UClass* ClassToFind, class AActor** OutActor);
 		static UClass* StaticClass();
 	};
 
@@ -225,7 +225,7 @@ namespace CG
 	class UAgentPostspawnData : public USpawnUserData
 	{
 	public:
-		unsigned char                                              UnknownData_7SJV[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_2169[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -251,7 +251,7 @@ namespace CG
 	class UAgentRemovalHandler : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_AYR4[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_BP7O[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -265,13 +265,13 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsRejoinable;                                           // 0x01C0(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_57MU[0xF];                                   // 0x01C1(0x000F) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TOPJ[0xF];                                   // 0x01C1(0x000F) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bOptOutOfSpatialManagement;                              // 0x01D0(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_XV2F[0x1];                                   // 0x01D1(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0DYR[0x1];                                   // 0x01D1(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bUseTriggerActivation;                                   // 0x01D2(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_N0HJ[0x5];                                   // 0x01D3(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YGPC[0x5];                                   // 0x01D3(0x0005) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UTriggerShapeComponent*                              TriggerShape;                                            // 0x01D8(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_OMFB[0x30];                                  // 0x01E0(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_IWLL[0x30];                                  // 0x01E0(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		void UseTriggerActivation(class UTriggerShapeComponent* ShapeComponent);
@@ -287,7 +287,7 @@ namespace CG
 	class UBaseAgentSource : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_J1EE[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_G6O9[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -300,7 +300,7 @@ namespace CG
 	class UBaseEntryAgentSource : public UBaseAgentSource
 	{
 	public:
-		unsigned char                                              UnknownData_X4B2[0x8];                                   // 0x0038(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WTO7[0x8];                                   // 0x0038(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -308,14 +308,14 @@ namespace CG
 
 	/**
 	 * Class EmergentSystem.AreaShapeEntryAgentSource
-	 * Size -> 0x0060 (FullSize[0x00A0] - InheritedSize[0x0040])
+	 * Size -> 0x0088 (FullSize[0x00C8] - InheritedSize[0x0040])
 	 */
 	class UAreaShapeEntryAgentSource : public UBaseEntryAgentSource
 	{
 	public:
-		struct FDSActorPicker                                      ActorWithAreaShapeViaPicker;                             // 0x0040(0x0050) Edit, DisableEditOnTemplate, NativeAccessSpecifierPublic
-		EAreaShapeSelection                                        AreaShapeSelection;                                      // 0x0090(0x0001) Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ELEI[0xF];                                   // 0x0091(0x000F) MISSED OFFSET (PADDING)
+		struct FDSActorPicker                                      ActorWithAreaShapeViaPicker;                             // 0x0040(0x0078) Edit, DisableEditOnTemplate, NativeAccessSpecifierPublic
+		EAreaShapeSelection                                        AreaShapeSelection;                                      // 0x00B8(0x0001) Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_9Z6U[0xF];                                   // 0x00B9(0x000F) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -328,7 +328,7 @@ namespace CG
 	class UBasicSpawnable : public UDataAsset
 	{
 	public:
-		unsigned char                                              UnknownData_P2G3[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YEJU[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UClass*                                              ClassToSpawn;                                            // 0x0038(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	public:
@@ -342,7 +342,7 @@ namespace CG
 	class UExistingAgentSource : public UBaseAgentSource
 	{
 	public:
-		unsigned char                                              UnknownData_JJUT[0x48];                                  // 0x0038(0x0048) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QFJT[0x48];                                  // 0x0038(0x0048) MISSED OFFSET (PADDING)
 
 	public:
 		void CheckAdvertising();
@@ -357,7 +357,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bSkipDirectableCheck;                                    // 0x0080(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_KI6V[0x7];                                   // 0x0081(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YYJV[0x7];                                   // 0x0081(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class USpawnInPlaceAgentSource*                            SpawnInPlaceSource;                                      // 0x0088(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UClass*                                              ClassToFind;                                             // 0x0090(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 
@@ -385,7 +385,7 @@ namespace CG
 	class UCooldownSet : public UValidatedDataAsset
 	{
 	public:
-		unsigned char                                              UnknownData_ZDIF[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XWL7[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              CooldownList[0x10];                                      // 0x0038(0x0010) UNKNOWN PROPERTY: ArrayProperty
 
 	public:
@@ -403,7 +403,7 @@ namespace CG
 		bool                                                       bSkipSpawnChecks;                                        // 0x0039(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bCanEnterScene;                                          // 0x003A(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bCanReuse;                                               // 0x003B(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1ZUD[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DW2A[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -416,9 +416,9 @@ namespace CG
 	class UDistanceCooldown : public UDataAsset
 	{
 	public:
-		unsigned char                                              UnknownData_AZ7J[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7IRW[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      RequiredDistance;                                        // 0x0038(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_BSD3[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YLON[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -431,9 +431,9 @@ namespace CG
 	class UEmergentActivitiesLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		bool LaunchActivityWithSingleParticipant(class AActivityActor* Activity, class UAgentComponent* Participant, const struct FParticipantLaunchParameters& OverrideParticipantLaunchParameters);
-		bool LaunchActivityWithParticipants(class AActivityActor* Activity, TArray<class UAgentComponent*> Participants);
-		bool LaunchActivity(class AActivityActor* Activity, const struct FSpawnConstraints& SpawnConstraints, bool bForceInstantSpawn, bool bForceDespawnNonVitalAgentsIfNeeded, EAgentRequestInterruptionReasons InterruptionReasonsToIgnore);
+		bool STATIC_LaunchActivityWithSingleParticipant(class AActivityActor* Activity, class UAgentComponent* Participant, const struct FParticipantLaunchParameters& OverrideParticipantLaunchParameters);
+		bool STATIC_LaunchActivityWithParticipants(class AActivityActor* Activity, TArray<class UAgentComponent*> Participants);
+		bool STATIC_LaunchActivity(class AActivityActor* Activity, const struct FSpawnConstraints& SpawnConstraints, bool bForceInstantSpawn, bool bForceDespawnNonVitalAgentsIfNeeded, EAgentRequestInterruptionReasons InterruptionReasonsToIgnore);
 		static UClass* StaticClass();
 	};
 
@@ -444,9 +444,9 @@ namespace CG
 	class AEmergentDirector : public AInfo
 	{
 	public:
-		unsigned char                                              UnknownData_FBSE[0x8];                                   // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9ZLG[0x8];                                   // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UClass*                                              AgentComponentClass;                                     // 0x02B8(0x0008) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_TFTW[0x20];                                  // 0x02C0(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_1OVJ[0x20];                                  // 0x02C0(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -469,10 +469,10 @@ namespace CG
 	class UEmergentSpatialLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void RemoveCustomActivePosition(class UObject* WorldContext, const struct FVector& Position);
-		bool IsLocationSpatiallyActive(class UObject* WorldContext, const struct FVector& Location);
-		void EnableDefaultActivePositions(class UObject* WorldContext, bool bEnable, const class FName& Reason);
-		void AddCustomActivePosition(class UObject* WorldContext, const struct FVector& Position, float Size);
+		void STATIC_RemoveCustomActivePosition(class UObject* WorldContext, const struct FVector& Position);
+		bool STATIC_IsLocationSpatiallyActive(class UObject* WorldContext, const struct FVector& Location);
+		void STATIC_EnableDefaultActivePositions(class UObject* WorldContext, bool bEnable, const class FName& Reason);
+		void STATIC_AddCustomActivePosition(class UObject* WorldContext, const struct FVector& Position, float Size);
 		static UClass* StaticClass();
 	};
 
@@ -497,9 +497,9 @@ namespace CG
 	class USpawnableGroupsLibrary : public UBlueprintFunctionLibrary
 	{
 	public:
-		void PickSpawnableFromSet(class UObject* WorldContext, const struct FSpawnableGroupHandle& SpawnableGroup);
-		struct FSpawnableGroupHandle GetGroupSetFromName(class UObject* WorldContext, const class FName& GroupName);
-		struct FSpawnableGroupHandle GetGroupSetFromAsset(class UObject* WorldContext, class UEmergentSpawnableGroupObject* GroupAsset);
+		void STATIC_PickSpawnableFromSet(class UObject* WorldContext, const struct FSpawnableGroupHandle& SpawnableGroup);
+		struct FSpawnableGroupHandle STATIC_GetGroupSetFromName(class UObject* WorldContext, const class FName& GroupName);
+		struct FSpawnableGroupHandle STATIC_GetGroupSetFromAsset(class UObject* WorldContext, class UEmergentSpawnableGroupObject* GroupAsset);
 		static UClass* StaticClass();
 	};
 
@@ -510,12 +510,12 @@ namespace CG
 	class UEntryActivityRegistrationComponent : public UActivityRegistrationComponent
 	{
 	public:
-		unsigned char                                              UnknownData_IRHC[0x18];                                  // 0x01C0(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_4L2P[0x18];                                  // 0x01C0(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             NavProjectionExtent;                                     // 0x01D8(0x000C) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_ZV9N[0x6C];                                  // 0x01E4(0x006C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OVFI[0x6C];                                  // 0x01E4(0x006C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bCanStartInView;                                         // 0x0250(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bUsesNavigationChecks;                                   // 0x0251(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_IRS3[0x5E];                                  // 0x0252(0x005E) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_JSM8[0x5E];                                  // 0x0252(0x005E) MISSED OFFSET (PADDING)
 
 	public:
 		void OnActivityStarted(class AActivityActor* Activity);
@@ -530,7 +530,7 @@ namespace CG
 	class UExitActivityRegistrationComponent : public UActivityRegistrationComponent
 	{
 	public:
-		unsigned char                                              UnknownData_F9UT[0x28];                                  // 0x01C0(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_OF7R[0x28];                                  // 0x01C0(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -553,7 +553,7 @@ namespace CG
 	class ULifetimePopulationConstraint : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_VU2W[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QXEJ[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -568,7 +568,7 @@ namespace CG
 	public:
 		float                                                      MinCooldownDuration;                                     // 0x0030(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      MaxCooldownDuration;                                     // 0x0034(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_GOS9[0xA0];                                  // 0x0038(0x00A0) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_JPLS[0xA0];                                  // 0x0038(0x00A0) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -581,7 +581,7 @@ namespace CG
 	class ULocationDirectionCollator : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_6JSL[0xA0];                                  // 0x0028(0x00A0) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QXUX[0xA0];                                  // 0x0028(0x00A0) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -607,7 +607,7 @@ namespace CG
 	class UOnceOnlyCooldown : public UDataAsset
 	{
 	public:
-		unsigned char                                              UnknownData_PJN1[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_Q5RQ[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -620,7 +620,7 @@ namespace CG
 	class UParticipantSlotComponent : public USceneComponent
 	{
 	public:
-		unsigned char                                              UnknownData_JN00[0x8];                                   // 0x0290(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6KDB[0x8];                                   // 0x0290(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class APawn*                                               AgentPawn;                                               // 0x0298(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UAgentComponent*                                     AgentComponent;                                          // 0x02A0(0x0008) BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class AAIController*                                       AIController;                                            // 0x02A8(0x0008) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -632,18 +632,18 @@ namespace CG
 		class FName                                                ParticipantNavMeshName;                                  // 0x04F0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bRequiresValidNavPosition;                               // 0x04F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bLogInvalidNavPosition;                                  // 0x04F9(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1061[0x6];                                   // 0x04FA(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZJWH[0x6];                                   // 0x04FA(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FKnowledgeBaseExpression                            AgentRequirements;                                       // 0x0500(0x0038) Edit, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7RHD[0x8];                                   // 0x0538(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_K555[0x8];                                   // 0x0538(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             NavProjectionExtent;                                     // 0x0540(0x000C) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_GICT[0x4];                                   // 0x054C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_M2XX[0x4];                                   // 0x054C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             ParticipantAssignedDelegate;                             // 0x0550(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
 		class FScriptMulticastDelegate                             ParticipantReceivedDelegate;                             // 0x0560(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
 		class FScriptMulticastDelegate                             ParticipantOnTheWayDelegate;                             // 0x0570(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
 		class FScriptMulticastDelegate                             ParticipantInterruptedDelegate;                          // 0x0580(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
 		class FScriptMulticastDelegate                             ParticipantReleasedDelegate;                             // 0x0590(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
 		class FScriptMulticastDelegate                             ParticipantUnassignedDelegate;                           // 0x05A0(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_R7S7[0x70];                                  // 0x05B0(0x0070) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_2488[0x70];                                  // 0x05B0(0x0070) MISSED OFFSET (PADDING)
 
 	public:
 		bool ShouldSkipIntro();
@@ -659,6 +659,7 @@ namespace CG
 		class UEmergentSpawnableGroupObject* GetParticipantSpawnableGroup();
 		class UGameEvent* GetParticipantGameEvent(EParticipantEvent Event);
 		void EditorShouldCheckForValidAgentSelection(bool bShouldCheck);
+		void EditorForceAlignNavPositionWithGround();
 		static UClass* StaticClass();
 	};
 
@@ -669,25 +670,25 @@ namespace CG
 	class APopulationArea : public AActor
 	{
 	public:
-		unsigned char                                              UnknownData_UAE6[0x8];                                   // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DC5P[0x8];                                   // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UTriggerShapeComponent*                              PrimaryShape;                                            // 0x02B8(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, NoClear, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UEmergentPopulationDefinition*                       PopulationDef;                                           // 0x02C0(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UEmergentPopulationDefinition*                       PopulationDefInline;                                     // 0x02C8(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<class ULifetimePopulationConstraint*>               LifetimeConstraints;                                     // 0x02D0(0x0010) Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
 		bool                                                       bAutoAddSlotBasedCooldownConstraint;                     // 0x02E0(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bResetAtDistance;                                        // 0x02E1(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3U7F[0x2];                                   // 0x02E2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7QEB[0x2];                                   // 0x02E2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      ResetDistance;                                           // 0x02E4(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bAtomicActivation;                                       // 0x02E8(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bHeightRelevant;                                         // 0x02E9(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZYB8[0x2];                                   // 0x02EA(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UZWF[0x2];                                   // 0x02EA(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SpatialActivationZOffset;                                // 0x02EC(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      SpatialActivationHeightOffset;                           // 0x02F0(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bUseAsHomeArea;                                          // 0x02F4(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8RC7[0x3];                                   // 0x02F5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SMUS[0x3];                                   // 0x02F5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FScopedKnowledgeBaseExpressionListener              ActiveExpression;                                        // 0x02F8(0x0060) Edit, ContainsInstancedReference, NativeAccessSpecifierPublic
 		bool                                                       bEnabled;                                                // 0x0358(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_8XNJ[0x167];                                 // 0x0359(0x0167) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PTT7[0x167];                                 // 0x0359(0x0167) MISSED OFFSET (PADDING)
 
 	public:
 		void SetEnabled(bool bInValue);
@@ -737,7 +738,7 @@ namespace CG
 	{
 	public:
 		uint32_t                                                   Count;                                                   // 0x0028(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_9RX6[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_D623[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -761,7 +762,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bAdvanced;                                               // 0x0030(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_90I2[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MMCX[0x7];                                   // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FPopulationState>                            PriorityOrderedPopulationStates;                         // 0x0038(0x0010) Edit, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate
 
 	public:
@@ -775,7 +776,7 @@ namespace CG
 	class UConditionalPopulationStateListQueryParameters : public UConditionalListQueryParameters
 	{
 	public:
-		unsigned char                                              UnknownData_6WRT[0x18];                                  // 0x0050(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QBU7[0x18];                                  // 0x0050(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -789,7 +790,7 @@ namespace CG
 	{
 	public:
 		class UBaseAgentSource*                                    FallbackAgentSource;                                     // 0x0080(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_WKFR[0x10];                                  // 0x0088(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_A2TM[0x10];                                  // 0x0088(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -805,7 +806,7 @@ namespace CG
 		float                                                      MinDistance;                                             // 0x0040(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      MaxDistance;                                             // 0x0044(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bUseClosestEntryPoints;                                  // 0x0048(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_YBUO[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_N82A[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -818,15 +819,15 @@ namespace CG
 	class URequestSpawnActorTask : public UGameplayTask
 	{
 	public:
-		unsigned char                                              UnknownData_T3DU[0x8];                                   // 0x0068(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_G8Z0[0x8];                                   // 0x0068(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             Prespawn;                                                // 0x0070(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             Success;                                                 // 0x0080(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             DidNotSpawn;                                             // 0x0090(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class UClass*                                              ClassToSpawn;                                            // 0x00A0(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_AYK9[0x8];                                   // 0x00A8(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_54ZS[0x8];                                   // 0x00A8(0x0008) MISSED OFFSET (PADDING)
 
 	public:
-		class URequestSpawnActorTask* SpawnActor(class UObject* WorldContextObject, const struct FSpawnParams& SpawnHandlerParams, class UClass* Class);
+		class URequestSpawnActorTask* STATIC_SpawnActor(class UObject* WorldContextObject, const struct FSpawnParams& SpawnHandlerParams, class UClass* Class);
 		void FinishSpawningActor(class UObject* WorldContextObject, class AActor* SpawnedActor);
 		bool BeginSpawningActor(class UObject* WorldContextObject, class AActor** SpawnedActor);
 		static UClass* StaticClass();
@@ -849,9 +850,9 @@ namespace CG
 	class URuntimeSpawnable : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_289X[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BZ75[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              ClassToSpawn[0x28];                                      // 0x0030(0x0028) UNKNOWN PROPERTY: SoftClassProperty
-		unsigned char                                              UnknownData_OB8N[0xE8];                                  // 0x0058(0x00E8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ESVA[0xE8];                                  // 0x0058(0x00E8) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -864,7 +865,7 @@ namespace CG
 	class UScriptTriggeredActivityRegistrationComponent : public UActivityRegistrationComponent
 	{
 	public:
-		unsigned char                                              UnknownData_O4JR[0x30];                                  // 0x01C0(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_C48V[0x30];                                  // 0x01C0(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -877,7 +878,7 @@ namespace CG
 	class USimpleAgentRemovalHandler : public UAgentRemovalHandler
 	{
 	public:
-		unsigned char                                              UnknownData_J69E[0x18];                                  // 0x0038(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ECX6[0x18];                                  // 0x0038(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -890,9 +891,9 @@ namespace CG
 	class ASimpleDirector : public AEmergentDirector
 	{
 	public:
-		unsigned char                                              UnknownData_7XJN[0x118];                                 // 0x02E0(0x0118) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SFMS[0x118];                                 // 0x02E0(0x0118) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class ULocationDirectionCollator*                          LocationDirectionCollator;                               // 0x03F8(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_8UV3[0x20];                                  // 0x0400(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TQJE[0x20];                                  // 0x0400(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class USpawnInPlaceAgentSource*                            SpawnInPlaceAgentSource;                                 // 0x0420(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class USpawnInPlaceAgentSource*                            SpawnInPlaceWithoutChecksAgentSource;                    // 0x0428(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UReuseAgentSource*                                   ReuseAgentSource;                                        // 0x0430(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
@@ -901,14 +902,14 @@ namespace CG
 		float                                                      VerticalActivationMargin;                                // 0x0440(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		int32_t                                                    MaxActivePopulationAreas;                                // 0x0444(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		float                                                      ActiveRadius;                                            // 0x0448(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_VAGU[0x4];                                   // 0x044C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RUPA[0x4];                                   // 0x044C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UClass*                                              CollatorClass;                                           // 0x0450(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UClass*                                              AgentRemovalHandlerClass;                                // 0x0458(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_4Z2Q[0x8];                                   // 0x0460(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FPWP[0x8];                                   // 0x0460(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAgentRemovalHandler*                                AgentRemovalHandler;                                     // 0x0468(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_MADU[0x38];                                  // 0x0470(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BVRS[0x38];                                  // 0x0470(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UKnowledgeBaseExpressionCache*                       GameWorldVisibleExpressionCache;                         // 0x04A8(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_BK6K[0xB8];                                  // 0x04B0(0x00B8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_D09U[0xB8];                                  // 0x04B0(0x00B8) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -916,15 +917,15 @@ namespace CG
 
 	/**
 	 * Class EmergentSystem.SingleActivityAgentSource
-	 * Size -> 0x0060 (FullSize[0x00A0] - InheritedSize[0x0040])
+	 * Size -> 0x0088 (FullSize[0x00C8] - InheritedSize[0x0040])
 	 */
 	class USingleActivityAgentSource : public UBaseEntryAgentSource
 	{
 	public:
-		struct FDSActorPicker                                      ActivityToUseViaPicker;                                  // 0x0040(0x0050) Edit, DisableEditOnTemplate, NativeAccessSpecifierPublic
-		class FName                                                SlotName;                                                // 0x0090(0x0008) Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		bool                                                       bFallbackToSourceOnOtherActivity;                        // 0x0098(0x0001) Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_5C8W[0x7];                                   // 0x0099(0x0007) MISSED OFFSET (PADDING)
+		struct FDSActorPicker                                      ActivityToUseViaPicker;                                  // 0x0040(0x0078) Edit, DisableEditOnTemplate, NativeAccessSpecifierPublic
+		class FName                                                SlotName;                                                // 0x00B8(0x0008) Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bFallbackToSourceOnOtherActivity;                        // 0x00C0(0x0001) Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_EPV8[0x7];                                   // 0x00C1(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -947,7 +948,7 @@ namespace CG
 	class ASpatialActivationAreaManager : public AGameAreaManager
 	{
 	public:
-		unsigned char                                              UnknownData_MH4Z[0x8];                                   // 0x0348(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RTNN[0x8];                                   // 0x0348(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -961,7 +962,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bSkipInstantSpawnChecks;                                 // 0x0038(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_HTYQ[0xF];                                   // 0x0039(0x000F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YZCF[0xF];                                   // 0x0039(0x000F) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -988,9 +989,9 @@ namespace CG
 	class UTimeCooldown : public UDataAsset
 	{
 	public:
-		unsigned char                                              UnknownData_GJDW[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RB5O[0x8];                                   // 0x0030(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      Duration;                                                // 0x0038(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_HGYJ[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_44RT[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -1003,7 +1004,7 @@ namespace CG
 	class UVisibleToPlayersTracker : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_LW9K[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LN15[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		void UpdateVisibility();

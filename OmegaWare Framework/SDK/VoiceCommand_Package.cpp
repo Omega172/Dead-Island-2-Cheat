@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D92140
 	 * 		Name   -> Function VoiceCommand.VoiceCommandHandlerManager.IsDoingUserInitiatedCapture
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	bool AVoiceCommandHandlerManager::IsDoingUserInitiatedCapture()
 	{
@@ -25,6 +25,7 @@ namespace CG
 		AVoiceCommandHandlerManager_IsDoingUserInitiatedCapture_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,16 +12,16 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_WeaponFunctions.BPFL_WeaponFunctions_C.IsActorWeapon
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               IsWeapon                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class AWeaponItemActor*                            Weapon                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_WeaponFunctions_C::IsActorWeapon(class AActor* Actor, class UObject* __WorldContext, bool* IsWeapon, class AWeaponItemActor** Weapon)
+	void UBPFL_WeaponFunctions_C::STATIC_IsActorWeapon(class AActor* Actor, class UObject* __WorldContext, bool* IsWeapon, class AWeaponItemActor** Weapon)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -43,16 +43,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_WeaponFunctions.BPFL_WeaponFunctions_C.GetWeaponItemEquippableComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Actor                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UWeaponEquippableComponent*                  EquippableComponent                                        (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               ComponentFound                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_WeaponFunctions_C::GetWeaponItemEquippableComponent(class AActor* Actor, class UObject* __WorldContext, class UWeaponEquippableComponent** EquippableComponent, bool* ComponentFound)
+	void UBPFL_WeaponFunctions_C::STATIC_GetWeaponItemEquippableComponent(class AActor* Actor, class UObject* __WorldContext, class UWeaponEquippableComponent** EquippableComponent, bool* ComponentFound)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -74,15 +74,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_WeaponFunctions.BPFL_WeaponFunctions_C.IsHeldWeaponUsingWeaponPose
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Owner                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               IsUsingAdditive                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_WeaponFunctions_C::IsHeldWeaponUsingWeaponPose(class AActor* Owner, class UObject* __WorldContext, bool* IsUsingAdditive)
+	void UBPFL_WeaponFunctions_C::STATIC_IsHeldWeaponUsingWeaponPose(class AActor* Owner, class UObject* __WorldContext, bool* IsUsingAdditive)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -102,14 +102,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_WeaponFunctions.BPFL_WeaponFunctions_C.ResetAttackAnticMontages
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class AActor*                                      Player                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_WeaponFunctions_C::ResetAttackAnticMontages(class AActor* Player, class UObject* __WorldContext)
+	void UBPFL_WeaponFunctions_C::STATIC_ResetAttackAnticMontages(class AActor* Player, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -126,16 +126,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_WeaponFunctions.BPFL_WeaponFunctions_C.SetInChainFact
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class ADICharacter*                                Character                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               FactValue                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		bool                                               Success                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UBPFL_WeaponFunctions_C::SetInChainFact(class ADICharacter* Character, bool FactValue, class UObject* __WorldContext, bool* Success)
+	void UBPFL_WeaponFunctions_C::STATIC_SetInChainFact(class ADICharacter* Character, bool FactValue, class UObject* __WorldContext, bool* Success)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -156,16 +156,16 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BPFL_WeaponFunctions.BPFL_WeaponFunctions_C.UpdateAIWeaponPose
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Static, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		ECosmeticCombatState                               CombatState                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class ADICharacter*                                Character                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     Weapon                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		class UObject*                                     __WorldContext                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */
-	void UBPFL_WeaponFunctions_C::UpdateAIWeaponPose(ECosmeticCombatState CombatState, class ADICharacter* Character, class UObject* Weapon, class UObject* __WorldContext)
+	void UBPFL_WeaponFunctions_C::STATIC_UpdateAIWeaponPose(ECosmeticCombatState CombatState, class ADICharacter* Character, class UObject* Weapon, class UObject* __WorldContext)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)

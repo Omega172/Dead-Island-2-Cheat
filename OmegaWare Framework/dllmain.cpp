@@ -57,7 +57,7 @@ namespace Cheat
 
 		// https://stackoverflow.com/questions/16711697/is-there-any-use-for-unique-ptr-with-array
 		// Features
-		//Features.push_back(std::make_unique<ESP>());
+		Features.push_back(std::make_unique<ESP>());
 
 		for (size_t i = 0; i < Features.size(); i++)
 		{
@@ -109,6 +109,10 @@ namespace Cheat
 
 		while (Cheat::bShouldRun)
 		{
+			CG::ULocalPlayer* LocalPlayer = Cheat::unreal.get()->GetLocalPlayer(0);
+			if (!LocalPlayer)
+				continue;
+
 			HandleKeys();
 
 			for (size_t i = 0; i < Features.size(); i++)
@@ -124,13 +128,6 @@ namespace Cheat
 
 		#if FRAMEWORK_RENDER_D3D12
 		D3D12Release();
-
-		//kiero::unbind(54);
-		//kiero::unbind(58);
-		//kiero::unbind(140);
-		//kiero::unbind(84);
-		//kiero::unbind(85);
-
 		kiero::shutdown();
 		#endif
 

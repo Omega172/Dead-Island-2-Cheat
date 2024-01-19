@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -33,27 +33,10 @@ namespace CG
 	};
 
 	/**
-	 * Function BP_Base_Battery.BP_Base_Battery_C.ToggleOutline
-	 */
-	struct ABP_Base_Battery_C_ToggleOutline_Params
-	{	};
-
-	/**
 	 * Function BP_Base_Battery.BP_Base_Battery_C.OnRep_CurrentCarrier
 	 */
 	struct ABP_Base_Battery_C_OnRep_CurrentCarrier_Params
 	{	};
-
-	/**
-	 * Function BP_Base_Battery.BP_Base_Battery_C.Melee Hit
-	 */
-	struct ABP_Base_Battery_C_MeleeHit_Params
-	{
-	public:
-		TArray<struct FHitResult>                                  HitResults;                                              // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-		struct FVector                                             SweepDirection;                                          // 0x0010(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		struct FVector                                             AttackOrigin;                                            // 0x001C(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	};
 
 	/**
 	 * Function BP_Base_Battery.BP_Base_Battery_C.SetupImpactOnCollisionDetection
@@ -128,12 +111,6 @@ namespace CG
 	{	};
 
 	/**
-	 * Function BP_Base_Battery.BP_Base_Battery_C.ReceiveBeginPlay
-	 */
-	struct ABP_Base_Battery_C_ReceiveBeginPlay_Params
-	{	};
-
-	/**
 	 * Function BP_Base_Battery.BP_Base_Battery_C.BndEvt__SpatialTick_K2Node_ComponentBoundEvent_0_OnSpatialCellDeativatedSignature__DelegateSignature
 	 */
 	struct ABP_Base_Battery_C_BndEvt__SpatialTick_K2Node_ComponentBoundEvent_0_OnSpatialCellDeativatedSignature__DelegateSignature_Params
@@ -194,7 +171,7 @@ namespace CG
 	public:
 		class APawn*                                               User;                                                    // 0x0000(0x0008)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		EInteractionMode                                           Mode;                                                    // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_7X7R[0x7];                                   // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_DPM1[0x7];                                   // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class UCustomInteractionActionParams*                      CustomParams;                                            // 0x0010(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
@@ -218,24 +195,10 @@ namespace CG
 	};
 
 	/**
-	 * Function BP_Base_Battery.BP_Base_Battery_C.BndEvt__BPC_Carryable_K2Node_ComponentBoundEvent_8_PaperDollEventMulticastDelegate__DelegateSignature
+	 * Function BP_Base_Battery.BP_Base_Battery_C.ReceiveBeginPlay
 	 */
-	struct ABP_Base_Battery_C_BndEvt__BPC_Carryable_K2Node_ComponentBoundEvent_8_PaperDollEventMulticastDelegate__DelegateSignature_Params
-	{
-	public:
-		class UPaperDollSlot*                                      PaperDollSlot;                                           // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	};
-
-	/**
-	 * Function BP_Base_Battery.BP_Base_Battery_C.OnMeleeHit
-	 */
-	struct ABP_Base_Battery_C_OnMeleeHit_Params
-	{
-	public:
-		TArray<struct FHitResult>                                  HitResults;                                              // 0x0000(0x0010)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-		struct FVector                                             SweepDirection;                                          // 0x0010(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		struct FVector                                             AttackOrigin;                                            // 0x001C(0x000C)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	};
+	struct ABP_Base_Battery_C_ReceiveBeginPlay_Params
+	{	};
 
 	/**
 	 * Function BP_Base_Battery.BP_Base_Battery_C.RequestMeleeImpactEvent
@@ -249,12 +212,12 @@ namespace CG
 	};
 
 	/**
-	 * Function BP_Base_Battery.BP_Base_Battery_C.BndEvt__BPC_CarryableInteractive_K2Node_ComponentBoundEvent_0_InteractionEnabledStateChangedDelegate__DelegateSignature
+	 * Function BP_Base_Battery.BP_Base_Battery_C.BndEvt__BPC_Carryable_K2Node_ComponentBoundEvent_2_SetSimulatePhysicsDelegate__DelegateSignature
 	 */
-	struct ABP_Base_Battery_C_BndEvt__BPC_CarryableInteractive_K2Node_ComponentBoundEvent_0_InteractionEnabledStateChangedDelegate__DelegateSignature_Params
+	struct ABP_Base_Battery_C_BndEvt__BPC_Carryable_K2Node_ComponentBoundEvent_2_SetSimulatePhysicsDelegate__DelegateSignature_Params
 	{
 	public:
-		bool                                                       IsEnabled;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+		bool                                                       bSimulate;                                               // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	};
 
 	/**
@@ -264,7 +227,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_HDBR[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_9YAX[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

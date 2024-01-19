@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -25,11 +25,11 @@ namespace CG
 		class FScriptMulticastDelegate                             OnPipeFlowStoppedDelegate;                               // 0x02C0(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class APipeOrigin*                                         PipeOrigin;                                              // 0x02D0(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<class ABasePipe*>                                   OutflowPipes;                                            // 0x02D8(0x0010) ZeroConstructor, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_S2LH[0x10];                                  // 0x02E8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RWPA[0x10];                                  // 0x02E8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UGameEvent*                                          OnPipeFlowStartedEvent;                                  // 0x02F8(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UGameEvent*                                          OnPipeFlowStoppedEvent;                                  // 0x0300(0x0008) Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bIsPipeEnd;                                              // 0x0308(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_2J8Y[0x7];                                   // 0x0309(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CO14[0x7];                                   // 0x0309(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class ULeakComponent*                                      LeakComponent;                                           // 0x0310(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 
 	public:
@@ -76,11 +76,11 @@ namespace CG
 	{
 	public:
 		float                                                      FlowSpeed;                                               // 0x0318(0x0004) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_537V[0x14];                                  // 0x031C(0x0014) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PTPL[0x14];                                  // 0x031C(0x0014) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UPipeOriginDataAsset*                                Data;                                                    // 0x0330(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		struct FScopedKnowledgeBaseExpressionListener              ActiveExpression;                                        // 0x0338(0x0060) Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate
 		bool                                                       bIsOriginAllowedToFlow;                                  // 0x0398(0x0001) Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_Q78B[0x7];                                   // 0x0399(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RI9K[0x7];                                   // 0x0399(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		void OnRep_IsOriginAllowedToFlow();

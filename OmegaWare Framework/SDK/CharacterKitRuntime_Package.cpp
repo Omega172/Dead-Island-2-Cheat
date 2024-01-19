@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -110,9 +110,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function CharacterKitRuntime.BodyPartActor.OnSpawn
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABodyPartActor::OnSpawn()
 	{
@@ -129,9 +129,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function CharacterKitRuntime.BodyPartActor.OnDetach
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABodyPartActor::OnDetach()
 	{
@@ -148,9 +148,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00ED7090
 	 * 		Name   -> Function CharacterKitRuntime.BodyPartActor.BuildMeshFromViscera
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      SkeletalMesh                                               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<class FName>                                SectionsToKeep                                             (ConstParm, Parm, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -166,6 +166,7 @@ namespace CG
 		params.SectionsToKeep = SectionsToKeep;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -214,14 +215,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00ED74A0
 	 * 		Name   -> Function CharacterKitRuntime.CharacterKitMeshUtils.ShowSubSections
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      SkeletalMesh                                               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<class FName>                                SectionsToKeep                                             (ConstParm, Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
-	void UCharacterKitMeshUtils::ShowSubSections(class USkeletalMeshComponent* SkeletalMesh, TArray<class FName> SectionsToKeep)
+	void UCharacterKitMeshUtils::STATIC_ShowSubSections(class USkeletalMeshComponent* SkeletalMesh, TArray<class FName> SectionsToKeep)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -232,19 +233,20 @@ namespace CG
 		params.SectionsToKeep = SectionsToKeep;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00ED7430
 	 * 		Name   -> Function CharacterKitRuntime.CharacterKitMeshUtils.ShowAllSubSections
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      SkeletalMesh                                               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UCharacterKitMeshUtils::ShowAllSubSections(class USkeletalMeshComponent* SkeletalMesh)
+	void UCharacterKitMeshUtils::STATIC_ShowAllSubSections(class USkeletalMeshComponent* SkeletalMesh)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -254,19 +256,20 @@ namespace CG
 		params.SkeletalMesh = SkeletalMesh;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00ED71B0
 	 * 		Name   -> Function CharacterKitRuntime.CharacterKitMeshUtils.HideAllSubSections
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      SkeletalMesh                                               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UCharacterKitMeshUtils::HideAllSubSections(class USkeletalMeshComponent* SkeletalMesh)
+	void UCharacterKitMeshUtils::STATIC_HideAllSubSections(class USkeletalMeshComponent* SkeletalMesh)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -276,6 +279,7 @@ namespace CG
 		params.SkeletalMesh = SkeletalMesh;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -305,6 +309,20 @@ namespace CG
 		static UClass* ptr = nullptr;
 		if (!ptr)
 			ptr = UObject::FindClass("Class CharacterKitRuntime.CharacterMaterialMasks");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UModelVariationPreviewComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UModelVariationPreviewComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class CharacterKitRuntime.ModelVariationPreviewComponent");
 		return ptr;
 	}
 
@@ -422,9 +440,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function CharacterKitRuntime.BodyPartActorInterface.OnSpawn
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      ParentSkeletalMeshComponent                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
@@ -444,9 +462,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function CharacterKitRuntime.BodyPartActorInterface.OnDetach
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      ParentSkeletalMeshComponent                                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Velocity                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -498,14 +516,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00ED75B0
 	 * 		Name   -> Function CharacterKitRuntime.SpawnablePartsUtils.UnHideSkeletonPart
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      Skeleton                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        PartName                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool USpawnablePartsUtils::UnHideSkeletonPart(class USkeletalMeshComponent* Skeleton, const class FName& PartName)
+	bool USpawnablePartsUtils::STATIC_UnHideSkeletonPart(class USkeletalMeshComponent* Skeleton, const class FName& PartName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -516,6 +534,7 @@ namespace CG
 		params.PartName = PartName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -524,14 +543,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00ED7360
 	 * 		Name   -> Function CharacterKitRuntime.SpawnablePartsUtils.IsSkeletonPartVisible
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      Skeleton                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        PartName                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool USpawnablePartsUtils::IsSkeletonPartVisible(class USkeletalMeshComponent* Skeleton, const class FName& PartName)
+	bool USpawnablePartsUtils::STATIC_IsSkeletonPartVisible(class USkeletalMeshComponent* Skeleton, const class FName& PartName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -542,6 +561,7 @@ namespace CG
 		params.PartName = PartName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -550,13 +570,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00ED72F0
 	 * 		Name   -> Function CharacterKitRuntime.SpawnablePartsUtils.HideViscera
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      Skeleton                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void USpawnablePartsUtils::HideViscera(class USkeletalMeshComponent* Skeleton)
+	void USpawnablePartsUtils::STATIC_HideViscera(class USkeletalMeshComponent* Skeleton)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -566,20 +586,21 @@ namespace CG
 		params.Skeleton = Skeleton;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00ED7220
 	 * 		Name   -> Function CharacterKitRuntime.SpawnablePartsUtils.HideSkeletonPart
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      Skeleton                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        PartName                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool USpawnablePartsUtils::HideSkeletonPart(class USkeletalMeshComponent* Skeleton, const class FName& PartName)
+	bool USpawnablePartsUtils::STATIC_HideSkeletonPart(class USkeletalMeshComponent* Skeleton, const class FName& PartName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -590,6 +611,7 @@ namespace CG
 		params.PartName = PartName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

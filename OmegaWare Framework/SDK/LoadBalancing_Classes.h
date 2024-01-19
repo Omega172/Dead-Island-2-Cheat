@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class USpatialObjectCoordinator : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_CC7F[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_HCO5[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -34,13 +34,13 @@ namespace CG
 	class U2DGridSpatialObjectCoordinator : public USpatialObjectCoordinator
 	{
 	public:
-		unsigned char                                              UnknownData_BZTQ[0x8];                                   // 0x0048(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LIQU[0x8];                                   // 0x0048(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      GridCellSize;                                            // 0x0050(0x0004) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bTreatAllCellsAsActive;                                  // 0x0054(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4NHG[0x3];                                   // 0x0055(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LL8X[0x3];                                   // 0x0055(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UActiveCellCalculator*                               ActiveCellCalculator;                                    // 0x0058(0x0008) Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      TimeInSecondsBetweenRecalculateActiveCells;              // 0x0060(0x0004) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_X4QM[0x254];                                 // 0x0064(0x0254) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_0PWE[0x254];                                 // 0x0064(0x0254) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -54,7 +54,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bLocalUserOnly;                                          // 0x0028(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4P40[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_A90R[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -68,7 +68,7 @@ namespace CG
 	{
 	public:
 		float                                                      GridCellActivationRange;                                 // 0x0030(0x0004) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_YCJB[0x4];                                   // 0x0034(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_U5MN[0x4];                                   // 0x0034(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -84,7 +84,7 @@ namespace CG
 		TMap<class FName, struct FAmortizedUpdateAspect>           Aspects;                                                 // 0x02B0(0x0050) Edit, NativeAccessSpecifierPublic
 		TArray<struct FPrioritizedUpdate>                          PrioritizedUpdates;                                      // 0x0300(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 		int32_t                                                    MaxSuccessiveSuppressedUpdates;                          // 0x0310(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_CS5V[0x1DC];                                 // 0x0314(0x01DC) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_82G3[0x1DC];                                 // 0x0314(0x01DC) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -97,7 +97,7 @@ namespace CG
 	class UMaxCountEnforcementHandler : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_ZUEN[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_KV0B[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -120,10 +120,10 @@ namespace CG
 	class UObjectCountCoordinator : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_WC14[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JTIU[0x10];                                  // 0x0028(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnScalableCountUpdated;                                  // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class UScalableCountLoadBalancedFeature*                   ScalableCount;                                           // 0x0048(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_0HY1[0x58];                                  // 0x0050(0x0058) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_U1XZ[0x58];                                  // 0x0050(0x0058) MISSED OFFSET (PADDING)
 
 	public:
 		void OnManagedObjectBudgetUpdated(class ULoadBalancedFeature* Feature, int32_t PreviousCount, int32_t NewCount);
@@ -137,7 +137,7 @@ namespace CG
 	class UFIFOObjectCountCoordinator : public UObjectCountCoordinator
 	{
 	public:
-		unsigned char                                              UnknownData_4GAZ[0x10];                                  // 0x00A8(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ML71[0x10];                                  // 0x00A8(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -152,7 +152,7 @@ namespace CG
 	public:
 		class FName                                                FeatureName;                                             // 0x0028(0x0008) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnCurrentFeatureBudgetUpdated;                           // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_6OGB[0x10];                                  // 0x0040(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ATHS[0x10];                                  // 0x0040(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -171,7 +171,7 @@ namespace CG
 		struct FBudgetMappingSettings                              DefaultBudgetMapping;                                    // 0x0308(0x0018) Edit, DisableEditOnInstance, NativeAccessSpecifierPublic
 		struct FBudgetRemapping                                    GameThreadLengthToMasterBudgetMapping;                   // 0x0320(0x0020) NoDestructor, NativeAccessSpecifierPublic
 		struct FBudgetRemapping                                    TotalAICostToMasterBudgetMapping;                        // 0x0340(0x0020) NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1LIN[0x100];                                 // 0x0360(0x0100) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_8DOW[0x100];                                 // 0x0360(0x0100) MISSED OFFSET (PADDING)
 
 	public:
 		void UnregisterLoadBalancingFeature(class ULoadBalancedFeature* Feature);
@@ -202,7 +202,7 @@ namespace CG
 	public:
 		TMap<class FName, struct FManagedObjectBehaviourCategorySettings> ManagedObjectBehaviourCategories;                        // 0x02B0(0x0050) Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic
 		TMap<class FName, struct FObjectBehaviourCategoryController> ObjectBehaviourControllers;                              // 0x0300(0x0050) Protected, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_N1VK[0x8];                                   // 0x0350(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_G6PU[0x8];                                   // 0x0350(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void OnManagedObjectBudgetUpdated(class ULoadBalancedFeature* Feature, int32_t PreviousCount, int32_t NewCount);
@@ -218,7 +218,7 @@ namespace CG
 	public:
 		TMap<class FName, struct FManagedObjectCategorySettings>   ManagedObjectCategories;                                 // 0x02B0(0x0050) Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic
 		TMap<class FName, struct FObjectCategoryController>        ObjectCategoryControllers;                               // 0x0300(0x0050) Protected, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_61XV[0x8];                                   // 0x0350(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_HCG8[0x8];                                   // 0x0350(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void OnManagedObjectBudgetUpdated(class ULoadBalancedFeature* Feature, int32_t PreviousCount, int32_t NewCount);
@@ -235,11 +235,11 @@ namespace CG
 		class UObjectScoreGenerator*                               ScoreGenerator;                                          // 0x00A8(0x0008) Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bRecalculateScoresOfRegisteredObjectsOnNewObjectRegistration; // 0x00B0(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bRecalculateScoresOfRegisteredObjectsAtFixedTimeInterval; // 0x00B1(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FQ7E[0x2];                                   // 0x00B2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6YI4[0x2];                                   // 0x00B2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      TimeInSecondsBetweenRecalculations;                      // 0x00B4(0x0004) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      FavourExistingObjectsScoreMultiplier;                    // 0x00B8(0x0004) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bRejectZeroScoreObjects;                                 // 0x00BC(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_J1UW[0x33];                                  // 0x00BD(0x0033) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_KD6Y[0x33];                                  // 0x00BD(0x0033) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -253,7 +253,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bLocalUserOnly;                                          // 0x0028(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_R57U[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_4GNL[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		float GenerateScore(const struct FBudgetedObjectInfo& ObjectInfo, struct FTransform* Viewport);
@@ -273,7 +273,7 @@ namespace CG
 		float                                                      ScoreAtEndDistance;                                      // 0x003C(0x0004) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      BiasForwardConeDegrees;                                  // 0x0040(0x0004) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      BiasForwardConeExternalScoreMultiplier;                  // 0x0044(0x0004) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_P1ZG[0x8];                                   // 0x0048(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_KUWS[0x8];                                   // 0x0048(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -287,7 +287,7 @@ namespace CG
 	{
 	public:
 		class FScriptMulticastDelegate                             OnScalableCountUpdated;                                  // 0x0050(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_BVX9[0x10];                                  // 0x0060(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RAUA[0x10];                                  // 0x0060(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

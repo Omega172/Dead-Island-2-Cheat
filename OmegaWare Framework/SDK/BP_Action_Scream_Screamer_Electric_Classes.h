@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -25,12 +25,12 @@ namespace CG
 		TArray<class ADICharacter*>                                Zombies;                                                 // 0x04B8(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
 		TArray<class ADICharacter*>                                Players;                                                 // 0x04C8(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
 		float                                                      ElectrocuteAccumulationInterval;                         // 0x04D8(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_PEO0[0x4];                                   // 0x04DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XD1Q[0x4];                                   // 0x04DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FSElecticScreamAccumlationByDistanceParams>  ZombieElectrocuteAccumulationValueByDistance;            // 0x04E0(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference
 		TArray<struct FSElecticScreamAccumlationByDistanceParams>  PlayerElectrocuteAccumulationValueByDistance;            // 0x04F0(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
 		struct FTimerHandle                                        ElectrocuteAccumulationTimer;                            // 0x0500(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 		struct FAccumulatingEffectTypeAndValue                     PlayerElectrocuteAccumulationMaxValue;                   // 0x0508(0x000C) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor
-		unsigned char                                              UnknownData_38S0[0x4];                                   // 0x0514(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Q91V[0x4];                                   // 0x0514(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UKnowledgeBaseComponent*>                     ZombieKnowledgeBases;                                    // 0x0518(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference
 		struct FKnowledgeBaseFactKey                               ElectricScreamerElectrocutionFact;                       // 0x0528(0x000C) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 		float                                                      FacingTargetAngleToAddElectrocuteAccumulation;           // 0x0534(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash

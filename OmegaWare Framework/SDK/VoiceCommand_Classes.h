@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,12 +16,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Class VoiceCommand.VoiceCommandHandlerManager
-	 * Size -> 0x0200 (FullSize[0x04B0] - InheritedSize[0x02B0])
+	 * Size -> 0x0218 (FullSize[0x04C8] - InheritedSize[0x02B0])
 	 */
 	class AVoiceCommandHandlerManager : public AInfo
 	{
 	public:
-		unsigned char                                              UnknownData_99JA[0x200];                                 // 0x02B0(0x0200) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5P06[0x218];                                 // 0x02B0(0x0218) MISSED OFFSET (PADDING)
 
 	public:
 		bool IsDoingUserInitiatedCapture();

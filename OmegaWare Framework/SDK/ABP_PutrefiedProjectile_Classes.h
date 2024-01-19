@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UABP_PutrefiedProjectile_C : public UAnimInstance
 	{
 	public:
-		unsigned char                                              UnknownData_W8CR[0x8];                                   // 0x02C8(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_AA0O[0x8];                                   // 0x02C8(0x0008) Fix Super Size
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x02D0(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x02D8(0x0030)
 		struct FAnimNode_BlendSpacePlayer                          AnimGraphNode_BlendSpacePlayer_2;                        // 0x0308(0x00E0)

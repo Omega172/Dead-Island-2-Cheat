@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -57,33 +57,44 @@ namespace CG
 	 */
 	enum class EDialoguePriority : uint8_t
 	{
-		inactive               = 0,
-		dynamicUsingContext    = 1,
-		localBreathing         = 2,
-		localExert             = 3,
-		globalExert            = 4,
-		localRoar              = 5,
-		globalRoar             = 6,
-		localHitReact          = 7,
-		globalHitReact         = 8,
-		localDialogueVeryLow   = 9,
-		globalDialogueVeryLow  = 10,
-		localDialogueLow       = 11,
-		globalDialogueLow      = 12,
-		localDialogue          = 13,
-		globalDialogue         = 14,
-		localDialogueHigh      = 15,
-		globalDialogueHigh     = 16,
-		localDialogueVeryHigh  = 17,
-		globalDialogueVeryHigh = 18,
-		localDialogueCritical  = 19,
-		globalDialogueCritical = 20,
-		localCinematic         = 21,
-		globalCinematic        = 22,
-		localDeath             = 23,
-		globalDeath            = 24,
-		count                  = 25,
-		MAX                    = 26
+		inactive                     = 0,
+		dynamicUsingContext          = 1,
+		localBreathing               = 2,
+		localExert                   = 3,
+		globalExertRemote            = 4,
+		globalExert                  = 5,
+		localRoar                    = 6,
+		globalRoarRemote             = 7,
+		globalRoar                   = 8,
+		localHitReact                = 9,
+		globalHitReactRemote         = 10,
+		globalHitReact               = 11,
+		localDialogueVeryLow         = 12,
+		globalDialogueVeryLowRemote  = 13,
+		globalDialogueVeryLow        = 14,
+		localDialogueLow             = 15,
+		globalDialogueLowRemote      = 16,
+		globalDialogueLow            = 17,
+		localDialogue                = 18,
+		globalDialogueRemote         = 19,
+		globalDialogue               = 20,
+		localDialogueHigh            = 21,
+		globalDialogueHighRemote     = 22,
+		globalDialogueHigh           = 23,
+		localDialogueVeryHigh        = 24,
+		globalDialogueVeryHighRemote = 25,
+		globalDialogueVeryHigh       = 26,
+		localDialogueCritical        = 27,
+		globalDialogueCriticalRemote = 28,
+		globalDialogueCritical       = 29,
+		localCinematic               = 30,
+		globalCinematicRemote        = 31,
+		globalCinematic              = 32,
+		localDeath                   = 33,
+		globalDeathRemote            = 34,
+		globalDeath                  = 35,
+		count                        = 36,
+		MAX                          = 37
 	};
 
 	/**
@@ -166,6 +177,18 @@ namespace CG
 		MustMatchFirstExecution                   = 0,
 		MatchDialogueComponentsInParticipantDatas = 1,
 		MAX                                       = 2
+	};
+
+	/**
+	 * Enum AudioPlugin.ETriggeredFromNetworkedType
+	 */
+	enum class ETriggeredFromNetworkedType : uint8_t
+	{
+		Unknown             = 0,
+		GameEventServerOnly = 1,
+		GameEventLocalOnly  = 2,
+		GameEventEverybody  = 3,
+		MAX                 = 4
 	};
 
 	/**
@@ -336,14 +359,14 @@ namespace CG
 		class UAkAudioEvent*                                       Event;                                                   // 0x0000(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int8_t                                                     GroupId;                                                 // 0x0008(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int8_t                                                     EnvironmentValue;                                        // 0x0009(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_XSKN[0x2];                                   // 0x000A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_1U4K[0x2];                                   // 0x000A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      OuterAttenuationDistance;                                // 0x000C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      InsideAttenuationDistance;                               // 0x0010(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      Absorption;                                              // 0x0014(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bOutsideAudioPlayedIn2D;                                 // 0x0018(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bOutsideNearbyAudioCanPlayOnFloorAndCeiling;             // 0x0019(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bInsideNearbyAudioCanPlayOnFloorAndCeiling;              // 0x001A(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MB5K[0x5];                                   // 0x001B(0x0005) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_4M9G[0x5];                                   // 0x001B(0x0005) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -353,10 +376,10 @@ namespace CG
 	struct FAmbientAudioPlayingData
 	{
 	public:
-		unsigned char                                              UnknownData_1WC9[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_GIC4[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UGameAreaComponent*                                  GameAreaComponent;                                       // 0x0008(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UAkComponent*                                        AkComponent;                                             // 0x0010(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1DUH[0x18];                                  // 0x0018(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NNA4[0x18];                                  // 0x0018(0x0018) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -378,9 +401,9 @@ namespace CG
 	struct FWithinRangeAmbientAudioAreaResult
 	{
 	public:
-		unsigned char                                              UnknownData_3FED[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9OSS[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UGameAreaComponent*                                  GameAreaComponent;                                       // 0x0010(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_U13P[0x70];                                  // 0x0018(0x0070) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_T0ZZ[0x70];                                  // 0x0018(0x0070) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -455,7 +478,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bDebugAllPostingsOfTheEvent;                             // 0x0000(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_GKHM[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_N1B8[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class FString>                                      RequiredSwitches;                                        // 0x0008(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic
 		TArray<class FString>                                      RequiredRTPCs;                                           // 0x0018(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic
 	};
@@ -473,6 +496,17 @@ namespace CG
 	};
 
 	/**
+	 * ScriptStruct AudioPlugin.DamLocShardData
+	 * Size -> 0x0070
+	 */
+	struct FDamLocShardData
+	{
+	public:
+		class FString                                              Description;                                             // 0x0000(0x0010) Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_4Q42[0x60];                                  // 0x0010(0x0060) MISSED OFFSET (PADDING)
+	};
+
+	/**
 	 * ScriptStruct AudioPlugin.DialogueKey
 	 * Size -> 0x000C
 	 */
@@ -480,7 +514,7 @@ namespace CG
 	{
 	public:
 		class FName                                                NameStorage;                                             // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_GJZ8[0x4];                                   // 0x0008(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5XZG[0x4];                                   // 0x0008(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -502,13 +536,13 @@ namespace CG
 	{
 	public:
 		struct FDialogueKey                                        ParticipantName;                                         // 0x0000(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_CWLZ[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_EKAH[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FDataTableRowHandle                                 Character;                                               // 0x0010(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 		class FText                                                OverrideUIDisplayName;                                   // 0x0020(0x0018) Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic
 		class UNPCAudioMessagingType*                              OverrideNPCAudioMessagingType;                           // 0x0038(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FDialogueKey                                        VoiceName;                                               // 0x0040(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 		bool                                                       bIsActive;                                               // 0x004C(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_9ON0[0x3];                                   // 0x004D(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6IP9[0x3];                                   // 0x004D(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -519,12 +553,12 @@ namespace CG
 	{
 	public:
 		struct FDialogueKey                                        ParticipantName;                                         // 0x0000(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_URIU[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MW39[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		unsigned char                                              CharacterClass[0x28];                                    // 0x0010(0x0028) UNKNOWN PROPERTY: SoftClassProperty
 		unsigned char                                              ActorClass[0x28];                                        // 0x0038(0x0028) UNKNOWN PROPERTY: SoftClassProperty
 		bool                                                       bIsActive;                                               // 0x0060(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bDeferFindingNearestTillFirstUse;                        // 0x0061(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_R5F9[0x6];                                   // 0x0062(0x0006) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_BNZD[0x6];                                   // 0x0062(0x0006) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -539,7 +573,7 @@ namespace CG
 		bool                                                       bAllowInterruptionByTriggerWithSamePriority;             // 0x0002(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bEnableListeningToDialogueRuntimeEventStatesForAllParticipants; // 0x0003(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bForceAllParticipantsToInactive;                         // 0x0004(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1R4V[0x1];                                   // 0x0005(0x0001) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_OY14[0x1];                                   // 0x0005(0x0001) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -586,7 +620,7 @@ namespace CG
 	public:
 		class UMusicThemeSelectorDataAsset*                        MusicThemeDataAsset;                                     // 0x0000(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    MusicThemeDataIndex;                                     // 0x0008(0x0004) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_LPCB[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5BOX[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UPlayerIntensityDataAsset*                           PlayerIntensityDataAsset;                                // 0x0010(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -599,7 +633,7 @@ namespace CG
 	public:
 		TArray<class UAudioStateDefinition*>                       AudioStateDefinitions;                                   // 0x0000(0x0010) Edit, ZeroConstructor, NativeAccessSpecifierPublic
 		struct FKnowledgeBaseFactKey                               FactToPush;                                              // 0x0010(0x000C) Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JWIL[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PLUV[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -610,7 +644,7 @@ namespace CG
 	{
 	public:
 		class UGameAreaComponent*                                  GameAreaComponent;                                       // 0x0000(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_84F1[0x10];                                  // 0x0008(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QVRS[0x10];                                  // 0x0008(0x0010) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -639,14 +673,14 @@ namespace CG
 	{
 	public:
 		struct FAkPostEventExtraParams                             PostEventExtraParams;                                    // 0x0000(0x000C) NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_SNMP[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RC3Z[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAkAudioEvent*                                       Event;                                                   // 0x0010(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                EventName;                                               // 0x0018(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class USceneComponent*                                     ParentSceneComponent;                                    // 0x0020(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FName                                                SocketName;                                              // 0x0028(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bStopWhenOwnerDestroyed;                                 // 0x0030(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bAttached;                                               // 0x0031(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZFE0[0x6];                                   // 0x0032(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CWPU[0x6];                                   // 0x0032(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAkAuxBus*                                           EarlyReflectionBus;                                      // 0x0038(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -667,7 +701,7 @@ namespace CG
 	struct FInsideContactAudioAreaData
 	{
 	public:
-		unsigned char                                              UnknownData_3GC7[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ZNTH[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -679,7 +713,7 @@ namespace CG
 
 	/**
 	 * ScriptStruct AudioPlugin.TriggerDialogueParamsBase
-	 * Size -> 0x0010
+	 * Size -> 0x0014
 	 */
 	struct FTriggerDialogueParamsBase
 	{
@@ -692,7 +726,10 @@ namespace CG
 		bool                                                       bInterruptAnyLowerPriorityActiveExecutionsInSameSessionsAsInstigator; // 0x000B(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bInterruptAnyLowerPriorityActiveExecutionsInSameSessionsAsAnyParticipants; // 0x000C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bImportantBlockingDialogue;                              // 0x000D(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_AAWV[0x2];                                   // 0x000E(0x0002) MISSED OFFSET (PADDING)
+		bool                                                       bReducePriorityWhenDialogueIsNetworked;                  // 0x000E(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bStopEntireDialogueSessionWhenInterruptingLowerPriorityDialogueInOtherSessions; // 0x000F(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		bool                                                       bAllowMultipleParticipantsToUseSameDialogueComponent;    // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_KDFH[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -703,41 +740,45 @@ namespace CG
 	{
 	public:
 		struct FDialogueKey                                        ExpressionContextName;                                   // 0x0000(0x000C) NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZBLY[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6GCZ[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AActor*                                              Actor;                                                   // 0x0010(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TWeakObjectPtr<class UKnowledgeBaseComponent>              KnowledgeBaseComponent;                                  // 0x0018(0x0008) ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
 	/**
 	 * ScriptStruct AudioPlugin.TriggerDialogueParamsInternal
-	 * Size -> 0x0010 (FullSize[0x0020] - InheritedSize[0x0010])
+	 * Size -> 0x0024 (FullSize[0x0038] - InheritedSize[0x0014])
 	 */
 	struct FTriggerDialogueParamsInternal : public FTriggerDialogueParamsBase
 	{
 	public:
-		TArray<struct FTriggerDialogueAdditionalActorDataInternal> AdditionalActorDatas;                                    // 0x0010(0x0010) ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_RHU4[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<struct FTriggerDialogueAdditionalActorDataInternal> AdditionalActorDatas;                                    // 0x0018(0x0010) ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_AZHI[0xC];                                   // 0x0028(0x000C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		int32_t                                                    OriginalNetworkSessionId;                                // 0x0034(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
 	/**
 	 * ScriptStruct AudioPlugin.TriggerDialogueAdditionalActorData
-	 * Size -> 0x0060
+	 * Size -> 0x0088
 	 */
 	struct FTriggerDialogueAdditionalActorData
 	{
 	public:
 		struct FDialogueKey                                        ExpressionContextName;                                   // 0x0000(0x000C) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_69TV[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-		struct FDSActorPicker                                      ActorPicker;                                             // 0x0010(0x0050) Edit, BlueprintVisible, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_E5KZ[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		struct FDSActorPicker                                      ActorPicker;                                             // 0x0010(0x0078) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 	};
 
 	/**
 	 * ScriptStruct AudioPlugin.TriggerDialogueParams
-	 * Size -> 0x0010 (FullSize[0x0020] - InheritedSize[0x0010])
+	 * Size -> 0x0014 (FullSize[0x0028] - InheritedSize[0x0014])
 	 */
 	struct FTriggerDialogueParams : public FTriggerDialogueParamsBase
 	{
 	public:
-		TArray<struct FTriggerDialogueAdditionalActorData>         AdditionalActorDatas;                                    // 0x0010(0x0010) Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_L3EM[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		TArray<struct FTriggerDialogueAdditionalActorData>         AdditionalActorDatas;                                    // 0x0018(0x0010) Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic
 	};
 
 	/**
@@ -760,10 +801,10 @@ namespace CG
 		float                                                      MaxDistance;                                             // 0x0000(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    TriggerCount;                                            // 0x0004(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<class FName>                                        FactionNames;                                            // 0x0008(0x0010) Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4P0Y[0x10];                                  // 0x0018(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VQW8[0x10];                                  // 0x0018(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bOnlyConsiderParticipants;                               // 0x0028(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bOnlyConsiderNonParticipants;                            // 0x0029(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MJSL[0x6];                                   // 0x002A(0x0006) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SAAE[0x6];                                   // 0x002A(0x0006) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -774,12 +815,12 @@ namespace CG
 	{
 	public:
 		struct FDialogueKey                                        Name;                                                    // 0x0000(0x000C) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_H81S[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_W45M[0x4];                                   // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UDialogueComponent*                                  DialogueComponent;                                       // 0x0010(0x0008) Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UClass*                                              DeferredSearchClass;                                     // 0x0018(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bDeferredSearchMustBeLocallyOwned;                       // 0x0020(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsActive;                                               // 0x0021(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_23AN[0x6];                                   // 0x0022(0x0006) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SPFT[0x6];                                   // 0x0022(0x0006) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -800,7 +841,7 @@ namespace CG
 	struct FMusicComponentDataCache
 	{
 	public:
-		unsigned char                                              UnknownData_P62V[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_AJHK[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UKnowledgeBaseExpressionCache*                       KBExpressionCache;                                       // 0x0018(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -811,7 +852,7 @@ namespace CG
 	struct FPlayerIntensityState
 	{
 	public:
-		unsigned char                                              UnknownData_ROER[0x60];                                  // 0x0000(0x0060) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6UPD[0x60];                                  // 0x0000(0x0060) MISSED OFFSET (PADDING)
 	};
 
 }

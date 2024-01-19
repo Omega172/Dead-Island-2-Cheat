@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.TryEndGather
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_GatherActor_C::TryEndGather()
 	{
@@ -31,9 +31,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.TryStartGather
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class APawn*                                       Initiator                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FGatherContext                              Context                                                    (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
@@ -59,9 +59,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.RequestGatherEnd
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Private, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_GatherActor_C::RequestGatherEnd()
 	{
@@ -78,9 +78,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.RequestGather
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Private, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
 	 * 		class APawn*                                       Initiator                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 * 		struct FGatherContext                              Context                                                    (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
@@ -106,9 +106,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.UserConstructionScript
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_GatherActor_C::UserConstructionScript()
 	{
@@ -125,9 +125,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.ReceiveBeginPlay
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
 	void ABP_Base_GatherActor_C::ReceiveBeginPlay()
 	{
@@ -144,9 +144,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.StartGatherVisuals
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_GatherActor_C::StartGatherVisuals()
 	{
@@ -163,9 +163,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.EndGatherVisuals
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_GatherActor_C::EndGatherVisuals()
 	{
@@ -182,9 +182,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.EnableGatherShape
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetServer, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_GatherActor_C::EnableGatherShape()
 	{
@@ -201,9 +201,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.DisableGatherShape
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetServer, BlueprintCallable, BlueprintEvent)
 	 */
 	void ABP_Base_GatherActor_C::DisableGatherShape()
 	{
@@ -220,9 +220,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.OnStartGathering
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
 	void ABP_Base_GatherActor_C::OnStartGathering()
 	{
@@ -239,9 +239,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.OnStopGathering
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
 	void ABP_Base_GatherActor_C::OnStopGathering()
 	{
@@ -258,9 +258,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.BndEvt__PlayerGatherComponent_K2Node_ComponentBoundEvent_0_GatherComponentOnCancelled__DelegateSignature
-	 * 		Flags  -> ()
+	 * 		Flags  -> (BlueprintEvent)
 	 */
 	void ABP_Base_GatherActor_C::BndEvt__PlayerGatherComponent_K2Node_ComponentBoundEvent_0_GatherComponentOnCancelled__DelegateSignature()
 	{
@@ -277,9 +277,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_Base_GatherActor.BP_Base_GatherActor_C.ExecuteUbergraph_BP_Base_GatherActor
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final)
 	 * Parameters:
 	 * 		int32_t                                            EntryPoint                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	 */

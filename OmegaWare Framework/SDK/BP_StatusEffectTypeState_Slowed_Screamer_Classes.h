@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -22,7 +22,7 @@ namespace CG
 	{
 	public:
 		struct FCosmeticEffectsID                                  ScreenShakeID;                                           // 0x0108(0x0004) Edit, BlueprintVisible, Transient, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_BEBU[0x4];                                   // 0x010C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UJLJ[0x4];                                   // 0x010C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class AActor*>                                      Aggressors;                                              // 0x0110(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance
 
 	public:

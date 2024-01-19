@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -27,10 +27,10 @@ namespace CG
 		class USkeletalMeshComponent*                              OwnersMesh;                                              // 0x00E8(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class ADICharacter*                                        OwningCharacter;                                         // 0x00F0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       LoopAnims;                                               // 0x00F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_9J7L[0x7];                                   // 0x00F9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_K17D[0x7];                                   // 0x00F9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UCharacterActionRequestHelper*                       StatusEffectBufferActionRequestHelper;                   // 0x0100(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      BlockHitReactPeriod;                                     // 0x0108(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_HWJ5[0x4];                                   // 0x010C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_8LOC[0x4];                                   // 0x010C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UBPC_ThresholdTracking_AI_C*                         ThresholdTrackingComponent;                              // 0x0110(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FGuid                                               HealthTrackingEntry;                                     // 0x0118(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UDSLogChannelHandle*                                 Logger;                                                  // 0x0128(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -39,13 +39,12 @@ namespace CG
 		struct FGuid                                               LookAtLayerGroupGUID;                                    // 0x0148(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
+		bool OnBeginEarly();
 		void OnInterruptionConditionsMet();
 		void DoesImpactMeetInterruptionConditions(class UBaseImpactEventResultWrapper* Impact, bool* Result);
 		void GetAttributeValueForDamageInterruption(class UAttributeType* AttributeType, float* OutputPin);
 		void SetupDamageInterruption(class UAttributeType* AttributeType, bool* Success);
 		void Resolve(const struct FCharacterActionResolveParams& Params, ECharacterActionResolution* OutResolution, float* OutQueuedTimeout);
-		void ResolveAnimSet(class UDIAnimInstance* AnimInstance, const class FName& AnimSetToResolve, class UAnimMontage** ResolvedMontage);
-		void UpdateAnimSetStream(class UDIAnimInstance* AnimInstance, const class FName& AnimSetName);
 		void OnFailedToPlay_64E0CC78418DB30CF33E12ABD3290705(const class FName& NotifyName);
 		void OnSectionChanged_64E0CC78418DB30CF33E12ABD3290705(const class FName& SectionName);
 		void OnNotifyEnd_64E0CC78418DB30CF33E12ABD3290705(const class FName& NotifyName);

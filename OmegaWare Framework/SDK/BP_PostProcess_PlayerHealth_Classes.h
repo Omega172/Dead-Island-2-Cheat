@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_PostProcess_PlayerHealth.BP_PostProcess_PlayerHealth_C
-	 * Size -> 0x0000 (FullSize[0x0A10] - InheritedSize[0x0A10])
+	 * Size -> 0x0000 (FullSize[0x0A50] - InheritedSize[0x0A50])
 	 */
 	class UBP_PostProcess_PlayerHealth_C : public UMinimalPostProcessComponent
 	{

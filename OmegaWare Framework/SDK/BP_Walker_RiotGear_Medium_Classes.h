@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_Walker_RiotGear_Medium.BP_Walker_RiotGear_Medium_C
-	 * Size -> 0x0000 (FullSize[0x1028] - InheritedSize[0x1028])
+	 * Size -> 0x0000 (FullSize[0x10B8] - InheritedSize[0x10B8])
 	 */
 	class ABP_Walker_RiotGear_Medium_C : public ABP_Base_Walker_RiotGear_C
 	{

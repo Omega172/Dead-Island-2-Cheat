@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -180,13 +180,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB08E0
 	 * 		Name   -> Function AudioPlugin.AudioManager.GetAudioManager
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	class AAudioManager* AAudioManager::GetAudioManager(class UObject* WorldContextObject)
+	class AAudioManager* AAudioManager::STATIC_GetAudioManager(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -196,6 +196,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -260,9 +261,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB2D40
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.TriggerDialogueNearbyPosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FDialogueTriggerChooser                     DialogueTrigger                                            (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -274,7 +275,7 @@ namespace CG
 	 * 		int32_t                                            OnEventFlags                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DelaySeconds                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::TriggerDialogueNearbyPosition(const struct FDialogueTriggerChooser& DialogueTrigger, const struct FVector& Position, class UObject* WorldContextObject, const struct FTriggerNearbyConfigData& TriggerNearbyConfigData, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags, float DelaySeconds)
+	int32_t UAudioUtilities::STATIC_TriggerDialogueNearbyPosition(const struct FDialogueTriggerChooser& DialogueTrigger, const struct FVector& Position, class UObject* WorldContextObject, const struct FTriggerNearbyConfigData& TriggerNearbyConfigData, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags, float DelaySeconds)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -292,6 +293,7 @@ namespace CG
 		params.DelaySeconds = DelaySeconds;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -300,9 +302,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB29E0
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.TriggerDialogueNearbyDialogueComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FDialogueTriggerChooser                     DialogueTrigger                                            (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class UDialogueComponent*                          InstigatingDialogueComponent                               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -313,7 +315,7 @@ namespace CG
 	 * 		int32_t                                            OnEventFlags                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DelaySeconds                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::TriggerDialogueNearbyDialogueComponent(const struct FDialogueTriggerChooser& DialogueTrigger, class UDialogueComponent* InstigatingDialogueComponent, const struct FTriggerNearbyConfigData& TriggerNearbyConfigData, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags, float DelaySeconds)
+	int32_t UAudioUtilities::STATIC_TriggerDialogueNearbyDialogueComponent(const struct FDialogueTriggerChooser& DialogueTrigger, class UDialogueComponent* InstigatingDialogueComponent, const struct FTriggerNearbyConfigData& TriggerNearbyConfigData, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags, float DelaySeconds)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -330,6 +332,7 @@ namespace CG
 		params.DelaySeconds = DelaySeconds;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -338,9 +341,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB2620
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.TriggerDialogueConversation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FDialogueTriggerChooser                     DialogueTrigger                                            (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class UDialogueComponent*                          DialogueComponent                                          (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -351,7 +354,7 @@ namespace CG
 	 * 		class FScriptDelegate                              OnEventDelegate                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            OnEventFlags                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::TriggerDialogueConversation(const struct FDialogueTriggerChooser& DialogueTrigger, class UDialogueComponent* DialogueComponent, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FDialogueSessionParticipantData> ParticipantDatas, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const struct FTriggerDialogueParams& TriggerParams, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags)
+	int32_t UAudioUtilities::STATIC_TriggerDialogueConversation(const struct FDialogueTriggerChooser& DialogueTrigger, class UDialogueComponent* DialogueComponent, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FDialogueSessionParticipantData> ParticipantDatas, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const struct FTriggerDialogueParams& TriggerParams, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -368,6 +371,7 @@ namespace CG
 		params.OnEventFlags = OnEventFlags;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -376,9 +380,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB22A0
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.TriggerDialogueAssetNearbyPosition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UConversationDialogueTriggerDataAsset*       DialogueTriggerDataAsset                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     Position                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -390,7 +394,7 @@ namespace CG
 	 * 		int32_t                                            OnEventFlags                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DelaySeconds                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::TriggerDialogueAssetNearbyPosition(class UConversationDialogueTriggerDataAsset* DialogueTriggerDataAsset, const struct FVector& Position, class UObject* WorldContextObject, const struct FTriggerNearbyConfigData& TriggerNearbyConfigData, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags, float DelaySeconds)
+	int32_t UAudioUtilities::STATIC_TriggerDialogueAssetNearbyPosition(class UConversationDialogueTriggerDataAsset* DialogueTriggerDataAsset, const struct FVector& Position, class UObject* WorldContextObject, const struct FTriggerNearbyConfigData& TriggerNearbyConfigData, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags, float DelaySeconds)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -408,6 +412,7 @@ namespace CG
 		params.DelaySeconds = DelaySeconds;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -416,9 +421,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB1F70
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.TriggerDialogueAssetNearbyDialogueComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UConversationDialogueTriggerDataAsset*       DialogueTriggerDataAsset                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UDialogueComponent*                          InstigatingDialogueComponent                               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -429,7 +434,7 @@ namespace CG
 	 * 		int32_t                                            OnEventFlags                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		float                                              DelaySeconds                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::TriggerDialogueAssetNearbyDialogueComponent(class UConversationDialogueTriggerDataAsset* DialogueTriggerDataAsset, class UDialogueComponent* InstigatingDialogueComponent, const struct FTriggerNearbyConfigData& TriggerNearbyConfigData, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags, float DelaySeconds)
+	int32_t UAudioUtilities::STATIC_TriggerDialogueAssetNearbyDialogueComponent(class UConversationDialogueTriggerDataAsset* DialogueTriggerDataAsset, class UDialogueComponent* InstigatingDialogueComponent, const struct FTriggerNearbyConfigData& TriggerNearbyConfigData, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags, float DelaySeconds)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -446,6 +451,7 @@ namespace CG
 		params.DelaySeconds = DelaySeconds;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -454,9 +460,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB1BD0
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.TriggerDialogueAssetConversation
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UConversationDialogueTriggerDataAsset*       DialogueTriggerDataAsset                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UDialogueComponent*                          DialogueComponent                                          (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -467,7 +473,7 @@ namespace CG
 	 * 		class FScriptDelegate                              OnEventDelegate                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            OnEventFlags                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::TriggerDialogueAssetConversation(class UConversationDialogueTriggerDataAsset* DialogueTriggerDataAsset, class UDialogueComponent* DialogueComponent, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FDialogueSessionParticipantData> ParticipantDatas, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const struct FTriggerDialogueParams& TriggerParams, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags)
+	int32_t UAudioUtilities::STATIC_TriggerDialogueAssetConversation(class UConversationDialogueTriggerDataAsset* DialogueTriggerDataAsset, class UDialogueComponent* DialogueComponent, const struct FDialogueSessionConfigData& SessionConfigData, TArray<struct FDialogueSessionParticipantData> ParticipantDatas, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const struct FTriggerDialogueParams& TriggerParams, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -484,6 +490,7 @@ namespace CG
 		params.OnEventFlags = OnEventFlags;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -492,14 +499,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB1B20
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.StopDialogueSession
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            SessionId                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAudioUtilities::StopDialogueSession(class UObject* WorldContextObject, int32_t SessionId)
+	void UAudioUtilities::STATIC_StopDialogueSession(class UObject* WorldContextObject, int32_t SessionId)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -510,21 +517,22 @@ namespace CG
 		params.SessionId = SessionId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB1A10
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.RemoveRuntimeEventHandler
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            RuntimeEventHandlerId                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Description                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAudioUtilities::RemoveRuntimeEventHandler(class UObject* WorldContextObject, int32_t RuntimeEventHandlerId, const class FString& Description)
+	bool UAudioUtilities::STATIC_RemoveRuntimeEventHandler(class UObject* WorldContextObject, int32_t RuntimeEventHandlerId, const class FString& Description)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -536,6 +544,7 @@ namespace CG
 		params.Description = Description;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -544,15 +553,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB1920
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.RemoveAllDialogueOnEventDelegates
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            SessionId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UObject*                                     UserObject                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UAudioUtilities::RemoveAllDialogueOnEventDelegates(class UObject* WorldContextObject, int32_t SessionId, class UObject* UserObject)
+	void UAudioUtilities::STATIC_RemoveAllDialogueOnEventDelegates(class UObject* WorldContextObject, int32_t SessionId, class UObject* UserObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -564,15 +573,16 @@ namespace CG
 		params.UserObject = UserObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB1760
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.PostMultipleLocalisedDialogue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FDialoguePathWithOverride>           DialoguePathWithOverrideArray                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -580,7 +590,7 @@ namespace CG
 	 * 		class UAkAudioEvent*                               AudioEvent                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bStopWhenAttachedToDestroyed                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::PostMultipleLocalisedDialogue(class UObject* WorldContextObject, TArray<struct FDialoguePathWithOverride> DialoguePathWithOverrideArray, class AActor* Actor, class UAkAudioEvent* AudioEvent, bool bStopWhenAttachedToDestroyed)
+	int32_t UAudioUtilities::STATIC_PostMultipleLocalisedDialogue(class UObject* WorldContextObject, TArray<struct FDialoguePathWithOverride> DialoguePathWithOverrideArray, class AActor* Actor, class UAkAudioEvent* AudioEvent, bool bStopWhenAttachedToDestroyed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -594,6 +604,7 @@ namespace CG
 		params.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -602,9 +613,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB14D0
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.PostLocalisedDialogueWithFaceFXToComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDialogueFilePath                           FilePathWrapper                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -615,7 +626,7 @@ namespace CG
 	 * 		class FScriptDelegate                              PostEventCallback                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bStopWhenAttachedToDestroyed                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::PostLocalisedDialogueWithFaceFXToComponent(class UObject* WorldContextObject, const struct FDialogueFilePath& FilePathWrapper, class UAkComponent* AkComponent, class UFaceFXComponent* FaceFXComponent, bool* bOutIsPlayingWithFaceFX, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, bool bStopWhenAttachedToDestroyed)
+	int32_t UAudioUtilities::STATIC_PostLocalisedDialogueWithFaceFXToComponent(class UObject* WorldContextObject, const struct FDialogueFilePath& FilePathWrapper, class UAkComponent* AkComponent, class UFaceFXComponent* FaceFXComponent, bool* bOutIsPlayingWithFaceFX, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, bool bStopWhenAttachedToDestroyed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -631,6 +642,7 @@ namespace CG
 		params.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -642,9 +654,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB1280
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.PostLocalisedDialogueWithFaceFX
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDialogueFilePath                           FilePathWrapper                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -654,7 +666,7 @@ namespace CG
 	 * 		class FScriptDelegate                              PostEventCallback                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bStopWhenAttachedToDestroyed                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::PostLocalisedDialogueWithFaceFX(class UObject* WorldContextObject, const struct FDialogueFilePath& FilePathWrapper, class AActor* Actor, bool* bOutIsPlayingWithFaceFX, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, bool bStopWhenAttachedToDestroyed)
+	int32_t UAudioUtilities::STATIC_PostLocalisedDialogueWithFaceFX(class UObject* WorldContextObject, const struct FDialogueFilePath& FilePathWrapper, class AActor* Actor, bool* bOutIsPlayingWithFaceFX, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, bool bStopWhenAttachedToDestroyed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -669,6 +681,7 @@ namespace CG
 		params.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -680,9 +693,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB1080
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.PostLocalisedDialogueToComponent
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDialogueFilePath                           FilePathWrapper                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -691,7 +704,7 @@ namespace CG
 	 * 		class FScriptDelegate                              PostEventCallback                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bStopWhenAttachedToDestroyed                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::PostLocalisedDialogueToComponent(class UObject* WorldContextObject, const struct FDialogueFilePath& FilePathWrapper, class UAkComponent* AkComponent, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, bool bStopWhenAttachedToDestroyed)
+	int32_t UAudioUtilities::STATIC_PostLocalisedDialogueToComponent(class UObject* WorldContextObject, const struct FDialogueFilePath& FilePathWrapper, class UAkComponent* AkComponent, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, bool bStopWhenAttachedToDestroyed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -706,6 +719,7 @@ namespace CG
 		params.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -714,9 +728,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB0E10
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.PostLocalisedDialogueIntoDialogueSystem
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FDialogueFilePath                           FilePathWrapper                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		class UDialogueComponent*                          DialogueComponent                                          (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -725,7 +739,7 @@ namespace CG
 	 * 		class FScriptDelegate                              OnEventDelegate                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            OnEventFlags                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::PostLocalisedDialogueIntoDialogueSystem(const struct FDialogueFilePath& FilePathWrapper, class UDialogueComponent* DialogueComponent, EDialoguePriority DialoguePriority, const struct FTriggerDialogueParams& TriggerParams, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags)
+	int32_t UAudioUtilities::STATIC_PostLocalisedDialogueIntoDialogueSystem(const struct FDialogueFilePath& FilePathWrapper, class UDialogueComponent* DialogueComponent, EDialoguePriority DialoguePriority, const struct FTriggerDialogueParams& TriggerParams, const class FScriptDelegate& OnEventDelegate, int32_t OnEventFlags)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -740,6 +754,7 @@ namespace CG
 		params.OnEventFlags = OnEventFlags;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -748,9 +763,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB0C10
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.PostLocalisedDialogue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDialogueFilePath                           FilePathWrapper                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -759,7 +774,7 @@ namespace CG
 	 * 		class FScriptDelegate                              PostEventCallback                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		bool                                               bStopWhenAttachedToDestroyed                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::PostLocalisedDialogue(class UObject* WorldContextObject, const struct FDialogueFilePath& FilePathWrapper, class AActor* Actor, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, bool bStopWhenAttachedToDestroyed)
+	int32_t UAudioUtilities::STATIC_PostLocalisedDialogue(class UObject* WorldContextObject, const struct FDialogueFilePath& FilePathWrapper, class AActor* Actor, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, bool bStopWhenAttachedToDestroyed)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -774,6 +789,7 @@ namespace CG
 		params.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -782,15 +798,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB0AC0
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.GetRegisteredDialogueComponentsWithOwnerClass
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UClass*                                      OwnerClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     NearPosition                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	TArray<class UDialogueComponent*> UAudioUtilities::GetRegisteredDialogueComponentsWithOwnerClass(class UObject* WorldContextObject, class UClass* OwnerClass, const struct FVector& NearPosition)
+	TArray<class UDialogueComponent*> UAudioUtilities::STATIC_GetRegisteredDialogueComponentsWithOwnerClass(class UObject* WorldContextObject, class UClass* OwnerClass, const struct FVector& NearPosition)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -802,6 +818,7 @@ namespace CG
 		params.NearPosition = NearPosition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -810,15 +827,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB0960
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.GetLineTextForDialoguePath
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDialogueFilePath                           FilePathWrapper                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		class FString                                      OutLineText                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAudioUtilities::GetLineTextForDialoguePath(class UObject* WorldContextObject, const struct FDialogueFilePath& FilePathWrapper, class FString* OutLineText)
+	bool UAudioUtilities::STATIC_GetLineTextForDialoguePath(class UObject* WorldContextObject, const struct FDialogueFilePath& FilePathWrapper, class FString* OutLineText)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -829,6 +846,7 @@ namespace CG
 		params.FilePathWrapper = FilePathWrapper;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -840,9 +858,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB0630
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.FindDialogueSessionIdWithRequirementsDataAsset
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UConversationDialogueTriggerDataAsset*       RequiredDialogueTriggerDataAsset                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -853,7 +871,7 @@ namespace CG
 	 * 		bool                                               bAddDataAssetInLevelParticipantClasses                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bAddDataAssetParticipantNames                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::FindDialogueSessionIdWithRequirementsDataAsset(class UObject* WorldContextObject, class UConversationDialogueTriggerDataAsset* RequiredDialogueTriggerDataAsset, TArray<class UClass*> OptionalRequiredOwnerClasses, TArray<class UDialogueComponent*> OptionalRequiredDialogueComponents, TArray<struct FDialogueKey> OptionalRequiredParticipantNames, int32_t FindFlags, bool bAddDataAssetInLevelParticipantClasses, bool bAddDataAssetParticipantNames)
+	int32_t UAudioUtilities::STATIC_FindDialogueSessionIdWithRequirementsDataAsset(class UObject* WorldContextObject, class UConversationDialogueTriggerDataAsset* RequiredDialogueTriggerDataAsset, TArray<class UClass*> OptionalRequiredOwnerClasses, TArray<class UDialogueComponent*> OptionalRequiredDialogueComponents, TArray<struct FDialogueKey> OptionalRequiredParticipantNames, int32_t FindFlags, bool bAddDataAssetInLevelParticipantClasses, bool bAddDataAssetParticipantNames)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -870,6 +888,7 @@ namespace CG
 		params.bAddDataAssetParticipantNames = bAddDataAssetParticipantNames;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -878,9 +897,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB03E0
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.FindDialogueSessionIdWithRequirementsChooser
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FDialogueTriggerChooser                     RequiredDialogueTrigger                                    (ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
@@ -889,7 +908,7 @@ namespace CG
 	 * 		TArray<struct FDialogueKey>                        OptionalRequiredParticipantNames                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            FindFlags                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::FindDialogueSessionIdWithRequirementsChooser(class UObject* WorldContextObject, const struct FDialogueTriggerChooser& RequiredDialogueTrigger, TArray<class UClass*> OptionalRequiredOwnerClasses, TArray<class UDialogueComponent*> OptionalRequiredDialogueComponents, TArray<struct FDialogueKey> OptionalRequiredParticipantNames, int32_t FindFlags)
+	int32_t UAudioUtilities::STATIC_FindDialogueSessionIdWithRequirementsChooser(class UObject* WorldContextObject, const struct FDialogueTriggerChooser& RequiredDialogueTrigger, TArray<class UClass*> OptionalRequiredOwnerClasses, TArray<class UDialogueComponent*> OptionalRequiredDialogueComponents, TArray<struct FDialogueKey> OptionalRequiredParticipantNames, int32_t FindFlags)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -904,6 +923,7 @@ namespace CG
 		params.FindFlags = FindFlags;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -912,15 +932,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB0290
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.AddRuntimeEventHandler
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              OnRuntimeEventDynamic                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Description                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UAudioUtilities::AddRuntimeEventHandler(class UObject* WorldContextObject, const class FScriptDelegate& OnRuntimeEventDynamic, const class FString& Description)
+	int32_t UAudioUtilities::STATIC_AddRuntimeEventHandler(class UObject* WorldContextObject, const class FScriptDelegate& OnRuntimeEventDynamic, const class FString& Description)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -932,6 +952,7 @@ namespace CG
 		params.Description = Description;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -940,15 +961,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB0160
 	 * 		Name   -> Function AudioPlugin.AudioUtilities.AddDialogueOnEventDelegate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              OnEventDelegate                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            SessionId                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UAudioUtilities::AddDialogueOnEventDelegate(class UObject* WorldContextObject, const class FScriptDelegate& OnEventDelegate, int32_t SessionId)
+	bool UAudioUtilities::STATIC_AddDialogueOnEventDelegate(class UObject* WorldContextObject, const class FScriptDelegate& OnEventDelegate, int32_t SessionId)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -960,6 +981,7 @@ namespace CG
 		params.SessionId = SessionId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1025,8 +1047,50 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDamLocShardLoaderComponent.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UDamLocShardLoaderComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AudioPlugin.DamLocShardLoaderComponent");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDamLocShardsDataAsset.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UDamLocShardsDataAsset::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AudioPlugin.DamLocShardsDataAsset");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00000000
+	 * 		Name   -> PredefinedFunction UDamLocShardManager.StaticClass
+	 * 		Flags  -> (Predefined, Static)
+	 */
+	UClass* UDamLocShardManager::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("Class AudioPlugin.DamLocShardManager");
+		return ptr;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00EB7C00
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.TriggerDialogue
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FDialogueTriggerChooser                     DialogueTrigger                                            (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FTriggerDialogueParams                      TriggerParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -1048,6 +1112,7 @@ namespace CG
 		params.OnEventFlags = OnEventFlags;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1056,9 +1121,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB7B60
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.SetVoiceName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FDialogueKey                                InVoiceName                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -1072,15 +1137,16 @@ namespace CG
 		params.InVoiceName = InVoiceName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB77D0
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.ServerForcedDialogueTriggerExecution
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, Native, Event, Public, NetServer, NetValidate)
 	 * Parameters:
 	 * 		int32_t                                            VoiceNameKeyId                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            InstigatingPlayerId                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1108,15 +1174,16 @@ namespace CG
 		params.DynamicPriority = DynamicPriority;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB7610
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.RemoveRuntimeEventHandler
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            RuntimeEventHandlerId                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Description                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1132,6 +1199,7 @@ namespace CG
 		params.Description = Description;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1140,9 +1208,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB7570
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.RemovePriorityChangedDelegate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -1156,15 +1224,16 @@ namespace CG
 		params.Delegate = Delegate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB73B0
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.OnRep_VoiceName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private)
 	 */
 	void UDialogueComponent::OnRep_VoiceName()
 	{
@@ -1175,15 +1244,16 @@ namespace CG
 		UDialogueComponent_OnRep_VoiceName_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB72E0
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.OnFaceFXRawPlaybackStarted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasOutParms)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      SkeletalMeshComponent                                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        AnimId                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1199,15 +1269,16 @@ namespace CG
 		params.AnimId = AnimId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB7210
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.OnFaceFXPlaybackStopped
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Private, HasOutParms)
 	 * Parameters:
 	 * 		class USkeletalMeshComponent*                      SkeletalMeshComponent                                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        AnimId                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1223,47 +1294,16 @@ namespace CG
 		params.AnimId = AnimId;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function AudioPlugin.DialogueComponent.NetMulticastTriggerDialogueWithComponents
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		TArray<class UDialogueComponent*>                  Components                                                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	 * 		class UConversationDialogueTriggerDataAsset*       DataAsset                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		struct FDialogueSessionConfigData                  ConfigData                                                 (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	 * 		struct FVector                                     NearPosition                                               (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		struct FTriggerDialogueParamsInternal              TriggerParams                                              (ConstParm, Parm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	 * 		TArray<struct FKnowledgeBaseValueSelector>         ContextKnowledgeBaseValues                                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	 */
-	void UDialogueComponent::NetMulticastTriggerDialogueWithComponents(TArray<class UDialogueComponent*> Components, class UConversationDialogueTriggerDataAsset* DataAsset, const struct FDialogueSessionConfigData& ConfigData, const struct FVector& NearPosition, const struct FTriggerDialogueParamsInternal& TriggerParams, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function AudioPlugin.DialogueComponent.NetMulticastTriggerDialogueWithComponents");
-		
-		UDialogueComponent_NetMulticastTriggerDialogueWithComponents_Params params {};
-		params.Components = Components;
-		params.DataAsset = DataAsset;
-		params.ConfigData = ConfigData;
-		params.NearPosition = NearPosition;
-		params.TriggerParams = TriggerParams;
-		params.ContextKnowledgeBaseValues = ContextKnowledgeBaseValues;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB6CA0
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.NetMulticastForcedDialogueTriggerExecution
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
 	 * Parameters:
 	 * 		int32_t                                            VoiceNameKeyId                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            InstigatingPlayerId                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1291,15 +1331,16 @@ namespace CG
 		params.DynamicPriority = DynamicPriority;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB6640
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.ClientTriggerDialogueWithComponents
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, HasDefaults, NetClient)
 	 * Parameters:
 	 * 		TArray<class UDialogueComponent*>                  Components                                                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		class UConversationDialogueTriggerDataAsset*       DataAsset                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1323,15 +1364,16 @@ namespace CG
 		params.ContextKnowledgeBaseValues = ContextKnowledgeBaseValues;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB62C0
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.AddPriorityChangedDelegate
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class FScriptDelegate                              Delegate                                                   (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -1345,15 +1387,16 @@ namespace CG
 		params.Delegate = Delegate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB5EB0
 	 * 		Name   -> Function AudioPlugin.DialogueComponent.AddDynamicRuntimeEventHandler
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FScriptDelegate                              OnRuntimeEventDynamic                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Description                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1369,6 +1412,7 @@ namespace CG
 		params.Description = Description;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1391,9 +1435,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB8540
 	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.TriggerDialogueWithoutComponents
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UConversationDialogueTriggerDataAsset*       DataAsset                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1403,7 +1447,7 @@ namespace CG
 	 * 		TArray<struct FKnowledgeBaseValueSelector>         ContextKnowledgeBaseValues                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              OnEventDelegate                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	int32_t UDialogueFunctionLibrary::TriggerDialogueWithoutComponents(class UObject* WorldContextObject, class UConversationDialogueTriggerDataAsset* DataAsset, const struct FDialogueSessionConfigData& ConfigData, const struct FVector& NearPosition, const struct FTriggerDialogueParams& TriggerParams, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate)
+	int32_t UDialogueFunctionLibrary::STATIC_TriggerDialogueWithoutComponents(class UObject* WorldContextObject, class UConversationDialogueTriggerDataAsset* DataAsset, const struct FDialogueSessionConfigData& ConfigData, const struct FVector& NearPosition, const struct FTriggerDialogueParams& TriggerParams, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1419,6 +1463,7 @@ namespace CG
 		params.OnEventDelegate = OnEventDelegate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1427,9 +1472,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB81C0
 	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.TriggerDialogueWithComponents
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<class UDialogueComponent*>                  Components                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
@@ -1440,7 +1485,7 @@ namespace CG
 	 * 		TArray<struct FKnowledgeBaseValueSelector>         ContextKnowledgeBaseValues                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		class FScriptDelegate                              OnEventDelegate                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	int32_t UDialogueFunctionLibrary::TriggerDialogueWithComponents(class UObject* WorldContextObject, TArray<class UDialogueComponent*> Components, class UConversationDialogueTriggerDataAsset* DataAsset, const struct FDialogueSessionConfigData& ConfigData, const struct FVector& NearPosition, const struct FTriggerDialogueParams& TriggerParams, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate)
+	int32_t UDialogueFunctionLibrary::STATIC_TriggerDialogueWithComponents(class UObject* WorldContextObject, TArray<class UDialogueComponent*> Components, class UConversationDialogueTriggerDataAsset* DataAsset, const struct FDialogueSessionConfigData& ConfigData, const struct FVector& NearPosition, const struct FTriggerDialogueParams& TriggerParams, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues, const class FScriptDelegate& OnEventDelegate)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1457,6 +1502,7 @@ namespace CG
 		params.OnEventDelegate = OnEventDelegate;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1465,9 +1511,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB7EB0
 	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.TriggerDialogueWithActors
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<class AActor*>                              Actors                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -1477,7 +1523,7 @@ namespace CG
 	 * 		struct FTriggerDialogueParams                      TriggerParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FKnowledgeBaseValueSelector>         ContextKnowledgeBaseValues                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	int32_t UDialogueFunctionLibrary::TriggerDialogueWithActors(class UObject* WorldContextObject, TArray<class AActor*> Actors, class UConversationDialogueTriggerDataAsset* DataAsset, const struct FDialogueSessionConfigData& ConfigData, const struct FVector& NearPosition, const struct FTriggerDialogueParams& TriggerParams, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues)
+	int32_t UDialogueFunctionLibrary::STATIC_TriggerDialogueWithActors(class UObject* WorldContextObject, TArray<class AActor*> Actors, class UConversationDialogueTriggerDataAsset* DataAsset, const struct FDialogueSessionConfigData& ConfigData, const struct FVector& NearPosition, const struct FTriggerDialogueParams& TriggerParams, TArray<struct FKnowledgeBaseValueSelector> ContextKnowledgeBaseValues)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1493,6 +1539,7 @@ namespace CG
 		params.ContextKnowledgeBaseValues = ContextKnowledgeBaseValues;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1501,23 +1548,24 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.RemoveBlockBreathingReason
-	 * 		Flags  -> ()
+	 * 		RVA    -> 0x00EB74A0
+	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.RemoveBlockAllDialogueReason
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FGuid                                       Reason                                                     (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UDialogueFunctionLibrary::RemoveBlockBreathingReason(class UObject* WorldContextObject, struct FGuid* Reason)
+	void UDialogueFunctionLibrary::STATIC_RemoveBlockAllDialogueReason(class UObject* WorldContextObject, struct FGuid* Reason)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function AudioPlugin.DialogueFunctionLibrary.RemoveBlockBreathingReason");
+			fn = UObject::FindObject<UFunction>("Function AudioPlugin.DialogueFunctionLibrary.RemoveBlockAllDialogueReason");
 		
-		UDialogueFunctionLibrary_RemoveBlockBreathingReason_Params params {};
+		UDialogueFunctionLibrary_RemoveBlockAllDialogueReason_Params params {};
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1527,14 +1575,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB6B90
 	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.IsDialogueKeyInParticipantDatas
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FDialogueKey                                DialogueKey                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FDialogueSessionParticipantData>     ParticipantDatas                                           (Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	bool UDialogueFunctionLibrary::IsDialogueKeyInParticipantDatas(const struct FDialogueKey& DialogueKey, TArray<struct FDialogueSessionParticipantData>* ParticipantDatas)
+	bool UDialogueFunctionLibrary::STATIC_IsDialogueKeyInParticipantDatas(const struct FDialogueKey& DialogueKey, TArray<struct FDialogueSessionParticipantData>* ParticipantDatas)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1544,6 +1592,7 @@ namespace CG
 		params.DialogueKey = DialogueKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1555,13 +1604,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB6B10
 	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.IsAllDialogueBlocked
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UDialogueFunctionLibrary::IsAllDialogueBlocked(class UObject* WorldContextObject)
+	bool UDialogueFunctionLibrary::STATIC_IsAllDialogueBlocked(class UObject* WorldContextObject)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1571,6 +1620,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1579,14 +1629,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB69B0
 	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.GetRadioParticipantVoiceName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FRadioParticipantData                       RadioParticipantData                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 * 		class UDialogueComponent*                          DialogueComponent                                          (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FDialogueKey UDialogueFunctionLibrary::GetRadioParticipantVoiceName(const struct FRadioParticipantData& RadioParticipantData, class UDialogueComponent* DialogueComponent)
+	struct FDialogueKey UDialogueFunctionLibrary::STATIC_GetRadioParticipantVoiceName(const struct FRadioParticipantData& RadioParticipantData, class UDialogueComponent* DialogueComponent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1597,6 +1647,7 @@ namespace CG
 		params.DialogueComponent = DialogueComponent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1605,14 +1656,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB68A0
 	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.GetDialogueComponentFromParticipantName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FDialogueKey                                DialogueKey                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FDialogueSessionParticipantData>     ParticipantDatas                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	class UDialogueComponent* UDialogueFunctionLibrary::GetDialogueComponentFromParticipantName(const struct FDialogueKey& DialogueKey, TArray<struct FDialogueSessionParticipantData> ParticipantDatas)
+	class UDialogueComponent* UDialogueFunctionLibrary::STATIC_GetDialogueComponentFromParticipantName(const struct FDialogueKey& DialogueKey, TArray<struct FDialogueSessionParticipantData> ParticipantDatas)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1623,6 +1674,7 @@ namespace CG
 		params.ParticipantDatas = ParticipantDatas;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1631,15 +1683,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB6530
 	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.AllRequiredParticipantsExistForDialogueWithoutComponents
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UConversationDialogueTriggerDataAsset*       DataAsset                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     NearPosition                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UDialogueFunctionLibrary::AllRequiredParticipantsExistForDialogueWithoutComponents(class UObject* WorldContextObject, class UConversationDialogueTriggerDataAsset* DataAsset, const struct FVector& NearPosition)
+	bool UDialogueFunctionLibrary::STATIC_AllRequiredParticipantsExistForDialogueWithoutComponents(class UObject* WorldContextObject, class UConversationDialogueTriggerDataAsset* DataAsset, const struct FVector& NearPosition)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1651,6 +1703,7 @@ namespace CG
 		params.NearPosition = NearPosition;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1659,16 +1712,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB6360
 	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.AllRequiredParticipantsExistForDialogueWithComponents
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<class UDialogueComponent*>                  Components                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		class UConversationDialogueTriggerDataAsset*       DataAsset                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     NearPosition                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		bool                                               bAllowMultipleParticipantsToUseSameDialogueComponent       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UDialogueFunctionLibrary::AllRequiredParticipantsExistForDialogueWithComponents(class UObject* WorldContextObject, TArray<class UDialogueComponent*> Components, class UConversationDialogueTriggerDataAsset* DataAsset, const struct FVector& NearPosition)
+	bool UDialogueFunctionLibrary::STATIC_AllRequiredParticipantsExistForDialogueWithComponents(class UObject* WorldContextObject, TArray<class UDialogueComponent*> Components, class UConversationDialogueTriggerDataAsset* DataAsset, const struct FVector& NearPosition, bool bAllowMultipleParticipantsToUseSameDialogueComponent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1679,8 +1733,10 @@ namespace CG
 		params.Components = Components;
 		params.DataAsset = DataAsset;
 		params.NearPosition = NearPosition;
+		params.bAllowMultipleParticipantsToUseSameDialogueComponent = bAllowMultipleParticipantsToUseSameDialogueComponent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1689,16 +1745,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB60F0
 	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.AddInLevelParticipantsToParticipantDatas
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class UConversationDialogueTriggerDataAsset*       DialogueTrigger                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FDialogueSessionParticipantData>     ParticipantDatas                                           (Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		struct FVector                                     NearPosition                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		bool                                               bAllowMultipleParticipantsToUseSameDialogueComponent       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	int32_t UDialogueFunctionLibrary::AddInLevelParticipantsToParticipantDatas(class UObject* WorldContextObject, class UConversationDialogueTriggerDataAsset* DialogueTrigger, TArray<struct FDialogueSessionParticipantData>* ParticipantDatas, const struct FVector& NearPosition)
+	int32_t UDialogueFunctionLibrary::STATIC_AddInLevelParticipantsToParticipantDatas(class UObject* WorldContextObject, class UConversationDialogueTriggerDataAsset* DialogueTrigger, TArray<struct FDialogueSessionParticipantData>* ParticipantDatas, const struct FVector& NearPosition, bool bAllowMultipleParticipantsToUseSameDialogueComponent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1708,8 +1765,10 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		params.DialogueTrigger = DialogueTrigger;
 		params.NearPosition = NearPosition;
+		params.bAllowMultipleParticipantsToUseSameDialogueComponent = bAllowMultipleParticipantsToUseSameDialogueComponent;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1721,15 +1780,15 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB5D50
 	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.AddDialogueComponentsToParticipantDatas
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		TArray<class UDialogueComponent*>                  DialogueComponents                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		class UConversationDialogueTriggerDataAsset*       DialogueTrigger                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		TArray<struct FDialogueSessionParticipantData>     ParticipantDatas                                           (Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	int32_t UDialogueFunctionLibrary::AddDialogueComponentsToParticipantDatas(TArray<class UDialogueComponent*> DialogueComponents, class UConversationDialogueTriggerDataAsset* DialogueTrigger, TArray<struct FDialogueSessionParticipantData>* ParticipantDatas)
+	int32_t UDialogueFunctionLibrary::STATIC_AddDialogueComponentsToParticipantDatas(TArray<class UDialogueComponent*> DialogueComponents, class UConversationDialogueTriggerDataAsset* DialogueTrigger, TArray<struct FDialogueSessionParticipantData>* ParticipantDatas)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -1740,6 +1799,7 @@ namespace CG
 		params.DialogueTrigger = DialogueTrigger;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1751,26 +1811,27 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.AddBlockBreathingReason
-	 * 		Flags  -> ()
+	 * 		RVA    -> 0x00EB5C50
+	 * 		Name   -> Function AudioPlugin.DialogueFunctionLibrary.AddBlockAllDialogueReason
+	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FName                                        Reason                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		bool                                               bUnique                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FGuid UDialogueFunctionLibrary::AddBlockBreathingReason(class UObject* WorldContextObject, const class FName& Reason, bool bUnique)
+	struct FGuid UDialogueFunctionLibrary::STATIC_AddBlockAllDialogueReason(class UObject* WorldContextObject, const class FName& Reason, bool bUnique)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>("Function AudioPlugin.DialogueFunctionLibrary.AddBlockBreathingReason");
+			fn = UObject::FindObject<UFunction>("Function AudioPlugin.DialogueFunctionLibrary.AddBlockAllDialogueReason");
 		
-		UDialogueFunctionLibrary_AddBlockBreathingReason_Params params {};
+		UDialogueFunctionLibrary_AddBlockAllDialogueReason_Params params {};
 		params.WorldContextObject = WorldContextObject;
 		params.Reason = Reason;
 		params.bUnique = bUnique;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1793,9 +1854,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB76F0
 	 * 		Name   -> Function AudioPlugin.DialogueManager.RemoveRuntimeEventHandler
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		int32_t                                            RuntimeEventHandlerId                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Description                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1811,6 +1872,7 @@ namespace CG
 		params.Description = Description;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1819,9 +1881,34 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB73D0
+	 * 		Name   -> Function AudioPlugin.DialogueManager.OnShardLoadedEvent
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
+	 * Parameters:
+	 * 		class FName                                        ShardName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		bool                                               bIsLoaded                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UDialogueManager::OnShardLoadedEvent(const class FName& ShardName, bool bIsLoaded)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AudioPlugin.DialogueManager.OnShardLoadedEvent");
+		
+		UDialogueManager_OnShardLoadedEvent_Params params {};
+		params.ShardName = ShardName;
+		params.bIsLoaded = bIsLoaded;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function AudioPlugin.DialogueManager.BlueprintInit
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
 	void UDialogueManager::BlueprintInit()
 	{
@@ -1838,9 +1925,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB5FD0
 	 * 		Name   -> Function AudioPlugin.DialogueManager.AddDynamicRuntimeEventHandler
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class FScriptDelegate                              OnRuntimeEventDynamic                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		class FString                                      Description                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1856,6 +1943,7 @@ namespace CG
 		params.Description = Description;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -1878,9 +1966,32 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EB7AA0
+	 * 		Name   -> Function AudioPlugin.DialogueNetworkingManager.ServerStopNetworkedDialogueSession
+	 * 		Flags  -> (Net, Native, Event, Public, NetServer, NetValidate)
+	 * Parameters:
+	 * 		int32_t                                            OriginalNetworkSessionId                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void ADialogueNetworkingManager::ServerStopNetworkedDialogueSession(int32_t OriginalNetworkSessionId)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AudioPlugin.DialogueNetworkingManager.ServerStopNetworkedDialogueSession");
+		
+		ADialogueNetworkingManager_ServerStopNetworkedDialogueSession_Params params {};
+		params.OriginalNetworkSessionId = OriginalNetworkSessionId;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00EB6FB0
 	 * 		Name   -> Function AudioPlugin.DialogueNetworkingManager.NetMulticastTriggerDialogueWithComponents
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public, HasDefaults)
 	 * Parameters:
 	 * 		TArray<class UDialogueComponent*>                  Components                                                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 * 		class UConversationDialogueTriggerDataAsset*       DataAsset                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1904,6 +2015,30 @@ namespace CG
 		params.ContextKnowledgeBaseValues = ContextKnowledgeBaseValues;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00EB6F20
+	 * 		Name   -> Function AudioPlugin.DialogueNetworkingManager.NetMulticastStopNetworkedDialogueSession
+	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
+	 * Parameters:
+	 * 		int32_t                                            OriginalNetworkSessionId                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void ADialogueNetworkingManager::NetMulticastStopNetworkedDialogueSession(int32_t OriginalNetworkSessionId)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AudioPlugin.DialogueNetworkingManager.NetMulticastStopNetworkedDialogueSession");
+		
+		ADialogueNetworkingManager_NetMulticastStopNetworkedDialogueSession_Params params {};
+		params.OriginalNetworkSessionId = OriginalNetworkSessionId;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -2022,14 +2157,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EBC0B0
 	 * 		Name   -> Function AudioPlugin.DialogueSystemNodes.EqualEqual_DialogueKey
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		struct FDialogueKey                                KeyA                                                       (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FDialogueKey                                KeyB                                                       (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UDialogueSystemNodes::EqualEqual_DialogueKey(const struct FDialogueKey& KeyA, const struct FDialogueKey& KeyB)
+	bool UDialogueSystemNodes::STATIC_EqualEqual_DialogueKey(const struct FDialogueKey& KeyA, const struct FDialogueKey& KeyB)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2040,6 +2175,7 @@ namespace CG
 		params.KeyB = KeyB;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2048,13 +2184,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84720
 	 * 		Name   -> Function AudioPlugin.DialogueSystemNodes.Conv_StringToDialogueKey
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FString                                      inString                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FDialogueKey UDialogueSystemNodes::Conv_StringToDialogueKey(const class FString& inString)
+	struct FDialogueKey UDialogueSystemNodes::STATIC_Conv_StringToDialogueKey(const class FString& inString)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2064,6 +2200,7 @@ namespace CG
 		params.inString = inString;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2072,13 +2209,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84580
 	 * 		Name   -> Function AudioPlugin.DialogueSystemNodes.Conv_NameToDialogueKey
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		class FName                                        InName                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	struct FDialogueKey UDialogueSystemNodes::Conv_NameToDialogueKey(const class FName& InName)
+	struct FDialogueKey UDialogueSystemNodes::STATIC_Conv_NameToDialogueKey(const class FName& InName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2088,6 +2225,7 @@ namespace CG
 		params.InName = InName;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2096,13 +2234,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A843F0
 	 * 		Name   -> Function AudioPlugin.DialogueSystemNodes.Conv_DialoguetKeyToString
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		struct FDialogueKey                                InDialogueKey                                              (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	class FString UDialogueSystemNodes::Conv_DialoguetKeyToString(const struct FDialogueKey& InDialogueKey)
+	class FString UDialogueSystemNodes::STATIC_Conv_DialoguetKeyToString(const struct FDialogueKey& InDialogueKey)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2112,6 +2250,7 @@ namespace CG
 		params.InDialogueKey = InDialogueKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2120,13 +2259,13 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00A84350
 	 * 		Name   -> Function AudioPlugin.DialogueSystemNodes.Conv_DialogueKeyToName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
 	 * 		struct FDialogueKey                                InDialogueKey                                              (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	class FName UDialogueSystemNodes::Conv_DialogueKeyToName(const struct FDialogueKey& InDialogueKey)
+	class FName UDialogueSystemNodes::STATIC_Conv_DialogueKeyToName(const struct FDialogueKey& InDialogueKey)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -2136,6 +2275,7 @@ namespace CG
 		params.InDialogueKey = InDialogueKey;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -2172,6 +2312,31 @@ namespace CG
 
 	/**
 	 * Function:
+	 * 		RVA    -> 0x00EBC1D0
+	 * 		Name   -> Function AudioPlugin.LocalisedAudioManager.OnShardLoadedEvent
+	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
+	 * Parameters:
+	 * 		class FName                                        ShardName                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		bool                                               bIsLoaded                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void ULocalisedAudioManager::OnShardLoadedEvent(const class FName& ShardName, bool bIsLoaded)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("Function AudioPlugin.LocalisedAudioManager.OnShardLoadedEvent");
+		
+		ULocalisedAudioManager_OnShardLoadedEvent_Params params {};
+		params.ShardName = ShardName;
+		params.bIsLoaded = bIsLoaded;
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
 	 * 		RVA    -> 0x00000000
 	 * 		Name   -> PredefinedFunction ULocalisedAudioManager.StaticClass
 	 * 		Flags  -> (Predefined, Static)
@@ -2186,9 +2351,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EBC1B0
 	 * 		Name   -> Function AudioPlugin.MusicComponent.OnRep_MusicTheme
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Protected)
 	 */
 	void UMusicComponent::OnRep_MusicTheme()
 	{
@@ -2199,6 +2364,7 @@ namespace CG
 		UMusicComponent_OnRep_MusicTheme_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -2219,9 +2385,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EBC600
 	 * 		Name   -> Function AudioPlugin.MusicManager.PushPlayerIntensityConfig
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UMusicComponent*                             Component                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Priority                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2241,15 +2407,16 @@ namespace CG
 		params.bForResetMusicData = bForResetMusicData;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EBC4A0
 	 * 		Name   -> Function AudioPlugin.MusicManager.PushMusicThemeDefinition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UMusicComponent*                             Component                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Priority                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2269,15 +2436,16 @@ namespace CG
 		params.RequestDescription = RequestDescription;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EBC3A0
 	 * 		Name   -> Function AudioPlugin.MusicManager.PopPlayerIntensityConfig
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UMusicComponent*                             Component                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Priority                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2295,15 +2463,16 @@ namespace CG
 		params.DataAsset = DataAsset;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00EBC2A0
 	 * 		Name   -> Function AudioPlugin.MusicManager.PopMusicThemeDefinition
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
 	 * 		class UMusicComponent*                             Component                                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            Priority                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2321,6 +2490,7 @@ namespace CG
 		params.MusicTheme = MusicTheme;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}

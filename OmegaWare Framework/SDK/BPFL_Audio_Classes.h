@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,11 +21,11 @@ namespace CG
 	class UBPFL_Audio_C : public UBlueprintFunctionLibrary
 	{
 	public:
-		struct FPlayAtLocationResult PostAudioAtLocationAdvanced(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, TArray<struct FAudioSwitchGroupNameSwitchStateSimplePair> SwitchGroupsAndSwitchStates, TArray<struct FAudioRTPCNameRTPCValueSimplePair> RTPCNamesAndValues, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, class UObject* __WorldContext);
-		struct FPlayAtLocationResult PostAudioAtLocationWithCallback(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, class UObject* __WorldContext);
-		struct FPlayAtLocationResult PostAudioAtLocationSimple(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, class UObject* __WorldContext);
-		void StopAudioByPlayingID(int32_t PlayingID, class UObject* __WorldContext);
-		int32_t CreateAudioAtLocation(class UObject* Owner, class UAkComponent* AudioSourceIn, class UAkAudioEvent* AkEvent, class UAkAuxBus* EarlyReflectionsBus, const struct FVector& Location, const struct FRotator& Orientation, bool AutoDestroy, class UObject* __WorldContext, class UAkComponent** AudioSourceOut);
+		struct FPlayAtLocationResult STATIC_PostAudioAtLocationAdvanced(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, TArray<struct FAudioSwitchGroupNameSwitchStateSimplePair> SwitchGroupsAndSwitchStates, TArray<struct FAudioRTPCNameRTPCValueSimplePair> RTPCNamesAndValues, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, class UObject* __WorldContext);
+		struct FPlayAtLocationResult STATIC_PostAudioAtLocationWithCallback(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, int32_t CallbackMask, const class FScriptDelegate& PostEventCallback, class UObject* __WorldContext);
+		struct FPlayAtLocationResult STATIC_PostAudioAtLocationSimple(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, class UObject* __WorldContext);
+		void STATIC_StopAudioByPlayingID(int32_t PlayingID, class UObject* __WorldContext);
+		int32_t STATIC_CreateAudioAtLocation(class UObject* Owner, class UAkComponent* AudioSourceIn, class UAkAudioEvent* AkEvent, class UAkAuxBus* EarlyReflectionsBus, const struct FVector& Location, const struct FRotator& Orientation, bool AutoDestroy, class UObject* __WorldContext, class UAkComponent** AudioSourceOut);
 		static UClass* StaticClass();
 	};
 

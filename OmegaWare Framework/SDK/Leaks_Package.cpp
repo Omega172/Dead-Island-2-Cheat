@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CDC530
 	 * 		Name   -> Function Leaks.BaseLeakObject.OnLeakStopped
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void UBaseLeakObject::OnLeakStopped()
 	{
@@ -25,15 +25,16 @@ namespace CG
 		UBaseLeakObject_OnLeakStopped_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00CF9800
 	 * 		Name   -> Function Leaks.BaseLeakObject.OnLeakStarted
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
 	void UBaseLeakObject::OnLeakStarted()
 	{
@@ -44,15 +45,16 @@ namespace CG
 		UBaseLeakObject_OnLeakStarted_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D0B230
 	 * 		Name   -> Function Leaks.BaseLeakObject.GetRequestParams
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
 	struct FLeakRequestParams UBaseLeakObject::GetRequestParams()
 	{
@@ -63,6 +65,7 @@ namespace CG
 		UBaseLeakObject_GetRequestParams_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -85,9 +88,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D0B3B0
 	 * 		Name   -> Function Leaks.LeakComponent.StopLeak
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void ULeakComponent::StopLeak()
 	{
@@ -98,15 +101,16 @@ namespace CG
 		ULeakComponent_StopLeak_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D0B270
 	 * 		Name   -> Function Leaks.LeakComponent.RequestLeak
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
 	void ULeakComponent::RequestLeak()
 	{
@@ -117,15 +121,16 @@ namespace CG
 		ULeakComponent_RequestLeak_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D0B190
 	 * 		Name   -> Function Leaks.LeakComponent.EditorOverrideLeakInfo
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		struct FLeakInfo                                   InLeakInfo                                                 (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
@@ -139,6 +144,7 @@ namespace CG
 		params.InLeakInfo = InLeakInfo;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 	}
@@ -173,14 +179,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D0B3D0
 	 * 		Name   -> Function Leaks.LeakFunctionLibrary.StopLeak
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            ID                                                         (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void ULeakFunctionLibrary::StopLeak(class UObject* WorldContextObject, int32_t* ID)
+	void ULeakFunctionLibrary::STATIC_StopLeak(class UObject* WorldContextObject, int32_t* ID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -190,6 +196,7 @@ namespace CG
 		params.WorldContextObject = WorldContextObject;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -199,14 +206,14 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00D0B290
 	 * 		Name   -> Function Leaks.LeakFunctionLibrary.RequestLeak
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
 	 * 		class UObject*                                     WorldContextObject                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		struct FLeakRequestParams                          LeakRequest                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	 */
-	int32_t ULeakFunctionLibrary::RequestLeak(class UObject* WorldContextObject, const struct FLeakRequestParams& LeakRequest)
+	int32_t ULeakFunctionLibrary::STATIC_RequestLeak(class UObject* WorldContextObject, const struct FLeakRequestParams& LeakRequest)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
@@ -217,6 +224,7 @@ namespace CG
 		params.LeakRequest = LeakRequest;
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

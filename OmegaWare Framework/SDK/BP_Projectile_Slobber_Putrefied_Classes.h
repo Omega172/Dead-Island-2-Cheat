@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -30,7 +30,7 @@ namespace CG
 		class UDamageableComponent*                                Damageable;                                              // 0x05E0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		float                                                      ModifyScale_Scale_2D7775BE4B40E177379DF19EE8815EBC;      // 0x05E8(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		ETimelineDirection                                         ModifyScale__Direction_2D7775BE4B40E177379DF19EE8815EBC; // 0x05EC(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_STGD[0x3];                                   // 0x05ED(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_LCMB[0x3];                                   // 0x05ED(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UTimelineComponent*                                  ModifyScale;                                             // 0x05F0(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FTimerHandle                                        EnableExpandedShootColliderTimer;                        // 0x05F8(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 		class UABP_PutrefiedProjectile_C*                          ABP;                                                     // 0x0600(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -38,13 +38,13 @@ namespace CG
 		struct FTimerHandle                                        DetonateTimer;                                           // 0x0610(0x0008) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
 		class UCosmeticEffectsDefinition*                          EmbeddedCosmeticEffectDefinition;                        // 0x0618(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FCosmeticEffectsID                                  EmbeddedCosmeticEffectID;                                // 0x0620(0x0004) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_URM9[0x4];                                   // 0x0624(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PW75[0x4];                                   // 0x0624(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UCosmeticEffectsDefinition*                          DetonationWindUpCosmeticEffectDefinition;                // 0x0628(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FCosmeticEffectsID                                  DetonationWindUpCosmeticEffectID;                        // 0x0630(0x0004) Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_CQRT[0x4];                                   // 0x0634(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XPZ3[0x4];                                   // 0x0634(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FSPutrefiedSpitHitCosmeticEffectParams>      HitCosmeticEffectDefinitions;                            // 0x0638(0x0010) Edit, BlueprintVisible, DisableEditOnInstance
 		EPutrefiedProjectileState                                  CurrentDetonationState;                                  // 0x0648(0x0001) Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_T854[0x7];                                   // 0x0649(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_NK55[0x7];                                   // 0x0649(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<EPutrefiedProjectileState, EPutrefiedProjectileState> StateTransition;                                         // 0x0650(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 		TMap<EPutrefiedProjectileState, struct FSPutrefiedSpitParams> DetonationParams;                                        // 0x06A0(0x0050) Edit, BlueprintVisible, DisableEditOnInstance
 		class UHUDIconBase*                                        Icon;                                                    // 0x06F0(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash

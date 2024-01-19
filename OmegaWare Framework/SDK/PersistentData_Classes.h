@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UPersistentDataCollectionBase : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_BS7D[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_J8S2[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -34,7 +34,7 @@ namespace CG
 	class UDummyPersistentDataCollection : public UPersistentDataCollectionBase
 	{
 	public:
-		unsigned char                                              UnknownData_2LVX[0x8];                                   // 0x0048(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SKYV[0x8];                                   // 0x0048(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -47,11 +47,11 @@ namespace CG
 	class UCategoryTreeNode : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_2PXM[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_08BG[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<struct FPersistentStoringParams, class UPersistentDataCollectionBase*> PersistentData;                                          // 0x0030(0x0050) NativeAccessSpecifierPublic
 		TArray<unsigned char>                                      SerializedData;                                          // 0x0080(0x0010) ZeroConstructor, NativeAccessSpecifierPublic
 		TArray<class UCategoryTreeNode*>                           Children;                                                // 0x0090(0x0010) ZeroConstructor, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_J5WQ[0x28];                                  // 0x00A0(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7OGJ[0x28];                                  // 0x00A0(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -66,7 +66,7 @@ namespace CG
 	public:
 		class UCategoryTreeNode*                                   PermanentData;                                           // 0x0028(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UCategoryTreeNode*                                   TemporaryData;                                           // 0x0030(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_CAFY[0x30];                                  // 0x0038(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_JNQD[0x30];                                  // 0x0038(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

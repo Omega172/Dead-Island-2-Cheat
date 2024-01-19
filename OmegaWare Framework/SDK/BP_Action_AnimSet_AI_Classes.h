@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -41,7 +41,7 @@ namespace CG
 		void PostResolve();
 		void PreResolve();
 		bool OnBeginEarly();
-		void GetBlendOutTime(class UAnimInstance* AnimSetInstance, float* BlendOutTime);
+		void GetBlendOutTime(bool* Success, float* BlendOutTime);
 		void OnEnd(const struct FGuid& RequestId, const struct FCharacterActionOnEndParams& Params);
 		void OnBegin(const struct FGuid& RequestId, const struct FCharacterActionOnBeginParams& Params);
 		void OnConstruct(class UCustomActionParamsBase* InitParams);

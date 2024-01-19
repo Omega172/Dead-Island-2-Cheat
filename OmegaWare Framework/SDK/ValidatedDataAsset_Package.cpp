@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00B974B0
 	 * 		Name   -> Function ValidatedDataAsset.BaseValidatedDataAsset.IsValidInternal
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent, Const)
 	 */
 	bool UBaseValidatedDataAsset::IsValidInternal()
 	{
@@ -25,6 +25,7 @@ namespace CG
 		UBaseValidatedDataAsset_IsValidInternal_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		
@@ -33,9 +34,9 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x00B973A0
 	 * 		Name   -> Function ValidatedDataAsset.BaseValidatedDataAsset.GetErrorsToOutput
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Native, Event, Protected, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
 	 * 		TArray<class FText>                                Errors                                                     (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	 */
@@ -48,6 +49,7 @@ namespace CG
 		UBaseValidatedDataAsset_GetErrorsToOutput_Params params {};
 		
 		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
 		

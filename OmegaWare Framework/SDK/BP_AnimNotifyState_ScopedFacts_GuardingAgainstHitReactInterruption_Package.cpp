@@ -1,6 +1,6 @@
 ﻿/**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #include "pch.h"
@@ -12,9 +12,9 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00000000
+	 * 		RVA    -> 0x0213CEB0
 	 * 		Name   -> Function BP_AnimNotifyState_ScopedFacts_GuardingAgainstHitReactInterruption.BP_AnimNotifyState_ScopedFacts_GuardingAgainstHitReactInterruption_C.GetNotifyName
-	 * 		Flags  -> ()
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
 	class FString UBP_AnimNotifyState_ScopedFacts_GuardingAgainstHitReactInterruption_C::GetNotifyName()
 	{

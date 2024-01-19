@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_PlayerCameraManager.BP_PlayerCameraManager_C
-	 * Size -> 0x0000 (FullSize[0x3830] - InheritedSize[0x3830])
+	 * Size -> 0x0000 (FullSize[0x39B0] - InheritedSize[0x39B0])
 	 */
 	class ABP_PlayerCameraManager_C : public ADIPlayerCameraManager
 	{

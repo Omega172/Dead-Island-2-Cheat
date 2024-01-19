@@ -112,7 +112,7 @@ extern long __fastcall hkPresent(IDXGISwapChain3* pSwapChain, UINT SyncInterval,
 			const auto rtvDescriptorSize = d3d12Device->GetDescriptorHandleIncrementSize(D3D12_DESCRIPTOR_HEAP_TYPE_RTV);
 			D3D12_CPU_DESCRIPTOR_HANDLE rtvHandle = d3d12DescriptorHeapBackBuffers->GetCPUDescriptorHandleForHeapStart();
 
-			for (size_t i = 0; i < buffersCounts; i++) {
+			for (UINT i = 0; i < buffersCounts; i++) {
 				ID3D12Resource* pBackBuffer = nullptr;
 
 				frameContext[i].main_render_target_descriptor = rtvHandle;

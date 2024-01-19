@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_HitDeathReactions_Suicider.BPC_HitDeathReactions_Suicider_C
-	 * Size -> 0x0000 (FullSize[0x01B8] - InheritedSize[0x01B8])
+	 * Size -> 0x0000 (FullSize[0x01C8] - InheritedSize[0x01C8])
 	 */
 	class UBPC_HitDeathReactions_Suicider_C : public UBPC_HitDeathReactions_Zombie_C
 	{

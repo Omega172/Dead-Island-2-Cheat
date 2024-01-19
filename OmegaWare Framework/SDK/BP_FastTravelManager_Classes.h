@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_FastTravelManager.BP_FastTravelManager_C
-	 * Size -> 0x0000 (FullSize[0x04F0] - InheritedSize[0x04F0])
+	 * Size -> 0x0000 (FullSize[0x0510] - InheritedSize[0x0510])
 	 */
 	class ABP_FastTravelManager_C : public AFastTravelManager
 	{

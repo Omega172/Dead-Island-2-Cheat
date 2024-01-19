@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -47,13 +47,13 @@ namespace CG
 	class ATemplateSequenceActor : public AActor
 	{
 	public:
-		unsigned char                                              UnknownData_MCZA[0x8];                                   // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZPIN[0x8];                                   // 0x02B0(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FMovieSceneSequencePlaybackSettings                 PlaybackSettings;                                        // 0x02B8(0x0014) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JMT2[0x4];                                   // 0x02CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_B9UY[0x4];                                   // 0x02CC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UTemplateSequencePlayer*                             SequencePlayer;                                          // 0x02D0(0x0008) BlueprintVisible, ExportObject, BlueprintReadOnly, Net, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FSoftObjectPath                                     TemplateSequence;                                        // 0x02D8(0x0018) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FTemplateSequenceBindingOverrideData                BindingOverride;                                         // 0x02F0(0x000C) BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8TSZ[0x4];                                   // 0x02FC(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_0J1J[0x4];                                   // 0x02FC(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		void SetSequence(class UTemplateSequence* InSequence);
@@ -71,10 +71,10 @@ namespace CG
 	class UTemplateSequencePlayer : public UMovieSceneSequencePlayer
 	{
 	public:
-		unsigned char                                              UnknownData_1MHS[0x10];                                  // 0x09E0(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EH2I[0x10];                                  // 0x09E0(0x0010) MISSED OFFSET (PADDING)
 
 	public:
-		class UTemplateSequencePlayer* CreateTemplateSequencePlayer(class UObject* WorldContextObject, class UTemplateSequence* TemplateSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ATemplateSequenceActor** OutActor);
+		class UTemplateSequencePlayer* STATIC_CreateTemplateSequencePlayer(class UObject* WorldContextObject, class UTemplateSequence* TemplateSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ATemplateSequenceActor** OutActor);
 		static UClass* StaticClass();
 	};
 

@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,7 +16,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BPC_FirstPersonHeldStaticMesh.BPC_FirstPersonHeldStaticMesh_C
-	 * Size -> 0x0000 (FullSize[0x05E0] - InheritedSize[0x05E0])
+	 * Size -> 0x0000 (FullSize[0x05F0] - InheritedSize[0x05F0])
 	 */
 	class UBPC_FirstPersonHeldStaticMesh_C : public UBlueprintableStaticMeshComponent
 	{

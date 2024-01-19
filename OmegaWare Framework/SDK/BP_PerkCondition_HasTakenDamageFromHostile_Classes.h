@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -16,15 +16,15 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_PerkCondition_HasTakenDamageFromHostile.BP_PerkCondition_HasTakenDamageFromHostile_C
-	 * Size -> 0x000B (FullSize[0x0063] - InheritedSize[0x0058])
+	 * Size -> 0x000B (FullSize[0x006B] - InheritedSize[0x0060])
 	 */
 	class UBP_PerkCondition_HasTakenDamageFromHostile_C : public UPerkCondition
 	{
 	public:
-		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0058(0x0008) ZeroConstructor, Transient, DuplicateTransient
-		bool                                                       ListenForCriticalHit;                                    // 0x0060(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		bool                                                       ListenForHeavyAttack;                                    // 0x0061(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		bool                                                       ListenForThrownAttack;                                   // 0x0062(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0060(0x0008) ZeroConstructor, Transient, DuplicateTransient
+		bool                                                       ListenForCriticalHit;                                    // 0x0068(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       ListenForHeavyAttack;                                    // 0x0069(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
+		bool                                                       ListenForThrownAttack;                                   // 0x006A(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
 		void Enable(const struct FBlueprintPerkConditionParams& Params);

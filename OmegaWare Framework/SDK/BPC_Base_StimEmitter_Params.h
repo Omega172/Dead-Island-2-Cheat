@@ -2,7 +2,7 @@
 
 /**
  * Name: Dead_Island_2
- * Version: Cracked
+ * Version: 3.0.0.1103923
  */
 
 #ifdef _MSC_VER
@@ -15,37 +15,82 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.BeginAndEndStim
+	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.RemoveFeelAllyCloseStim
 	 */
-	struct UBPC_Base_StimEmitter_C_BeginAndEndStim_Params
+	struct UBPC_Base_StimEmitter_C_RemoveFeelAllyCloseStim_Params
+	{	};
+
+	/**
+	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.AddFeelAllyCloseStim
+	 */
+	struct UBPC_Base_StimEmitter_C_AddFeelAllyCloseStim_Params
 	{
 	public:
 		class UStimTemplate*                                       StimTemplate;                                            // 0x0000(0x0008)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		struct FSStimOverrideParams                                StimParams;                                              // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
-		float                                                      Duration;                                                // 0x0010(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		struct FStimID                                             StimID;                                                  // 0x0014(0x0004)  (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
-	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.EndStim
+	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnCombatStateChanged
 	 */
-	struct UBPC_Base_StimEmitter_C_EndStim_Params
+	struct UBPC_Base_StimEmitter_C_OnCombatStateChanged_Params
 	{
 	public:
-		struct FStimID                                             StimID;                                                  // 0x0000(0x0004)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+		ECombatState                                               NewState;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
-	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.BeginStim
+	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnCharacterUnpossessed
 	 */
-	struct UBPC_Base_StimEmitter_C_BeginStim_Params
+	struct UBPC_Base_StimEmitter_C_OnCharacterUnpossessed_Params
+	{	};
+
+	/**
+	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnCharacterPossessed
+	 */
+	struct UBPC_Base_StimEmitter_C_OnCharacterPossessed_Params
 	{
 	public:
-		class UStimTemplate*                                       StimTemplate;                                            // 0x0000(0x0008)  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		struct FSStimOverrideParams                                StimParams;                                              // 0x0008(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
-		struct FStimID                                             StimID;                                                  // 0x0010(0x0004)  (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_PLIH[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class AController*                                         PlayerController;                                        // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
+
+	/**
+	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.UninitialiseFeelAllyCloseStim
+	 */
+	struct UBPC_Base_StimEmitter_C_UninitialiseFeelAllyCloseStim_Params
+	{	};
+
+	/**
+	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.IntialiseFeelAllyCloseStim
+	 */
+	struct UBPC_Base_StimEmitter_C_IntialiseFeelAllyCloseStim_Params
+	{	};
+
+	/**
+	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.SetAlive
+	 */
+	struct UBPC_Base_StimEmitter_C_SetAlive_Params
+	{
+	public:
+		bool                                                       Alive;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	};
+
+	/**
+	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnResurrect
+	 */
+	struct UBPC_Base_StimEmitter_C_OnResurrect_Params
+	{	};
+
+	/**
+	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.OnDeath
+	 */
+	struct UBPC_Base_StimEmitter_C_OnDeath_Params
+	{	};
+
+	/**
+	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.ReceiveBeginPlay
+	 */
+	struct UBPC_Base_StimEmitter_C_ReceiveBeginPlay_Params
+	{	};
 
 	/**
 	 * Function BPC_Base_StimEmitter.BPC_Base_StimEmitter_C.ReceiveEndPlay
