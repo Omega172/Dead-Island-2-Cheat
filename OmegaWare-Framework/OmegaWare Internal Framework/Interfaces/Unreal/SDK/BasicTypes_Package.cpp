@@ -36,7 +36,7 @@ namespace CG
 	 */
 	bool InitSdk()
 	{
-		return InitSdk(L"DeadIsland-Win64-Shipping.exe", 0x6C81500, 0x6C4DB00, 0x6E06648);
+		return InitSdk(L"DeadIsland-Win64-Shipping.exe", 0x6c80440, 0x1F4A9B0, 0x6B67DA0);
 	}
 
 	// --------------------------------------------------
